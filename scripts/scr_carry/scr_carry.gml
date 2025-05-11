@@ -7,6 +7,7 @@ function carry_initialize(_canCarry = true, _carried = false, _carrier = noone)
 {
 	canCarry = _canCarry;
 	carrier = _carrier;
+	originalMask = mask_index;
 }
 
 ///@function carry_carried_step()

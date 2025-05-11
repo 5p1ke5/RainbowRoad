@@ -31,15 +31,15 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (!instance_exists(myCarry)) && (grounded)
+if (B_BUTTON_RELEASED)
 {
-	var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
-	show_debug_message(_onTop);
-
-	//If the object can be picked up...
-	if (variable_instance_get(_onTop, "canCarry"))
+	//If not carrying an object, tries to lift whatever's underfoot.
+	if (!instance_exists(myCarry))
 	{
-		if (B_BUTTON)
+		var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
+		show_debug_message(_onTop);
+		
+		if (variable_instance_get(_onTop, "canCarry") != undefined)
 		{
 			myCarry = _onTop;
 			
@@ -47,7 +47,24 @@ if (!instance_exists(myCarry)) && (grounded)
 			_onTop.mask_index = spr_maskNone;
 		}
 	}
+	else //If carrying an object, throws it.
+	{
+		
+		var _throwHsp = facing * 3;
+		
+		with (myCarry)
+		{
+			carrier = noone;
+			mask_index = originalMask;
+			
+			hsp = _throwHsp;
+			vsp = -1;
+		}
+		
+		myCarry = noone;
+	}
 }
+
 
 
 ///Set sprite properties.
