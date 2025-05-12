@@ -6,12 +6,12 @@ hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
 if (X_BUTTON_PRESSED)
 {
-	image_speed = 2;
+	image_speed = animSpeedRun;
 }
 
 if (X_BUTTON_RELEASED)
 {
-	image_speed = 1;	
+	image_speed = animSpeed;	
 }
 
 if (A_BUTTON)
@@ -45,9 +45,8 @@ if (B_BUTTON_RELEASED)
 	if (!instance_exists(myCarry))
 	{
 		var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
-		show_debug_message(_onTop);
 		
-		if (variable_instance_get(_onTop, "canCarry") != undefined)
+		if (variable_instance_get(_onTop, "canCarry") == true)
 		{
 			myCarry = _onTop;
 			
@@ -65,7 +64,7 @@ if (B_BUTTON_RELEASED)
 			mask_index = originalMask;
 			
 			hsp = _throwHsp;
-			vsp = -1;
+			vsp = -2;
 		}
 		
 		myCarry = noone;

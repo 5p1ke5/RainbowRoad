@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_box",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_chestS",
+  "eventList":[],
   "managed":true,
-  "name":"obj_box",
+  "name":"obj_chestS",
   "overriddenProperties":[],
   "parent":{
     "name":"furniture",
     "path":"folders/Objects/furniture.yy",
   },
   "parentObjectId":{
-    "name":"obj_block",
-    "path":"objects/obj_block/obj_block.yy",
+    "name":"abs_carryBlock",
+    "path":"objects/abs_carryBlock/abs_carryBlock.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_box",
-    "path":"sprites/spr_box/spr_box.yy",
+    "name":"spr_chestS",
+    "path":"sprites/spr_chestS/spr_chestS.yy",
   },
   "spriteMaskId":null,
   "visible":true,

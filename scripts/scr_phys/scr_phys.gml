@@ -5,7 +5,7 @@
 /// @param _hsp Horizontal speed.
 /// @param _vsp vertical speed
 /// @param _collision Whether the object stops when it collides with blocks.
-function phys_initialize(_grav, _frict, _hsp, _vsp, _collision) 
+function phys_initialize(_grav, _frict, _hsp = 0, _vsp = 0, _collision = true) 
 {
 
 	//Initializes instance variables.
@@ -135,7 +135,7 @@ function phys_friction(_hsp, _frict, _grounded)
 {
 
 	//Friction will reduce horizontal speed. This is reduced while in the air.
-	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(7, !_grounded)));
+	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(6, !_grounded)));
 	  
 	//If hsp is lower than the friction value, it just sets hsp to 0.
 	if (abs(_hsp) < _frict)
