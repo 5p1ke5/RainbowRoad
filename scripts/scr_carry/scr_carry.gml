@@ -52,7 +52,7 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 		mask_index = originalMask;
 		
 		//Check collision first. If one is there cancels by resetting mask_index and returning.
-		if (! place_empty(x + _xOffset, y + _yOffset, all))
+		if (!place_empty(x + _xOffset, y + _yOffset, all))
 		{
 			mask_index = MASK_BLANK;
 			return false;

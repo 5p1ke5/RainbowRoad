@@ -1,0 +1,1 @@
+/// @description Event for being picked up.

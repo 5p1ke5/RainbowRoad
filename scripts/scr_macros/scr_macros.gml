@@ -66,3 +66,7 @@
 #macro MOUSE_LEFT_BUTTON_RELEASED_NOT_GUI (!position_meeting(mouse_x, mouse_y, abs_gui) && MOUSE_LEFT_BUTTON_RELEASED)
 #macro MOUSE_RIGHT_BUTTON_RELEASED_NOT_GUI (!position_meeting(mouse_x, mouse_y, abs_gui) && MOUSE_RIGHT_BUTTON_RELEASED)
 #endregion
+
+#region enums
+enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15}
+#endregion
