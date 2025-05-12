@@ -39,7 +39,7 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON)
+if (B_BUTTON_PRESSED)
 {
 	//If not carrying an object, tries to lift whatever's underfoot.
 	if (!instance_exists(myCarry))
@@ -52,7 +52,8 @@ if (B_BUTTON)
 		}
 	}	
 }
-if (B_BUTTON_PRESSED)
+
+if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
