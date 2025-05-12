@@ -22,8 +22,8 @@
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"backgrounds","folderPath":"folders/Sprites/backgrounds.yy","name":"backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"furniture","folderPath":"folders/Sprites/furniture.yy","name":"furniture","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"collision masks","folderPath":"folders/Sprites/collision masks.yy","name":"collision masks","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"furniture","folderPath":"folders/Sprites/furniture.yy","name":"furniture","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player","folderPath":"folders/Sprites/player.yy","name":"player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
@@ -43,6 +43,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
+    {"id":{"name":"room_plains","path":"rooms/room_plains/room_plains.yy",},},
     {"id":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"id":{"name":"scr_carry","path":"scripts/scr_carry/scr_carry.yy",},},
     {"id":{"name":"scr_game_initialize","path":"scripts/scr_game_initialize/scr_game_initialize.yy",},},
@@ -71,6 +72,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
+    {"roomId":{"name":"room_plains","path":"rooms/room_plains/room_plains.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

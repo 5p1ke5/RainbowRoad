@@ -4,7 +4,15 @@ event_inherited();
 ///Controls.
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
+if (X_BUTTON_PRESSED)
+{
+	image_speed = 2;
+}
 
+if (X_BUTTON_RELEASED)
+{
+	image_speed = 1;	
+}
 
 if (A_BUTTON)
 {
@@ -14,7 +22,7 @@ if (A_BUTTON)
 	}
 	else //You jump higher if you hold the jump button
 	{
-		vsp -= grav/2;	
+		vsp -= jumpOffset;	
 	}
 }
 
@@ -22,7 +30,7 @@ if (A_BUTTON)
 ///Movement
 if (hDir != 0)
 {
-	if (abs(hsp) < maxSpeed)
+	if (abs(hsp) < maxSpeed + (0.5 * maxSpeed * X_BUTTON))
 	{
 		hsp += accel * hDir;	
 	}
@@ -49,7 +57,6 @@ if (B_BUTTON_RELEASED)
 	}
 	else //If carrying an object, throws it.
 	{
-		
 		var _throwHsp = facing * 3;
 		
 		with (myCarry)

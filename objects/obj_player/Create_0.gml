@@ -8,6 +8,7 @@ facing = 1;
 maxSpeed = 3;
 accel = 1;
 jumpHeight = 4;
+jumpOffset = 0.1;
 
 //The object currently being carried.
 myCarry = noone;
