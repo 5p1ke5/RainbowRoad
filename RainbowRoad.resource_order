@@ -10,9 +10,9 @@
     {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
     {"name":"Sounds","order":1,"path":"folders/Sounds.yy",},
     {"name":"backgrounds","order":11,"path":"folders/Sprites/backgrounds.yy",},
+    {"name":"blocks","order":15,"path":"folders/Sprites/blocks.yy",},
     {"name":"collision masks","order":14,"path":"folders/Sprites/collision masks.yy",},
     {"name":"furniture","order":13,"path":"folders/Sprites/furniture.yy",},
-    {"name":"blocks","order":15,"path":"folders/Sprites/blocks.yy",},
     {"name":"player","order":9,"path":"folders/Sprites/player.yy",},
   ],
   "ResourceOrderSettings":[

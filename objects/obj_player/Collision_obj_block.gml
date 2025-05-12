@@ -17,4 +17,4 @@ do
 {
 	y--;
 }
-until (!place_meeting(x, y, other));
+until (!place_meeting(x, y + 1, other));

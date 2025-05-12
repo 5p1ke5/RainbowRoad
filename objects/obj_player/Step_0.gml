@@ -30,10 +30,8 @@ if (A_BUTTON)
 ///Movement
 if (hDir != 0)
 {
-	if (abs(hsp) < maxSpeed + (0.5 * maxSpeed * X_BUTTON))
-	{
-		hsp += accel * hDir;	
-	}
+	hsp = phys_force_add(hsp, accel * hDir, maxSpeed + (0.5 * maxSpeed * X_BUTTON))
+
 	
 	facing = hDir;
 }

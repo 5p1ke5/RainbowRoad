@@ -202,8 +202,8 @@ function phys_step()
 	    hsp = phys_wall_collision(hsp);
 	}
 
-	y += vsp;
-	x += hsp;
+	y += round(vsp);
+	x += round(hsp);
 
 	//Checks if the object is on the ground.
 	//grounded = (place_meeting(x, y + 1, BLOCK)) || (bottom(bbox_bottom + 1, obj_oneWay));
