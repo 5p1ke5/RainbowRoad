@@ -2,13 +2,12 @@
 ///@description Initializes variables for an object that can be carried.
 ///@param _canCarry Whether or not the object can currently be carrie
 ///@param _carrier The instance currently carrying this one.
-function carry_initialize(_canCarry = true, _carrier = noone)
+function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 {
 	canCarry = _canCarry;
 	carrier = _carrier;
 	
-	//If the object has a mask sets originalMask to the mask_index. Otherwise sets it as the object's sprite.
-	originalMask = (mask_index == -1) ? sprite_index : mask_index;
+	collision = _collision;
 }
 
 ///@function carry_carried_step()
@@ -17,7 +16,7 @@ function carry_carried_step()
 {
 	//X is alligned with carrier's x, y is so that the sprite's bottom is on the character's top.
 	x = carrier.x;
-	y = carrier.y - (sprite_get_bbox_bottom(originalMask) - sprite_get_bbox_top(originalMask));
+	y = carrier.y - (bbox_bottom - bbox_top);
 }
 
 
@@ -33,7 +32,7 @@ function carry_pickup_instance(_pickup)
 	with (_pickup)
 	{
 		carrier = _self;
-		mask_index = MASK_BLANK;
+		collision = false;
 	}
 }
 
@@ -49,22 +48,22 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 	
 	with (myCarry)
 	{
-		mask_index = originalMask;
 		
 		//Check collision first. If one is there cancels by resetting mask_index and returning.
 		if (!place_empty(x + _xOffset, y + _yOffset, all))
 		{
-			mask_index = MASK_BLANK;
 			return false;
 		}
-		
-		carrier = noone;
 		
 		hsp = _hsp;
 		vsp = _vsp;
 		
 		x += _xOffset;
 		y += _yOffset;
+		
+		collision = true;
+		carrier = noone;
+		
 	}
 	
 	myCarry = noone;

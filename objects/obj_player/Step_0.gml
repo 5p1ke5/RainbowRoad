@@ -19,6 +19,7 @@ if (A_BUTTON)
 	if (grounded)
 	{
 		vsp = -jumpHeight;
+		show_debug_message("Grounded: {0}", grounded)
 	}
 	else //You jump higher if you hold the jump button
 	{
@@ -56,7 +57,7 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 	if (!grounded) && (DOWN_BUTTON)
 	{
 		
-		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (sprite_get_bbox_bottom(myCarry.originalMask) - sprite_get_bbox_top(myCarry.originalMask) + 2)))
+		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 2))
 		{
 			//Double jumps
 			vsp = -jumpHeight;

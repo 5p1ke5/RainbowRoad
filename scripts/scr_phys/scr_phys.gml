@@ -112,26 +112,6 @@ function phys_gravity(_vsp, _grav, _terminalVelocity)
 
 }
 
-/// @function bottom(ycoord, object)
-/// @description Checks for an object directly under the calling object (in a line from bbox left to bbox right). returns true if the calling object is there. Otherwise returns false.
-/// @param _ycoord Y coordinate of the object.
-/// @param _object Block object to check for.
-function bottom(_ycoord, _object) 
-{
-
-	//Checks every pixel directly under the object's bounding box.
-	for (var i = bbox_left; i <= bbox_right; i++)
-	{
-	    if (instance_position(i, _ycoord, _object))
-	    {
-	        return true;
-	    }
-	}
-
-	return false;
-}
-
-
 
 
 /// @function phys_step()
@@ -157,5 +137,5 @@ function phys_step()
 
 	//Checks if the object is on the ground.
 	//grounded = (place_meeting(x, y + 1, BLOCK)) || (bottom(bbox_bottom + 1, obj_oneWay));
-	grounded = (place_meeting(x, y + 1, BLOCK));
+	grounded = (collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, true));
 }
