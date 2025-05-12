@@ -13,8 +13,8 @@ if (B_BUTTON)
 	}	
 }
 
-do 
-{
-	y--;
-}
-until (!place_meeting(x, y + 1, other));
+//do 
+//{
+//	y--;
+//}
+//until (!place_meeting(x, y + 1, other));

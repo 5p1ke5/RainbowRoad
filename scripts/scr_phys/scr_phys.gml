@@ -34,16 +34,17 @@ function phys_force_add(_force, _accel, _max)
 	return _force * _sign;
 }
 
-/// @function phys_floor_collison(vsp)
+/// @function phys_floor_collision(_vsp) 
 /// @description Stops the player if they would touch a block vertically. eg vsp = phys_floor_collison(vsp). Returns new vsp.
 /// @param _vsp object's vertical speed.
 function phys_floor_collision(_vsp) 
 {
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_vsp)) || (place_meeting(x, y + _i, BLOCK)); _i += sign(_vsp))
+	for (var _i = 0; (abs(_i) < abs(_vsp)) || (variable_instance_get(instance_place(x, y + _i, BLOCK), "collision") == true); _i += sign(_vsp))
 	{
-	    //If there is a collision, it will move the player as close to the object as possible and then stop.
-	    if (place_meeting(x, y + _i, BLOCK))
+	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
+		var _collider = instance_place(x, y + _i, BLOCK)
+	    if (variable_instance_get(_collider, "collision") == true)
 	    {
 	        y += _i - sign(_vsp);
 	        return 0;
@@ -61,10 +62,11 @@ function phys_wall_collision(_hsp)
 {
 
 	//Checks every pixel in the object's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_hsp)) || (place_meeting(x + _i, y, BLOCK)); _i += sign(_hsp))
+	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || ( variable_instance_get(instance_place(x  + _i, y, BLOCK), "collision") == true ); _i += sign(_hsp))
 	{
-	    //If there is a collision, it will move the player as close to the object as possible and then stop. Bas a tiny upwards margin for now.4
-	    if (place_meeting(x + _i, y, BLOCK))
+	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
+		var _collider = instance_place(x + _i, y, BLOCK)
+	    if (variable_instance_get(_collider, "collision") == true)
 	    {
 	        x += _i - sign(_hsp);
 	        return 0;
@@ -73,58 +75,6 @@ function phys_wall_collision(_hsp)
 	
 	return _hsp;
 }
-
-/// @function phys_wall_collision_bounce(hsp)
-/// @description Horizontal collision. Bounces when it would hit a wall.
-/// @param hsp object's horizontal speed.
-function phys_wall_collision_bounce(_hsp) 
-{
-	//Checks every pixel in the object's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_hsp)) || (place_meeting(x + _i, y, BLOCK)); _i += sign(_hsp))
-	{
-	    //If there is a collision, it will bounce off the object.
-	    if (place_meeting(x + _i, y, BLOCK))
-	    {
-			if (object_index == obj_player)
-			{
-				audio_play_sound(sfx_bump, 2, false);
-			}
-			
-	        x += _i - sign(_hsp);
-	        return -_hsp;
-	    }
-	}
-	
-	return _hsp;
-}
-
-/// @function phys_floor_collison_bounce(vsp)
-/// @description Makes the object bounce if it would touch a block vertically
-/// @param vsp object's vertical speed.
-function phys_floor_collision_bounce(_vsp) 
-{
-
-	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_vsp)) || (place_meeting(x, y + _i, BLOCK)); _i += sign(_vsp))
-	{
-
-	    //If there is a collision, it will move the player as close to the object as possible and then stop.
-	    //This is the check for collision with blocks.
-	    if (place_meeting(x, y + _i, BLOCK))
-	    {
-			if (object_index == obj_player)
-			{
-				audio_play_sound(sfx_bump, 2, false);
-			}
-			
-	        y += _i - sign(_vsp);
-	        return -_vsp;
-	    }
-	}
-	
-	return _vsp;
-}
-
 
 /// @function phys_friction(hsp, friction, grounded)
 /// @description Applies friction to a horizontal speed variable. Returns new horizontal speed.
@@ -204,32 +154,6 @@ function phys_step()
 
 	y += round(vsp);
 	x += round(hsp);
-
-	//Checks if the object is on the ground.
-	//grounded = (place_meeting(x, y + 1, BLOCK)) || (bottom(bbox_bottom + 1, obj_oneWay));
-	grounded = (place_meeting(x, y + 1, BLOCK));
-}
-
-/// @function phys_step_bounce()
-/// @description Place in the step event to activate physics with bounce.
-function phys_step_bounce() 
-{
-
-	//grav increases the object's downwards speed by raising vsp. Does not do so past the terminal velocity.
-	vsp = phys_gravity(vsp, grav, TERMINAL_VELOCITY);
-
-	//Friction will reduce horizontal speed. This is reduced while in the air.
-	hsp = phys_friction(hsp, frict, grounded);
-
-	//Collision with walls. The object's position is changed after each collision function.
-	if (collision)
-	{
-	    vsp = phys_floor_collision_bounce(vsp);
-	    hsp = phys_wall_collision_bounce(hsp);
-	}
-
-	y += vsp;
-	x += hsp;
 
 	//Checks if the object is on the ground.
 	//grounded = (place_meeting(x, y + 1, BLOCK)) || (bottom(bbox_bottom + 1, obj_oneWay));
