@@ -4,13 +4,17 @@
 #endregion
 
 #region //Room references
-#macro TITLE room_test
+#macro TITLE room_plains
 #endregion
 
 #region //Constant numbers
-#macro TERMINAL_VELOCITY 3
+#macro TERMINAL_VELOCITY 5
 #macro MAX_ACCEL 3
 #macro PLAYER_WEIGHT 0.02
+#endregion
+
+#region //masks
+#macro MASK_BLANK spr_maskNone
 #endregion
 
 #region	//Controls.

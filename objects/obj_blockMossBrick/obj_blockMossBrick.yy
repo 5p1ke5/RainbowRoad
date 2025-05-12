@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_magicOrb",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_blockMossBrick",
+  "eventList":[],
   "managed":true,
-  "name":"obj_magicOrb",
+  "name":"obj_blockMossBrick",
   "overriddenProperties":[],
   "parent":{
-    "name":"furniture",
-    "path":"folders/Objects/furniture.yy",
+    "name":"blocks",
+    "path":"folders/Objects/blocks.yy",
   },
   "parentObjectId":{
-    "name":"abs_carryBlock",
-    "path":"objects/abs_carryBlock/abs_carryBlock.yy",
+    "name":"obj_block",
+    "path":"objects/obj_block/obj_block.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_magicOrb",
-    "path":"sprites/spr_magicOrb/spr_magicOrb.yy",
+    "name":"spr_blockMossBricks",
+    "path":"sprites/spr_blockMossBricks/spr_blockMossBricks.yy",
   },
   "spriteMaskId":null,
   "visible":true,

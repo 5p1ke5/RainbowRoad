@@ -1,5 +1,5 @@
-/// @description Inherits, does player things.
-event_inherited();
+/// @description does player things, inherits
+
 
 ///Controls.
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
@@ -39,7 +39,7 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_RELEASED)
+if (B_BUTTON_PRESSED)
 {
 	//If not carrying an object, tries to lift whatever's underfoot.
 	if (!instance_exists(myCarry))
@@ -48,26 +48,32 @@ if (B_BUTTON_RELEASED)
 		
 		if (variable_instance_get(_onTop, "canCarry") == true)
 		{
-			myCarry = _onTop;
+			carry_pickup_instance(_onTop);
+			//myCarry = _onTop;
 			
-			_onTop.carrier = self;
-			_onTop.mask_index = spr_maskNone;
+			//_onTop.carrier = self;
+			//_onTop.mask_index = spr_maskNone;
 		}
 	}
 	else //If carrying an object, throws it.
 	{
-		var _throwHsp = facing * 3;
-		
-		with (myCarry)
+		if (!grounded) && (DOWN_BUTTON)
 		{
-			carrier = noone;
-			mask_index = originalMask;
 			
-			hsp = _throwHsp;
-			vsp = -2;
+			if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (sprite_get_bbox_bottom(myCarry.originalMask) - sprite_get_bbox_top(myCarry.originalMask) + 2)))
+			{
+				//Double jumps
+				vsp = -jumpHeight;
+			}
 		}
-		
-		myCarry = noone;
+		else if (UP_BUTTON)
+		{
+			carry_throw_instance(0, -jumpHeight, 0, 0);
+		}
+		else
+		{
+			carry_throw_instance(facing * 3, -2);
+		}
 	}
 }
 
@@ -112,3 +118,5 @@ else
 		sprite_index = spr_playerJumpCarry;			
 	}
 }
+
+event_inherited();
