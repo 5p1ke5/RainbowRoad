@@ -15,17 +15,14 @@ function phys_initialize(_grav, _frict, _hsp = 0, _vsp = 0, _collision = true)
 	vsp = _vsp;
 	collision = _collision;
 	
-	//The object is considered grounded if they are directly above a block.
-	grounded = (collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, true));
+	//The object is considered grounded if they are directly above a block with collision = true.
+	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
 }
-
-
 
 /// @function phys_step()
 /// @description Place in the step event to activate physics.
 function phys_step() 
 {
-
 	//grav increases the object's downwards speed by raising vsp. Does not do so past the terminal velocity.
 	vsp = phys_gravity(vsp, grav, TERMINAL_VELOCITY);
 
@@ -39,12 +36,12 @@ function phys_step()
 	    hsp = phys_wall_collision(hsp);
 	}
 
+
 	y += round(vsp);
 	x += round(hsp);
 
 	//Checks if the object is on the ground.
-	//grounded = (place_meeting(x, y + 1, BLOCK)) || (bottom(bbox_bottom + 1, obj_oneWay));
-	grounded = (collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, true));
+	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
 }
 
 
@@ -133,7 +130,12 @@ function phys_friction(_hsp, _frict, _grounded)
 /// @param _terminalVelocity The maximum gravity that can be applied.
 function phys_gravity(_vsp, _grav, _terminalVelocity) 
 {
-
+	//Taking this out makes objects 'sink' when a held object is colliding with them. Why?? The objects in question aren't even grounded
+	if (grounded) && (_vsp > 0)
+	{
+		return 0;	
+	}
+	
 	_vsp = min(_vsp + _grav, _terminalVelocity) 
 
 	return _vsp;

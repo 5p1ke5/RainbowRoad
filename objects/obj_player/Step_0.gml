@@ -16,7 +16,7 @@ if (X_BUTTON_RELEASED)
 
 if (A_BUTTON)
 {
-	if (instance_exists(grounded))
+	if (grounded)
 	{
 		vsp = -jumpHeight;
 	}
@@ -39,7 +39,7 @@ if (hDir != 0)
 //Lets you pick up stuff if you're on top of it.
 if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
-	if (!instance_exists(grounded)) && (DOWN_BUTTON)
+	if (!grounded) && (DOWN_BUTTON)
 	{
 		
 		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 2))
@@ -63,7 +63,7 @@ else if (B_BUTTON_PRESSED)
 	if (!instance_exists(myCarry))
 	{
 		//Checks just below the character first
-		var _grab = grounded;//collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
+		var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
 		
 		if (variable_instance_get(_grab, "canCarry") == true)
 		{
@@ -93,7 +93,7 @@ if (flicker >= 0)
 ///Set sprite properties.
 image_xscale = facing;
 
-if (instance_exists(grounded))
+if (grounded)
 {
 	if (hDir == 0)
 	{
