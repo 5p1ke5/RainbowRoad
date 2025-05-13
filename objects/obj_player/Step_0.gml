@@ -16,7 +16,7 @@ if (X_BUTTON_RELEASED)
 
 if (A_BUTTON)
 {
-	if (grounded)
+	if (instance_exists(grounded))
 	{
 		vsp = -jumpHeight;
 	}
@@ -37,13 +37,9 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-
-
-
-
 if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
-	if (!grounded) && (DOWN_BUTTON)
+	if (!instance_exists(grounded)) && (DOWN_BUTTON)
 	{
 		
 		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 2))
@@ -54,7 +50,7 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 	}
 	else if (UP_BUTTON)
 	{
-		carry_throw_instance(0, -jumpHeight, 0, 0);
+		carry_throw_instance(hsp, -jumpHeight, 0, 0);
 	}
 	else
 	{
@@ -66,21 +62,38 @@ else if (B_BUTTON_PRESSED)
 	//If not carrying an object, tries to lift whatever's underfoot.
 	if (!instance_exists(myCarry))
 	{
-		var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
+		//Checks just below the character first
+		var _grab = grounded;//collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
 		
-		if (variable_instance_get(_onTop, "canCarry") == true)
+		if (variable_instance_get(_grab, "canCarry") == true)
 		{
-			carry_pickup_instance(_onTop);
+			carry_pickup_instance(_grab);
+		}
+		
+		//Otherwise if nothing was there checks up top next.
+		//if (!instance_exists(_grab))
+		else {
+			_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
+			
+			if (variable_instance_get(_grab, "canCarry") == true)
+			{
+				carry_pickup_instance(_grab);
+			}
 		}
 	}	
 }
 
 
+//Timers
+if (flicker >= 0)
+{
+	flicker--;	
+}
 
 ///Set sprite properties.
 image_xscale = facing;
 
-if (grounded)
+if (instance_exists(grounded))
 {
 	if (hDir == 0)
 	{

@@ -9,6 +9,7 @@ maxSpeed = 3;
 accel = 1;
 jumpHeight = 4;
 jumpOffset = 0.1;
+flicker = -1;
 
 animSpeed = 0.2;
 animSpeedRun = 0.8;

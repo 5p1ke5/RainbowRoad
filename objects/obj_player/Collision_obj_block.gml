@@ -1,20 +1,27 @@
 /// @description If inside of a block attempts to grab. If unsuccessful teleports to atop it.
 
-///Todo: Put this code and the dupe in the step event into its own script and fix it so they're exclusive.
-if (B_BUTTON)
+if (variable_instance_get(other, "collision") == false)
 {
-	//If not carrying an object, tries to lift whatever's underfoot.
-	if (!instance_exists(myCarry))
-	{
-		if (variable_instance_get(other, "canCarry") == true)
-		{
-			carry_pickup_instance(other);
-		}
-	}	
+	return;
 }
 
-//do 
-//{
-//	y--;
-//}
-//until (!place_meeting(x, y + 1, other));
+if (B_BUTTON) && (!instance_exists(myCarry)) && (variable_instance_get(other, "canCarry") == true)
+{
+	carry_pickup_instance(other);
+}
+else //Take damage, put on top of object.
+{
+	
+	//Todo: Make this a function
+	if (flicker < 0)
+	{
+		global.hp--;
+		flicker = FLICKER_MAX;
+	}
+	
+	do 
+	{
+		y--;
+	}
+	until (!place_meeting(x, y + 1, other));
+}

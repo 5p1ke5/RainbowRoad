@@ -26,16 +26,14 @@ function carry_carried_step()
 function carry_pickup_instance(_pickup)
 {
 	myCarry = _pickup;
-	
 	var _self = self;
 	
-	with (_pickup)
+	with (myCarry)
 	{
 		carrier = _self;
 		collision = false;
 	}
 	
-	show_debug_message("Pickup!");
 	audio_play_sound(sfx_pickup, 0, false);
 }
 
@@ -48,7 +46,6 @@ function carry_pickup_instance(_pickup)
 ///@param _yOffset y position to teleport the instance to relative to the calling instance.
 function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 {
-	
 	with (myCarry)
 	{
 		
@@ -58,18 +55,18 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 			return false;
 		}
 		
+		collision = true;
+		carrier = undefined;
+		
 		hsp = _hsp;
 		vsp = _vsp;
 		
 		x += _xOffset;
 		y += _yOffset;
 		
-		collision = true;
-		carrier = noone;
 		
 	}
 	audio_play_sound(sfx_throw, 1, false);
-	show_debug_message("Throw!");
 	
 	myCarry = noone;
 	return true;
