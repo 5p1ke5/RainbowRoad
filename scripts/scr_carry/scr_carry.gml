@@ -34,6 +34,9 @@ function carry_pickup_instance(_pickup)
 		carrier = _self;
 		collision = false;
 	}
+	
+	show_debug_message("Pickup!");
+	audio_play_sound(sfx_pickup, 0, false);
 }
 
 ///@function carry_throw_instance(_hsp, _vsp, _xOffset, _yOffset)
@@ -65,6 +68,8 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 		carrier = noone;
 		
 	}
+	audio_play_sound(sfx_throw, 1, false);
+	show_debug_message("Throw!");
 	
 	myCarry = noone;
 	return true;

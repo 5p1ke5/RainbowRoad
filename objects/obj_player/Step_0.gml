@@ -19,7 +19,6 @@ if (A_BUTTON)
 	if (grounded)
 	{
 		vsp = -jumpHeight;
-		show_debug_message("Grounded: {0}", grounded)
 	}
 	else //You jump higher if you hold the jump button
 	{
@@ -38,19 +37,9 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_PRESSED)
-{
-	//If not carrying an object, tries to lift whatever's underfoot.
-	if (!instance_exists(myCarry))
-	{
-		var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
-		
-		if (variable_instance_get(_onTop, "canCarry") == true)
-		{
-			carry_pickup_instance(_onTop);
-		}
-	}	
-}
+
+
+
 
 if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
@@ -71,6 +60,19 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 	{
 		carry_throw_instance(facing * 3, -2);
 	}
+}
+else if (B_BUTTON_PRESSED)
+{
+	//If not carrying an object, tries to lift whatever's underfoot.
+	if (!instance_exists(myCarry))
+	{
+		var _onTop = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
+		
+		if (variable_instance_get(_onTop, "canCarry") == true)
+		{
+			carry_pickup_instance(_onTop);
+		}
+	}	
 }
 
 
