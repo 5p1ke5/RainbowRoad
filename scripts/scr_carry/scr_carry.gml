@@ -2,6 +2,7 @@
 ///@description Initializes variables for an object that can be carried.
 ///@param _canCarry Whether or not the object can currently be carrie
 ///@param _carrier The instance currently carrying this one.
+///@param _collision Whether the object is recognizing collisions.
 function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 {
 	canCarry = _canCarry;
@@ -31,7 +32,9 @@ function carry_pickup_instance(_pickup)
 	with (myCarry)
 	{
 		carrier = _self;
-		collision = false;
+		
+		//Does whatever code the object has for being picked up.	
+		event_user(USER_EVENTS.U_EVENT_PICKED_UP);
 	}
 	
 	audio_play_sound(sfx_pickup, 0, false);
@@ -55,17 +58,18 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 			return false;
 		}
 		
-		collision = true;
-		carrier = undefined;
-		
 		hsp = _hsp;
 		vsp = _vsp;
 		
 		x += _xOffset;
 		y += _yOffset;
 		
+		///Does whatever code the thrown object has for being thrown.
+		event_user(USER_EVENTS.U_EVENT_THROWN)
+		
 		
 	}
+	
 	audio_play_sound(sfx_throw, 1, false);
 	
 	myCarry = noone;
