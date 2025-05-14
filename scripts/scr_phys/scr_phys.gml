@@ -5,15 +5,16 @@
 /// @param _hsp Horizontal speed.
 /// @param _vsp vertical speed
 /// @param _collision Whether the object stops when it collides with blocks.
-function phys_initialize(_grav, _frict, _hsp = 0, _vsp = 0, _collision = true) 
+/// @param _elasticity How much an object bounces when it collides with something.
+function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0) 
 {
-
 	//Initializes instance variables.
 	grav = _grav;
 	frict = _frict;
 	hsp = _hsp;
 	vsp = _vsp;
 	collision = _collision;
+	elasticity = _elasticity
 	
 	//The object is considered grounded if they are directly above a block with collision = true.
 	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
@@ -73,7 +74,7 @@ function phys_floor_collision(_vsp)
 	    if (variable_instance_get(_collider, "collision") == true)
 	    {
 	        y += _i - sign(_vsp);
-	        return 0;
+	        return _vsp * -elasticity;
 	    }
 	}
 
@@ -81,9 +82,9 @@ function phys_floor_collision(_vsp)
 }
 
 
-/// @function phys_wall_collision(hsp)
+/// @function phys_wall_collision(_hsp)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible. eg hsp = phys_wall_collision(hsp)
-/// @param hsp object's horizontal speed.
+/// @param _hsp object's horizontal speed.
 function phys_wall_collision(_hsp) 
 {
 
@@ -95,7 +96,7 @@ function phys_wall_collision(_hsp)
 	    if (variable_instance_get(_collider, "collision") == true)
 	    {
 	        x += _i - sign(_hsp);
-	        return 0;
+	        return _hsp * -elasticity;
 	    }
 	}
 	
@@ -104,9 +105,9 @@ function phys_wall_collision(_hsp)
 
 /// @function phys_friction(hsp, friction, grounded)
 /// @description Applies friction to a horizontal speed variable. Returns new horizontal speed.
-/// @param hsp Horizontal speed.
-/// @param friction Friction variable.
-/// @param grounded Whether the object is on the ground or not.
+/// @param _hsp Horizontal speed.
+/// @param _friction Friction variable.
+/// @param _grounded Whether the object is on the ground or not.
 function phys_friction(_hsp, _frict, _grounded) 
 {
 

@@ -1,5 +1,5 @@
 /// @description Initialize physics variables.
-phys_initialize(0.1, 0.2);
+phys_initialize()
 
 //Initializes variables for carrying this object.
 carry_initialize();
