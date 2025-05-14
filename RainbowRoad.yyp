@@ -63,6 +63,7 @@
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
     {"id":{"name":"scr_point","path":"scripts/scr_point/scr_point.yy",},},
     {"id":{"name":"scr_savegame","path":"scripts/scr_savegame/scr_savegame.yy",},},
+    {"id":{"name":"scr_variables","path":"scripts/scr_variables/scr_variables.yy",},},
     {"id":{"name":"sfx_pickup","path":"sounds/sfx_pickup/sfx_pickup.yy",},},
     {"id":{"name":"sfx_throw","path":"sounds/sfx_throw/sfx_throw.yy",},},
     {"id":{"name":"bg_dungeon1","path":"sprites/bg_dungeon1/bg_dungeon1.yy",},},

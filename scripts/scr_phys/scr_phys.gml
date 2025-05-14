@@ -31,6 +31,7 @@ function phys_step()
 	hsp = phys_friction(hsp, frict, grounded);
 
 	//Collision with walls. The object's position is changed after each collision function.
+	//TODO: Try moving this to after gravity
 	if (collision)
 	{
 	    vsp = phys_floor_collision(vsp);
@@ -59,8 +60,37 @@ function phys_force_add(_force, _accel, _max)
 	return _force * _sign;
 }
 
+/// @function phys_wall_collision(_hsp)
+/// @description If the object would end up inside the block object, it instead just moves them as close as possible. eg hsp = phys_wall_collision(hsp)
+/// @param _hsp object's horizontal speed.
+function phys_wall_collision(_hsp) 
+{
+
+	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
+	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || ( variable_instance_get(instance_place(x  + _i, y, BLOCK), "collision") == true ); _i += sign(_hsp))
+	{
+	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
+		var _collisionsList = ds_list_create();
+		var _collisions = instance_place_list(x + _i, y, BLOCK, _collisionsList, true);
+		
+		for (var _ii = 0; _ii < _collisions; _ii++) 
+		{
+		    var _collision = ds_list_find_value(_collisionsList, _ii);
+		
+		    if (variable_instance_get(_collision, "collision") == true)
+		    {
+		        x += _i - sign(_hsp);
+		        return _hsp * -elasticity;
+		    }
+		}
+	}
+	
+	return _hsp;
+}
+
+
 /// @function phys_floor_collision(_vsp) 
-/// @description Stops the player if they would touch a block vertically. eg vsp = phys_floor_collison(vsp). Returns new vsp.
+/// @description Stops the player if they would touch a block vertically. eg vsp = phys_floor_collision(vsp). Returns new vsp.
 /// @param _vsp object's vertical speed.
 function phys_floor_collision(_vsp) 
 {
@@ -70,13 +100,13 @@ function phys_floor_collision(_vsp)
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		//TODO: Make this get a list to check. Right now it's only checking for one and then it returns
 		var _collisionsList = ds_list_create();
-		var _collisions = instance_place_list(x, y + _i, BLOCK, _collisionsList, true);
+		var _collisions = instance_place_list(x, y + _i, BLOCK, _collisionsList, false);
 		
 		for (var _ii = 0; _ii < _collisions; _ii++) 
 		{
-		    var _collison = ds_list_find_value(_collisionsList, _ii);
+		    var _collision = ds_list_find_value(_collisionsList, _ii);
 		
-		    if (variable_instance_get(_collison, "collision") == true)
+		    if (variable_instance_get(_collision, "collision") == true)
 		    {
 		        y += _i - sign(_vsp);
 		        return _vsp * -elasticity;
@@ -87,34 +117,6 @@ function phys_floor_collision(_vsp)
 	return _vsp;
 }
 
-
-/// @function phys_wall_collision(_hsp)
-/// @description If the object would end up inside the block object, it instead just moves them as close as possible. eg hsp = phys_wall_collision(hsp)
-/// @param _hsp object's horizontal speed.
-function phys_wall_collision(_hsp) 
-{
-
-	//Checks every pixel in the object's path for collision. TODO: Maybe remove this? vvv
-	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || ( variable_instance_get(instance_place(x  + _i, y, BLOCK), "collision") == true ); _i += sign(_hsp))
-	{
-	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisionsList = ds_list_create();
-		var _collisions = instance_place_list(x + _i, y, BLOCK, _collisionsList, true);
-		
-		for (var _ii = 0; _ii < _collisions; _ii++) 
-		{
-		    var _collison = ds_list_find_value(_collisionsList, _ii);
-		
-		    if (variable_instance_get(_collison, "collision") == true)
-		    {
-		        x += _i - sign(_hsp);
-		        return _hsp * -elasticity;
-		    }
-		}
-	}
-	
-	return _hsp;
-}
 
 /// @function phys_friction(hsp, friction, grounded)
 /// @description Applies friction to a horizontal speed variable. Returns new horizontal speed.
