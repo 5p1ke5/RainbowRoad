@@ -1,6 +1,6 @@
 /// @description Initializes variables.
 
-phys_initialize(0.2, 0.5);
+phys_initialize(0.2, 0.2);
 
 //Initialize player variables.
 hDir = 0;

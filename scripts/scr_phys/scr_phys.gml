@@ -68,12 +68,20 @@ function phys_floor_collision(_vsp)
 	for (var _i = 0; (abs(_i) < abs(_vsp)) || (variable_instance_get(instance_place(x, y + _i, BLOCK), "collision") == true); _i += sign(_vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collider = instance_place(x, y + _i, BLOCK)
-	    if (variable_instance_get(_collider, "collision") == true)
-	    {
-	        y += _i - sign(_vsp);
-	        return _vsp * -elasticity;
-	    }
+		//TODO: Make this get a list to check. Right now it's only checking for one and then it returns
+		var _collisionsList = ds_list_create();
+		var _collisions = instance_place_list(x, y + _i, BLOCK, _collisionsList, true);
+		
+		for (var _ii = 0; _ii < _collisions; _ii++) 
+		{
+		    var _collison = ds_list_find_value(_collisionsList, _ii);
+		
+		    if (variable_instance_get(_collison, "collision") == true)
+		    {
+		        y += _i - sign(_vsp);
+		        return _vsp * -elasticity;
+		    }
+		}
 	}
 
 	return _vsp;
@@ -86,16 +94,23 @@ function phys_floor_collision(_vsp)
 function phys_wall_collision(_hsp) 
 {
 
-	//Checks every pixel in the object's path for collision.
+	//Checks every pixel in the object's path for collision. TODO: Maybe remove this? vvv
 	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || ( variable_instance_get(instance_place(x  + _i, y, BLOCK), "collision") == true ); _i += sign(_hsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collider = instance_place(x + _i, y, BLOCK)
-	    if (variable_instance_get(_collider, "collision") == true)
-	    {
-	        x += _i - sign(_hsp);
-	        return _hsp * -elasticity;
-	    }
+		var _collisionsList = ds_list_create();
+		var _collisions = instance_place_list(x + _i, y, BLOCK, _collisionsList, true);
+		
+		for (var _ii = 0; _ii < _collisions; _ii++) 
+		{
+		    var _collison = ds_list_find_value(_collisionsList, _ii);
+		
+		    if (variable_instance_get(_collison, "collision") == true)
+		    {
+		        x += _i - sign(_hsp);
+		        return _hsp * -elasticity;
+		    }
+		}
 	}
 	
 	return _hsp;
