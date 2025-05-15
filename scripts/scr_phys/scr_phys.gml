@@ -45,11 +45,10 @@ function phys_step()
 
 
 	y += round(vsp);
-	x += round(hsp) + round(hspExt);
+	x += round(hsp);
 	
 	//Should I reset *Ext values at the end?
 	hspExt = 0;
-	vspExt = 0;
 
 }
 
@@ -81,7 +80,7 @@ function phys_wall_collision(_hsp, _hspExt = 0)
 	}
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(_hsp + _hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp + _hspExt))
+	for (var _i = 0; ( abs(_i) < abs(_hsp) + abs(_hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp + _hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x + _i, y, BLOCK, false);
