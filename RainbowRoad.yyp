@@ -61,6 +61,7 @@
     {"id":{"name":"scr_game_initialize","path":"scripts/scr_game_initialize/scr_game_initialize.yy",},},
     {"id":{"name":"scr_globals","path":"scripts/scr_globals/scr_globals.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
+    {"id":{"name":"scr_movingPlatforms","path":"scripts/scr_movingPlatforms/scr_movingPlatforms.yy",},},
     {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
     {"id":{"name":"scr_point","path":"scripts/scr_point/scr_point.yy",},},
