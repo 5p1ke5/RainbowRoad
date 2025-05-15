@@ -157,11 +157,6 @@ function phys_gravity(_vsp, _grav, _terminalVelocity)
 	//Checks if the object is on the ground.
 	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
 	
-	//Taking this out makes objects 'sink' when a held object is colliding with them. Why?? The objects in question aren't even grounded
-	if (grounded) && (_vsp > 0)
-	{
-		return 0;	
-	}
 	
 	_vsp = min(_vsp + _grav, _terminalVelocity) 
 
