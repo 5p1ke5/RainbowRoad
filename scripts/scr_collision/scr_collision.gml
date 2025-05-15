@@ -21,3 +21,9 @@ function instance_place_array(_x, _y, _object, _ordered)
 	
 	return _array;
 }
+
+
+function collision_rectangle_array(_x1, _y1, _x2, _y2, _prec, _notme, _ordered)
+{
+	
+}

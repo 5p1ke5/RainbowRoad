@@ -65,19 +65,21 @@ function phys_force_add(_force, _accel, _max)
 /// @param _hsp object's horizontal speed.
 function phys_wall_collision(_hsp) 
 {
+	
+	var _collision_on = function(element, index)
+	{
+		return (variable_instance_get(element, "collision") == true)
+	}
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || ( variable_instance_get(instance_place(x  + _i, y, BLOCK), "collision") == true ); _i += sign(_hsp))
+	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisionsList = ds_list_create();
-		var _collisions = instance_place_list(x + _i, y, BLOCK, _collisionsList, true);
+		var _collisions = instance_place_array(x + _i, y, BLOCK, false);
 		
-		for (var _ii = 0; _ii < _collisions; _ii++) 
+		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    var _collision = ds_list_find_value(_collisionsList, _ii);
-		
-		    if (variable_instance_get(_collision, "collision") == true)
+		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
 		        x += _i - sign(_hsp);
 		        return _hsp * -elasticity;
@@ -94,26 +96,21 @@ function phys_wall_collision(_hsp)
 /// @param _vsp object's vertical speed.
 function phys_floor_collision(_vsp) 
 {
-	
-	function collision_on(element, index)
+	var _collision_on = function (element, index)
 	{
 		return (variable_instance_get(element, "collision") == true)
 	}
 
 	
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), collision_on)); _i += sign(_vsp))
+	for (var _i = 0; (abs(_i) < abs(_vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)); _i += sign(_vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		//TODO: Make this get a list to check. Right now it's only checking for one and then it returns
-		var _collisionsList = ds_list_create();
-		var _collisions = instance_place_list(x, y + _i, BLOCK, _collisionsList, false);
+		var _collisions = instance_place_array(x, y + _i, BLOCK, false);
 		
-		for (var _ii = 0; _ii < _collisions; _ii++) 
+		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    var _collision = ds_list_find_value(_collisionsList, _ii);
-		
-		    if (variable_instance_get(_collision, "collision") == true)
+		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
 		        y += _i - sign(_vsp);
 		        return _vsp * -elasticity;
@@ -132,7 +129,6 @@ function phys_floor_collision(_vsp)
 /// @param _grounded Whether the object is on the ground or not.
 function phys_friction(_hsp, _frict, _grounded) 
 {
-
 	//Friction will reduce horizontal speed. This is reduced while in the air.
 	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(6, !_grounded)));
 	  
