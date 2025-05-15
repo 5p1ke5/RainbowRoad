@@ -94,8 +94,15 @@ function phys_wall_collision(_hsp)
 /// @param _vsp object's vertical speed.
 function phys_floor_collision(_vsp) 
 {
+	
+	function collision_on(element, index)
+	{
+		return (variable_instance_get(element, "collision") == true)
+	}
+
+	
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_vsp)) || (variable_instance_get(instance_place(x, y + _i, BLOCK), "collision") == true); _i += sign(_vsp))
+	for (var _i = 0; (abs(_i) < abs(_vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), collision_on)); _i += sign(_vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		//TODO: Make this get a list to check. Right now it's only checking for one and then it returns
