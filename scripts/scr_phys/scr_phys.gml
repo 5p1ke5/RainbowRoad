@@ -16,6 +16,11 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	collision = _collision;
 	elasticity = _elasticity
 	
+	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
+	hspExt = 0;
+	vspExt = 0;
+	
+	
 	//The object is considered grounded if they are directly above a block with collision = true.
 	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
 }
@@ -35,12 +40,16 @@ function phys_step()
 	if (collision)
 	{
 	    vsp = phys_floor_collision(vsp);
-	    hsp = phys_wall_collision(hsp);
+	    hsp = phys_wall_collision(hsp, hspExt);
 	}
 
 
 	y += round(vsp);
-	x += round(hsp);
+	x += round(hsp) + round(hspExt);
+	
+	//Should I reset *Ext values at the end?
+	hspExt = 0;
+	vspExt = 0;
 
 }
 
@@ -63,16 +72,16 @@ function phys_force_add(_force, _accel, _max)
 /// @function phys_wall_collision(_hsp)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible. eg hsp = phys_wall_collision(hsp)
 /// @param _hsp object's horizontal speed.
-function phys_wall_collision(_hsp) 
+/// @param _hspExt hspExt value, if the instance has it.
+function phys_wall_collision(_hsp, _hspExt = 0) 
 {
-	
 	var _collision_on = function(element, index)
 	{
 		return (variable_instance_get(element, "collision") == true)
 	}
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(_hsp) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp))
+	for (var _i = 0; ( abs(_i) < abs(_hsp + _hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp + _hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x + _i, y, BLOCK, false);
@@ -81,7 +90,7 @@ function phys_wall_collision(_hsp)
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-		        x += _i - sign(_hsp);
+		        x += _i - sign(_hsp + _hspExt);
 		        return _hsp * -elasticity;
 		    }
 		}
