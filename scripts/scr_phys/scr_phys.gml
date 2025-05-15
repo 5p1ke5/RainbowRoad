@@ -40,12 +40,12 @@ function phys_step()
 	if (collision)
 	{
 	    vsp = phys_floor_collision(vsp);
-	    hsp = phys_wall_collision(hsp, hspExt);
+	    phys_wall_collision();
 	}
 
 
 	y += round(vsp);
-	x += round(hsp);
+	x += round(hsp) + round(hspExt);
 	
 	//Should I reset *Ext values at the end?
 	hspExt = 0;
@@ -69,10 +69,8 @@ function phys_force_add(_force, _accel, _max)
 }
 
 /// @function phys_wall_collision(_hsp)
-/// @description If the object would end up inside the block object, it instead just moves them as close as possible. eg hsp = phys_wall_collision(hsp)
-/// @param _hsp object's horizontal speed.
-/// @param _hspExt hspExt value, if the instance has it.
-function phys_wall_collision(_hsp, _hspExt = 0) 
+/// @description If the object would end up inside the block object, it instead just moves them as close as possible.
+function phys_wall_collision() 
 {
 	var _collision_on = function(element, index)
 	{
@@ -80,7 +78,7 @@ function phys_wall_collision(_hsp, _hspExt = 0)
 	}
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(_hsp) + abs(_hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(_hsp + _hspExt))
+	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x + _i, y, BLOCK, false);
@@ -89,13 +87,13 @@ function phys_wall_collision(_hsp, _hspExt = 0)
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-		        x += _i - sign(_hsp + _hspExt);
-		        return _hsp * -elasticity;
+		        x += _i - sign(hsp + hspExt);
+		        hsp = hsp * -elasticity;
+				hspExt = 0;
+				return;
 		    }
 		}
 	}
-	
-	return _hsp;
 }
 
 
