@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_variables",
+  "%Name":"scr_collision",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_variables",
+  "name":"scr_collision",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
