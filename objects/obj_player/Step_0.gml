@@ -19,6 +19,8 @@ if (A_BUTTON_PRESSED)
 	if (grounded)
 	{
 		vsp = -jumpHeight;
+		hsp += hspExt;
+		hspExt = 0;
 	}
 } 
 else if (A_BUTTON)

@@ -9,7 +9,7 @@
 #endregion
 
 #region //Constant numbers
-#macro TERMINAL_VELOCITY 5
+#macro TERMINAL_VELOCITY 10
 #macro MAX_ACCEL 3
 #macro PLAYER_WEIGHT 0.02
 #macro FLICKER_MAX game_get_speed(gamespeed_fps)

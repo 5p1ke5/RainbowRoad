@@ -41,22 +41,20 @@ function phys_step()
 	if (collision)
 	{
 	
-	//Checks if grounded.
-	var _on_ground = function (element, index) 
-	{ 
-		if (variable_instance_get(element, "collision") == true) 
-		{
-			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, element.bbox_left, element.bbox_top - 2, element.bbox_right, element.bbox_top + 2) > 0)	
-		}
+		//Checks if grounded.
+		var _on_ground = function (element, index) 
+		{ 
+			if (variable_instance_get(element, "collision") == true) 
+			{
+				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, element.bbox_left, element.bbox_top - 2, element.bbox_right, element.bbox_top + 2) > 0)	
+			}
 		
-		return true;
-	};
-	grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _on_ground));
+			return true;
+		};
+		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _on_ground));
 	
-		
 	    phys_wall_collision();
-	    phys_floor_collision();
-		
+	    phys_floor_collision();	
 	}
 
 
@@ -141,7 +139,8 @@ function phys_floor_collision()
 						//if (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, _collisions[_ii].bbox_left, _collisions[_ii].bbox_top - 2, _collisions[_ii].bbox_right, _collisions[_ii].bbox_top + 2) > 0)
 						{
 							y += _i;
-					        //y += _i - sign(vsp);
+							//y += _i - sign(vsp);
+					        //y = floor(y + _i - sign(round(vsp)));
 					        vsp = vsp * -elasticity;
 							return;
 						}
