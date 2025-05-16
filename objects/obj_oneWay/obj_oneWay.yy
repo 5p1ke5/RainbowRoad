@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
+  "%Name":"obj_oneWay",
   "eventList":[],
   "managed":true,
-  "name":"obj_block",
+  "name":"obj_oneWay",
   "overriddenProperties":[],
   "parent":{
     "name":"blocks",
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_oneWay",
+    "path":"sprites/spr_oneWay/spr_oneWay.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

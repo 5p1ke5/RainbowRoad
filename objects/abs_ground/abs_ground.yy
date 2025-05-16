@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
-  "eventList":[],
+  "%Name":"abs_ground",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_block",
+  "name":"abs_ground",
   "overriddenProperties":[],
   "parent":{
-    "name":"blocks",
-    "path":"folders/Objects/blocks.yy",
+    "name":"abstract",
+    "path":"folders/Objects/abstract.yy",
   },
-  "parentObjectId":{
-    "name":"abs_ground",
-    "path":"objects/abs_ground/abs_ground.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

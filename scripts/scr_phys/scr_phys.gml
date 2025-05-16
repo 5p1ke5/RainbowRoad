@@ -18,7 +18,6 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
-	vspExt = 0;
 	
 	
 	//The object is considered grounded if they are directly above a block with collision = true.
@@ -39,7 +38,7 @@ function phys_step()
 	//TODO: Try moving this to after gravity
 	if (collision)
 	{
-	    vsp = phys_floor_collision(vsp);
+	    phys_floor_collision();
 	    phys_wall_collision();
 	}
 
@@ -97,10 +96,9 @@ function phys_wall_collision()
 }
 
 
-/// @function phys_floor_collision(_vsp) 
-/// @description Stops the player if they would touch a block vertically. eg vsp = phys_floor_collision(vsp). Returns new vsp.
-/// @param _vsp object's vertical speed.
-function phys_floor_collision(_vsp) 
+/// @function phys_floor_collision() 
+/// @description Stops the player if they would touch a block vertically.
+function phys_floor_collision() 
 {
 	var _collision_on = function (element, index)
 	{
@@ -109,7 +107,7 @@ function phys_floor_collision(_vsp)
 
 	
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(_vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)); _i += sign(_vsp))
+	for (var _i = 0; (abs(_i) < abs(vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)); _i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x, y + _i, BLOCK, false);
@@ -118,13 +116,12 @@ function phys_floor_collision(_vsp)
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-		        y += _i - sign(_vsp);
-		        return _vsp * -elasticity;
+		        y += _i - sign(vsp);
+		        vsp = vsp * -elasticity;
+				return;
 		    }
 		}
 	}
-
-	return _vsp;
 }
 
 
