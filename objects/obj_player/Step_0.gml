@@ -1,6 +1,8 @@
 /// @description does player things, inherits
 
 
+event_inherited();
+
 ///Controls.
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
@@ -95,7 +97,6 @@ if (flicker >= 0)
 ///Set sprite properties.
 image_xscale = facing;
 
-event_inherited();
 
 if (grounded)
 {

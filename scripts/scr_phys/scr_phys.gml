@@ -46,7 +46,7 @@ function phys_step()
 		{ 
 			if (variable_instance_get(element, "collision") == true) 
 			{
-				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, element.bbox_left, element.bbox_top - 2, element.bbox_right, element.bbox_top + 2) > 0)	
+				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
 			}
 		
 			return true;
@@ -113,8 +113,23 @@ function phys_floor_collision()
 	
 	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 	
+	//Checks if grounded.
+	var _on_ground = function (element, index) 
+	{ 
+		if (variable_instance_get(element, "collision") == true) 
+		{
+			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
+		}
+	
+		return true;
+	};
+	
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(vsp)) || (array_any(instance_place_array(x, y + _i, GROUND, false), _collision_on)); _i += sign(vsp))
+	for (var _i = 0;
+		(abs(_i) < abs(vsp)) || 
+		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
+		(array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, ONEWAY, false, true, false), _on_ground) && vsp > 0); 
+		_i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x, y + _i, GROUND, false);
@@ -132,15 +147,16 @@ function phys_floor_collision()
 				
 				if (_collisions[_ii].object_index == ONEWAY) || ( object_is_ancestor(_collisions[_ii].object_index, ONEWAY))
 				{
-					if (vsp > 0)
+					if (vsp >= 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
-						if (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 						//if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
 						//if (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, _collisions[_ii].bbox_left, _collisions[_ii].bbox_top - 2, _collisions[_ii].bbox_right, _collisions[_ii].bbox_top + 2) > 0)
 						{
 							//y += _i;
 							y += _i - sign(vsp);
 					        //y = floor(y + _i - sign(round(vsp)));
+							
+							//TODO: This is causing some funky issues
 					        vsp = vsp * -elasticity;
 							return;
 						}
@@ -149,11 +165,7 @@ function phys_floor_collision()
 		    }
 		}
 	}
-	
-	
-	
 }
-
 
 /// @function phys_friction(hsp, friction, grounded)
 /// @description Applies friction to a horizontal speed variable. Returns new horizontal speed.
