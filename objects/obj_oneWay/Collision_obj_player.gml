@@ -1,0 +1,1 @@
+show_debug_message("Hit - {0}", current_time);

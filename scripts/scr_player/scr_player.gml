@@ -1,5 +1,0 @@
-function player_control()
-{
-	
-}
-

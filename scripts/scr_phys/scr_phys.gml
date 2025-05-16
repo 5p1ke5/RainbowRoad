@@ -114,7 +114,7 @@ function phys_floor_collision()
 	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 	
 	//Checks every pixel in the player's path for collision.
-	for (var _i = 0; (abs(_i) < abs(vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)); _i += sign(vsp))
+	for (var _i = 0; (abs(_i) < abs(vsp)) || (array_any(instance_place_array(x, y + _i, GROUND, false), _collision_on)); _i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x, y + _i, GROUND, false);
@@ -138,8 +138,8 @@ function phys_floor_collision()
 						//if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
 						//if (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, _collisions[_ii].bbox_left, _collisions[_ii].bbox_top - 2, _collisions[_ii].bbox_right, _collisions[_ii].bbox_top + 2) > 0)
 						{
-							y += _i;
-							//y += _i - sign(vsp);
+							//y += _i;
+							y += _i - sign(vsp);
 					        //y = floor(y + _i - sign(round(vsp)));
 					        vsp = vsp * -elasticity;
 							return;
