@@ -41,7 +41,7 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
+if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
@@ -52,6 +52,10 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 			if (A_BUTTON)
 			{
 				vsp = -jumpHeight;
+			}
+			else //otherwise just cancels vsp (experimental, cool but registers as a collision)
+			{
+				vsp = 0;
 			}
 		}
 	}
@@ -64,7 +68,7 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 		carry_throw_instance(facing * 3, -2);
 	}
 }
-else if (B_BUTTON_PRESSED)
+else if (B_BUTTON_RELEASED)
 {
 	//If not carrying an object, tries to lift whatever's underfoot.
 	if (!instance_exists(myCarry))
