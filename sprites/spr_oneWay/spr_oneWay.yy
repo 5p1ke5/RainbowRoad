@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"spr_oneWay",
-  "bboxMode":0,
-  "bbox_bottom":0,
+  "bboxMode":2,
+  "bbox_bottom":1,
   "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,

@@ -1,6 +1,7 @@
 #region //Object references
 #macro BLOCK obj_block
-#macro GROUND obj_block
+#macro ONEWAY obj_oneWay
+#macro GROUND abs_ground
 #endregion
 
 #region //Room references

@@ -14,16 +14,16 @@ if (X_BUTTON_RELEASED)
 	image_speed = animSpeed;	
 }
 
-if (A_BUTTON)
+if (A_BUTTON_PRESSED)
 {
 	if (grounded)
 	{
 		vsp = -jumpHeight;
 	}
-	else //You jump higher if you hold the jump button
-	{
-		vsp -= jumpOffset;	
-	}
+} 
+else if (A_BUTTON)
+{
+	vsp -= jumpOffset;		
 }
 
 
@@ -93,6 +93,8 @@ if (flicker >= 0)
 ///Set sprite properties.
 image_xscale = facing;
 
+event_inherited();
+
 if (grounded)
 {
 	if (hDir == 0)
@@ -129,5 +131,3 @@ else
 		sprite_index = spr_playerJumpCarry;			
 	}
 }
-
-event_inherited();

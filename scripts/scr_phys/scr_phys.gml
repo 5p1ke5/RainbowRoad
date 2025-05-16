@@ -33,22 +33,29 @@ function phys_step()
 
 	//Friction will reduce horizontal speed. This is reduced while in the air.
 	hsp = phys_friction(hsp, frict, grounded);
+	
+
 
 	//Collision with walls. The object's position is changed after each collision function.
 	//TODO: Try moving this to after gravity
 	if (collision)
 	{
-	    phys_floor_collision();
+	
+	//Checks if grounded.
+	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
+	grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _collision_on));
+	
+		
 	    phys_wall_collision();
+	    phys_floor_collision();
+		
 	}
 
 
 	y += round(vsp);
 	x += round(hsp) + round(hspExt);
-	
-	//Should I reset *Ext values at the end?
 	hspExt = 0;
-
+	
 }
 
 
@@ -71,10 +78,7 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	var _collision_on = function(element, index)
-	{
-		return (variable_instance_get(element, "collision") == true)
-	}
+	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
 	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(hsp + hspExt))
@@ -100,28 +104,46 @@ function phys_wall_collision()
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	var _collision_on = function (element, index)
-	{
-		return (variable_instance_get(element, "collision") == true)
-	}
-
+	
+	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 	
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0; (abs(_i) < abs(vsp)) || (array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)); _i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisions = instance_place_array(x, y + _i, BLOCK, false);
+		var _collisions = instance_place_array(x, y + _i, GROUND, false);
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-		        y += _i - sign(vsp);
-		        vsp = vsp * -elasticity;
-				return;
+				if ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
+				{
+			        y += _i - sign(vsp);
+			        vsp = vsp * -elasticity;
+					return;
+				}
+				
+				if (_collisions[_ii].object_index == ONEWAY)
+				{
+		
+					if (vsp >= 0)
+					{
+						if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
+						{
+							//grounded = true;
+					        y += _i;// - sign(vsp);
+					        vsp = vsp * -elasticity;
+							return;
+						}
+					}
+				}
 		    }
 		}
 	}
+	
+	
+	
 }
 
 
@@ -152,11 +174,6 @@ function phys_friction(_hsp, _frict, _grounded)
 /// @param _terminalVelocity The maximum gravity that can be applied.
 function phys_gravity(_vsp, _grav, _terminalVelocity) 
 {
-	
-	//Checks if the object is on the ground.
-	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
-	
-	
 	_vsp = min(_vsp + _grav, _terminalVelocity) 
 
 	return _vsp;
