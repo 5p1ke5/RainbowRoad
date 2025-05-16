@@ -49,7 +49,7 @@ function phys_step()
 				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
 			}
 		
-			return true;
+			return false;
 		};
 		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _on_ground));
 	
@@ -69,7 +69,7 @@ function phys_step()
 /// @description Accelerates a given force value up to a maximum number. Returns the new value.
 /// @param _force the base value to be added to. Usually hsp or vsp.
 /// @param _accel the number to be added to the _force variable.
-/// @param _max the maximum value that _force can be set to.
+/// @param _max the maximum value that _force can be set to. If the force would be greater than max just sets it to max.
 function phys_force_add(_force, _accel, _max)
 {
 	var _sign = sign(_accel);
@@ -121,7 +121,7 @@ function phys_floor_collision()
 			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
 		}
 	
-		return true;
+		return false;
 	};
 	
 	//Checks every pixel in the player's path for collision.
@@ -147,7 +147,7 @@ function phys_floor_collision()
 				
 				if (_collisions[_ii].object_index == ONEWAY) || ( object_is_ancestor(_collisions[_ii].object_index, ONEWAY))
 				{
-					if (vsp >= 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
+					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
 						//if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
 						//if (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, _collisions[_ii].bbox_left, _collisions[_ii].bbox_top - 2, _collisions[_ii].bbox_right, _collisions[_ii].bbox_top + 2) > 0)

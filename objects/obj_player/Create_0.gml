@@ -1,12 +1,12 @@
 /// @description Initializes variables.
 
-phys_initialize(0.2, 0.21);
+phys_initialize(0.2, 0.2);
 
 //Initialize player variables.
 hDir = 0;
 facing = 1;
 maxSpeed = 3;
-accel = 1;
+accel = 0.4;
 jumpHeight = 4;
 jumpOffset = 0.1;
 flicker = -1;

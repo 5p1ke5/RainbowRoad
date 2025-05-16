@@ -5,6 +5,7 @@
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
     {"name":"blocks","order":1,"path":"folders/Objects/blocks.yy",},
     {"name":"furniture","order":9,"path":"folders/Objects/furniture.yy",},
+    {"name":"living","order":10,"path":"folders/Objects/living.yy",},
     {"name":"UI","order":4,"path":"folders/Objects/UI.yy",},
     {"name":"Rooms","order":5,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
@@ -13,6 +14,7 @@
     {"name":"blocks","order":15,"path":"folders/Sprites/blocks.yy",},
     {"name":"collision masks","order":14,"path":"folders/Sprites/collision masks.yy",},
     {"name":"furniture","order":13,"path":"folders/Sprites/furniture.yy",},
+    {"name":"living","order":16,"path":"folders/Sprites/living.yy",},
     {"name":"player","order":9,"path":"folders/Sprites/player.yy",},
   ],
   "ResourceOrderSettings":[

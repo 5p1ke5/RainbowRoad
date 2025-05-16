@@ -48,8 +48,11 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 		
 		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 2))
 		{
-			//Double jumps
-			vsp = -jumpHeight;
+			//Double jumps if holding A
+			if (A_BUTTON)
+			{
+				vsp = -jumpHeight;
+			}
 		}
 	}
 	else if (UP_BUTTON)
