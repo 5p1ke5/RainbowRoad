@@ -1,9 +1,9 @@
 {
   "$GMSprite":"",
   "%Name":"spr_playerJumpCarry",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":33,
-  "bbox_left":6,
+  "bbox_left":4,
   "bbox_right":20,
   "bbox_top":2,
   "collisionKind":1,

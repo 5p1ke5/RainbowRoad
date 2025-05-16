@@ -126,13 +126,12 @@ function phys_floor_collision()
 				
 				if (_collisions[_ii].object_index == ONEWAY)
 				{
-		
 					if (vsp >= 0)
 					{
-						if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
+						if (bbox_bottom + vsp) >= (_collisions[_ii].bbox_top)
+						//if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
 						{
-							//grounded = true;
-					        y += _i;// - sign(vsp);
+					        y += _i
 					        vsp = vsp * -elasticity;
 							return;
 						}

@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},},
     {"id":{"name":"abs_carryBlock","path":"objects/abs_carryBlock/abs_carryBlock.yy",},},
+    {"id":{"name":"abs_carryOneway","path":"objects/abs_carryOneway/abs_carryOneway.yy",},},
     {"id":{"name":"abs_ground","path":"objects/abs_ground/abs_ground.yy",},},
     {"id":{"name":"abs_gui","path":"objects/abs_gui/abs_gui.yy",},},
     {"id":{"name":"abs_physics","path":"objects/abs_physics/abs_physics.yy",},},
@@ -52,6 +53,7 @@
     {"id":{"name":"obj_magicOrb","path":"objects/obj_magicOrb/obj_magicOrb.yy",},},
     {"id":{"name":"obj_money","path":"objects/obj_money/obj_money.yy",},},
     {"id":{"name":"obj_oneWay","path":"objects/obj_oneWay/obj_oneWay.yy",},},
+    {"id":{"name":"obj_oneWayBlock","path":"objects/obj_oneWayBlock/obj_oneWayBlock.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pot","path":"objects/obj_pot/obj_pot.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},

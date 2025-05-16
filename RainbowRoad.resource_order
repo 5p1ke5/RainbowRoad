@@ -17,6 +17,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"abs_carryBlock","order":2,"path":"objects/abs_carryBlock/abs_carryBlock.yy",},
+    {"name":"abs_carryOneway","order":4,"path":"objects/abs_carryOneway/abs_carryOneway.yy",},
     {"name":"abs_ground","order":3,"path":"objects/abs_ground/abs_ground.yy",},
     {"name":"abs_physics","order":1,"path":"objects/abs_physics/abs_physics.yy",},
     {"name":"obj_ballS","order":8,"path":"objects/obj_ballS/obj_ballS.yy",},
@@ -30,6 +31,7 @@
     {"name":"obj_magicOrb","order":6,"path":"objects/obj_magicOrb/obj_magicOrb.yy",},
     {"name":"obj_money","order":7,"path":"objects/obj_money/obj_money.yy",},
     {"name":"obj_oneWay","order":2,"path":"objects/obj_oneWay/obj_oneWay.yy",},
+    {"name":"obj_oneWayBlock","order":3,"path":"objects/obj_oneWayBlock/obj_oneWayBlock.yy",},
     {"name":"obj_player","order":8,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_pot","order":7,"path":"objects/obj_pot/obj_pot.yy",},
     {"name":"obj_title","order":2,"path":"objects/obj_title/obj_title.yy",},
