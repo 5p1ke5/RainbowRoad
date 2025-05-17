@@ -2,6 +2,9 @@
 #macro BLOCK obj_block
 #macro ONEWAY obj_oneWay
 #macro GROUND abs_ground
+#macro BLOCK_CARRY abs_carryBlock
+#macro ONEWAY_CARRY abs_carryOneway
+#macro CARRY [BLOCK_CARRY, ONEWAY_CARRY]
 #endregion
 
 #region //Room references
