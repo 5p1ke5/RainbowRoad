@@ -142,14 +142,14 @@ function phys_floor_collision()
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-				if ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
+				if (_collisions[_ii].object_index == BLOCK) || ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
 				{
 			        y += _i - sign(vsp);
 			        vsp = vsp * -elasticity;
 					return;
 				}
 				
-				if (_collisions[_ii].object_index == ONEWAY) || ( object_is_ancestor(_collisions[_ii].object_index, ONEWAY))
+				if (_collisions[_ii].object_index == ONEWAY) || (object_is_ancestor(_collisions[_ii].object_index, ONEWAY))
 				{
 					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
