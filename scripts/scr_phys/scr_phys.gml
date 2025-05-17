@@ -6,7 +6,9 @@
 /// @param _vsp vertical speed
 /// @param _collision Whether the object stops when it collides with blocks.
 /// @param _elasticity How much an object bounces when it collides with something.
-function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wall = BLOCK) 
+/// @param _wallObject Object used for collision in wall_collision event.
+/// @param _floorObject Object used for collision in wall_collision event.
+function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = BLOCK) 
 {
 	//Initializes instance variables.
 	grav = _grav;
@@ -15,7 +17,8 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	vsp = _vsp;
 	collision = _collision;
 	elasticity = _elasticity
-	wall = _wall;
+	wallObject = _wallObject;
+	floorObject = _floorObject;
 	
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
@@ -88,10 +91,10 @@ function phys_wall_collision()
 	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, wall, false), _collision_on)); _i += sign(hsp + hspExt))
+	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisions = instance_place_array(x + _i, y, wall, false);
+		var _collisions = instance_place_array(x + _i, y, wallObject, false);
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
@@ -128,7 +131,7 @@ function phys_floor_collision()
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
-		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
+		(array_any(instance_place_array(x, y + _i, floorObject, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
 		(array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, ONEWAY, false, true, false), _on_ground) && vsp > 0); 
 		_i += sign(vsp))
 	{
@@ -139,7 +142,7 @@ function phys_floor_collision()
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-				if ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
+				if ( object_is_ancestor(_collisions[_ii].object_index, floorObject))
 				{
 			        y += _i - sign(vsp);
 			        vsp = vsp * -elasticity;
