@@ -2,5 +2,3 @@
 phys_initialize(0.1, 0, 0, 0, true, 1);
 
 carry_initialize();
-
-image_speed = 0;

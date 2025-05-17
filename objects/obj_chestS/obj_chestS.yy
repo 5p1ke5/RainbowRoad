@@ -10,8 +10,8 @@
     "path":"folders/Objects/furniture.yy",
   },
   "parentObjectId":{
-    "name":"abs_carryBlock",
-    "path":"objects/abs_carryBlock/abs_carryBlock.yy",
+    "name":"abs_carryOneway",
+    "path":"objects/abs_carryOneway/abs_carryOneway.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

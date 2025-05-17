@@ -1,4 +1,4 @@
-/// @description Initalizes physic.
+/// @description Initalizes physics.
 phys_initialize(0.1, 0.1, 0, 0, true, 0.5);
 
 carry_initialize();

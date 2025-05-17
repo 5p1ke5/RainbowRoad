@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ballSOneWay",
+  "%Name":"obj_ballM",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":24,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ballSOneWay",
+  "name":"obj_ballM",
   "overriddenProperties":[],
   "parent":{
     "name":"furniture",
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ballS",
-    "path":"sprites/spr_ballS/spr_ballS.yy",
+    "name":"spr_ballM",
+    "path":"sprites/spr_ballM/spr_ballM.yy",
   },
   "spriteMaskId":null,
   "visible":true,
