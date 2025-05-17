@@ -41,12 +41,12 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
+if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
 		
-		if (carry_throw_instance(0, 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 2))
+		if (carry_throw_instance(0, vsp + 1, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5))
 		{
 			//Double jumps if holding A
 			if (A_BUTTON)
@@ -56,6 +56,7 @@ if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 			else //otherwise just cancels vsp (experimental, cool but registers as a collision)
 			{
 				vsp = 0;
+				y = y+1;
 			}
 		}
 	}
@@ -68,7 +69,7 @@ if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 		carry_throw_instance(facing * 3, -2);
 	}
 }
-else if (B_BUTTON_RELEASED)
+else if (B_BUTTON_PRESSED)
 {
 	//If not carrying an object, tries to lift whatever's underfoot.
 	if (!instance_exists(myCarry))
@@ -80,10 +81,9 @@ else if (B_BUTTON_RELEASED)
 		{
 			carry_pickup_instance(_grab);
 		}
-		
-		//Otherwise if nothing was there checks up top next.
-		//if (!instance_exists(_grab))
-		else {
+		 
+		else 
+		{
 			_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
 			
 			if (variable_instance_get(_grab, "canCarry") == true)

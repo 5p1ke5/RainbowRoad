@@ -5,7 +5,7 @@ if (variable_instance_get(other, "collision") == false)
 	return;
 }
 
-if (B_BUTTON) && (!instance_exists(myCarry)) && (variable_instance_get(other, "canCarry") == true)
+if (B_BUTTON_RELEASED) && (!instance_exists(myCarry)) && (variable_instance_get(other, "canCarry") == true)
 {
 	carry_pickup_instance(other);
 }

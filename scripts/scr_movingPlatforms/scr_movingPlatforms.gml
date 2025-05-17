@@ -8,7 +8,7 @@ function moving_platform_step()
 	}
 	
 	//var _collisions = collision_rectangle_array(bbox_left, bbox_top - vsp - 1, bbox_right, bbox_top, all, true, true, false);
-	var _collisions = collision_rectangle_array(bbox_left, bbox_top - abs(vsp) - 6, bbox_right, bbox_top, [abs_physics, abs_carryBlock, abs_carryOneway], true, true, false);
+	var _collisions = collision_rectangle_array(bbox_left, bbox_top - abs(vsp) - 2, bbox_right, bbox_top, [abs_physics, abs_carryBlock, abs_carryOneway], true, true, false);
 	
 	for (var _i = 0; _i < array_length(_collisions); _i++) 
 	{
