@@ -41,7 +41,7 @@ if (hDir != 0)
 }
 
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
+if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
@@ -56,7 +56,7 @@ if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 			else //otherwise just cancels vsp and makes sure the player is above the object.
 			{
 				vsp = 0;
-				while (place_meeting(x, y, _myCarry))
+				while (place_meeting(x, y + 1, _myCarry))
 				{
 					y--;
 				}
@@ -72,9 +72,10 @@ if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 		carry_throw_instance(facing * 3, -2);
 	}
 }
-else if (B_BUTTON_RELEASED) 	//If not carrying an object, tries to lift a valid target.
+else if (!instance_exists(myCarry))
 {
-	if (!instance_exists(myCarry))
+	
+	if (B_BUTTON_PRESSED)
 	{
 		//Checks just below the character first
 		var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
@@ -83,19 +84,7 @@ else if (B_BUTTON_RELEASED) 	//If not carrying an object, tries to lift a valid 
 		{
 			carry_pickup_instance(_grab);
 		}
-		
-		//Next checks directly where the characters is.
-		else
-		{
-			_grab = instance_place(x, y, CARRY);	
-		}
-		
-		if (variable_instance_get(_grab, "canCarry") == true)
-		{
-			carry_pickup_instance(_grab);
-		}
-		
-		//Last checks directly above the character.
+		//Next directly above the character.
 		else
 		{
 			_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
@@ -105,9 +94,49 @@ else if (B_BUTTON_RELEASED) 	//If not carrying an object, tries to lift a valid 
 		{
 			carry_pickup_instance(_grab);
 		}
-	}	
-}
-
+	}
+	else if (B_BUTTON)
+	{
+		var _grab = instance_place(x, y, [BLOCK_CARRY, ONEWAY_CARRY]);	
+		
+		if (variable_instance_get(_grab, "canCarry") == true)
+		{
+			carry_pickup_instance(_grab);
+		}
+		
+	}
+	/*
+	//Checks just below the character first
+	var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
+		
+	if (variable_instance_get(_grab, "canCarry") == true)
+	{
+		carry_pickup_instance(_grab);
+	}
+		
+	//Next checks directly where the characters is.
+	else
+	{
+		_grab = instance_place(x, y, [BLOCK_CARRY, ONEWAY_CARRY]);	
+	}
+		
+	if (variable_instance_get(_grab, "canCarry") == true)
+	{
+		carry_pickup_instance(_grab);
+	}
+		
+	//Last checks directly above the character.
+	else
+	{
+		_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
+	}
+			
+	if (variable_instance_get(_grab, "canCarry") == true)
+	{
+		carry_pickup_instance(_grab);
+	}
+	*/
+}	
 
 //Timers
 if (flicker >= 0)

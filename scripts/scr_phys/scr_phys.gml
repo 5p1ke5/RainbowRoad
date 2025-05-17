@@ -6,7 +6,7 @@
 /// @param _vsp vertical speed
 /// @param _collision Whether the object stops when it collides with blocks.
 /// @param _elasticity How much an object bounces when it collides with something.
-function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0) 
+function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wall = BLOCK) 
 {
 	//Initializes instance variables.
 	grav = _grav;
@@ -15,6 +15,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	vsp = _vsp;
 	collision = _collision;
 	elasticity = _elasticity
+	wall = _wall;
 	
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
@@ -87,10 +88,10 @@ function phys_wall_collision()
 	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, BLOCK, false), _collision_on)); _i += sign(hsp + hspExt))
+	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, wall, false), _collision_on)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisions = instance_place_array(x + _i, y, BLOCK, false);
+		var _collisions = instance_place_array(x + _i, y, wall, false);
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
