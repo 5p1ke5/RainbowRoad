@@ -131,7 +131,7 @@ function phys_floor_collision()
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
-		(array_any(instance_place_array(x, y + _i, floorObject, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
+		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
 		(array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, ONEWAY, false, true, false), _on_ground) && vsp > 0); 
 		_i += sign(vsp))
 	{
@@ -142,7 +142,7 @@ function phys_floor_collision()
 		{
 		    if (variable_instance_get(_collisions[_ii], "collision") == true)
 		    {
-				if ( object_is_ancestor(_collisions[_ii].object_index, floorObject))
+				if ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
 				{
 			        y += _i - sign(vsp);
 			        vsp = vsp * -elasticity;
@@ -153,14 +153,8 @@ function phys_floor_collision()
 				{
 					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
-						//if (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + vsp + 1, ONEWAY, false, true, false), _collision_on))
-						//if (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 2, bbox_right, bbox_bottom + round(vsp) + 2, _collisions[_ii].bbox_left, _collisions[_ii].bbox_top - 2, _collisions[_ii].bbox_right, _collisions[_ii].bbox_top + 2) > 0)
 						{
-							//y += _i;
 							y += _i - sign(vsp);
-					        //y = floor(y + _i - sign(round(vsp)));
-							
-							//TODO: This is causing some funky issues
 					        vsp = vsp * -elasticity;
 							return;
 						}
