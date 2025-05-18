@@ -100,7 +100,7 @@ function phys_wall_collision()
 	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
-	for (var _i = 0; ( abs(_i) < abs(hsp) + abs(hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
+	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x + _i, y, wallObject, false);

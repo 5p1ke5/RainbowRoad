@@ -2,4 +2,4 @@
 event_inherited();
 
 hDir = sign(image_xscale)
-spd = 2;
+spd = 1;
