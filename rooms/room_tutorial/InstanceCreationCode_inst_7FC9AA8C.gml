@@ -1,0 +1,1 @@
+transition_initialize(320, 512, room_plains);

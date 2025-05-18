@@ -1,5 +1,6 @@
-
+//If this instance collides with a moving carry object it's considered tripped. 
 var _collision = instance_place(x, y, CARRY);
+
 if (flicker < 0)
 {
 	if (variable_instance_get(_collision, "collision") == true)

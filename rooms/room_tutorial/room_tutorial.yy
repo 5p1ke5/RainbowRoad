@@ -68,6 +68,7 @@
     {"name":"inst_5387A2FB","path":"rooms/room_tutorial/room_tutorial.yy",},
     {"name":"inst_34E8296F","path":"rooms/room_tutorial/room_tutorial.yy",},
     {"name":"inst_529632B9","path":"rooms/room_tutorial/room_tutorial.yy",},
+    {"name":"inst_7FC9AA8C","path":"rooms/room_tutorial/room_tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -138,6 +139,7 @@
         {"$GMRInstance":"v1","%Name":"inst_66726C1E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66726C1E","objectId":{"name":"obj_boxM","path":"objects/obj_boxM/obj_boxM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1200.0,"y":1072.0,},
         {"$GMRInstance":"v1","%Name":"inst_5387A2FB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5387A2FB","objectId":{"name":"obj_npcScreen","path":"objects/obj_npcScreen/obj_npcScreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":936.0,"y":1072.0,},
         {"$GMRInstance":"v1","%Name":"inst_529632B9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_529632B9","objectId":{"name":"obj_slimePink","path":"objects/obj_slimePink/obj_slimePink.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":1104.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7FC9AA8C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FC9AA8C","objectId":{"name":"obj_doorMetal","path":"objects/obj_doorMetal/obj_doorMetal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":1072.0,},
       ],"layers":[],"name":"Furniture","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"FLOOR1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"FLOOR1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":80,"SerialiseWidth":180,"TileCompressedData":[
           -158,0,-22,-2147483648,-158,0,-22,-2147483648,-158,0,-22,-2147483648,-158,0,-22,-2147483648,-158,0,-22,
