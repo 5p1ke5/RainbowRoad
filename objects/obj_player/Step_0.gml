@@ -6,6 +6,16 @@ event_inherited();
 ///Controls.
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
+if (UP_BUTTON_RELEASED)
+{
+	var _interactable = instance_place(x, y, abs_interactable);
+	
+	with (_interactable)
+	{
+		event_user(0);
+	}
+}
+
 if (X_BUTTON_PRESSED)
 {
 	image_speed = animSpeedRun;
@@ -76,7 +86,7 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 else if (!instance_exists(myCarry))
 {
 	
-	if (B_BUTTON_PRESSED)
+	if (B_BUTTON_RELEASED)
 	{
 		//Checks just below the character first
 		var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
@@ -106,37 +116,6 @@ else if (!instance_exists(myCarry))
 		}
 		
 	}
-	/*
-	//Checks just below the character first
-	var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
-		
-	if (variable_instance_get(_grab, "canCarry") == true)
-	{
-		carry_pickup_instance(_grab);
-	}
-		
-	//Next checks directly where the characters is.
-	else
-	{
-		_grab = instance_place(x, y, [BLOCK_CARRY, ONEWAY_CARRY]);	
-	}
-		
-	if (variable_instance_get(_grab, "canCarry") == true)
-	{
-		carry_pickup_instance(_grab);
-	}
-		
-	//Last checks directly above the character.
-	else
-	{
-		_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
-	}
-			
-	if (variable_instance_get(_grab, "canCarry") == true)
-	{
-		carry_pickup_instance(_grab);
-	}
-	*/
 }	
 
 //Timers

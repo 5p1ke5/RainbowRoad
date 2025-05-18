@@ -1,0 +1,1 @@
+dialogue = ["You can't just move through big heavy stone and metal objects like this. You'll need to move it out of the way."];

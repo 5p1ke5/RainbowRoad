@@ -5,7 +5,15 @@
 function npc_initialize(_name = "", _dialogue = "")
 {
 	name = _name;
+	
+	if (is_string(_dialogue))
+	{
+		_dialogue = [_dialogue];	
+	}
+	
 	dialogue = _dialogue;
+	dialogueIndex = 0;
+	talkedToCount = 0;
 
 	//This will contain a reference to any dialogue balloon the NPC creates.
 	//If it equals noone the NPC has no created dialogue balloons.

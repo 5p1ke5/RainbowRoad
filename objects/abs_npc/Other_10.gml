@@ -1,9 +1,11 @@
 ///Speaks.
 
-show_debug_message("Speak! {0}", current_time);
-
 /// @description NPC speech.
-if !(instance_exists(myBalloon)) && (dialogue != "")
+if !(instance_exists(myBalloon))
 {
-	myBalloon = npc_speak(dialogue);
+	var _text = dialogue[dialogueIndex];
+	dialogueIndex++;
+	dialogueIndex = dialogueIndex % array_length(dialogue);
+	
+	myBalloon = npc_speak(_text);
 }

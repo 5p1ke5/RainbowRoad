@@ -1,0 +1,1 @@
+dialogue = ["You can throw objects downward by holding down and pressing Z. Hold the jump button while throwing an object down to double jump!"];

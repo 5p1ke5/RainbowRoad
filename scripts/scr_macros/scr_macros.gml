@@ -17,7 +17,7 @@
 #macro PLAYER_WEIGHT 0.02
 #macro FLICKER_MAX game_get_speed(gamespeed_fps)
 #macro TEXT_BALLOON_SPEED 5
-#macro TEXT_BALLOON_MAXW 200
+#macro TEXT_BALLOON_MAXW 150
 #endregion
 
 #region //masks
