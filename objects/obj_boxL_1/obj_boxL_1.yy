@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npcScreen",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_boxL_1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_npcScreen",
+  "name":"obj_boxL_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"npcs",
-    "path":"folders/Objects/npcs.yy",
+    "name":"carryable",
+    "path":"folders/Objects/carryable.yy",
   },
   "parentObjectId":{
-    "name":"abs_npc",
-    "path":"objects/abs_npc/abs_npc.yy",
+    "name":"abs_carryBlock",
+    "path":"objects/abs_carryBlock/abs_carryBlock.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npcScreen",
-    "path":"sprites/spr_npcScreen/spr_npcScreen.yy",
+    "name":"spr_boxL_1",
+    "path":"sprites/spr_boxL_1/spr_boxL_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

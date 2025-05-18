@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npcScreen",
+  "%Name":"Object30",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npcScreen",
+  "name":"Object30",
   "overriddenProperties":[],
   "parent":{
-    "name":"npcs",
-    "path":"folders/Objects/npcs.yy",
+    "name":"gates",
+    "path":"folders/Objects/level features/gates.yy",
   },
   "parentObjectId":{
-    "name":"abs_npc",
-    "path":"objects/abs_npc/abs_npc.yy",
+    "name":"obj_block",
+    "path":"objects/obj_block/obj_block.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npcScreen",
-    "path":"sprites/spr_npcScreen/spr_npcScreen.yy",
+    "name":"spr_gateRed",
+    "path":"sprites/spr_gateRed/spr_gateRed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

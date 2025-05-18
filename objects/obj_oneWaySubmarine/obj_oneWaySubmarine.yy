@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npcScreen",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_oneWaySubmarine",
+  "eventList":[],
   "managed":true,
-  "name":"obj_npcScreen",
+  "name":"obj_oneWaySubmarine",
   "overriddenProperties":[],
   "parent":{
-    "name":"npcs",
-    "path":"folders/Objects/npcs.yy",
+    "name":"blocks",
+    "path":"folders/Objects/blocks.yy",
   },
   "parentObjectId":{
-    "name":"abs_npc",
-    "path":"objects/abs_npc/abs_npc.yy",
+    "name":"obj_oneWay",
+    "path":"objects/obj_oneWay/obj_oneWay.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npcScreen",
-    "path":"sprites/spr_npcScreen/spr_npcScreen.yy",
+    "name":"spr_oneWaySubmarine",
+    "path":"sprites/spr_oneWaySubmarine/spr_oneWaySubmarine.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npcScreen",
+  "%Name":"Object29",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npcScreen",
+  "name":"Object29",
   "overriddenProperties":[],
   "parent":{
-    "name":"npcs",
-    "path":"folders/Objects/npcs.yy",
+    "name":"levers",
+    "path":"folders/Objects/level features/levers.yy",
   },
   "parentObjectId":{
-    "name":"abs_npc",
-    "path":"objects/abs_npc/abs_npc.yy",
+    "name":"abs_interactable",
+    "path":"objects/abs_interactable/abs_interactable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npcScreen",
-    "path":"sprites/spr_npcScreen/spr_npcScreen.yy",
+    "name":"spr_leverRed",
+    "path":"sprites/spr_leverRed/spr_leverRed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

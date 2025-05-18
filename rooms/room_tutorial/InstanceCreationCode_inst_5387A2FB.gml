@@ -1,0 +1,1 @@
+dialogue = ["Oh no! That snail stole the key out of here. You can defeat it by hitting it with thrown objects.", "Once you get the key you can leave through the door."];

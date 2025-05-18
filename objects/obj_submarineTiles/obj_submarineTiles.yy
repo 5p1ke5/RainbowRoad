@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npcScreen",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_submarineTiles",
+  "eventList":[],
   "managed":true,
-  "name":"obj_npcScreen",
+  "name":"obj_submarineTiles",
   "overriddenProperties":[],
   "parent":{
-    "name":"npcs",
-    "path":"folders/Objects/npcs.yy",
+    "name":"blocks",
+    "path":"folders/Objects/blocks.yy",
   },
   "parentObjectId":{
-    "name":"abs_npc",
-    "path":"objects/abs_npc/abs_npc.yy",
+    "name":"obj_oneWay",
+    "path":"objects/obj_oneWay/obj_oneWay.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npcScreen",
-    "path":"sprites/spr_npcScreen/spr_npcScreen.yy",
+    "name":"spr_submarineTiles",
+    "path":"sprites/spr_submarineTiles/spr_submarineTiles.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_submarineTiles_1",
+    "path":"sprites/spr_submarineTiles_1/spr_submarineTiles_1.yy",
+  },
   "visible":true,
 }
