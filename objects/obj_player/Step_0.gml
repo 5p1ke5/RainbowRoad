@@ -53,8 +53,9 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 			{
 				vsp = -jumpHeight;
 			}
-			else //otherwise just cancels vsp and makes sure the player is above the object.
+			else //otherwise just cancels hsp & vsp and makes sure the player is above the object.
 			{
+				hsp = 0;
 				vsp = 0;
 				while (place_meeting(x, y + 1, _myCarry))
 				{
@@ -69,7 +70,7 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 	}
 	else
 	{
-		carry_throw_instance(facing * 3, -2);
+		carry_throw_instance(facing * 3, -2, 0, vsp - 2);
 	}
 }
 else if (!instance_exists(myCarry))

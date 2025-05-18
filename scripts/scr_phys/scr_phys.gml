@@ -55,8 +55,17 @@ function phys_step()
 		
 			return false;
 		};
+		
 		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _on_ground));
-	
+		
+		//If not grounded resets hspExt.
+		if !(grounded)
+		{
+			//This makes things go flying off but it would be awesome if you kept momentum after jumping off a moving platform.
+			//hsp = hsp + hspExt 
+			hspExt = 0;
+		}
+		
 	    phys_wall_collision();
 	    phys_floor_collision();	
 	}
@@ -64,7 +73,7 @@ function phys_step()
 
 	y += round(vsp);
 	x += round(hsp) + round(hspExt);
-	hspExt = 0;
+	//hspExt = 0;
 	
 }
 
@@ -173,7 +182,7 @@ function phys_floor_collision()
 function phys_friction(_hsp, _frict, _grounded) 
 {
 	//Friction will reduce horizontal speed. This is reduced while in the air.
-	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(6, !_grounded)));
+	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(8, !_grounded)));
 	  
 	//If hsp is lower than the friction value, it just sets hsp to 0.
 	if (abs(_hsp) < _frict)

@@ -6,8 +6,8 @@
   "name":"obj_boxL",
   "overriddenProperties":[],
   "parent":{
-    "name":"furniture",
-    "path":"folders/Objects/furniture.yy",
+    "name":"carryable",
+    "path":"folders/Objects/carryable.yy",
   },
   "parentObjectId":{
     "name":"abs_carryOneway",

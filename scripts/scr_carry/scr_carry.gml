@@ -17,7 +17,7 @@ function carry_carried_step()
 {
 	//X is alligned with carrier's x, y is so that the sprite's bottom is on the character's top.
 	x = carrier.x;
-	y = carrier.y - (bbox_bottom - bbox_top);
+	y = carrier.bbox_top - (bbox_bottom - bbox_top);
 }
 
 
@@ -60,6 +60,7 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 		
 		hsp = _hsp;
 		vsp = _vsp;
+		hspExt = hsp;
 		
 		x += _xOffset;
 		y += _yOffset;
