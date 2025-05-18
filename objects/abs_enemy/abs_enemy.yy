@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_robotLackey",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"abs_enemy",
+  "eventList":[],
   "managed":true,
-  "name":"obj_robotLackey",
+  "name":"abs_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"carryable",
-    "path":"folders/Objects/carryable.yy",
+    "name":"abstract",
+    "path":"folders/Objects/abstract.yy",
   },
   "parentObjectId":{
     "name":"abs_carryOneway",
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_robotLacky",
-    "path":"sprites/spr_robotLacky/spr_robotLacky.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

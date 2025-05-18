@@ -1,1 +1,1 @@
-dialogue = ["Oh no! That snail stole the key out of here. You can defeat it by hitting it with thrown objects.", "Once you get the key you can leave through the door."];
+dialogue = ["Oh no! There's an enemy in the way of the door. You can throw objects at enemies to defeat them.", "If you jump on top of a most enemies you can ride on their backs."];

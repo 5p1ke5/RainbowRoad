@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_robotLackey",
+  "%Name":"obj_slimePink",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_robotLackey",
+  "name":"obj_slimePink",
   "overriddenProperties":[],
   "parent":{
-    "name":"carryable",
-    "path":"folders/Objects/carryable.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
-    "name":"abs_carryOneway",
-    "path":"objects/abs_carryOneway/abs_carryOneway.yy",
+    "name":"abs_enemy",
+    "path":"objects/abs_enemy/abs_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_robotLacky",
-    "path":"sprites/spr_robotLacky/spr_robotLacky.yy",
+    "name":"spr_slimePink",
+    "path":"sprites/spr_slimePink/spr_slimePink.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"living",
-    "path":"folders/Sprites/living.yy",
+    "name":"carryable",
+    "path":"folders/Sprites/carryable.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

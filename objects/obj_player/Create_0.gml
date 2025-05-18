@@ -1,4 +1,4 @@
-/// @description Initializes variables.
+/// @description Initializes variables, position at spawn.
 
 phys_initialize(0.2, 0.2);
 
@@ -18,3 +18,11 @@ image_speed = animSpeed;
 
 //The object currently being carried.
 myCarry = noone;
+
+
+//Positions at spawn point if defined.
+if (global.spawnX != undefined)
+{
+	x = global.spawnX;
+	y = global.spawnY;
+}
