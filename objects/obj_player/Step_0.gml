@@ -55,23 +55,9 @@ if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
-		var _myCarry = myCarry; //Saves myCarry as a temporary variables.
 		if (carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5))
 		{
-			//Double jumps if holding A
-			if (A_BUTTON)
-			{
-				vsp = -jumpHeight;
-			}
-			else //otherwise just cancels hsp & vsp and makes sure the player is above the object.
-			{
-				hsp = 0;
-				vsp = 0;
-				while (place_meeting(x, y + 1, _myCarry))
-				{
-					y--;
-				}
-			}
+			vsp = -jumpHeight;
 		}
 	}
 	else if (UP_BUTTON)

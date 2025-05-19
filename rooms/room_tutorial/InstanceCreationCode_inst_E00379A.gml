@@ -1,1 +1,1 @@
-dialogue = ["You can throw objects downward by holding down and pressing Z. Hold the jump button while throwing an object down to double jump!"];
+dialogue = ["You can throw objects downward and double jump by holding the down button and pressing Z.", "Double jump to get over the gap. Hold space to get more air!"];
