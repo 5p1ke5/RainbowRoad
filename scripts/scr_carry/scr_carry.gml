@@ -11,6 +11,49 @@ function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 	collision = _collision;
 }
 
+/// @function carry_grab()
+/// @description Attempts to grab an instance for the calling instance. Checks below, colliding with the instance, and above, in that order. Returns a target, or undefined if none was found..
+function carry_grab()
+{
+	//Function to check if collision is on.
+	var _canCarry_on = function (element, index) 
+	{	
+		return (element.canCarry = true) && (element != myCarry);
+	};
+	
+	//Checks below first.
+	var _array = collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, [BLOCK_CARRY, ONEWAY_CARRY], false, true, false);
+	var _i = array_find_index(_array, _canCarry_on);
+	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
+	
+	if (instance_exists(_grab))
+	{
+		return _grab;	
+	}
+	
+	//Next checks if directly colliding.
+	var _array = instance_place_array(x, y, [BLOCK_CARRY, ONEWAY_CARRY], false);
+	var _i = array_find_index(_array, _canCarry_on);
+	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
+	
+	if (instance_exists(_grab))
+	{
+		return _grab;	
+	}
+	
+	//Finally checks above.
+	var _array = collision_rectangle_array(bbox_left, bbox_top, bbox_right, bbox_top - 1, [BLOCK_CARRY, ONEWAY_CARRY], false, true, false);
+	var _i = array_find_index(_array, _canCarry_on);
+	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
+	
+	if (instance_exists(_grab))
+	{
+		return _grab;	
+	}
+	
+	return undefined;
+}
+
 ///@function carry_carried_step()
 ///@description Makes the carried object follow the carrier. Should usually be put in the step event.
 function carry_carried_step()

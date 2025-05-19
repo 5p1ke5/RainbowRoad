@@ -3,12 +3,18 @@
 if (flicker % 5 != 0)
 {
 	draw_self();
-	//draws top hitbox
-	
 }
 
+var _alert = "";
 
 if (place_meeting(x, y, abs_interactable))
 {
-	draw_text_color(x, bbox_top - string_height("?"), "?", c_black, c_black, c_black, c_black, 1);
+	_alert += "?";
 }
+
+if (grab)
+{
+	_alert += "!";	
+}
+
+draw_text_color(x, bbox_top - string_height(_alert), _alert, c_black, c_black, c_black, c_black, 1);

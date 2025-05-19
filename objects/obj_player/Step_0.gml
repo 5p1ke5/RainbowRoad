@@ -50,8 +50,15 @@ if (hDir != 0)
 	facing = hDir;
 }
 
+
+
+//The objectb being targeted to grab.
+grab = carry_grab();
+
+show_debug_message(string(grab));
+
 //Lets you pick up stuff if you're on top of it.
-if (B_BUTTON_PRESSED) && (instance_exists(myCarry))
+if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
@@ -74,33 +81,10 @@ else if (!instance_exists(myCarry))
 	
 	if (B_BUTTON_RELEASED)
 	{
-		//Checks just below the character first
-		var _grab = collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, all, false, true);
-		
-		if (variable_instance_get(_grab, "canCarry") == true)
+		if (grab)
 		{
-			carry_pickup_instance(_grab);
+			carry_pickup_instance(grab)	
 		}
-		//Next directly above the character.
-		else
-		{
-			_grab = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_top - 1, all, false, true);
-		}
-			
-		if (variable_instance_get(_grab, "canCarry") == true)
-		{
-			carry_pickup_instance(_grab);
-		}
-	}
-	else if (B_BUTTON)
-	{
-		var _grab = instance_place(x, y, [BLOCK_CARRY, ONEWAY_CARRY]);	
-		
-		if (variable_instance_get(_grab, "canCarry") == true)
-		{
-			carry_pickup_instance(_grab);
-		}
-		
 	}
 }	
 
