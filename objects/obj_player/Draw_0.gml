@@ -6,3 +6,9 @@ if (flicker % 5 != 0)
 	//draws top hitbox
 	
 }
+
+
+if (place_meeting(x, y, abs_interactable))
+{
+	draw_text_color(x, bbox_top - string_height("?"), "?", c_black, c_black, c_black, c_black, 1);
+}
