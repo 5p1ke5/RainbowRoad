@@ -30,6 +30,8 @@ if (A_BUTTON_PRESSED)
 {
 	if (grounded)
 	{
+		
+		audio_play_sound(sfx_jump, 1, false);
 		vsp = -jumpHeight;
 		hsp += hspExt;
 		hspExt = 0;
@@ -54,8 +56,6 @@ if (hDir != 0)
 
 //The objectb being targeted to grab.
 grab = carry_grab();
-
-show_debug_message(string(grab));
 
 //Lets you pick up stuff if you're on top of it.
 if (B_BUTTON_RELEASED) && (instance_exists(myCarry))

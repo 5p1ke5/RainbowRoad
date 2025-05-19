@@ -12,7 +12,7 @@ if (place_meeting(x, y, abs_interactable))
 	_alert += "?";
 }
 
-if (grab)
+if (grab) && !(myCarry)
 {
 	_alert += "!";	
 }

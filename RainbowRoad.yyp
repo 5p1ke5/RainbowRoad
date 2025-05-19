@@ -104,6 +104,8 @@
     {"id":{"name":"scr_npc","path":"scripts/scr_npc/scr_npc.yy",},},
     {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},},
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},},
+    {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
+    {"id":{"name":"sfx_lever","path":"sounds/sfx_lever/sfx_lever.yy",},},
     {"id":{"name":"sfx_pickup","path":"sounds/sfx_pickup/sfx_pickup.yy",},},
     {"id":{"name":"sfx_throw","path":"sounds/sfx_throw/sfx_throw.yy",},},
     {"id":{"name":"bg_dungeon1","path":"sprites/bg_dungeon1/bg_dungeon1.yy",},},

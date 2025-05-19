@@ -7,3 +7,5 @@ with (obj_gateRed)
 
 //Also flips x axis.
 image_xscale = -image_xscale;
+
+audio_play_sound(sfx_lever, 1, false);
