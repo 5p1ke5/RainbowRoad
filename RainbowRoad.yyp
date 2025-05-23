@@ -109,6 +109,7 @@
     {"id":{"name":"sfx_pickup","path":"sounds/sfx_pickup/sfx_pickup.yy",},},
     {"id":{"name":"sfx_throw","path":"sounds/sfx_throw/sfx_throw.yy",},},
     {"id":{"name":"bg_dungeon1","path":"sprites/bg_dungeon1/bg_dungeon1.yy",},},
+    {"id":{"name":"bg_polkadot","path":"sprites/bg_polkadot/bg_polkadot.yy",},},
     {"id":{"name":"spr_ballM","path":"sprites/spr_ballM/spr_ballM.yy",},},
     {"id":{"name":"spr_ballS","path":"sprites/spr_ballS/spr_ballS.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
