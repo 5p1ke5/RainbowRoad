@@ -80,7 +80,7 @@ function carry_pickup_instance(_pickup)
 		event_user(USER_EVENTS.U_EVENT_PICKED_UP);
 	}
 	
-	audio_play_sound(sfx_pickup, 0, false);
+	audio_play_sound(sfx_pickup, 1, false);
 }
 
 ///@function carry_throw_instance(_hsp, _vsp, _xOffset, _yOffset)
