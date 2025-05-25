@@ -73,6 +73,9 @@ function phys_step()
 
 	y += round(vsp);
 	x += round(hsp) + round(hspExt);
+	
+	x = round(x);
+	y = round(y);
 	//hspExt = 0;
 	
 }

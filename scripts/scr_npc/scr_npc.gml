@@ -29,11 +29,11 @@ function npc_speak(_text)
 	//Creates speech balloon object.
 	var _name = name;
 	
+	//Gets height of the balloon text when using fnt_speech, then resets font.
 	draw_set_font(fnt_speech);
 	var _balloonHeight = string_height_ext(_text, string_height(_text), TEXT_BALLOON_MAXW);
-	draw_set_font(fnt_default)
+	draw_set_font(fnt_default);
 	
-	;
 	var _balloon = instance_create_layer(x, y - 32 - _balloonHeight, layer, obj_speechBalloon);
 	with (_balloon)
 	{
