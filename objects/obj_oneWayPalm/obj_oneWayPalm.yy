@@ -10,8 +10,8 @@
     "path":"folders/Objects/blocks.yy",
   },
   "parentObjectId":{
-    "name":"obj_oneWay",
-    "path":"objects/obj_oneWay/obj_oneWay.yy",
+    "name":"abs_carryOneway",
+    "path":"objects/abs_carryOneway/abs_carryOneway.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

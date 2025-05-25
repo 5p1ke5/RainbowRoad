@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_money",
+  "%Name":"obj_redShard",
   "eventList":[],
   "managed":true,
-  "name":"obj_money",
+  "name":"obj_redShard",
   "overriddenProperties":[],
   "parent":{
     "name":"collectables",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_money",
-    "path":"sprites/spr_money/spr_money.yy",
+    "name":"spr_redShard",
+    "path":"sprites/spr_redShard/spr_redShard.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_money",
+  "%Name":"abs_collectible",
   "eventList":[],
   "managed":true,
-  "name":"obj_money",
+  "name":"abs_collectible",
   "overriddenProperties":[],
   "parent":{
-    "name":"collectables",
-    "path":"folders/Objects/collectables.yy",
+    "name":"abstract",
+    "path":"folders/Objects/abstract.yy",
   },
-  "parentObjectId":{
-    "name":"abs_collectible",
-    "path":"objects/abs_collectible/abs_collectible.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_money",
-    "path":"sprites/spr_money/spr_money.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

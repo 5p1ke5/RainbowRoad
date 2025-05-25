@@ -6,6 +6,8 @@ function globals_initialize()
 	global.hp = global.maxHP;
 	global.music = noone;
 	
+	global.redShards = 0;
+	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
 	
