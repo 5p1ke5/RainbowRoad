@@ -8,7 +8,7 @@
 /// @param _elasticity How much an object bounces when it collides with something.
 /// @param _wallObject Object used for collision in wall_collision event.
 /// @param _floorObject Object used for collision in wall_collision event.
-function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = BLOCK) 
+function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = GROUND) 
 {
 	//Initializes instance variables.
 	grav = _grav;
@@ -25,7 +25,17 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	
 	
 	//The object is considered grounded if they are directly above a block with collision = true.
-	grounded = variable_instance_get(collision_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, BLOCK, true, false), "collision") == true;
+	var _on_ground = function (element, index) 
+	{ 
+		if (element.collision) 
+		{
+			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
+		}
+	
+		return false;
+	};
+		
+	grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
 }
 
 /// @function phys_step()
@@ -41,14 +51,13 @@ function phys_step()
 
 
 	//Collision with walls. The object's position is changed after each collision function.
-	//TODO: Try moving this to after gravity
 	if (collision)
 	{
 	
 		//Checks if grounded.
 		var _on_ground = function (element, index) 
 		{ 
-			if (variable_instance_get(element, "collision") == true) 
+			if (element.collision) 
 			{
 				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
 			}
@@ -56,13 +65,11 @@ function phys_step()
 			return false;
 		};
 		
-		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, GROUND, false, true, false), _on_ground));
+		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
 		
 		//If not grounded resets hspExt.
 		if !(grounded)
 		{
-			//This makes things go flying off but it would be awesome if you kept momentum after jumping off a moving platform.
-			//hsp = hsp + hspExt 
 			hspExt = 0;
 		}
 		
@@ -110,7 +117,7 @@ function phys_wall_collision()
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (variable_instance_get(_collisions[_ii], "collision") == true)
+		    if (_collisions[_ii].collision)
 		    {
 		        x += _i - sign(hsp + hspExt);
 		        hsp = hsp * -elasticity;
@@ -148,11 +155,11 @@ function phys_floor_collision()
 		_i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
-		var _collisions = instance_place_array(x, y + _i, GROUND, false);
+		var _collisions = instance_place_array(x, y + _i, floorObject, false);
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (variable_instance_get(_collisions[_ii], "collision") == true)
+		    if (_collisions[_ii].collision)
 		    {
 				if (_collisions[_ii].object_index == BLOCK) || ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
 				{
