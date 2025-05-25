@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_oneWay",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_submarine",
+  "eventList":[],
   "managed":true,
-  "name":"obj_oneWay",
+  "name":"obj_submarine",
   "overriddenProperties":[],
   "parent":{
     "name":"blocks",
     "path":"folders/Objects/blocks.yy",
   },
   "parentObjectId":{
-    "name":"abs_ground",
-    "path":"objects/abs_ground/abs_ground.yy",
+    "name":"obj_oneWay",
+    "path":"objects/obj_oneWay/obj_oneWay.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_oneWay",
-    "path":"sprites/spr_oneWay/spr_oneWay.yy",
+    "name":"spr_submarine",
+    "path":"sprites/spr_submarine/spr_submarine.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
