@@ -66,6 +66,7 @@
     {"name":"obj_potM","order":13,"path":"objects/obj_potM/obj_potM.yy",},
     {"name":"obj_redShard","order":1,"path":"objects/obj_redShard/obj_redShard.yy",},
     {"name":"obj_robotLackey","order":11,"path":"objects/obj_robotLackey/obj_robotLackey.yy",},
+    {"name":"obj_star","order":2,"path":"objects/obj_star/obj_star.yy",},
     {"name":"obj_title","order":2,"path":"objects/obj_title/obj_title.yy",},
     {"name":"room_atrium","order":4,"path":"rooms/room_atrium/room_atrium.yy",},
     {"name":"room_beach","order":5,"path":"rooms/room_beach/room_beach.yy",},
@@ -120,6 +121,7 @@
     {"name":"spr_potM","order":13,"path":"sprites/spr_potM/spr_potM.yy",},
     {"name":"spr_redShard","order":1,"path":"sprites/spr_redShard/spr_redShard.yy",},
     {"name":"spr_robotLacky","order":11,"path":"sprites/spr_robotLacky/spr_robotLacky.yy",},
+    {"name":"spr_star","order":2,"path":"sprites/spr_star/spr_star.yy",},
     {"name":"til_beach","order":1,"path":"tilesets/til_beach/til_beach.yy",},
   ],
 }
