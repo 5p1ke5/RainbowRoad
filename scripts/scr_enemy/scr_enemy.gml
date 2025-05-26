@@ -4,5 +4,4 @@
 function enemy_initialize(_hp = 1)
 {
 	hp = _hp;
-	flicker = -1;
 }

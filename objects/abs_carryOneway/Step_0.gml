@@ -9,5 +9,5 @@ else
 	phys_step();
 }
 
-	//Does moving platform things
-	moving_platform_step();
+//Does moving platform things
+moving_platform_step();

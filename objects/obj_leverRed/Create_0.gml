@@ -1,1 +1,1 @@
-flicker = -1;
+hitbox_initialize(CARRY);

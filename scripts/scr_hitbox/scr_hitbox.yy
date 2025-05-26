@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script12",
+  "%Name":"scr_hitbox",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script12",
+  "name":"scr_hitbox",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
