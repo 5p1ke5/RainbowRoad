@@ -1,4 +1,4 @@
-/// @function phys_initialize(gravity, friction, hsp, vsp, collision)
+/// @function phys_initialize(_grav, _frict, _hsp, _vsp, _collision, _elasticity, _wallObject, _floorObject, _collisionBlacklist)
 /// @description Initializes physics variables.
 /// @param _grav How many pixels the object is pulled down by each step.
 /// @param _frict How much horizontal speed is reduced each step while it is non-zero.
@@ -20,6 +20,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	elasticity = _elasticity
 	wallObject = _wallObject;
 	floorObject = _floorObject;
+	collisionBlacklist = _collisionBlacklist;
 	
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
@@ -43,17 +44,6 @@ function phys_step()
 	if (collision)
 	{
 		//Checks if grounded.
-		//TODO: Make this its own function (like, phys_grounded() or something)
-		var _on_ground = function (element, index) 
-		{ 
-			if (element.collision) 
-			{
-				return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
-			}
-		
-			return false;
-		};
-		
 		grounded = phys_grounded();
 		
 		//If not grounded resets hspExt.
@@ -94,7 +84,7 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	var _collision_on = function (element, index) { return (element.collision) };
+	var _collision_on = function (element, index) { return (element.collision) && !(array_contains(collisionBlacklist, element.object_index)) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
 	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
@@ -104,7 +94,7 @@ function phys_wall_collision()
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (_collisions[_ii].collision)
+		    if (_collisions[_ii].collision) && !(array_contains(collisionBlacklist, _collisions[_ii].object_index))
 		    {
 		        x += _i - sign(hsp + hspExt);
 		        hsp = hsp * -elasticity;
@@ -120,12 +110,12 @@ function phys_wall_collision()
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	var _collision_on = function (element, index) { return element.collision };
+	var _collision_on = function (element, index) { return (element.collision) && !(array_contains(collisionBlacklist, element.object_index)) };
 	
 	//Checks if grounded.
 	var _on_ground = function (element, index) 
 	{ 
-		if (element.collision) 
+		if (element.collision)  && !(array_contains(collisionBlacklist, element.object_index))
 		{
 			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
 		}
@@ -136,7 +126,7 @@ function phys_floor_collision()
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
-		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || //This one vVvVv makes grabbing an object teleport you to the groound. Why???
+		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || 
 		(array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, ONEWAY, false, true, false), _on_ground) && vsp > 0); 
 		_i += sign(vsp))
 	{
@@ -145,7 +135,7 @@ function phys_floor_collision()
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (_collisions[_ii].collision)
+		    if (_collisions[_ii].collision) && !(array_contains(collisionBlacklist, _collisions[_ii].object_index))
 		    {
 				if (_collisions[_ii].object_index == BLOCK) || ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
 				{
@@ -208,7 +198,7 @@ function phys_grounded()
 {
 	var _on_ground = function (element, index) 
 	{ 
-		if (element.collision) 
+		if (element.collision) && !(array_contains(collisionBlacklist, element))
 		{
 			//if (element.object_index == ONEWAY_CARRY) || (element.object_index == BLOCK_CARRY)
 			//{

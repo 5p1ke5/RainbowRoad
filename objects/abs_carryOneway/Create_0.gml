@@ -1,5 +1,8 @@
 /// @description Initialize physics variables.
-phys_initialize(,,,,,,, [ONEWAY, BLOCK]);
+//phys_initialize(,,,,,,,, [abs_enemy]);
+phys_initialize(,,,,,,,,[obj_slimePink]);
+//Problem: The above code only works if its literally the same object index (so abs_enemy doesn't work.) Figure out inheritance stuff.
+
 
 //Initializes variables for carrying this object.
 carry_initialize();
