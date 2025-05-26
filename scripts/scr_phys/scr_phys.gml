@@ -84,9 +84,9 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	var _collision_on = function (element, index) { return (element.collision) && !(array_contains(collisionBlacklist, element.object_index)) };
+	var _collision_on = function (element, index) { return phys_collision_validate(element, collisionBlacklist) };
 
-	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
+	//Checks every pixel in the object's path for collision. TODO: Find a way to cut dwn on instance_place_array calls a little.
 	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
@@ -94,7 +94,7 @@ function phys_wall_collision()
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (_collisions[_ii].collision) && !(array_contains(collisionBlacklist, _collisions[_ii].object_index))
+		    if (phys_collision_validate(_collisions[_ii], collisionBlacklist))
 		    {
 		        x += _i - sign(hsp + hspExt);
 		        hsp = hsp * -elasticity;
@@ -105,17 +105,16 @@ function phys_wall_collision()
 	}
 }
 
-
 /// @function phys_floor_collision() 
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	var _collision_on = function (element, index) { return (element.collision) && !(array_contains(collisionBlacklist, element.object_index)) };
+	var _collision_on = function (element, index) { return phys_collision_validate(element, collisionBlacklist) };
 	
 	//Checks if grounded.
 	var _on_ground = function (element, index) 
 	{ 
-		if (element.collision)  && !(array_contains(collisionBlacklist, element.object_index))
+		if (phys_collision_validate(element, collisionBlacklist))
 		{
 			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
 		}
@@ -135,16 +134,16 @@ function phys_floor_collision()
 		
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
-		    if (_collisions[_ii].collision) && !(array_contains(collisionBlacklist, _collisions[_ii].object_index))
+		    if (phys_collision_validate(_collisions[_ii], collisionBlacklist))
 		    {
-				if (_collisions[_ii].object_index == BLOCK) || ( object_is_ancestor(_collisions[_ii].object_index, BLOCK))
+				if (object_is_family(_collisions[_ii], BLOCK))
 				{
 			        y += _i - sign(vsp);
 			        vsp = vsp * -elasticity;
 					return;
 				}
 				
-				if (_collisions[_ii].object_index == ONEWAY) || (object_is_ancestor(_collisions[_ii].object_index, ONEWAY))
+				if (object_is_family(_collisions[_ii], ONEWAY))
 				{
 					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
@@ -159,7 +158,6 @@ function phys_floor_collision()
 		}
 	}
 }
-
 /// @function phys_friction(hsp, friction, grounded)
 /// @description Applies friction to a horizontal speed variable. Returns new horizontal speed.
 /// @param _hsp Horizontal speed.
@@ -198,14 +196,8 @@ function phys_grounded()
 {
 	var _on_ground = function (element, index) 
 	{ 
-		if (element.collision) && !(array_contains(collisionBlacklist, element))
+		if (phys_collision_validate(element, collisionBlacklist))
 		{
-			//if (element.object_index == ONEWAY_CARRY) || (element.object_index == BLOCK_CARRY)
-			//{
-			//	return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top + round(element.vsp) - 1, element.bbox_right + round(element.vsp), element.bbox_top) > 0)	
-			//}
-			//return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
-			
 			return (rectangle_in_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
 		}
 	
@@ -213,4 +205,14 @@ function phys_grounded()
 	};
 	
 	return (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
+}
+
+
+/// @function phys_collision_validate(_instance, _blacklist)
+/// @description Checks if an instance is a valid collision. Returns true if so, false if not.
+/// @param _instance The instance to check if it can be collided with.
+/// @param _blacklist An array of blacklisted collision objects/ 
+function phys_collision_validate(_instance, _blacklist = [])
+{
+	return (_instance.collision) && !(array_contains(_blacklist, _instance.object_index));
 }

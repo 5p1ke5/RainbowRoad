@@ -113,6 +113,7 @@
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
     {"id":{"name":"scr_movingPlatforms","path":"scripts/scr_movingPlatforms/scr_movingPlatforms.yy",},},
     {"id":{"name":"scr_npc","path":"scripts/scr_npc/scr_npc.yy",},},
+    {"id":{"name":"scr_object","path":"scripts/scr_object/scr_object.yy",},},
     {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},},
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},},
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
