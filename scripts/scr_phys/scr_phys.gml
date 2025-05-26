@@ -8,7 +8,8 @@
 /// @param _elasticity How much an object bounces when it collides with something.
 /// @param _wallObject Object used for collision in wall_collision event.
 /// @param _floorObject Object used for collision in wall_collision event.
-function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = GROUND) 
+/// @param _collisionBlacklist An array of objects that are ignored for collisions.
+function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = GROUND, _collisionBlacklist = []) 
 {
 	//Initializes instance variables.
 	grav = _grav;
@@ -23,19 +24,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
 	
-	
-	//The object is considered grounded if they are directly above a block with collision = true.
-	var _on_ground = function (element, index) 
-	{ 
-		if (element.collision) 
-		{
-			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
-		}
-	
-		return false;
-	};
-		
-	grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
+	grounded = false; //Just initializing variable here. It will be set in the step event.
 }
 
 /// @function phys_step()
@@ -53,8 +42,8 @@ function phys_step()
 	//Collision with walls. The object's position is changed after each collision function.
 	if (collision)
 	{
-	
 		//Checks if grounded.
+		//TODO: Make this its own function (like, phys_grounded() or something)
 		var _on_ground = function (element, index) 
 		{ 
 			if (element.collision) 
@@ -65,7 +54,7 @@ function phys_step()
 			return false;
 		};
 		
-		grounded = (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
+		grounded = phys_grounded();
 		
 		//If not grounded resets hspExt.
 		if !(grounded)
@@ -83,8 +72,6 @@ function phys_step()
 	
 	x = round(x);
 	y = round(y);
-	//hspExt = 0;
-	
 }
 
 
@@ -107,7 +94,7 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
+	var _collision_on = function (element, index) { return (element.collision) };
 
 	//Checks every pixel in the object's path for collision. TODO: Turn this into an array type thing. Maybe Foreach or a specialized function?
 	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
@@ -133,13 +120,12 @@ function phys_wall_collision()
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	
-	var _collision_on = function (element, index) { return (variable_instance_get(element, "collision") == true) };
+	var _collision_on = function (element, index) { return element.collision };
 	
 	//Checks if grounded.
 	var _on_ground = function (element, index) 
 	{ 
-		if (variable_instance_get(element, "collision") == true) 
+		if (element.collision) 
 		{
 			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
 		}
@@ -214,6 +200,27 @@ function phys_gravity(_vsp, _grav, _terminalVelocity)
 	_vsp = min(_vsp + _grav, _terminalVelocity) 
 
 	return _vsp;
+}
 
-
+/// @function phys_grounded()
+/// @description Returns whether the calling instance is grounded or not.
+function phys_grounded()
+{
+	var _on_ground = function (element, index) 
+	{ 
+		if (element.collision) 
+		{
+			//if (element.object_index == ONEWAY_CARRY) || (element.object_index == BLOCK_CARRY)
+			//{
+			//	return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top + round(element.vsp) - 1, element.bbox_right + round(element.vsp), element.bbox_top) > 0)	
+			//}
+			//return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp), bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
+			
+			return (rectangle_in_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
+		}
+	
+		return false;
+	};
+	
+	return (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
 }

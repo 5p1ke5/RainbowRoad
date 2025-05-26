@@ -1,4 +1,3 @@
-//if (variable_instance_get(other, "myCarry.id") == self.id)
 if (other.myCarry) && (other.myCarry.id == self.id)
 {
 	return;	

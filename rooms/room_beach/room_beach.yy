@@ -81,6 +81,7 @@
     {"name":"inst_5C89758D","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_68F8A05A","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_331F53C6","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_24A36E72","path":"rooms/room_beach/room_beach.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -109,6 +110,7 @@
         {"$GMRInstance":"v1","%Name":"inst_76ED21A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76ED21A5","objectId":{"name":"obj_potM","path":"objects/obj_potM/obj_potM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2320.0,"y":704.0,},
         {"$GMRInstance":"v1","%Name":"inst_637028DE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_637028DE","objectId":{"name":"obj_moai","path":"objects/obj_moai/obj_moai.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-0.92,"scaleY":1.0,"x":4748.0,"y":330.0,},
         {"$GMRInstance":"v1","%Name":"inst_2F7AAB8B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F7AAB8B","objectId":{"name":"obj_moai","path":"objects/obj_moai/obj_moai.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4819.04,"y":330.0,},
+        {"$GMRInstance":"v1","%Name":"inst_24A36E72","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_24A36E72","objectId":{"name":"obj_ballM","path":"objects/obj_ballM/obj_ballM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":576.0,},
       ],"layers":[],"name":"Furniture","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Blocks","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_689C38C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_689C38C1","objectId":{"name":"obj_blockTropicsDirt","path":"objects/obj_blockTropicsDirt/obj_blockTropicsDirt.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.125,"scaleY":14.0,"x":298.0,"y":608.0,},
