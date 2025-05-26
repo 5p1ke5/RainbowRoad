@@ -11,7 +11,7 @@ if (_collision)
 			if (abs(_collision.hsp) > 0) || (abs(_collision.vsp) > 0)
 			{
 				event_user(0);
-				flicker = FLICKER_MAX;
+				flicker = FLICKER_MAX/2;
 			}
 		}
 	}

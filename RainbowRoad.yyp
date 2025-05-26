@@ -117,6 +117,7 @@
     {"id":{"name":"scr_object","path":"scripts/scr_object/scr_object.yy",},},
     {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},},
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},},
+    {"id":{"name":"Script12","path":"scripts/Script12/Script12.yy",},},
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},},
     {"id":{"name":"sfx_lever","path":"sounds/sfx_lever/sfx_lever.yy",},},
     {"id":{"name":"sfx_pickup","path":"sounds/sfx_pickup/sfx_pickup.yy",},},
