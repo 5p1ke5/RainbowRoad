@@ -126,7 +126,7 @@ function phys_floor_collision()
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
 		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || 
-		(array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, ONEWAY, false, true, false), _on_ground) && vsp > 0); 
+		(phys_grounded() && vsp > 0); 
 		_i += sign(vsp))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.

@@ -7,7 +7,11 @@ if (myCarry) && (myCarry.id == other.id)
 }
 
 
-if (flicker < 0)
+
+if (bbox_bottom - 1 > other.bbox_top + 1)
 {
-	flicker = FLICKER_MAX;	
+	if (flicker < 0)
+	{
+		flicker = FLICKER_MAX;	
+	}
 }
