@@ -1,0 +1,1 @@
+if (other.hsp > 0) ||
