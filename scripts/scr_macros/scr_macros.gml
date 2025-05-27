@@ -5,6 +5,7 @@
 #macro BLOCK_CARRY abs_carryBlock
 #macro ONEWAY_CARRY abs_carryOneway
 #macro CARRY [BLOCK_CARRY, ONEWAY_CARRY]
+#macro CORPSE obj_dead
 #endregion
 
 #region //Room references
@@ -14,6 +15,7 @@
 #region //Constant numbers
 #macro TERMINAL_VELOCITY 10
 #macro MAX_ACCEL 3
+#macro JUMP_HEIGHT 4
 #macro PLAYER_WEIGHT 0.02
 #macro FLICKER_MAX game_get_speed(gamespeed_fps)
 #macro TEXT_BALLOON_SPEED 4

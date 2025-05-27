@@ -21,7 +21,17 @@ else
 		if (array_any(_hitInstances, _validate_hit))
 		{
 			hp--;
-			flicker = maxFlicker;
+			
+			if (hp <= 0)
+			{
+				instance_destroy();	
+			}
+			else
+			{		
+				flicker = maxFlicker;
+			}
+			
+			audio_play_sound(sfx_enemyHit, 1, false);
 		}
 		
 	}

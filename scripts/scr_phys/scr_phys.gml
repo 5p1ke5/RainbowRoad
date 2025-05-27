@@ -111,17 +111,6 @@ function phys_floor_collision()
 {
 	var _collision_on = function (element, index) { return phys_collision_validate(element, collisionBlacklist) };
 	
-	//Checks if grounded.
-	var _on_ground = function (element, index) 
-	{ 
-		if (phys_collision_validate(element, collisionBlacklist))
-		{
-			return (rectangle_in_rectangle(bbox_left, bbox_bottom + round(vsp) - 1, bbox_right, bbox_bottom + round(vsp) + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top + 1) > 0)	
-		}
-	
-		return false;
-	};
-	
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
