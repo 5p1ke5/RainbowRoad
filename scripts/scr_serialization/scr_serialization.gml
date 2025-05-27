@@ -1,5 +1,5 @@
 ///@function serialize_instance(_instance)
-///@description Gets all instance variables + object_index from an instance, then saves them to a struct. This lets you easily read all the variables from the struct into an object with the deserialize_instance function (id is used to find which instance is which).
+///@description Gets all instance variables + needed built-in variables from an instance, then saves them to a struct. This lets you easily read all the variables from the struct into an object with the deserialize_instance function (id is used to find which instance is which).
 ///@param _instance the instance to be serialized.
 ///@return A struct with all instance variables.
 function serialize_instance(_instance)
@@ -20,9 +20,16 @@ function serialize_instance(_instance)
 		variable_struct_set(_serializedInstance,  _variableNameArray[_i], _var)
 	}
 	
+	//These are the variable instances we still need.
 	with (_serializedInstance)
 	{
 		object_index = _instance.object_index;
+		image_alpha = _instance.image_alpha;
+		image_angle = _instance.image_angle;
+		image_blend = _instance.image_blend;
+		image_speed = _instance.image_speed;
+		image_xscale = _instance.image_xscale;
+		image_yscale = _instance.image_yscale;
 	}
 	
 	return _serializedInstance;
@@ -114,21 +121,17 @@ function serialize_instance_all(_instance)
 
 //Not done and might not even use.
 function instance_deserialize(_serializedInstance, _x, _y, _depth)
-{
-	//Saves object index.
-	var _obj = _serializedInstance.object_index;
-	
+{	
 	//Creates an instance using the saved object index.
-	var _instance = instance_create_depth(_x, _y, _depth, _obj);
-	
-	
+	var _instance = instance_create_depth(_x, _y, _depth, _serializedInstance.object_index);
+		
 	//Gets all variable names from the struct.
 	_variableNameArray = struct_get_names(_serializedInstance);
 	
 	//Gets all non built-in variables from the struct and puts them in the instance.
 	for (var _i = 0; _i < array_length(_variableNameArray); _i++)
 	{
-		if (_variableNameArray != "object_index")
+		if (_variableNameArray[_i] != "object_index")
 		{
 			var _var = struct_get(_serializedInstance, _variableNameArray[_i]);
 			variable_instance_set(_instance, _variableNameArray[_i], _var);

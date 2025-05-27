@@ -27,7 +27,7 @@ function transition_goto(_spawnX, _spawnY, _roomTo)
 		{
 			if (myCarry)
 			{
-				global.carried = myCarry.object_index;	
+				global.carried = serialize_instance(myCarry);	
 			}
 			else
 			{
