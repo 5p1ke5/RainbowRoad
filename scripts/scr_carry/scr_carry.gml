@@ -7,8 +7,10 @@ function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 {
 	canCarry = _canCarry;
 	carrier = _carrier;
-	
 	collision = _collision;
+	
+	//Whether the object has been thrown.
+	thrown = false;
 }
 
 /// @function carry_grab()
