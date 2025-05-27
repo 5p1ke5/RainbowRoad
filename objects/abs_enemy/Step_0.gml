@@ -7,6 +7,7 @@ if (carrier)
 else
 {
 	phys_step();
+	carry_uncarried_step();
 	
 	//The hitbox checks if it was hit, and if so validates that and takes damage if it was a valid hit.
 	var _hitInstances = hitbox_step_instance_array();

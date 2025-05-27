@@ -65,6 +65,15 @@ function carry_carried_step()
 	y = carrier.bbox_top - (bbox_bottom - bbox_top);
 }
 
+///@function carry_uncarried_step()
+///@description Code to be run when the carry object is not being carried. Sets 'thrown' as false if grounded and still.
+function carry_uncarried_step()
+{
+	if (thrown)
+	{
+		thrown = !((grounded) && (hsp == 0) && (vsp == 0));
+	}
+}
 
 ///@function carry_pickup_instance(_pickup)
 ///@descrption Makes the calling instance pick up a carriable object.
@@ -113,7 +122,8 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 		///Does whatever code the thrown object has for being thrown.
 		event_user(USER_EVENTS.U_EVENT_THROWN)
 		
-		
+		//Sets thrwn as true.
+		thrown = true;
 	}
 	
 	audio_play_sound(sfx_throw, 1, false);

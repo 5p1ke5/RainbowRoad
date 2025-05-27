@@ -7,6 +7,7 @@ if (instance_exists(carrier))
 else
 {
 	phys_step();
+	carry_uncarried_step()
 }
 
 //Does moving platform things
