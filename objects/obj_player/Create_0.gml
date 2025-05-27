@@ -16,8 +16,21 @@ animSpeedRun = 0.5;
 
 image_speed = animSpeed;
 
-//The object currently being carried.
-myCarry = noone;
+//The object currently being carried.If a carried object is saved it spawns the saved object into the rom.
+if (global.carried)
+{
+	myCarry = instance_create_depth(x, y, depth, global.carried);
+	var _carrier = self;
+	with (myCarry)
+	{
+		collision = false;
+		carrier = _carrier;
+	}
+}
+else
+{
+	myCarry = noone;
+}
 
 //The objectb being target to grab.
 grab = carry_grab();

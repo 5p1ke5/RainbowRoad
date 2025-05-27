@@ -4,6 +4,10 @@ function globals_initialize()
 {
 	global.maxHP = 3;
 	global.hp = global.maxHP;
+	
+	//The object currently being carried between rooms.
+	global.carried = noone;
+	
 	global.music = noone;
 	
 	global.redShards = 0;

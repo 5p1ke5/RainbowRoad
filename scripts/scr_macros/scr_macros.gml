@@ -6,6 +6,7 @@
 #macro ONEWAY_CARRY abs_carryOneway
 #macro CARRY [BLOCK_CARRY, ONEWAY_CARRY]
 #macro CORPSE obj_dead
+#macro PLAYER obj_player
 #endregion
 
 #region //Room references
