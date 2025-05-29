@@ -1,0 +1,1 @@
+dialogue = ["You can throw objects upwards by pressing 'Up' and 'Z' at the same time. You can use that to hit the switch on the ceiling and open the gate."];
