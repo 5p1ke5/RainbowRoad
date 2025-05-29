@@ -1,1 +1,0 @@
-dialogue = ["If you see an '?' over your head that means you can press 'UP' on the keyboard to interact with that object."]

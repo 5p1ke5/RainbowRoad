@@ -1,1 +1,0 @@
-dialogue = ["You can press 'UP' and 'Z' at the same time to throw objects upwards. You can use this to activate the switch up there."]

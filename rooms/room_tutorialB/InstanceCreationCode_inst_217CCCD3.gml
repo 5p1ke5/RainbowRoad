@@ -1,0 +1,1 @@
+transition_initialize(290, 570, room_tutorialA)

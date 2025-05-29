@@ -1,1 +1,0 @@
-dialogue = ["Welcome to the tutorial! You can use the arrow keys to move around. Press space to jump!", "If you hold down space, you'll jump higher. Hold down X to run."];

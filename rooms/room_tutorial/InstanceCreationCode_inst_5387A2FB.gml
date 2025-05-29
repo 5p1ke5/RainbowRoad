@@ -1,1 +1,0 @@
-dialogue = ["Oh no! There's an enemy in the way of the door. You can throw objects at enemies to defeat them.", "If you jump on top of a most enemies you can ride on their backs."];
