@@ -16,7 +16,7 @@ else
 	{
 		var _validate_hit = function (element, index)
 		{
-			return (element.collision) && (abs(element.hsp) > 0 || abs(element.vsp) > 0)
+			return (element.collision) && (element.thrown);
 		}
 		
 		if (array_any(_hitInstances, _validate_hit))
