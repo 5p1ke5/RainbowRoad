@@ -14,7 +14,7 @@ function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 }
 
 /// @function carry_grab()
-/// @description Attempts to grab an instance for the calling instance. Checks below, colliding with the instance, and above, in that order. Returns a target, or undefined if none was found..
+/// @description Selects a target to grab. Checks below, colliding with the instance, and above, in that order. Returns a target, or undefined if none was found..
 function carry_grab()
 {
 	//Function to check if collision is on.
@@ -33,8 +33,8 @@ function carry_grab()
 		return _grab;	
 	}
 	
-	//Next checks if directly colliding.
-	var _array = instance_place_array(x, y, [BLOCK_CARRY, ONEWAY_CARRY], false);
+	//Next checks if directly colliding or in front of.
+	var _array = instance_place_array(x + (facing), y, [BLOCK_CARRY, ONEWAY_CARRY], false);
 	var _i = array_find_index(_array, _canCarry_on);
 	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
 	

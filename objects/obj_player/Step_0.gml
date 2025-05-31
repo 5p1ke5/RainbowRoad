@@ -4,6 +4,12 @@
 event_inherited();
 
 ///Controls.
+if (RESTART_BUTTON)
+{
+	room_restart();	
+}
+
+
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
 if (UP_BUTTON_RELEASED)

@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_submarineTiles",
-    "path":"sprites/spr_submarineTiles/spr_submarineTiles.yy",
+    "name":"spr_tilesSubmarine",
+    "path":"sprites/spr_tilesSubmarine/spr_tilesSubmarine.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

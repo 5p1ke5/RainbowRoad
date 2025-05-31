@@ -8,7 +8,7 @@ function globals_initialize()
 	//The object currently being carried between rooms.
 	global.carried = noone;
 	
-	global.music = noone;
+	global.bgm = noone;
 	
 	global.redShards = 0;
 	

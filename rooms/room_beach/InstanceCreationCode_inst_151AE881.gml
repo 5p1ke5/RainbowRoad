@@ -1,1 +1,1 @@
-transition_initialize(194, 621, room_beachHouse);
+transition_initialize(515, 686, room_beachHouse);

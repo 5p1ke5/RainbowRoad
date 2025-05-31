@@ -1,1 +1,0 @@
-npc_initialize("Sign", ["Beware of slimes! Defeat enemies by throwing objects at them.", "You can ride on top of most enemies by jumping on them."]);

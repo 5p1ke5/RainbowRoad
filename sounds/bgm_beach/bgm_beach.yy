@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgm_beach",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":149.94286,
+  "name":"bgm_beach",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgm_beach.mp3",
+  "type":0,
+  "volume":0.5,
+}
