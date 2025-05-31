@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":84.37551,
+  "duration":149.94286,
   "name":"bgm_tutorial",
   "parent":{
     "name":"Music",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"bgm_tutorial.mp3",
   "type":0,
-  "volume":0.5,
+  "volume":0.3,
 }

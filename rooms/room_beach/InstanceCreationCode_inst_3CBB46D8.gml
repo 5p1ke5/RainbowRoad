@@ -1,0 +1,1 @@
+npc_initialize("Sign", "Watch out for slimes and other monsters! You can defeat them by throwing objects at them. Additionally, most monsters can be ridden by jumping on top of them.");
