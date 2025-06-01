@@ -1,0 +1,1 @@
+transition_initialize(176, 1008, room_jungle);
