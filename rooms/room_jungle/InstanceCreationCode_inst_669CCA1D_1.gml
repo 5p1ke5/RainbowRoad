@@ -1,1 +1,0 @@
-npc_initialize("Sign", ["Did you know? You can run by holding 'X'."]);
