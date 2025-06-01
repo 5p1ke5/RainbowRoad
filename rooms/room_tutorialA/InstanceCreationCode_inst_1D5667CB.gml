@@ -1,1 +1,1 @@
-dialogue = ["Welcome to the tutorial! You can use the arrow keys to move around. Press space to jump!", "An '?' over your head means you can press 'UP' on the keyboard to interact with an object. Interact with the door to go to the next area."];
+dialogue = ["Use the arrow keys to move around. Press space to jump!", "An '?' over your head means you can press 'UP' on the keyboard to interact with an object. Interact with the door to go to the next area."];

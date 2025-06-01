@@ -1,0 +1,1 @@
+npc_initialize("Computer", "Hello World!");

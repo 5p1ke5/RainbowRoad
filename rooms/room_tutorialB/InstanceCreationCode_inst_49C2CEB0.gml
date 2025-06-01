@@ -1,1 +1,1 @@
-dialogue = ["If you touch an object and '!' appears over your head you can press 'Z' to pick it up.", "If you move that box you can use it to get up on that ledge.", "You can always exit and reenter through the door to reset a room."];
+dialogue = ["If you touch an object and '!' appears over your head you can press 'Z' to pick it up.","You can always exit and reenter through the door to reset a room if you get stuck."];
