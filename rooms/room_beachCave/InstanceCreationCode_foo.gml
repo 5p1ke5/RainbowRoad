@@ -1,0 +1,1 @@
+transition_initialize(2944, 896, room_beach);

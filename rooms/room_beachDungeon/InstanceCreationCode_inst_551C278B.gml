@@ -1,1 +1,0 @@
-moving_platform_initialize(0, 1)

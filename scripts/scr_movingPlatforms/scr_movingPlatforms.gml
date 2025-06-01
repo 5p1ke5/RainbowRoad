@@ -3,7 +3,7 @@
 /// @param _hsp Horizontal speed of the platform.
 /// @param _vsp Vertical speed of the platgorm.
 /// @param _collision If collision is true.
-function moving_platform_initialize(_hsp, _vsp, _collision = true, _block = BLOCK)
+function moving_platform_initialize(_hsp, _vsp, _collision = true, _block = [BLOCK, obj_oneWayMovingMarker])
 {
 	hsp = _hsp;
 	vsp = _vsp;

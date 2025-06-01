@@ -9,8 +9,8 @@
   "name":"obj_oneWayRuinsMoving",
   "overriddenProperties":[],
   "parent":{
-    "name":"blocks",
-    "path":"folders/Objects/blocks.yy",
+    "name":"moving",
+    "path":"folders/Objects/blocks/oneway/moving.yy",
   },
   "parentObjectId":{
     "name":"obj_oneWay",

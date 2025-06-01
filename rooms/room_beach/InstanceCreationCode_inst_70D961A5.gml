@@ -1,1 +1,1 @@
-transition_initialize(2272, 608, room_beachCave);
+transition_initialize(2304, 608, room_beachCave);

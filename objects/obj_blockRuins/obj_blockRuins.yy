@@ -6,8 +6,8 @@
   "name":"obj_blockRuins",
   "overriddenProperties":[],
   "parent":{
-    "name":"blocks",
-    "path":"folders/Objects/blocks.yy",
+    "name":"block",
+    "path":"folders/Objects/blocks/block.yy",
   },
   "parentObjectId":{
     "name":"obj_block",

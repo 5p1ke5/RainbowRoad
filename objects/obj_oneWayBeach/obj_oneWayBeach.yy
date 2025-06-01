@@ -6,8 +6,8 @@
   "name":"obj_oneWayBeach",
   "overriddenProperties":[],
   "parent":{
-    "name":"blocks",
-    "path":"folders/Objects/blocks.yy",
+    "name":"oneway",
+    "path":"folders/Objects/blocks/oneway.yy",
   },
   "parentObjectId":{
     "name":"obj_oneWay",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_beachOneWay",
-    "path":"sprites/spr_beachOneWay/spr_beachOneWay.yy",
+    "name":"spr_oneWayBeach",
+    "path":"sprites/spr_oneWayBeach/spr_oneWayBeach.yy",
   },
   "spriteMaskId":null,
   "visible":true,
