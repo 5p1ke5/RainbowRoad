@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":85.08082,
+  "duration":188.7347,
   "name":"bgm_beach",
   "parent":{
     "name":"Music",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"bgm_beach.mp3",
   "type":0,
-  "volume":0.3,
+  "volume":0.25,
 }
