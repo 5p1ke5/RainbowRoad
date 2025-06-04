@@ -22,8 +22,8 @@ if (_file)
 		//var _instance = instance_deserialize_layer(_struct, _struct.x, _struct.y, "Furniture");
 		//var _instance = instance_deserialize_depth(_struct, _struct.x, _struct.y, depth);		
 		
-		//Okay this one does work but not as well as I want.
-		var _instance = instance_create_depth(_struct.x, _struct.y, depth, _struct.object_index);
+		//Okay this one does work but not as well as I want. 
+		var _instance = instance_create_depth(_struct.x, _struct.y, depth, _object_index);
 	}
 
 	file_text_close(_file);
