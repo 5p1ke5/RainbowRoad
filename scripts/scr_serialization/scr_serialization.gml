@@ -119,8 +119,13 @@ function serialize_instance_all(_instance)
 }
 
 
-//Not done and might not even use.
-function instance_deserialize(_serializedInstance, _x, _y, _depth)
+/// @function instance_deserialize_depth(_serializedInstance, _x, _y, _depth)
+/// @description Creates an instance out of the passed struct at the given depth.
+/// @param _serializedInstance struct containing variables for the created instance.
+/// @param _x X coordinate to create the instance at.
+/// @param _y Y coordinate to create the instance at.
+/// @param _depth Depth the create the instance at.
+function instance_deserialize_depth(_serializedInstance, _x, _y, _depth)
 {	
 	//Creates an instance using the saved object index.
 	var _instance = instance_create_depth(_x, _y, _depth, _serializedInstance.object_index);
@@ -142,6 +147,37 @@ function instance_deserialize(_serializedInstance, _x, _y, _depth)
 	
 	return _instance;
 }
+
+
+/// @function instance_deserialize_layer(_serializedInstance, _x, _y, _layer)
+/// @description Creates an instance out of the passed struct at the given layer.
+/// @param _serializedInstance struct containing variables for the created instance.
+/// @param _x X coordinate to create the instance at.
+/// @param _y Y coordinate to create the instance at.
+/// @param _layer Layer the create the instance at.
+function instance_deserialize_layer(_serializedInstance, _x, _y, _layer)
+{	
+	//Creates an instance using the saved object index.
+	var _instance = instance_create_layer(_x, _y, _layer, _serializedInstance.object_index);
+	
+	//Gets all variable names from the struct.
+	_variableNameArray = struct_get_names(_serializedInstance);
+	
+	//Gets all non built-in variables from the struct and puts them in the instance.
+	for (var _i = 0; _i < array_length(_variableNameArray); _i++)
+	{
+		if (_variableNameArray[_i] != "object_index")
+		{
+			var _var = struct_get(_serializedInstance, _variableNameArray[_i]);
+			
+			variable_instance_set(_instance, _variableNameArray[_i], _var);
+		}
+	}
+	
+	return _instance;
+}
+
+
 
 //Not used in this game but good for reference.
 //function instance_deserialize_doll(_x, _y, _depth, _struct, _NPCCommand = new NPCCommandIdle())

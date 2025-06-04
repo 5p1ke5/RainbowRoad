@@ -19,7 +19,8 @@ for (var _i = 0; _i < instance_count; _i++)
 	(_instance.object_index != ONEWAY) &&
 	(_instance.object_index != PLAYER) &&
 	(_instance.object_index != obj_home) &&
-	(!object_is_family(_instance, abs_interactableTransition))
+	(!object_is_family(_instance, abs_interactableTransition)) &&
+	(instance_exists(PLAYER) && PLAYER.myCarry != _instance)
 	{
 		var _serializedInstance = serialize_instance_extended(_instance);	
 		show_debug_message("Instance written to struct: " + string(_serializedInstance));

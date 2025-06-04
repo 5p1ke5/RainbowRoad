@@ -19,7 +19,7 @@ image_speed = animSpeed;
 //The object currently being carried.If a carried object is saved it spawns the saved object into the rom.
 if (global.carried)
 {
-	myCarry = instance_deserialize(global.carried, x, y, depth);
+	myCarry = instance_deserialize_depth(global.carried, x, y, depth);
 	var _carrier = self;
 	with (myCarry)
 	{

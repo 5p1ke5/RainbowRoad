@@ -19,12 +19,11 @@ if (_file)
 		var _struct = json_parse(_json);
 		show_debug_message("Json parsed: {0}", _struct);
 		
-		var _instance = instance_deserialize(_struct, _struct.x, _struct.y, -2000);
-		with (_instance)
-		{
-			depth = -2000;	
-		}
-		show_debug_message(_instance.depth);
+		//var _instance = instance_deserialize_layer(_struct, _struct.x, _struct.y, "Furniture");
+		//var _instance = instance_deserialize_depth(_struct, _struct.x, _struct.y, depth);		
+		
+		//Okay this one does work but not as well as I want.
+		var _instance = instance_create_depth(_struct.x, _struct.y, depth, _struct.object_index);
 	}
 
 	file_text_close(_file);
