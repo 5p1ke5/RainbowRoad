@@ -5,13 +5,12 @@ var _fName = _roomName + ".dat";
 var _file = file_text_open_write(_fName);
 
 var _jsonString = "";
-var _items = 0;
 
-//Clears file.
+//Clears the file..
 file_text_write_string(_file, "");
 
-//get all objects from the room and write their serialized versions using json_stringify
 
+//get all objects from the room and write their serialized versions to a file using json_stringify
 for (var _i = 0; _i < instance_count; _i++) 
 {
 	var _instance = instance_find(all, _i);
@@ -23,10 +22,13 @@ for (var _i = 0; _i < instance_count; _i++)
 	(!object_is_family(_instance, abs_interactableTransition))
 	{
 		var _serializedInstance = serialize_instance_extended(_instance);	
+		show_debug_message("Instance written to struct: " + string(_serializedInstance));
+		
 		_jsonString = _jsonString + json_stringify(_serializedInstance) + "\n";
 	}
 }
 		
 file_text_write_string(_file, _jsonString);
-
+
+
 file_text_close(_file);

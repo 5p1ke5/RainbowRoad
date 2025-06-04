@@ -124,7 +124,8 @@ function instance_deserialize(_serializedInstance, _x, _y, _depth)
 {	
 	//Creates an instance using the saved object index.
 	var _instance = instance_create_depth(_x, _y, _depth, _serializedInstance.object_index);
-		
+	//var _instance = instance_create_layer(x, y, "Furniture", _serializedInstance.object_index);
+	
 	//Gets all variable names from the struct.
 	_variableNameArray = struct_get_names(_serializedInstance);
 	
@@ -134,6 +135,7 @@ function instance_deserialize(_serializedInstance, _x, _y, _depth)
 		if (_variableNameArray[_i] != "object_index")
 		{
 			var _var = struct_get(_serializedInstance, _variableNameArray[_i]);
+			
 			variable_instance_set(_instance, _variableNameArray[_i], _var);
 		}
 	}
