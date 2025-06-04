@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_home, 0, 40, view_get_hport(view_current) - 30, 5, 5, 0, c_white, 0.5);
