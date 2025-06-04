@@ -1,7 +1,7 @@
 /// @description Attempts to write to the file.
 
 var _roomName = room_get_name(room);
-var _fName = _roomName + ".txt";
+var _fName = _roomName + ".dat";
 var _file = file_text_open_write(_fName);
 
 var _jsonString = "";
