@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_blockSand",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_blockSand",
   "overriddenProperties":[],
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_blockJungle",
-    "path":"sprites/spr_blockJungle/spr_blockJungle.yy",
+    "name":"spr_blockSand",
+    "path":"sprites/spr_blockSand/spr_blockSand.yy",
   },
   "spriteMaskId":null,
   "visible":true,
