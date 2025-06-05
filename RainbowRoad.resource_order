@@ -59,6 +59,7 @@
     {"name":"obj_blockJungle","order":5,"path":"objects/obj_blockJungle/obj_blockJungle.yy",},
     {"name":"obj_blockMossBrick","order":1,"path":"objects/obj_blockMossBrick/obj_blockMossBrick.yy",},
     {"name":"obj_blockRuins","order":2,"path":"objects/obj_blockRuins/obj_blockRuins.yy",},
+    {"name":"obj_blockSand","order":6,"path":"objects/obj_blockSand/obj_blockSand.yy",},
     {"name":"obj_blockTropicsDirt","order":3,"path":"objects/obj_blockTropicsDirt/obj_blockTropicsDirt.yy",},
     {"name":"obj_boxL","order":1,"path":"objects/obj_boxL/obj_boxL.yy",},
     {"name":"obj_boxS","order":3,"path":"objects/obj_boxS/obj_boxS.yy",},
