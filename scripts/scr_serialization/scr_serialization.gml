@@ -55,7 +55,7 @@ function serialize_instance_extended(_instance)
 		solid = _instance.solid;
 		persistent = _instance.persistent;
 		depth = _instance.depth;
-		layer = _instance.layer;
+		//layer = _instance.layer;
 		alarm = _instance.alarm;
 		
 		direction = _instance.direction;
@@ -129,12 +129,11 @@ function instance_deserialize_depth(_serializedInstance, _x, _y, _depth)
 {	
 	//Creates an instance using the saved object index.
 	var _instance = instance_create_depth(_x, _y, _depth, _serializedInstance.object_index);
-	//var _instance = instance_create_layer(x, y, "Furniture", _serializedInstance.object_index);
 	
 	//Gets all variable names from the struct.
 	_variableNameArray = struct_get_names(_serializedInstance);
 	
-	//Gets all non built-in variables from the struct and puts them in the instance.
+	//Gets all variables from the struct and puts them in the instance.
 	for (var _i = 0; _i < array_length(_variableNameArray); _i++)
 	{
 		if (_variableNameArray[_i] != "object_index")
@@ -163,7 +162,7 @@ function instance_deserialize_layer(_serializedInstance, _x, _y, _layer)
 	//Gets all variable names from the struct.
 	_variableNameArray = struct_get_names(_serializedInstance);
 	
-	//Gets all non built-in variables from the struct and puts them in the instance.
+	//Gets all variables from the struct and puts them in the instance.
 	for (var _i = 0; _i < array_length(_variableNameArray); _i++)
 	{
 		if (_variableNameArray[_i] != "object_index")
