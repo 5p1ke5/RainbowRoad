@@ -131,6 +131,7 @@
     {"name":"spr_blockJungle","order":5,"path":"sprites/spr_blockJungle/spr_blockJungle.yy",},
     {"name":"spr_blockMossBricks","order":1,"path":"sprites/spr_blockMossBricks/spr_blockMossBricks.yy",},
     {"name":"spr_blockRock","order":7,"path":"sprites/spr_blockRock/spr_blockRock.yy",},
+    {"name":"spr_blockRubble","order":8,"path":"sprites/spr_blockRubble/spr_blockRubble.yy",},
     {"name":"spr_blockRuins","order":3,"path":"sprites/spr_blockRuins/spr_blockRuins.yy",},
     {"name":"spr_blockSand","order":6,"path":"sprites/spr_blockSand/spr_blockSand.yy",},
     {"name":"spr_blockTropical","order":2,"path":"sprites/spr_blockTropical/spr_blockTropical.yy",},

@@ -175,6 +175,7 @@
     {"id":{"name":"spr_blockJungle","path":"sprites/spr_blockJungle/spr_blockJungle.yy",},},
     {"id":{"name":"spr_blockMossBricks","path":"sprites/spr_blockMossBricks/spr_blockMossBricks.yy",},},
     {"id":{"name":"spr_blockRock","path":"sprites/spr_blockRock/spr_blockRock.yy",},},
+    {"id":{"name":"spr_blockRubble","path":"sprites/spr_blockRubble/spr_blockRubble.yy",},},
     {"id":{"name":"spr_blockRuins","path":"sprites/spr_blockRuins/spr_blockRuins.yy",},},
     {"id":{"name":"spr_blockSand","path":"sprites/spr_blockSand/spr_blockSand.yy",},},
     {"id":{"name":"spr_blockTropical","path":"sprites/spr_blockTropical/spr_blockTropical.yy",},},

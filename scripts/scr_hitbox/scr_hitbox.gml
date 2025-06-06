@@ -21,7 +21,7 @@ function hitbox_step()
 {
 	if (flicker < 0)
 	{
-		return place_meeting(x, y, hitboxObjs);
+		return instance_place(x, y, hitboxObjs);
 	}
 	
 	flicker--;
