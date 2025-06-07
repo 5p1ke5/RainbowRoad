@@ -129,6 +129,7 @@
     {"name":"sfx_jump","order":2,"path":"sounds/sfx_jump/sfx_jump.yy",},
     {"name":"sfx_lever","order":3,"path":"sounds/sfx_lever/sfx_lever.yy",},
     {"name":"sfx_powerup1","order":5,"path":"sounds/sfx_powerup1/sfx_powerup1.yy",},
+    {"name":"sfx_shoot","order":6,"path":"sounds/sfx_shoot/sfx_shoot.yy",},
     {"name":"sfx_throw","order":1,"path":"sounds/sfx_throw/sfx_throw.yy",},
     {"name":"bg_polkadot","order":1,"path":"sprites/bg_polkadot/bg_polkadot.yy",},
     {"name":"spr_ballM","order":10,"path":"sprites/spr_ballM/spr_ballM.yy",},

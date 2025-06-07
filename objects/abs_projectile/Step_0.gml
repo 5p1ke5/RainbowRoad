@@ -3,7 +3,10 @@ phys_step();
 
 var _hits = hitbox_step_instance_array(false);
 
-if (_hits)
+if (array_length(_hits))
 {
-		
+	if (collision_validate(_hits))
+	{
+		instance_destroy();	
+	}
 }
