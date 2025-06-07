@@ -10,7 +10,7 @@
 #endregion
 
 #region //Room references
-#macro TITLE room_beach
+#macro TITLE room_beachDungeon
 #endregion
 
 #region //Constant numbers
@@ -21,10 +21,6 @@
 #macro FLICKER_MAX game_get_speed(gamespeed_fps)
 #macro TEXT_BALLOON_SPEED 5
 #macro TEXT_BALLOON_MAXW 150
-#endregion
-
-#region //masks
-#macro MASK_BLANK spr_maskNone
 #endregion
 
 #region	//Controls.

@@ -21,9 +21,11 @@ function moving_platform_move_step()
 
 	//Checks every pixel in the object's path for collision. If a collision would happen reverses direction.
 	
+	
+	//todo: Have this further filter for if a carryBlock has been thrown or not. Or make blacklist check inheritance tree, idk.
 	for (var _i = 0; ( abs(_i) < abs(hsp) ); _i += sign(hsp))
 	{
-		if (collision_validate(instance_place_array(x + _i, y, block, false), []))
+		if (collision_validate(instance_place_array(x + _i, y, block, false), [BLOCK_CARRY]))
 		{
 			hsp *= -1;
 		}
@@ -31,7 +33,7 @@ function moving_platform_move_step()
 	
 	for (var _i = 0; ( abs(_i) < abs(vsp) ); _i += sign(vsp))
 	{
-		if (collision_validate(instance_place_array(x, y + _i, block, false), []))
+		if (collision_validate(instance_place_array(x, y + _i, block, false), [obj_moai]))
 		{
 			vsp *= -1;
 		}
@@ -59,8 +61,8 @@ function moving_platform_carry_step()
 		if (_collisions[_i].bbox_bottom - 2 <= bbox_top + 1 - vsp) && (_collisions[_i].vsp >= 0)
 		{
 			//If it has *Ext variables sets them.
-			if (variable_instance_exists(_collisions[_i], "hspExt"))
-			{
+			//if (variable_instance_exists(_collisions[_i], "hspExt"))
+			//{
 				//Saves this instance's hsp and vsp variables
 				var _hsp = hsp;
 				var _hspExt = hspExt;
@@ -72,7 +74,7 @@ function moving_platform_carry_step()
 					hspExt = _hsp + _hspExt;
 					y += round(_vsp);
 				}
-			}
+			//}
 		}
 		
 	}

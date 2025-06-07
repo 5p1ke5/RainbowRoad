@@ -67,7 +67,6 @@ function collision_validate(_target, _blacklist = [])
 				return true;	
 			}
 		}
-		
 		return false;
 	}
 	
