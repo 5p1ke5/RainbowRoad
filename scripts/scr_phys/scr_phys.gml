@@ -84,10 +84,8 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	var _collision_on = function (element, index) { return collision_validate(element, collisionBlacklist) };
-
 	//Checks every pixel in the object's path for collision. TODO: Find a way to cut dwn on instance_place_array calls a little.
-	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (array_any(instance_place_array(x + _i, y, wallObject, false), _collision_on)); _i += sign(hsp + hspExt))
+	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (collision_validate(instance_place_array(x + _i, y, wallObject, false), collisionBlacklist)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x + _i, y, wallObject, false);
@@ -109,12 +107,11 @@ function phys_wall_collision()
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	var _collision_on = function (element, index) { return collision_validate(element, collisionBlacklist) };
 	
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp)) || 
-		(array_any(instance_place_array(x, y + _i, BLOCK, false), _collision_on)) || 
+		(collision_validate(instance_place_array(x, y + _i, BLOCK, false), collisionBlacklist)) || 
 		(phys_grounded() && vsp > 0); 
 		_i += sign(vsp))
 	{

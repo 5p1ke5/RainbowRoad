@@ -1,8 +1,6 @@
 if (!carrier)
 {
-	var _collision_on = function (element, index) { return element.collision; };
-
-	if (array_any(instance_place_array(x + hsp + hDir, y, BLOCK, false), _collision_on))
+	if (collision_validate(instance_place_array(x + hsp + hDir, y, BLOCK, false), collisionBlacklist))
 	{
 		hDir = -hDir;
 		image_xscale = hDir;

@@ -7,8 +7,7 @@ function moving_platform_initialize(_hsp, _vsp, _collision = true, _block = [BLO
 {
 	hsp = _hsp;
 	vsp = _vsp;
-	hspExt = 0;
-	vspExt = 0;
+	hspExt = 0; 
 	
 	collision = _collision;
 	block = _block;
@@ -19,16 +18,12 @@ function moving_platform_initialize(_hsp, _vsp, _collision = true, _block = [BLO
 /// @description Moves the moving platform. Stripped-down version of collision in physics, if the moving platform uses physics use that instead.
 function moving_platform_move_step()
 {
-	var _collision_on = function (element, index) 
-	{
-		return element.collision 
-	};
 
 	//Checks every pixel in the object's path for collision. If a collision would happen reverses direction.
 	
 	for (var _i = 0; ( abs(_i) < abs(hsp) ); _i += sign(hsp))
 	{
-		if (array_any(instance_place_array(x + _i, y, block, false), _collision_on))
+		if (collision_validate(instance_place_array(x + _i, y, block, false), []))
 		{
 			hsp *= -1;
 		}
@@ -36,7 +31,7 @@ function moving_platform_move_step()
 	
 	for (var _i = 0; ( abs(_i) < abs(vsp) ); _i += sign(vsp))
 	{
-		if (array_any(instance_place_array(x, y + _i, block, false), _collision_on))
+		if (collision_validate(instance_place_array(x, y + _i, block, false), []))
 		{
 			vsp *= -1;
 		}

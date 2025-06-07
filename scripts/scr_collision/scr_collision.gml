@@ -59,10 +59,17 @@ function collision_validate(_instance, _blacklist = [])
 {
 	//If it's an array returns true if any instance in the array is a valid collision.
 	if (is_array(_instance))
-	{
-		var _collision_on = function (element, index) { return collision_validate(element, collisionBlacklist) };
+	{	
+		for (var _i = 0; _i < array_length(_instance); _i++) 
+		{    
+			if (collision_validate(_instance[_i], _blacklist))
+			{
+				return true;	
+			}
+		}
 		
-		return array_any(_instance, _collision_on);
+		return false;
+		
 	}
 	
 	return (_instance.collision) && !(array_contains(_blacklist, _instance.object_index));
