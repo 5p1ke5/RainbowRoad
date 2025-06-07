@@ -3,4 +3,5 @@ moving_platform_carry_step();
 
 x += round(hsp);
 y += round(vsp);
+
 moving_platform_move_step();

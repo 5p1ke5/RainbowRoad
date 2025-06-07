@@ -51,27 +51,55 @@ function collision_rectangle_array(_x1, _y1, _x2, _y2, _obj, _prec, _notme, _ord
 }
 
 
-/// @function collision_validate(_instance, _blacklist)
+/// @function collision_validate(_target, _blacklist)
 /// @description Checks if an instance or array of instances have a valid collision. Returns true if so, false if not.
-/// @param _instance The instance to check if it can be collided with.
+/// @param _target The instance or array of instances to check if it can be collided with.
 /// @param _blacklist An array of blacklisted collision objects/ 
-function collision_validate(_instance, _blacklist = [])
+function collision_validate(_target, _blacklist = [])
 {
 	//If it's an array returns true if any instance in the array is a valid collision.
-	if (is_array(_instance))
+	if (is_array(_target))
 	{	
-		for (var _i = 0; _i < array_length(_instance); _i++) 
+		for (var _i = 0; _i < array_length(_target); _i++) 
 		{    
-			if (collision_validate(_instance[_i], _blacklist))
+			if (collision_validate(_target[_i], _blacklist))
 			{
 				return true;	
 			}
 		}
 		
 		return false;
-		
 	}
 	
-	return (_instance.collision) && !(array_contains(_blacklist, _instance.object_index));
+	return (_target.collision) && !(array_contains(_blacklist, _target.object_index));
 }
 
+////I thiiiiink this works but need to test?
+
+/// @function collision_validate_instance(_target, _blacklist = [])
+/// @description Checks if an instance or array of instances have a valid collision. Returns the first valid collision if so, undefined if not.
+/// @param _instance The instance to check if it can be collided with.
+/// @param _blacklist An array of blacklisted collision objects/ 
+function collision_validate_instance(_target, _blacklist = [])
+{
+	//If it's an array returns true if any instance in the array is a valid collision.
+	if (is_array(_target))
+	{	
+		for (var _i = 0; _i < array_length(_target); _i++) 
+		{    
+			if (collision_validate(_target[_i], _blacklist))
+			{
+				return _target[_i];	
+			}
+		}
+		
+		return undefined;
+	}
+	
+	if (_target.collision) && !(array_contains(_blacklist, _target.object_index))
+	{
+		return _target;	
+	}
+	
+	return undefined;
+}
