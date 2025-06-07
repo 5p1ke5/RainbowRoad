@@ -60,7 +60,7 @@ if (hDir != 0)
 
 
 
-//The objectb being targeted to grab.
+//The object being targeted to grab.
 grab = carry_grab();
 
 //Lets you pick up stuff if you're on top of it.
