@@ -6,7 +6,6 @@
 var _hit = hitbox_step();
 if (_hit)
 {
-	show_debug_message(_hit.collision);
 	if (phys_collision_validate(_hit))
 	{
 		instance_destroy();	
