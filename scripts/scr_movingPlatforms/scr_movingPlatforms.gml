@@ -8,6 +8,7 @@ function moving_platform_initialize(_hsp, _vsp, _collision = true, _block = [BLO
 	hsp = _hsp;
 	vsp = _vsp;
 	hspExt = 0; 
+	vspExt = 0;
 	
 	collision = _collision;
 	block = _block;
@@ -64,11 +65,30 @@ function moving_platform_carry_step()
 				var _hspExt = hspExt;
 				
 				var _vsp = vsp;
+				var _vspExt = vspExt;
 			
 				with (_collisions[_i])
 				{
 					hspExt = _hsp + _hspExt;
-					y += round(_vsp);
+					
+					if (_vspExt > 0)
+					{
+						vspExt = _vsp + _vspExt;
+					
+						//adds vspExt to y here. Works good for going downwards but upwards might need to switch to the old way with an if statement or soemthing...
+						y += round(vspExt);
+					}
+					else
+					{
+						////adds vspExt to y here. Works good for going downwards but upwards might need to switch to the old way with an if statement or soemthing...
+						//vspExt = _vsp + _vspExt;
+						//vspExt = _vsp;
+						
+						
+						//y += round(_vspExt);
+						//y += round(_vsp);	
+						y += round(_vsp + _vspExt);	
+					}
 				}
 		}
 		

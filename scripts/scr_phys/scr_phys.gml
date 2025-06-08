@@ -24,6 +24,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	
 	//*Ext variables are for modifiers to horizontal or vertical speed by 'Ext'ernal forces.
 	hspExt = 0;
+	vspExt = 0;
 	
 	grounded = false; //Just initializing variable here. It will be set in the step event.
 }
@@ -50,6 +51,7 @@ function phys_step()
 		if !(grounded)
 		{
 			hspExt = 0;
+			vspExt = 0;
 		}
 		
 	    phys_wall_collision();
@@ -110,10 +112,10 @@ function phys_floor_collision()
 	
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
-		(abs(_i) < abs(vsp)) || 
+		(abs(_i) < abs(vsp + vspExt)) || 
 		(collision_validate(instance_place_array(x, y + _i, BLOCK, false), collisionBlacklist)) || 
-		(phys_grounded() && vsp > 0); 
-		_i += sign(vsp))
+		(phys_grounded() && vsp + vspExt > 0); 
+		_i += sign(vsp + vspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x, y + _i, floorObject, false);
@@ -124,7 +126,7 @@ function phys_floor_collision()
 		    {
 				if (object_is_family(_collisions[_ii], BLOCK))
 				{
-			        y += _i - sign(vsp);
+			        y += _i - sign(vsp + vspExt);
 			        vsp = vsp * -elasticity;
 					return;
 				}
@@ -133,11 +135,9 @@ function phys_floor_collision()
 				{
 					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
 					{
-						{
-							y += _i - sign(vsp);
-					        vsp = vsp * -elasticity;
-							return;
-						}
+						y += _i - sign((vsp + vspExt));
+					    vsp = vsp * -elasticity;
+						return;
 					}
 				}
 		    }
@@ -184,12 +184,12 @@ function phys_grounded()
 	{ 
 		if (collision_validate(element, collisionBlacklist))
 		{
-			return (rectangle_in_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, element.bbox_left, element.bbox_top - 1, element.bbox_right, element.bbox_top) > 0)	
+			return (rectangle_in_rectangle(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 2, element.bbox_left, element.bbox_top - 2, element.bbox_right, element.bbox_top) > 0)	
 		}
 	
 		return false;
 	};
 	
-	return (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, floorObject, false, true, false), _on_ground));
+	return (array_any(collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 2, floorObject, false, true, false), _on_ground));
 }
 
