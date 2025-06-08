@@ -10,7 +10,7 @@
 #endregion
 
 #region //Room references
-#macro TITLE room_beach
+#macro TITLE room_beachDungeon
 #endregion
 
 #region //Constant numbers

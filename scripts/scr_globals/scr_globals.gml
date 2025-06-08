@@ -11,6 +11,7 @@ function globals_initialize()
 	global.bgm = noone;
 	
 	global.redShards = 0;
+	global.stars = 0;
 	
 	global.spawnX = undefined;
 	global.spawnY = undefined;

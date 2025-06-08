@@ -11,3 +11,5 @@ image_index = pressed;
 image_speed = 0;
 
 wasPressed = pressed;
+
+object = undefined; //The object that will be opened / closed. Should be overwritten by children.

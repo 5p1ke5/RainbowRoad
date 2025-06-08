@@ -9,4 +9,9 @@ pressed = _onTop;
 image_index = pressed;
 image_speed = 0;
 
+if pressed && (!wasPressed)
+{
+	audio_play_sound(sfx_lever, 1, false);
+}
+
 wasPressed = pressed;
