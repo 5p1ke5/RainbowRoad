@@ -1,2 +1,6 @@
 /// @description if outside the room dies.
-room_restart();
+
+if (y > 0)
+{
+	room_restart();
+}

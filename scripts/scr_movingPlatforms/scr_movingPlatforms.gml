@@ -71,7 +71,7 @@ function moving_platform_carry_step()
 				{
 					hspExt = _hsp + _hspExt;
 					
-					if (_vspExt > 0)
+					if (_vsp + _vspExt > 0)
 					{
 						vspExt = _vsp + _vspExt;
 					
@@ -86,8 +86,8 @@ function moving_platform_carry_step()
 						
 						
 						//y += round(_vspExt);
-						//y += round(_vsp);	
 						y += round(_vsp + _vspExt);	
+						//y += round(_vsp + _vspExt);	
 					}
 				}
 		}
