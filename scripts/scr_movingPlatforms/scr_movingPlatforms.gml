@@ -59,11 +59,7 @@ function moving_platform_carry_step()
 	{
 		//Checks if the other instance is on top of this one. 
 		if (_collisions[_i].bbox_bottom - 2 <= bbox_top + 1 - vsp) && (_collisions[_i].vsp >= 0)
-		{
-			//If it has *Ext variables sets them.
-			//if (variable_instance_exists(_collisions[_i], "hspExt"))
-			//{
-				//Saves this instance's hsp and vsp variables
+		{ 
 				var _hsp = hsp;
 				var _hspExt = hspExt;
 				
@@ -74,7 +70,6 @@ function moving_platform_carry_step()
 					hspExt = _hsp + _hspExt;
 					y += round(_vsp);
 				}
-			//}
 		}
 		
 	}
