@@ -1,1 +1,0 @@
-spawnTimer = spawnTimerInterval/2;
