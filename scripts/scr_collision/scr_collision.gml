@@ -70,7 +70,19 @@ function collision_validate(_target, _blacklist = [])
 		return false;
 	}
 	
-	return (_target.collision) && !(array_contains(_blacklist, _target.object_index));
+	//Otherwise proceeds as if it's an instance.
+	
+	//If the object is on he blacklist return false;
+	for (var _i = 0; _i < array_length(_blacklist); _i++) 
+	{
+		if (object_is_family(_target, _blacklist[_i]))
+		{
+			return false;	
+		}
+	}
+	
+	
+	return (_target.collision);
 }
 
 ////I thiiiiink this works but need to test?
@@ -79,26 +91,26 @@ function collision_validate(_target, _blacklist = [])
 /// @description Checks if an instance or array of instances have a valid collision. Returns the first valid collision if so, undefined if not.
 /// @param _instance The instance to check if it can be collided with.
 /// @param _blacklist An array of blacklisted collision objects/ 
-function collision_validate_instance(_target, _blacklist = [])
-{
-	//If it's an array returns true if any instance in the array is a valid collision.
-	if (is_array(_target))
-	{	
-		for (var _i = 0; _i < array_length(_target); _i++) 
-		{    
-			if (collision_validate(_target[_i], _blacklist))
-			{
-				return _target[_i];	
-			}
-		}
+//function collision_validate_instance(_target, _blacklist = [])
+//{
+//	//If it's an array returns true if any instance in the array is a valid collision.
+//	if (is_array(_target))
+//	{	
+//		for (var _i = 0; _i < array_length(_target); _i++) 
+//		{    
+//			if (collision_validate_instance(_target[_i], _blacklist))
+//			{
+//				return _target[_i];	
+//			}
+//		}
 		
-		return undefined;
-	}
+//		return undefined;
+//	}
 	
-	if (_target.collision) && !(array_contains(_blacklist, _target.object_index))
-	{
-		return _target;	
-	}
+//	if (_target.collision) && !(array_contains(_blacklist, _target.object_index))
+//	{
+//		return _target;	
+//	}
 	
-	return undefined;
-}
+//	return undefined;
+//}

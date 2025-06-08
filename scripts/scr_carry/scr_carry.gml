@@ -71,7 +71,9 @@ function carry_uncarried_step()
 {
 	if (thrown)
 	{
-		thrown = !((grounded) && (hsp == 0) && (vsp == 0));
+		//Todo: Make it work if an object is grounded but sliding on the ground kinda but don't mkake it work on enemies who are moving.
+		thrown = !(grounded);
+		//thrown = !((grounded) && (abs(vsp) + abs(hsp) < 1));
 	}
 }
 

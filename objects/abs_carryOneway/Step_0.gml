@@ -8,6 +8,7 @@ else
 {
 	phys_step();
 	carry_uncarried_step();
+	
 	//Does moving platform things
 	moving_platform_carry_step();
 }
