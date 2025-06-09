@@ -3,4 +3,4 @@ event_inherited();
 
 enemy_initialize();
 
-hitbox_initialize(CARRY);
+hitbox_initialize([BLOCK_CARRY, ONEWAY_CARRY]);
