@@ -2,14 +2,15 @@
 
 phys_initialize(0.2, 0.2);
 
+hitbox_initialize([abs_enemy], FLICKER_MAX); 
+
 //Initialize player variables.
 hDir = 0; //Horizontal movement direction.
 facing = 1; //Direction facing. Should always be 1 or -1.
 maxSpeed = 3; 
 accel = 0.4;
 jumpHeight = 4;
-jumpOffset = 0.1;
-flicker = -1;
+jumpOffset = 0.1; 
 
 animSpeed = 0.2;
 animSpeedRun = 0.5;

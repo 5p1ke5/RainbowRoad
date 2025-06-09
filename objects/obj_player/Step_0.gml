@@ -3,14 +3,13 @@
 
 event_inherited();
 
-///Movement Controls.
+#region ///Movement Controls.
 if (RESTART_BUTTON)
 {
 	room_restart();	
 }
 
 
-hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
 if (UP_BUTTON_RELEASED)
 {
@@ -22,16 +21,7 @@ if (UP_BUTTON_RELEASED)
 	}
 }
 
-if (X_BUTTON_PRESSED)
-{
-	image_speed = animSpeedRun;
-}
-
-if (X_BUTTON_RELEASED)
-{
-	image_speed = animSpeed;	
-}
-
+//Jumping.
 if (A_BUTTON_PRESSED)
 {
 	if (grounded)
@@ -48,8 +38,21 @@ else if (A_BUTTON)
 	vsp -= jumpOffset;		
 }
 
-
 ///Movement
+
+//Running
+hDir = RIGHT_BUTTON - LEFT_BUTTON;
+
+if (X_BUTTON_PRESSED)
+{
+	image_speed = animSpeedRun;
+}
+
+if (X_BUTTON_RELEASED)
+{
+	image_speed = animSpeed;	
+}
+
 if (hDir != 0)
 {
 	hsp = phys_force_add(hsp, accel * hDir, maxSpeed + (0.5 * maxSpeed * X_BUTTON))
@@ -58,15 +61,17 @@ if (hDir != 0)
 	facing = hDir;
 }
 
+#endregion
 
 
 
-///Grab n throw controls
+
+#region ///Grab n throw controls
 
 //The object being targeted to grab.
 grab = carry_grab_target();
 
-//Lets you pick up stuff if you're on top of it.
+//Lets you throw stuff.
 if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
@@ -96,19 +101,59 @@ else if (!instance_exists(myCarry))
 		}
 	}
 }	
+#endregion
 
 
+#region ///Collision
 
-//Timers. This will go in hurtbox_step()
-if (flicker >= 0)
-{
-	flicker--;	
+var _collisions = hitbox_step_instance_array();
+
+//Goes through all the collisions and processes each one.
+for (var _i = 0; _i < array_length(_collisions); _i++) 
+{   
+	//If flicker is activated then a hit has been registered and the loop can be broken.
+	if (flicker > 0)
+	{
+		break;	
+	}
+	
+	if (object_is_family(_collisions[_i], abs_enemy))
+	{
+		//Ignores if it's a carried object or if collision is off.
+		if ((myCarry) && (myCarry.id == _collisions[_i].id)) || !(_collisions[_i].collision)
+		{
+			break;	
+		}
+		
+		
+		if (bbox_bottom + 1 > _collisions[_i].bbox_top - 1)
+		{
+			global.hp--;
+			flicker = FLICKER_MAX;	
+			vsp = -jumpHeight;
+		
+			//If above 0 hp just plays the damage sound effect, otherwise dies.
+			if (global.hp > 0)
+			{
+				audio_play_sound(sfx_playerHit, 1, false);
+			}
+			else
+			{
+				instance_destroy();
+				instance_create_depth(x, y, depth, obj_gameOver);
+				audio_play_sound(sfx_playerDead, 1, false);
+				global.hp = global.maxHP;
+			}
+		}
+	}
 }
 
 
 
 
-///Set sprite properties.
+#endregion
+
+#region ///Set sprite properties.
 image_xscale = facing;
 
 if (grounded)
@@ -147,3 +192,5 @@ else
 		sprite_index = spr_playerJumpCarry;			
 	}
 }
+
+#endregion
