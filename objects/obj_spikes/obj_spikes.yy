@@ -9,7 +9,10 @@
     "name":"hazards",
     "path":"folders/Objects/level features/hazards.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"abs_hazard",
+    "path":"objects/abs_hazard/abs_hazard.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"abs_enemyProjectile",
+  "%Name":"abs_hazard",
   "eventList":[],
   "managed":true,
-  "name":"abs_enemyProjectile",
+  "name":"abs_hazard",
   "overriddenProperties":[],
   "parent":{
     "name":"abstract",
     "path":"folders/Objects/abstract.yy",
   },
-  "parentObjectId":{
-    "name":"abs_projectile",
-    "path":"objects/abs_projectile/abs_projectile.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

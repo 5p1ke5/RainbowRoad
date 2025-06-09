@@ -10,8 +10,8 @@
     "path":"folders/Objects/enemies/projectiles.yy",
   },
   "parentObjectId":{
-    "name":"abs_enemyProjectile",
-    "path":"objects/abs_enemyProjectile/abs_enemyProjectile.yy",
+    "name":"abs_projectile",
+    "path":"objects/abs_projectile/abs_projectile.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

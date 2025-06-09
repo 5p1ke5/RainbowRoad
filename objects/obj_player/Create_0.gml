@@ -2,7 +2,7 @@
 
 phys_initialize(0.2, 0.2);
 
-hitbox_initialize([abs_enemy], FLICKER_MAX); 
+hitbox_initialize([abs_enemy, abs_hazard], FLICKER_MAX); 
 
 //Initialize player variables.
 hDir = 0; //Horizontal movement direction.

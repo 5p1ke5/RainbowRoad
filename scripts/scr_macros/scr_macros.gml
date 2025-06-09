@@ -18,7 +18,7 @@
 #macro MAX_ACCEL 3
 #macro JUMP_HEIGHT 4
 #macro PLAYER_WEIGHT 0.02
-#macro FLICKER_MAX game_get_speed(gamespeed_fps)
+#macro FLICKER_MAX game_get_speed(gamespeed_fps) * 2
 #macro TEXT_BALLOON_SPEED 5
 #macro TEXT_BALLOON_MAXW 150
 #endregion

@@ -1,3 +1,5 @@
+/// @function player_die()
+/// @description Destroys player instance and makes game enter death state.
 function player_die()
 {
 	instance_destroy();
@@ -7,6 +9,8 @@ function player_die()
 	audio_play_sound(sfx_playerDead, 1, false);
 }
 
+/// @function player_hit()
+/// @description Deducts HP, activates flicker, does knockback, plays sound effect. May call player_die if hp is brought below 0.
 function player_hit()
 {
 	global.hp--;

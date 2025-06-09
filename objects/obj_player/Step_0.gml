@@ -126,10 +126,15 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 		}
 		
 		
-		if (bbox_bottom + 1 > _collisions[_i].bbox_top - 1)
+		//if (bbox_bottom + 1 > _collisions[_i].bbox_top - 1)
+		if !(bbox_bottom < _collisions[_i].bbox_top)
 		{
 			player_hit();
 		}
+	}
+	else //Otherwise its a hazard.
+	{
+		player_hit();	
 	}
 }
 
