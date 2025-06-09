@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
-  "%Name":"room_initialize",
-  "creationCodeFile":"rooms/room_initialize/RoomCreationCode.gml",
+  "%Name":"room_reset",
+  "creationCodeFile":"rooms/room_reset/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -10,7 +10,7 @@
   "layers":[
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":15.0,"animationSpeedType":0,"colour":4294907928,"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"room_initialize",
+  "name":"room_reset",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
@@ -26,7 +26,7 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":481,
+    "Height":480,
     "inheritRoomSettings":false,
     "persistent":false,
     "Width":640,

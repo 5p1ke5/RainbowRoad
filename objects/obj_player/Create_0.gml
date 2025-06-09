@@ -31,8 +31,8 @@ else
 	myCarry = noone;
 }
 
-//The objectb being target to grab.
-grab = carry_grab();
+//The object being targettws to grab.
+grab = carry_grab_target();
 
 
 //Positions at spawn point if defined.

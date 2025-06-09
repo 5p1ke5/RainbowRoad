@@ -15,6 +15,7 @@ function globals_initialize()
 	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
+	global.roomPrev = TITLE;
 	
 	show_debug_message("Globals initialized.");
 }

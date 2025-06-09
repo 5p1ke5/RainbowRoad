@@ -3,7 +3,7 @@
 
 event_inherited();
 
-///Controls.
+///Movement Controls.
 if (RESTART_BUTTON)
 {
 	room_restart();	
@@ -60,8 +60,11 @@ if (hDir != 0)
 
 
 
+
+///Grab n throw controls
+
 //The object being targeted to grab.
-grab = carry_grab();
+grab = carry_grab_target();
 
 //Lets you pick up stuff if you're on top of it.
 if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
@@ -94,15 +97,19 @@ else if (!instance_exists(myCarry))
 	}
 }	
 
-//Timers
+
+
+//Timers. This will go in hurtbox_step()
 if (flicker >= 0)
 {
 	flicker--;	
 }
 
+
+
+
 ///Set sprite properties.
 image_xscale = facing;
-
 
 if (grounded)
 {

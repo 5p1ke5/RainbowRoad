@@ -13,9 +13,9 @@ function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 	thrown = false;
 }
 
-/// @function carry_grab()
+/// @function carry_grab_target()
 /// @description Selects a target to grab. Checks below, colliding with the instance, and above, in that order. Returns a target, or undefined if none was found..
-function carry_grab()
+function carry_grab_target()
 {
 	//Function to check if collision is on.
 	var _canCarry_on = function (element, index) 
