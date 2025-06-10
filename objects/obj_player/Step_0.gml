@@ -10,12 +10,10 @@ if (RESTART_BUTTON)
 }
 
 
-
+interact = instance_place(x, y, abs_interactable);
 if (UP_BUTTON_RELEASED)
 {
-	var _interactable = instance_place(x, y, abs_interactable);
-	
-	with (_interactable)
+	with (interact)
 	{
 		event_user(0);
 	}

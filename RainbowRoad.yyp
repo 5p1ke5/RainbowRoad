@@ -165,6 +165,7 @@
     {"id":{"name":"room_beachDungeonA","path":"rooms/room_beachDungeonA/room_beachDungeonA.yy",},},
     {"id":{"name":"room_beachDungeonB","path":"rooms/room_beachDungeonB/room_beachDungeonB.yy",},},
     {"id":{"name":"room_beachHouse","path":"rooms/room_beachHouse/room_beachHouse.yy",},},
+    {"id":{"name":"room_beachResidential","path":"rooms/room_beachResidential/room_beachResidential.yy",},},
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
     {"id":{"name":"room_jungle","path":"rooms/room_jungle/room_jungle.yy",},},
     {"id":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
@@ -321,6 +322,7 @@
     {"roomId":{"name":"room_beachDungeonB","path":"rooms/room_beachDungeonB/room_beachDungeonB.yy",},},
     {"roomId":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
     {"roomId":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
+    {"roomId":{"name":"room_beachResidential","path":"rooms/room_beachResidential/room_beachResidential.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -61,4 +61,5 @@ function speechBalloon_initialize(_text, _maxTime, _owner, _name)
 	time = maxTime;
 	owner = _owner;
 	name = _name;
+	height =  string_height_ext(text, string_height(text), TEXT_BALLOON_MAXW);
 }

@@ -8,7 +8,7 @@ if (flicker % 5 != 0)
 var _alert = "";
 
 ///TODO: Move this to step event somehow.
-if (place_meeting(x, y, abs_interactable))
+if (interact)
 {
 	_alert += "?";
 }

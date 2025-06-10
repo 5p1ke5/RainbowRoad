@@ -35,6 +35,9 @@ else
 //The object being targettws to grab.
 grab = carry_grab_target();
 
+//The target for interaction.
+interact = undefined;
+
 
 //Positions at spawn point if defined.
 if (global.spawnX != undefined)
