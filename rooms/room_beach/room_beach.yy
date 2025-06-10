@@ -146,6 +146,10 @@
     {"name":"inst_5BF40F3D","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_758AF30","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_12E49A6A","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_7F69B9E4","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_4335381D","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_4CE70E5F","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_9E5A541","path":"rooms/room_beach/room_beach.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -172,6 +176,10 @@
       ],"layers":[],"name":"Furniture","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Collectibles","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_6BDB8841","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BDB8841","objectId":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5168.0,"y":888.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7F69B9E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7F69B9E4","objectId":{"name":"obj_redShard","path":"objects/obj_redShard/obj_redShard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4976.0,"y":1392.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4335381D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4335381D","objectId":{"name":"obj_redShard","path":"objects/obj_redShard/obj_redShard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3312.0,"y":1704.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4CE70E5F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CE70E5F","objectId":{"name":"obj_redShard","path":"objects/obj_redShard/obj_redShard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1384.0,"y":1848.0,},
+        {"$GMRInstance":"v1","%Name":"inst_9E5A541","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9E5A541","objectId":{"name":"obj_redShard","path":"objects/obj_redShard/obj_redShard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2680.0,"y":1864.0,},
       ],"layers":[],"name":"Collectibles","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Level","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_63D1C54D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_63D1C54D","objectId":{"name":"obj_doorMetal","path":"objects/obj_doorMetal/obj_doorMetal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":2048.0,},

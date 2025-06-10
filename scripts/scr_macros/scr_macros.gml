@@ -10,10 +10,12 @@
 #endregion
 
 #region //Room references
-#macro TITLE room_beach
+#macro ROOM_TITLE room_titleScreen
+#macro ROOM_START room_beach
 #endregion
 
 #region //Constant numbers
+#macro STARTING_HP 3
 #macro TERMINAL_VELOCITY 10
 #macro MAX_ACCEL 3
 #macro JUMP_HEIGHT 4

@@ -24,10 +24,14 @@ function npc_initialize(_name = "", _dialogue = "")
 /// @function npc_speak(_text)
 /// @description generates a speech balloon for the npc.
 /// @param _text The text to be put in the balloon.
-function npc_speak(_text)
+/// @param _name The name to be put in the balloon.
+function npc_speak(_text, _name = undefined)
 {
 	//Creates speech balloon object.
-	var _name = name;
+	if (_name == undefined)
+	{
+		_name = name;
+	}
 	
 	//Gets height of the balloon text when using fnt_speech, then resets font.
 	draw_set_font(fnt_speech);

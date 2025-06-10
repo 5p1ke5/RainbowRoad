@@ -5,6 +5,6 @@ function game_initialize()
 	randomize();
 	globals_initialize();
 	draw_set_font(fnt_default);
-	room_goto(TITLE);
+	room_goto(ROOM_TITLE);
 	show_debug_message("Game initialized.");
 }

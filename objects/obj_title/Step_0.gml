@@ -1,10 +1,5 @@
-/// @description If mouse is down goes to the pet screen.
-if (MOUSE_LEFT_BUTTON_RELEASED)
+/// @description If Space is down goes to the title screen
+if (A_BUTTON_PRESSED)
 {
-	clicks++;
-	
-	if (clicks =2)
-	{
-		room_goto(PET);	
-	}
+	room_goto(ROOM_START);
 }

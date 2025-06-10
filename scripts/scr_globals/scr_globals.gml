@@ -2,7 +2,7 @@
 /// @description Initializes the game's global variabls.
 function globals_initialize()
 {
-	global.maxHP = 3;
+	global.maxHP = STARTING_HP;
 	global.hp = global.maxHP;
 	
 	//The object currently being carried between rooms.
@@ -15,7 +15,7 @@ function globals_initialize()
 	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
-	global.roomPrev = TITLE;
+	global.roomPrev = ROOM_TITLE;
 	
 	show_debug_message("Globals initialized.");
 }

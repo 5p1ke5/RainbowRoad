@@ -168,6 +168,7 @@
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
     {"id":{"name":"room_jungle","path":"rooms/room_jungle/room_jungle.yy",},},
     {"id":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
+    {"id":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
     {"id":{"name":"room_tutorialA","path":"rooms/room_tutorialA/room_tutorialA.yy",},},
     {"id":{"name":"room_tutorialB","path":"rooms/room_tutorialB/room_tutorialB.yy",},},
     {"id":{"name":"scr_carry","path":"scripts/scr_carry/scr_carry.yy",},},
@@ -319,6 +320,7 @@
     {"roomId":{"name":"room_jungle","path":"rooms/room_jungle/room_jungle.yy",},},
     {"roomId":{"name":"room_beachDungeonB","path":"rooms/room_beachDungeonB/room_beachDungeonB.yy",},},
     {"roomId":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
+    {"roomId":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
