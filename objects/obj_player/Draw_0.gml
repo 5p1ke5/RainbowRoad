@@ -2,9 +2,18 @@
 
 if (flicker % 5 != 0)
 {
-	draw_sprite_ext(spr_armB, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
-	draw_self();
-	draw_sprite_ext(spr_armA, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+	if (myCarry)
+	{
+		draw_sprite_ext(spr_armBUp, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		draw_self();
+		draw_sprite_ext(spr_armAUp, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+	}
+	else
+	{
+		draw_sprite_ext(spr_armB, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		draw_self();
+		draw_sprite_ext(spr_armA, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
+	}
 }
 
 var _alert = "";
