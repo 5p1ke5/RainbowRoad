@@ -182,3 +182,12 @@ else
 }
 
 #endregion
+
+
+//parallax
+var _layer = layer_get_id("Parallax");
+
+if (_layer)
+{
+	layer_y(_layer, y/2);
+}

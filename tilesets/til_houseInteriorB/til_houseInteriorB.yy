@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"til_houseInterior",
+  "%Name":"til_houseInteriorB",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"til_houseInterior",
+  "name":"til_houseInteriorB",
   "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tilesHouseInside",
-    "path":"sprites/spr_tilesHouseInside/spr_tilesHouseInside.yy",
+    "name":"spr_tilesHouseInsideB",
+    "path":"sprites/spr_tilesHouseInsideB/spr_tilesHouseInsideB.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

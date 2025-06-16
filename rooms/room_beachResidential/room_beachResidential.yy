@@ -37,6 +37,7 @@
     {"name":"inst_1C8FAD3D","path":"rooms/room_beachResidential/room_beachResidential.yy",},
     {"name":"inst_686EC54","path":"rooms/room_beachResidential/room_beachResidential.yy",},
     {"name":"inst_765B061C","path":"rooms/room_beachResidential/room_beachResidential.yy",},
+    {"name":"inst_39A14310","path":"rooms/room_beachResidential/room_beachResidential.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -49,6 +50,7 @@
     {"$GMRInstanceLayer":"","%Name":"NPC","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"NPC","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Level","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_5B839C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B839C","objectId":{"name":"obj_doorMarker","path":"objects/obj_doorMarker/obj_doorMarker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":435.0,"y":985.0,},
+        {"$GMRInstance":"v1","%Name":"inst_39A14310","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39A14310","objectId":{"name":"obj_doorMarker","path":"objects/obj_doorMarker/obj_doorMarker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":865.0,"y":984.0,},
       ],"layers":[],"name":"Level","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Blocks","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_689C38C1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_689C38C1_1","objectId":{"name":"obj_blockTropicsDirt","path":"objects/obj_blockTropicsDirt/obj_blockTropicsDirt.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":17.666666,"scaleY":5.3333335,"x":224.0,"y":1024.0,},
