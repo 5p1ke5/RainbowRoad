@@ -154,7 +154,8 @@ if (grounded)
 		}
 		else
 		{
-			sprite_index = spr_playerCarry;			
+			sprite_index = spr_player;	
+			//sprite_index = spr_playerCarry;			
 		}
 	}
 	else
@@ -165,7 +166,8 @@ if (grounded)
 		}
 		else
 		{
-			sprite_index = spr_playerRunCarry;			
+			sprite_index = spr_playerRun;	
+			//sprite_index = spr_playerRunCarry;			
 		}
 	}
 }
@@ -177,7 +179,8 @@ else
 	}
 	else
 	{
-		sprite_index = spr_playerJumpCarry;			
+		sprite_index = spr_playerJump;	
+		//sprite_index = spr_playerJumpCarry;			
 	}
 }
 

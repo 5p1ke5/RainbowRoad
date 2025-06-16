@@ -1,8 +1,10 @@
-/// @description Flickers if taken damage. 
+/// @description Draws arms, body. Flickers if taken damage. 
 
 if (flicker % 5 != 0)
 {
+	draw_sprite_ext(spr_armB, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
 	draw_self();
+	draw_sprite_ext(spr_armA, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
 }
 
 var _alert = "";
