@@ -148,40 +148,16 @@ if (grounded)
 {
 	if (hDir == 0)
 	{
-		if (!instance_exists(myCarry))
-		{
-			sprite_index = spr_player;	
-		}
-		else
-		{
-			sprite_index = spr_player;	
-			//sprite_index = spr_playerCarry;			
-		}
+		sprite_index = spr_player;	
 	}
 	else
 	{
-		if (!instance_exists(myCarry))
-		{
-			sprite_index = spr_playerRun;	
-		}
-		else
-		{
-			sprite_index = spr_playerRun;	
-			//sprite_index = spr_playerRunCarry;			
-		}
+		sprite_index = spr_playerRun;	
 	}
 }
 else
 {
-	if (!instance_exists(myCarry))
-	{
-		sprite_index = spr_playerJump;	
-	}
-	else
-	{
-		sprite_index = spr_playerJump;	
-		//sprite_index = spr_playerJumpCarry;			
-	}
+	sprite_index = spr_playerJump;		
 }
 
 #endregion
