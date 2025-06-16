@@ -190,6 +190,7 @@
     {"id":{"name":"scr_object","path":"scripts/scr_object/scr_object.yy",},},
     {"id":{"name":"scr_phys","path":"scripts/scr_phys/scr_phys.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},
+    {"id":{"name":"scr_savegame","path":"scripts/scr_savegame/scr_savegame.yy",},},
     {"id":{"name":"scr_serialization","path":"scripts/scr_serialization/scr_serialization.yy",},},
     {"id":{"name":"scr_sound","path":"scripts/scr_sound/scr_sound.yy",},},
     {"id":{"name":"scr_spawner","path":"scripts/scr_spawner/scr_spawner.yy",},},

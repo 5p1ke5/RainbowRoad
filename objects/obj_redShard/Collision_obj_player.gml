@@ -3,6 +3,8 @@ var _startingMaxHP = global.maxHP;
 global.redShards++;
 global.maxHP = STARTING_HP + (global.redShards div 4);
 global.hp = global.maxHP;
+array_set(global.shardsFound, index, true);
+
 
 instance_destroy();	
 

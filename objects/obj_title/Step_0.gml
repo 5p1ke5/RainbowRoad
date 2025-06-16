@@ -1,5 +1,13 @@
-/// @description If Space is down goes to the title screen
-if (A_BUTTON_PRESSED)
+// Inherit the parent event
+event_inherited();
+
+if (FACE_BUTTON_RELEASED)
 {
-	room_goto(ROOM_START);
+	switch (optionSelected) 
+	{   
+		default:
+			room_goto(ROOM_START)
+		break;
+	}
 }
+
