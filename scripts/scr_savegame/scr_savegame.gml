@@ -4,8 +4,39 @@
 ///@param _file Name of the file to save to.
 function savegame_save(_file)
 {
+	//Has player notify the game has been saved, updates some globals before calling the save function that will actually save them
+	with (PLAYER)
+	{
+		npc_speak("Game saved!", "Player");
+		global.spawnX = x;
+		global.spawnY = y;
+		
+		if (myCarry)
+		{
+			global.carried = serialize_instance(myCarry);	
+		}
+		else
+		{
+			global.carried = noone;	
+		}
+	}
+	
+	
 	ini_open(_file);
 
+		//Ini migh read the json_stringify stuff wrong might have to use a normal file.
+	ini_write_real("SAVE", "room", room);
+	ini_write_real("SAVE", "spawnX", global.spawnX);
+	ini_write_real("SAVE", "spawnY", global.spawnY);
+	ini_write_string("SAVE", "myCarry", json_stringify(global.carried));
+	ini_write_real("SAVE", "bgm", global.bgm);
+	
+	ini_write_real("SAVE", "redShards", global.redShards);
+	ini_write_string("SAVE", "shardsFound", json_stringify(global.shardsFound));
+	
+	ini_write_real("SAVE", "hp", global.hp);
+	ini_write_real("SAVE", "maxHp", global.maxHP);
+	
 	////First clears both sections.
 	//ini_section_delete("STATS");
 	//ini_section_delete("INVENTORY");

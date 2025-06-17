@@ -9,6 +9,10 @@
 #macro PLAYER obj_player
 #endregion
 
+#region string refs
+#macro SAVEFILE "save.ini"
+#endregion
+
 #region //Room references
 #macro ROOM_TITLE room_titleScreen
 #macro ROOM_START room_beach
