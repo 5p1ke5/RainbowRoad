@@ -1,2 +1,12 @@
 /// @description Initialize variables.
-menu_initialize(["Continue", "New Game"]);
+
+if (file_exists(SAVEFILE))
+{
+	var _options = ["Continue", "New Game"]
+}
+else
+{
+	var _options = ["New Game"];	
+}
+
+menu_initialize(_options);

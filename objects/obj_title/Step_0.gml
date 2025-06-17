@@ -3,11 +3,14 @@ event_inherited();
 
 if (FACE_BUTTON_RELEASED)
 {
-	switch (optionSelected) 
+	switch (options[optionSelected]) 
 	{   
-		default:
+		case "Continue":
+			savegame_load(SAVEFILE);
+		break;
+		case "New Game":
 			room_goto(ROOM_START)
 		break;
 	}
 }
-
+

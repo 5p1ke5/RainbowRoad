@@ -21,69 +21,69 @@ function savegame_save(_file)
 		}
 	}
 	
+	var _textFile = file_text_open_write(_file);
 	
-	ini_open(_file);
-
-		//Ini migh read the json_stringify stuff wrong might have to use a normal file.
-	ini_write_real("SAVE", "room", room);
-	ini_write_real("SAVE", "spawnX", global.spawnX);
-	ini_write_real("SAVE", "spawnY", global.spawnY);
-	ini_write_string("SAVE", "myCarry", json_stringify(global.carried));
-	ini_write_real("SAVE", "bgm", global.bgm);
+	file_text_write_real(_textFile, room);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.spawnX);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.spawnY);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.bgm);
+	file_text_writeln(_textFile);
 	
-	ini_write_real("SAVE", "redShards", global.redShards);
-	ini_write_string("SAVE", "shardsFound", json_stringify(global.shardsFound));
+	file_text_write_string(_textFile, json_stringify(global.carried));
+	file_text_writeln(_textFile);
 	
-	ini_write_real("SAVE", "hp", global.hp);
-	ini_write_real("SAVE", "maxHp", global.maxHP);
+	file_text_write_real(_textFile, global.redShards);
+	file_text_writeln(_textFile);
+	file_text_write_string(_textFile,json_stringify(global.shardsFound));
+	file_text_writeln(_textFile);
 	
-	////First clears both sections.
-	//ini_section_delete("STATS");
-	//ini_section_delete("INVENTORY");
-
-	//ini_write_real("STATS", "hunger", global.hunger);
-	//ini_write_real("STATS", "food", global.food);
-	//ini_write_real("STATS", "money", global.money);
-	//ini_write_real("STATS", "happiness", global.happiness);
-	//ini_write_real("STATS", "color", global.color);
-	//ini_write_real("STATS", "roomIndex", global.roomIndex);
-
-	////Saves inventory.
-	//for (var _i = 0; _i < array_length(global.inventory); _i++) 
-	//{
-	//	ini_write_string("INVENTORY", string(_i), object_get_name(global.inventory[_i]));
-	//}
+	file_text_write_real(_textFile, global.hp);
+	file_text_writeln(_textFile);
 	
-	ini_close();
+	file_text_write_real(_textFile, global.maxHP);
+	file_text_writeln(_textFile);
+	
+	file_text_close(_textFile);
 }
 
 ///@function savegame_load(_file)
-///@description Loads the game from an ini file.
+///@description Attempts to load the game from an ini file. Returns true if the load was successful, false if not.
 ///@param _file Name of the file to load.
 function savegame_load(_file)
 {
-	ini_open(_file);
-
-	//global.hunger = ini_read_real("STATS", "hunger", 100);
-	//global.food = ini_read_real("STATS", "food", 0);
-	//global.money = ini_read_real("STATS", "money", 0);
-	//global.happiness = ini_read_real("STATS", "happiness", 100);
-	//global.color = ini_read_real("STATS", "color", c_white);
-	//global.roomIndex = ini_read_real("STATS", "roomIndex", 0);
-
-
-	////Reads from the inventory section.
+	//If the file was not found returns false.
+	if !(file_exists(_file))
+	{
+		return false;	
+	}
 	
-	//global.inventory = []; //Resets inventory.
-	//var _i = 0;
-	//while ini_key_exists("INVENTORY", string(_i)) 
-	//{
-	//	var _read = ini_read_string("INVENTORY", string(_i), "obj_inventoryBlueDye");
-	//    global.inventory[_i] = asset_get_index(_read);
-	//	_i++;
-	//}
+	var _textFile = file_text_open_read(_file);
+	
+	//If no file was found returns false.
+	if !(_textFile)
+	{
+		return false;
+	}
 
-	ini_close();
+	var _roomTo = real(file_text_readln(_textFile));
+	global.spawnX = real(file_text_readln(_textFile));
+	global.spawnY = real(file_text_readln(_textFile));
+	global.bgm = real(file_text_readln(_textFile));
+	
+	global.carried = json_parse(file_text_readln(_textFile));
+	
+	global.redShards = real(file_text_readln(_textFile));
+	global.shardsFound = json_parse(file_text_readln(_textFile));
+	
+	global.hp = real(file_text_readln(_textFile));
+	global.maxHP = real(file_text_readln(_textFile));
+	
+	file_text_close(_textFile);
+
+	transition_goto(global.spawnX, global.spawnY, _roomTo);
 }
 
 ///@function savegame_delete(_file)

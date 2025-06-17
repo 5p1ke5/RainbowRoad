@@ -10,12 +10,12 @@
 #endregion
 
 #region string refs
-#macro SAVEFILE "save.ini"
+#macro SAVEFILE "save.dat"
 #endregion
 
 #region //Room references
 #macro ROOM_TITLE room_titleScreen
-#macro ROOM_START room_beach
+#macro ROOM_START room_tutorialA
 #endregion
 
 #region //Constant numbers

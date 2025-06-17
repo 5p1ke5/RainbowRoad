@@ -1,0 +1,1 @@
+npc_initialize("Sign", "This house is yours! You can decorate it with furniture and the game will save it when you leave.");

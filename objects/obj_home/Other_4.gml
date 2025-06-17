@@ -1,4 +1,4 @@
-/// @description TODO: Consider changing this to create event. Attempts ot open the ini file section for this room, then spawns the read instances.
+/// @description Attempts ot open the ini file section for this room, then spawns the read instances.
 
 var _roomName = room_get_name(room);
 var _fName = _roomName + ".dat";

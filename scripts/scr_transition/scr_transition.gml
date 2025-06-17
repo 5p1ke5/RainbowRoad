@@ -38,5 +38,5 @@ function transition_goto(_spawnX, _spawnY, _roomTo)
 	
 	global.roomPrev = room;
 	
-	room_goto(roomTo);
+	room_goto(_roomTo);
 }
