@@ -108,10 +108,39 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 	with (myCarry)
 	{
 		
-		//Check collision first. If one is there cancels by resetting mask_index and returning.
-		if (!place_empty(x + _xOffset, y + _yOffset, [BLOCK, ONEWAY_CARRY]))
+		//Tries to find a good spot to place the object at.
+		
+		var _pointFound = place_empty(x + _xOffset, y + _yOffset, [BLOCK, ONEWAY_CARRY])
+		if (!_pointFound)
 		{
-			return false;
+			//Checks to the right and left of object up to half of it's bbox size.
+			for (var _i = 0; _i < (bbox_right - x); _i++) 
+			{
+				_pointFound = place_empty(x + _xOffset + _i, y + _yOffset, [BLOCK, ONEWAY_CARRY]);
+				
+				//If a valid point is found adjusts _xOffset accordingly and continues as normal.
+				if (_pointFound)
+				{
+					_xOffset += _i;
+					break;	
+				}
+				
+				_pointFound = place_empty(x + _xOffset - _i, y + _yOffset, [BLOCK, ONEWAY_CARRY]);
+				
+				if (_pointFound)
+				{
+					_xOffset -= _i;
+					break;	
+				}
+				
+			}
+			
+			//If no point was found, returns false.
+			if (!_pointFound)
+			{
+				return false;
+			}
+			
 		}
 		
 		hsp = _hsp;
