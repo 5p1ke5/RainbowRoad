@@ -3,14 +3,16 @@
 
 event_inherited();
 
-#region ///Movement Controls.
 if (RESTART_BUTTON)
 {
 	room_restart();	
 }
 
+#region ///Movement Controls.
+
 
 interact = instance_place(x, y, abs_interactable);
+
 if (UP_BUTTON_RELEASED)
 {
 	with (interact)
@@ -20,25 +22,29 @@ if (UP_BUTTON_RELEASED)
 }
 
 //Jumping.
-if (A_BUTTON_PRESSED)
+if (A_BUTTON_PRESSED) //Jumps
 {
 	if (grounded)
 	{
-		
 		audio_play_sound(sfx_jump, 1, false);
 		vsp = -jumpHeight;
 		hsp += hspExt;
 		hspExt = 0;
 	}
+	else if (instance_exists(myCarry))
+	{
+		if (carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5))
+		{
+			vsp = -jumpHeight;
+		}
+	}
 } 
-else if (A_BUTTON)
+else if (A_BUTTON) //Offsets gravity to allow for jump cancelling
 {
 	vsp -= jumpOffset;		
 }
 
-///Movement
-
-//Running
+///Running
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
 if (X_BUTTON_PRESSED)
@@ -54,11 +60,8 @@ if (X_BUTTON_RELEASED)
 if (hDir != 0)
 {
 	hsp = phys_force_add(hsp, accel * hDir, maxSpeed + (0.5 * maxSpeed * X_BUTTON))
-
-	
 	facing = hDir;
 }
-
 #endregion
 
 
@@ -74,10 +77,7 @@ if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
 {
 	if (!grounded) && (DOWN_BUTTON)
 	{
-		if (carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5))
-		{
-			vsp = -jumpHeight;
-		}
+		carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5)
 	}
 	else if (UP_BUTTON)
 	{
