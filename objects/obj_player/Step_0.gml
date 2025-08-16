@@ -73,32 +73,34 @@ if (hDir != 0)
 grab = carry_grab_target();
 
 //Lets you throw stuff.
-if (B_BUTTON_RELEASED) && (instance_exists(myCarry))
+if (B_BUTTON_RELEASED) 
 {
-	if (!grounded) && (DOWN_BUTTON)
+	//If a carry object exists tries to throw it.
+	if (instance_exists(myCarry))
 	{
-		carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5)
+		if (!grounded) && (DOWN_BUTTON)
+		{
+			carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5)
+		}
+		else if (UP_BUTTON)
+		{
+			carry_throw_instance(0, -jumpHeight, 0, 0);
+		}
+		else
+		{
+			carry_throw_instance(facing * 3, -2, 0, vsp - 2);
+		}
 	}
-	else if (UP_BUTTON)
-	{
-		carry_throw_instance(0, -jumpHeight, 0, 0);
-	}
+	//Otherwise tiries to pick the target object up.
 	else
-	{
-		carry_throw_instance(facing * 3, -2, 0, vsp - 2);
-	}
-}
-else if (!instance_exists(myCarry))
-{
-	
-	if (B_BUTTON_RELEASED)
 	{
 		if (grab)
 		{
 			carry_pickup_instance(grab)	
 		}
 	}
-}	
+}
+
 #endregion
 
 
