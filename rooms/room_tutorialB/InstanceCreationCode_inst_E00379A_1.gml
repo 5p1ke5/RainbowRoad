@@ -1,1 +1,1 @@
-dialogue = ["While holding an object in midair, you can bress 'Down' and 'Z' to double jump and throw the object down.", "Double jump to get over the gap. Hold space to get more air!"];
+dialogue = ["You can press 'A' in midair while holding an object to Double Jump!"];
