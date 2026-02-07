@@ -1,15 +1,15 @@
 ///@function carry_initialize(_carrier, _canCarry, _carried)
-///@description Initializes variables for an object that can be carried.
-///@param _canCarry Whether or not the object can currently be carrie
-///@param _carrier The instance currently carrying this one.
-///@param _collision Whether the object is recognizing collisions.
+///@description Initializes variables for an instance that can be carried.
+///@param _canCarry Whether or not the instance can currently be carried.
+///@param _carrier The instance currently carrying this instance.
+///@param _collision Whether the instance is recognizing collisions.
 function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 {
 	canCarry = _canCarry;
 	carrier = _carrier;
 	collision = _collision;
 	
-	//Whether the object has been thrown.
+	//Whether the instance has been thrown.
 	thrown = false;
 }
 
@@ -140,7 +140,8 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 			{
 				return false;
 			}
-			
+			
+
 		}
 		
 		hsp = _hsp;

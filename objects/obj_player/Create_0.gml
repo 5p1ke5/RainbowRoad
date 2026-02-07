@@ -38,6 +38,9 @@ grab = carry_grab_target();
 //The target for interaction.
 interact = undefined;
 
+//The alert being displayed.
+alert = "";
+
 
 //Positions at spawn point if defined.
 if (global.spawnX != undefined)

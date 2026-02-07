@@ -1,6 +1,4 @@
 /// @description does player things, inherits
-
-
 event_inherited();
 
 if (RESTART_BUTTON)
@@ -164,6 +162,18 @@ else
 
 #endregion
 
+//update alert
+alert = "";
+
+if (interact)
+{
+	alert += "?";
+}
+
+if (grab) && !(myCarry)
+{
+	alert += "!";	
+}
 
 //parallax
 var _layer = layer_get_id("Parallax");
