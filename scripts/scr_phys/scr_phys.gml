@@ -16,7 +16,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	frict = _frict;
 	hsp = _hsp;
 	vsp = _vsp;
-	collision = _collision;
+	collision = _collision; //Todo: This is different from collision with hitboxes. Change its name?
 	elasticity = _elasticity
 	wallObject = _wallObject;
 	floorObject = _floorObject;

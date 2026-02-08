@@ -1,4 +1,4 @@
-/// @description does player things, inherits
+/// @description does player things, inherits physics
 event_inherited();
 
 if (RESTART_BUTTON)
@@ -8,7 +8,7 @@ if (RESTART_BUTTON)
 
 #region ///Movement Controls.
 
-
+//Interacts with things like doors by pressing the up button.
 interact = instance_place(x, y, abs_interactable);
 
 if (UP_BUTTON_RELEASED)
@@ -29,6 +29,7 @@ if (A_BUTTON_PRESSED) //Jumps
 		hsp += hspExt;
 		hspExt = 0;
 	}
+	//If the player is holding an item lets them double jump off of that item by throwing it downards.
 	else if (instance_exists(myCarry))
 	{
 		if (carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5))
@@ -37,14 +38,17 @@ if (A_BUTTON_PRESSED) //Jumps
 		}
 	}
 } 
-else if (A_BUTTON) //Offsets gravity to allow for jump cancelling
+//Offsets gravity to allow for jump cancelling
+else if (A_BUTTON) 
 {
 	vsp -= jumpOffset;		
 }
 
-///Running
+///Movement
+//What direction the instance is trying to move. 1 is right, 0 is neutral, -1 is left.
 hDir = RIGHT_BUTTON - LEFT_BUTTON;
 
+//Pressing X makes the player run faster and animate faster too.
 if (X_BUTTON_PRESSED)
 {
 	image_speed = animSpeedRun;
@@ -55,6 +59,7 @@ if (X_BUTTON_RELEASED)
 	image_speed = animSpeed;	
 }
 
+//If hDir is non-zero adds to hsp every frame and also sets facing direction.
 if (hDir != 0)
 {
 	hsp = phys_force_add(hsp, accel * hDir, maxSpeed + (0.5 * maxSpeed * X_BUTTON))
@@ -68,14 +73,18 @@ if (hDir != 0)
 #region ///Grab n throw controls
 
 //The object being targeted to grab.
+//TODO: Somewhat intensive (up to 3 O(n^2)), maybe only do this on button press? Except we also need this for the alert....
+//But wait in practice its probably not much more than a dozen or so checks at once so more like O(n). Worst case is maaaybe close to 100 but only if there are way too many carryables already.
+//It's fine for the player to have it in the step event but if I port this over to NPCs I need to figure out how to only do this on some frames.
 grab = carry_grab_target();
 
 //Lets you throw stuff.
 if (B_BUTTON_RELEASED) 
 {
-	//If a carry object exists tries to throw it.
+	//If an instance is being carried tries to throw it.
 	if (instance_exists(myCarry))
 	{
+		//Can be thrown down if jumping, up, or neutral.
 		if (!grounded) && (DOWN_BUTTON)
 		{
 			carry_throw_instance(0, 0, 0, (bbox_bottom - bbox_top) + (myCarry.bbox_bottom - myCarry.bbox_top) + 5)
@@ -103,6 +112,8 @@ if (B_BUTTON_RELEASED)
 
 
 #region ///Collision
+//Specifically objects that are meant to be touched / you're 'inside' them.
+//Blocks/walls are part of physics.
 
 var _collisions = hitbox_step_instance_array();
 
@@ -118,9 +129,11 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 	if (object_is_family(_collisions[_i], abs_enemy))
 	{
 		//Ignores if it's a carried object or if collision is off.
+		//TODO: Make this its own function, maybe??
 		if ((myCarry) && (myCarry.id == _collisions[_i].id)) || !(_collisions[_i].collision)
 		{
-			break;	
+			break;	//??? What was I doin here??? Should I use continue instead??
+			//break exits the loop
 		}
 		
 		

@@ -54,7 +54,7 @@ function collision_rectangle_array(_x1, _y1, _x2, _y2, _obj, _prec, _notme, _ord
 /// @function collision_validate(_target, _blacklist)
 /// @description Checks if an instance or array of instances have a valid collision. Returns true if so, false if not.
 /// @param _target The instance or array of instances to check if it can be collided with.
-/// @param _blacklist An array of blacklisted collision objects/ 
+/// @param _blacklist An array of blacklisted collision objects to be exempted. 
 function collision_validate(_target, _blacklist = [])
 {
 	//If it's an array returns true if any instance in the array is a valid collision.
@@ -80,7 +80,8 @@ function collision_validate(_target, _blacklist = [])
 			return false;	
 		}
 	}
-	
+	
+
 	
 	return (_target.collision);
 }

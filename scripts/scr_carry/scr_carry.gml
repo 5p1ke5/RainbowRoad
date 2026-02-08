@@ -23,17 +23,25 @@ function carry_grab_target()
 		return (element.canCarry = true) && (element != myCarry);
 	};
 	
-	//Checks below first.
+	///We check below the calling instance to see if they are on top of an object. 
+	
+	//First we get an array of objects within a 1-pixel tall rectangle directly beneath the instance.
 	var _array = collision_rectangle_array(bbox_left, bbox_bottom, bbox_right, bbox_bottom + 1, [BLOCK_CARRY, ONEWAY_CARRY], false, true, false);
+	
+	//Go through this array using the _canCarry_on function.
 	var _i = array_find_index(_array, _canCarry_on);
+	
+	//If _i == -1 no grabbable instance was found. Otherwise returns the first instance found in the array.
 	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
 	
+	//If an instance was found returns it as the target.
 	if (instance_exists(_grab))
 	{
 		return _grab;	
 	}
 	
-	//Next checks if directly colliding or in front of.
+	//Otherwise checks if directly colliding or in front of. Uses similar logic to checking below.
+	//This time we check a box consisting of the calling instance's collision mask +1 pixel in front of them.
 	var _array = instance_place_array(x + (facing), y, [BLOCK_CARRY, ONEWAY_CARRY], false);
 	var _i = array_find_index(_array, _canCarry_on);
 	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
@@ -43,7 +51,7 @@ function carry_grab_target()
 		return _grab;	
 	}
 	
-	//Finally checks above.
+	//Finally checks directly above.
 	var _array = collision_rectangle_array(bbox_left, bbox_top, bbox_right, bbox_top - 1, [BLOCK_CARRY, ONEWAY_CARRY], false, true, false);
 	var _i = array_find_index(_array, _canCarry_on);
 	var _grab = (_i == -1) ? undefined : array_get(_array, _i);
@@ -53,6 +61,7 @@ function carry_grab_target()
 		return _grab;	
 	}
 	
+	//If nothing is found returns undefined.
 	return undefined;
 }
 
