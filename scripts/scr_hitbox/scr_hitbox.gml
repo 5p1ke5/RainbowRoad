@@ -5,6 +5,7 @@
 function hitbox_initialize(_hitboxObjs = [], _maxFlicker = FLICKER_MAX)
 {
 	//If the object was given a single element for _hitboxObjs just assumes they meant to pass a 1-element array.
+	//TODO: Maybe make it so we have a hitBoxActive variable and that turns the hitbox off and on?
 	if !(is_array(_hitboxObjs))
 	{
 		_hitboxObjs = [_hitboxObjs]

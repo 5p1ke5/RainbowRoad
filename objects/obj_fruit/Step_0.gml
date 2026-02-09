@@ -2,9 +2,11 @@
 
 //If object moves reactivates gravity
 
-	if (yprevious != y) || (xprevious != x)
+	if (!moved) && ((yprevious != y) || (xprevious != x))
 	{
-		grav = 0.1;	
+		//grav = 0.1;	
+		phys_initialize(0.1,,,,,,,, [abs_enemy, obj_blockSand]);
+		moved = true;
 	}
 
 if (instance_exists(carrier))
