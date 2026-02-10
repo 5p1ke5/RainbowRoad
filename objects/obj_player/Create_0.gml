@@ -4,9 +4,11 @@ phys_initialize(0.2, 0.2);
 
 hitbox_initialize([abs_enemy, abs_hazard], FLICKER_MAX); 
 
+doll_initialize(0, 0, 0, 0, 0, c_white, c_white, c_white, c_white, c_white);
+
 //Initialize player variables.
 hDir = 0; //Horizontal movement direction.
-facing = 1; //Direction facing. Should always be 1 or -1.
+facing = sign(image_xscale); //Direction facing. Should always be 1 or -1.
 maxSpeed = 3; 
 accel = 0.4;
 jumpHeight = 4;

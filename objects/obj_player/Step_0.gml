@@ -132,12 +132,11 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 		//TODO: Make this its own function, maybe??
 		if ((myCarry) && (myCarry.id == _collisions[_i].id)) || !(_collisions[_i].collision)
 		{
-			break;	//??? What was I doin here??? Should I use continue instead??
+			continue;	//??? What was I doin here??? Should I use continue instead??
 			//break exits the loop
 		}
 		
 		
-		//if (bbox_bottom + 1 > _collisions[_i].bbox_top - 1)
 		if !(bbox_bottom < _collisions[_i].bbox_top)
 		{
 			player_hit();
@@ -149,29 +148,10 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 	}
 }
 
-
-
-
 #endregion
 
 #region ///Set sprite properties.
-image_xscale = facing;
-
-if (grounded)
-{
-	if (hDir == 0)
-	{
-		sprite_index = spr_player;	
-	}
-	else
-	{
-		sprite_index = spr_playerRun;	
-	}
-}
-else
-{
-	sprite_index = spr_playerJump;		
-}
+doll_animate();
 
 #endregion
 

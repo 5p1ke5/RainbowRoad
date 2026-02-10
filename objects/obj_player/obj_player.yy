@@ -37,12 +37,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_doll",
+    "path":"sprites/spr_doll/spr_doll.yy",
   },
   "spriteMaskId":{
-    "name":"spr_player",
-    "path":"sprites/spr_player/spr_player.yy",
+    "name":"spr_doll",
+    "path":"sprites/spr_doll/spr_doll.yy",
   },
   "visible":true,
 }

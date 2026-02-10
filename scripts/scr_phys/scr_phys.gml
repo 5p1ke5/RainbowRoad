@@ -54,8 +54,8 @@ function phys_step()
 			vspExt = 0;
 		}
 		
-	    phys_wall_collision();
 	    phys_floor_collision();	
+	    phys_wall_collision();
 	}
 
 
