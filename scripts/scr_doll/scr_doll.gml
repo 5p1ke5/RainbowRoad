@@ -31,6 +31,15 @@ function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoe
 		asset_get_index("spr_dollPants" + string(pantsIndex) + "Run")
 	];
 	pantsSprite = pantsSprites[0]
+	
+	shoeSprites = 
+	[ //I'll think of a better way to do this later
+		asset_get_index("spr_dollShoes" + string(pantsIndex)), 
+		asset_get_index("spr_dollShoes" + string(pantsIndex) + "Jump"), 
+		asset_get_index("spr_dollShoes" + string(pantsIndex) + "Run")
+	];
+	shoeSprite = shoeSprites[0]
+	
 	shirtSprite = spr_dollShirt;
 	faceSprite = spr_dollFace;
 	hairSprite = spr_dollHair;
@@ -51,17 +60,20 @@ function doll_animate()
 		{
 			sprite_index = spr_doll;	
 			pantsSprite =  pantsSprites[0];
+			shoeSprite = shoeSprites[0];
 		}
 		else
 		{
 			sprite_index = spr_dollRun;	
 			pantsSprite = pantsSprites[2];
+			shoeSprite = shoeSprites[2];
 		}
 	}
 	else
 	{
 		sprite_index = spr_dollJump;		
 		pantsSprite = pantsSprites[1];
+		shoeSprite = shoeSprites[1];
 	}
 	
 	if (myCarry)
@@ -82,13 +94,11 @@ function doll_animate()
 function doll_draw()
 {
 	draw_sprite_ext(armSpriteB, 0, x, y, image_xscale, image_yscale, 0, skinColor, 1);
-	
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, skinColor, 1);
 	draw_sprite_ext(hairSprite, hairIndex, x, y, image_xscale, image_yscale, image_angle, hairColor, 1);
 	draw_sprite_ext(shirtSprite, shirtIndex, x, y, image_xscale, image_yscale, image_angle, shirtColor, 1);
 	draw_sprite_ext(pantsSprite, image_index, x, y, image_xscale, image_yscale, image_angle, pantsColor, 1);
 	draw_sprite_ext(faceSprite, faceIndex, x, y, image_xscale, image_yscale, image_angle, pantsColor, 1);
-	//No shoes yet draw_sprite_ext(sprite_index, shoesIndex, x, y, image_xscale, image_yscale, image_angle, skinColor, 1);
-	
+	draw_sprite_ext(shoeSprite, image_index, x, y, image_xscale, image_yscale, image_angle, skinColor, 1);
 	draw_sprite_ext(armSpriteA, 0, x, y, image_xscale, image_yscale, 0, skinColor, 1);
 }

@@ -214,6 +214,8 @@
     {"name":"spr_dollPants0Jump","order":2,"path":"sprites/spr_dollPants0Jump/spr_dollPants0Jump.yy",},
     {"name":"spr_dollRun","order":8,"path":"sprites/spr_dollRun/spr_dollRun.yy",},
     {"name":"spr_dollShirt","order":2,"path":"sprites/spr_dollShirt/spr_dollShirt.yy",},
+    {"name":"spr_dollShoes0Jump","order":1,"path":"sprites/spr_dollShoes0Jump/spr_dollShoes0Jump.yy",},
+    {"name":"spr_dollShoes0Run","order":2,"path":"sprites/spr_dollShoes0Run/spr_dollShoes0Run.yy",},
     {"name":"spr_doorCave","order":3,"path":"sprites/spr_doorCave/spr_doorCave.yy",},
     {"name":"spr_doorCaveExit","order":1,"path":"sprites/spr_doorCaveExit/spr_doorCaveExit.yy",},
     {"name":"spr_doorHouse","order":4,"path":"sprites/spr_doorHouse/spr_doorHouse.yy",},
