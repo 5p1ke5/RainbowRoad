@@ -34,9 +34,9 @@ function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoe
 	
 	shoeSprites = 
 	[ //I'll think of a better way to do this later
-		asset_get_index("spr_dollShoes" + string(pantsIndex)), 
-		asset_get_index("spr_dollShoes" + string(pantsIndex) + "Jump"), 
-		asset_get_index("spr_dollShoes" + string(pantsIndex) + "Run")
+		asset_get_index("spr_dollShoes" + string(shoesIndex)), 
+		asset_get_index("spr_dollShoes" + string(shoesIndex) + "Jump"), 
+		asset_get_index("spr_dollShoes" + string(shoesIndex) + "Run")
 	];
 	shoeSprite = shoeSprites[0]
 	

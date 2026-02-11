@@ -4,7 +4,7 @@ phys_initialize(0.2, 0.2);
 
 hitbox_initialize([abs_enemy, abs_hazard], FLICKER_MAX); 
 
-doll_initialize(0, 0, 0, 0, 0, c_white, c_white, c_white, c_white, c_white);
+doll_initialize(1, 1, 1, 1, 1, c_white, c_white, c_white, c_white, c_white);
 
 //Initialize player variables.
 hDir = 0; //Horizontal movement direction.
