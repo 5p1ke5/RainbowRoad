@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_dollPants1Jump",
+  "%Name":"spr_dollPants0Jump",
   "bboxMode":0,
   "bbox_bottom":30,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"be7575b2-673a-44ca-88f8-2a8c0c7bf4b9","blendMode":0,"displayName":"default","isLocked":false,"name":"be7575b2-673a-44ca-88f8-2a8c0c7bf4b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_dollPants1Jump",
+  "name":"spr_dollPants0Jump",
   "nineSlice":null,
   "origin":9,
   "parent":{
     "name":"pants",
-    "path":"folders/Sprites/dolls/pants.yy",
+    "path":"folders/Sprites/dolls/clothes/pants.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_dollPants1Jump",
+    "%Name":"spr_dollPants0Jump",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_dollPants1Jump",
+    "name":"spr_dollPants0Jump",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87a81f86-c426-45dd-8a2c-a16d78e29f7b","path":"sprites/spr_dollPants1Jump/spr_dollPants1Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87a81f86-c426-45dd-8a2c-a16d78e29f7b","path":"sprites/spr_dollPants0Jump/spr_dollPants0Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"895db470-fda5-4889-a460-2074aafac071","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

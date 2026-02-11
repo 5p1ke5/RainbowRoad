@@ -24,7 +24,13 @@ function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoe
 	shoeColor = _shoeColor;
 	
 	sprite_index = spr_doll;
-	pantsSprite = spr_dollPants1;
+	pantsSprites = 
+	[ //I'll think of a better way to do this later
+		asset_get_index("spr_dollPants" + string(pantsIndex)), 
+		asset_get_index("spr_dollPants" + string(pantsIndex) + "Jump"), 
+		asset_get_index("spr_dollPants" + string(pantsIndex) + "Run")
+	];
+	pantsSprite = pantsSprites[0]
 	shirtSprite = spr_dollShirt;
 	faceSprite = spr_dollFace;
 	hairSprite = spr_dollHair;
@@ -44,18 +50,18 @@ function doll_animate()
 		if (hDir == 0)
 		{
 			sprite_index = spr_doll;	
-			pantsSprite = spr_dollPants1;
+			pantsSprite =  pantsSprites[0];
 		}
 		else
 		{
 			sprite_index = spr_dollRun;	
-			pantsSprite = spr_dollPants1Run;
+			pantsSprite = pantsSprites[2];
 		}
 	}
 	else
 	{
 		sprite_index = spr_dollJump;		
-		pantsSprite = spr_dollPants1Jump;
+		pantsSprite = pantsSprites[1];
 	}
 	
 	if (myCarry)
