@@ -15,7 +15,8 @@
 
 #region //Room references
 #macro ROOM_TITLE room_titleScreen
-#macro ROOM_START room_beach
+#macro ROOM_START room_characterCreation
+#macro ROOM_INTRO_SCREEN room_beach
 #endregion
 
 #region //Constant numbers

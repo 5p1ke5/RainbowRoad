@@ -52,8 +52,8 @@
   ],
   "name":"room_tutorialA",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"ship",
+    "path":"folders/Rooms/ship.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

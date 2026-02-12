@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_title",
+  "%Name":"abs_colorSlider",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_title",
+  "name":"abs_colorSlider",
   "overriddenProperties":[],
   "parent":{
-    "name":"menus",
-    "path":"folders/Objects/menus.yy",
+    "name":"character creation",
+    "path":"folders/Objects/menus/character creation.yy",
   },
-  "parentObjectId":{
-    "name":"abs_menu",
-    "path":"objects/abs_menu/abs_menu.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_colorSliderMarker",
+    "path":"sprites/spr_colorSliderMarker/spr_colorSliderMarker.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

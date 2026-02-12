@@ -19,5 +19,7 @@ function globals_initialize()
 	global.spawnY = undefined;
 	global.roomPrev = ROOM_TITLE;
 	
+	global.playerDoll = new doll_struct(0, 0, 0,0, 0, c_white, c_white, c_white, c_white, c_white);
+	
 	show_debug_message("Globals initialized.");
 }

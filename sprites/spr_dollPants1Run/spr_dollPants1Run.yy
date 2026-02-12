@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_dollPants1Run",
   "bboxMode":0,
-  "bbox_bottom":30,
-  "bbox_left":0,
-  "bbox_right":18,
+  "bbox_bottom":26,
+  "bbox_left":4,
+  "bbox_right":15,
   "bbox_top":22,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"87a81f86-c426-45dd-8a2c-a16d78e29f7b","name":"87a81f86-c426-45dd-8a2c-a16d78e29f7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"bd885bf8-16a7-4632-a228-a8b2e472b101","name":"bd885bf8-16a7-4632-a228-a8b2e472b101","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"befba8df-f98b-4fb4-a048-405500cea3d6","name":"befba8df-f98b-4fb4-a048-405500cea3d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a82fc45-e578-40fb-8a91-cdb0bfaf97b1","name":"7a82fc45-e578-40fb-8a91-cdb0bfaf97b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"be7575b2-673a-44ca-88f8-2a8c0c7bf4b9","blendMode":0,"displayName":"default","isLocked":false,"name":"be7575b2-673a-44ca-88f8-2a8c0c7bf4b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1c7bd55e-c4a6-4087-babd-798423d6192d","blendMode":0,"displayName":"default","isLocked":false,"name":"1c7bd55e-c4a6-4087-babd-798423d6192d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dollPants1Run",
   "nineSlice":null,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"87a81f86-c426-45dd-8a2c-a16d78e29f7b","path":"sprites/spr_dollPants1Run/spr_dollPants1Run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"895db470-fda5-4889-a460-2074aafac071","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"befba8df-f98b-4fb4-a048-405500cea3d6","path":"sprites/spr_dollPants1Run/spr_dollPants1Run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a7028d61-05e8-4f61-9022-8eb04c3270e6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bd885bf8-16a7-4632-a228-a8b2e472b101","path":"sprites/spr_dollPants1Run/spr_dollPants1Run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"07621997-4946-40c8-ad70-99efe721c020","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a82fc45-e578-40fb-8a91-cdb0bfaf97b1","path":"sprites/spr_dollPants1Run/spr_dollPants1Run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"27fd28d0-e71e-4dd1-a3ae-59b3ad10b65e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

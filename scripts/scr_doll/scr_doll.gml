@@ -47,6 +47,23 @@ function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoe
 	armSpriteB = spr_armB;
 }
 
+///@function doll_struct(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoesIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor)
+///@description Creates a struct form of the doll component and returns it.
+///@param _faceIndex Subimage in the faces sprite to set face.
+///@param _hairIndex Subimage in the hair sprite to set hair.
+///@param _shirtIndex Subimage in the shirt sprite to set shirt.
+///@param _pantsIndex Which pants sprite to use.
+///@param _shoesIndex Subimage in the shoes sprite to set shoes to.
+///@param _skinColor Color for the doll's body.
+///@param _hairColor Color to make the doll's hair.
+///@param _shirtColor Color to make the doll's shirt.
+///@param _pantsColor Color to make the doll's pants.
+///@param _shoeColor Color to make the doll's shoes.
+function doll_struct(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoesIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor) constructor
+{
+	doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoesIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor);
+}
+
 
 ///@function doll_animate()
 ///@description Sets which sprites are used in the draw event depending on what the doll is doing.
