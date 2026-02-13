@@ -52,8 +52,6 @@ function menu_draw(_x, _y, _options, _color1, _color2, _height, _select)
     
 	    draw_set_colour(_color1);
 	}
-
-
 }
 
 

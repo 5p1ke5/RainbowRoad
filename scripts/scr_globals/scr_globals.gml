@@ -21,5 +21,9 @@ function globals_initialize()
 	
 	global.playerDoll = new doll_struct(0, 0, 0,0, 0, c_white, c_white, c_white, c_white, c_white);
 	
+	
+	global.pants[0] = spr_dollPants0;
+	global.pants[1] = spr_dollPants1;
+	
 	show_debug_message("Globals initialized.");
 }
