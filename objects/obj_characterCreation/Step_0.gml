@@ -81,47 +81,69 @@ switch (optionSelected)
 	break;
 	
 	case 3: //Pants.
-	/* We only have one pair of pants right now. This can be uncommented when we get more.
-		global.playerPantsIndex += _increment;
+	//TODO: fix magic number 2 here by getting number of pants sets.
+		pantsIndex += _increment;
 		
-		if (global.playerPantsIndex < 0)
+		if (pantsIndex < 0)
 		{
-			global.playerPantsIndex = global.pants - 1;	
+			pantsIndex = 1;	
 		}
 		
-		if (global.playerPantsIndex >= array_length(global.pants))
+		if (pantsIndex >= 2)
 		{
-			global.playerPantsIndex = 0;
+			pantsIndex = 0;
 		}
 		
 		
-		pants = global.pants[global.playerPantsIndex];
-		options[optionSelected] = "PANTS: " + string(global.playerPantsIndex);
-		*/
+		pantsSprites = 
+		[ //I'll think of a better way to do this later
+			asset_get_index("spr_dollPants" + string(pantsIndex)), 
+			asset_get_index("spr_dollPants" + string(pantsIndex) + "Jump"), 
+			asset_get_index("spr_dollPants" + string(pantsIndex) + "Run")
+		];
+		pantsSprite = pantsSprites[0]
+		options[optionSelected] = "PANTS: " + string(pantsIndex);
+		
 		if (MOUSE_LEFT_BUTTON)
 		{
 			pantsColor = make_color_rgb(_red, _green, _blue);
 		}
 	break;
 	
-	case 4: //Exit
+	case 4: //sHOES.
+	//TODO: fix magic number 2 here by getting number of shoes sets.
+		shoeIndex += _increment;
+		
+		if (shoeIndex < 0)
+		{
+			shoeIndex = 1;	
+		}
+		
+		if (shoeIndex >= 2)
+		{
+			shoeIndex = 0;
+		}
+		
+		
+		shoeSprites = 
+		[ //I'll think of a better way to do this later
+			asset_get_index("spr_dollShoes" + string(shoeIndex)), 
+			asset_get_index("spr_dollShoes" + string(shoeIndex) + "Jump"), 
+			asset_get_index("spr_dollShoes" + string(shoeIndex) + "Run")
+		];
+		shoeSprite = shoeSprites[0]
+		options[optionSelected] = "SHOES: " + string(shoeIndex);
+		
+		if (MOUSE_LEFT_BUTTON)
+		{
+			shoeColor = make_color_rgb(_red, _green, _blue);
+		}
+	break;
+	
+	case 5: //Exit
 		if (FACE_BUTTON_RELEASED)
 		{
-			
-			////Creates a doll with the values from the character creation and then really quick serializes it.
-			//var _doll = instance_create_depth(x, y, depth, obj_doll);
-			//var _inventory = inventory_initialize();
-			
-			//with (_doll)
-			//{
-			//	doll_initialize(PLAYER_STARTING_HP, PLAYER_STARTING_HP, PLAYER_STARTING_PP, PLAYER_STARTING_PP, factions.player, 
-			//	other.faceIndex, other.hairIndex, other.shirtIndex, other.pantsIndex, other.image_blend, other.hairColor, other.shirtColor, other.pantsColor, 0, _inventory);	
-			//}
-			
-			//var _struct = serialize_instance_extended(_doll)
-			
-			//ds_list_add(global.partySerialized, _struct);}
-			global.playerDoll = new doll_struct(faceIndex, hairIndex, shirtIndex, pantsIndex, shoesIndex, skinColor, hairColor, shirtColor, pantsColor, shoeColor);
+			global.playerDoll = doll_struct(faceIndex, hairIndex, shirtIndex, pantsIndex, shoeIndex, skinColor, hairColor, shirtColor, pantsColor, shoeColor);
 			room_goto(ROOM_INTRO_SCREEN);
 		}
 	break;

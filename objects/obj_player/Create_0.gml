@@ -5,7 +5,7 @@ phys_initialize(0.2, 0.2);
 hitbox_initialize([abs_enemy, abs_hazard], FLICKER_MAX); 
 
 var _doll = global.playerDoll;
-doll_initialize(_doll.faceIndex, _doll.hairIndex, _doll.shirtIndex, _doll.pantsIndex, _doll.shoesIndex, 
+doll_initialize(_doll.faceIndex, _doll.hairIndex, _doll.shirtIndex, _doll.pantsIndex, _doll.shoeIndex, 
 			_doll.skinColor, _doll.hairColor, _doll.shirtColor, _doll.pantsColor, _doll.shoeColor);
 
 //Initialize player variables.

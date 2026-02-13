@@ -19,8 +19,16 @@ function globals_initialize()
 	global.spawnY = undefined;
 	global.roomPrev = ROOM_TITLE;
 	
-	global.playerDoll = new doll_struct(0, 0, 0,0, 0, c_white, c_white, c_white, c_white, c_white);
+	global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white, c_white, c_white, c_white, c_white);
 	
+	
+	
+	//Note: Make these a thing that getts looked up in INI or a DS Map or osmething idk. It shouldn't be just held in memory all the time.
+	global.pants[0] = spr_dollPants0;
+	global.pants[1] = spr_dollPants1;
+	
+	global.pants[0] = spr_dollPants0;
+	global.pants[1] = spr_dollPants1;
 	
 	global.pants[0] = spr_dollPants0;
 	global.pants[1] = spr_dollPants1;
