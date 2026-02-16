@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_dollPants1Jump",
   "bboxMode":0,
-  "bbox_bottom":25,
-  "bbox_left":4,
-  "bbox_right":15,
+  "bbox_bottom":26,
+  "bbox_left":3,
+  "bbox_right":16,
   "bbox_top":22,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"550eaa47-ae6c-4e84-b34a-b184fa059960","name":"550eaa47-ae6c-4e84-b34a-b184fa059960","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"22321bb6-f6c0-4fba-bf55-f2c1ba04628e","name":"22321bb6-f6c0-4fba-bf55-f2c1ba04628e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b29bf8bb-51b6-4543-806e-cfa473594cf5","blendMode":0,"displayName":"default","isLocked":false,"name":"b29bf8bb-51b6-4543-806e-cfa473594cf5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"31330051-5828-4886-bd73-ecd8c70afc0e","blendMode":0,"displayName":"default","isLocked":false,"name":"31330051-5828-4886-bd73-ecd8c70afc0e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dollPants1Jump",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"550eaa47-ae6c-4e84-b34a-b184fa059960","path":"sprites/spr_dollPants1Jump/spr_dollPants1Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"66963152-777c-4615-ab86-e2775c3e249a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"22321bb6-f6c0-4fba-bf55-f2c1ba04628e","path":"sprites/spr_dollPants1Jump/spr_dollPants1Jump.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3e4a9ba9-6b71-473d-97a5-80ff54e7315a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

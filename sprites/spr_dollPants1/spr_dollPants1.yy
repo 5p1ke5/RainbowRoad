@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_dollPants1",
   "bboxMode":0,
-  "bbox_bottom":30,
+  "bbox_bottom":26,
   "bbox_left":4,
   "bbox_right":14,
   "bbox_top":22,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"174fa3c7-82a2-4571-8e13-651f6f7fe373","name":"174fa3c7-82a2-4571-8e13-651f6f7fe373","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"008d1f91-c49d-4e5f-b568-f5e3bc292f07","name":"008d1f91-c49d-4e5f-b568-f5e3bc292f07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"645b66e3-86a5-498c-858d-ab671438b4bf","blendMode":0,"displayName":"default","isLocked":false,"name":"645b66e3-86a5-498c-858d-ab671438b4bf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"986bb3c3-4bee-463c-bae4-b3c346e93b7f","blendMode":0,"displayName":"default","isLocked":false,"name":"986bb3c3-4bee-463c-bae4-b3c346e93b7f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dollPants1",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"174fa3c7-82a2-4571-8e13-651f6f7fe373","path":"sprites/spr_dollPants1/spr_dollPants1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"094036b7-4d8e-4084-84ce-41010eec8775","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"008d1f91-c49d-4e5f-b568-f5e3bc292f07","path":"sprites/spr_dollPants1/spr_dollPants1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6e45fa7f-06a8-4af5-a982-12c2da5924df","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

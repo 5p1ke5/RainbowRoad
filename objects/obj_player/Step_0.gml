@@ -163,15 +163,15 @@ if (interact)
 	alert += "?";
 }
 
-if (grab) && !(myCarry)
+if (grab) && !(instance_exists(myCarry))
 {
 	alert += "!";	
 }
 
 //parallax
-var _layer = layer_get_id("Parallax");
+//var _layer = layer_get_id("Parallax");
 
-if (_layer)
-{
-	layer_y(_layer, y/2);
-}
+//if (_layer)
+//{
+//	layer_y(_layer, y/2);
+//}

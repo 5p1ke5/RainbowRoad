@@ -114,11 +114,10 @@ function carry_pickup_instance(_pickup)
 ///@param _yOffset y position to teleport the instance to relative to the calling instance.
 function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 {
+	//Todo: Make this it's own function? Or what if I just put it all under event_user??
 	with (myCarry)
 	{
-		
-		//Tries to find a good spot to place the object at.
-		
+		//Tries to find a good spot to place the object at.	
 		var _pointFound = place_empty(x + _xOffset, y + _yOffset, [BLOCK, ONEWAY_CARRY])
 		if (!_pointFound)
 		{
@@ -149,8 +148,6 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 			{
 				return false;
 			}
-			
-
 		}
 		
 		hsp = _hsp;

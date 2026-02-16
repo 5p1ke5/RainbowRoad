@@ -100,7 +100,7 @@ function doll_animate()
 		shoeSprite = shoeSprites[1];
 	}
 	
-	if (myCarry)
+	if (instance_exists(myCarry))
 	{
 		armSpriteA = spr_armAUp;
 		armSpriteB = spr_armBUp;
