@@ -15,7 +15,22 @@ _array[5] = "START GAME";
 
 menu_initialize(_array);
 
-//Get sliders.
+//Get sliders, set self as owner.
+var _self = self;
 sliderRed = instance_find(obj_colorSliderRed, 0);
+with (sliderRed)
+{
+	owner = _self;
+}
+
 sliderGreen = instance_find(obj_colorSliderGreen, 0);
+with (sliderGreen)
+{
+	owner = _self;
+}
+
 sliderBlue = instance_find(obj_colorSliderBlue, 0);
+with (sliderBlue)
+{
+	owner = _self;
+}

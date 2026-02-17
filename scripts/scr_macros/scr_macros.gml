@@ -16,7 +16,7 @@
 #region //Room references
 #macro ROOM_TITLE room_titleScreen
 #macro ROOM_START room_characterCreation
-#macro ROOM_INTRO_SCREEN room_dirtIsle
+#macro ROOM_INTRO_SCREEN room_beach
 #endregion
 
 #region //Constant numbers
@@ -84,4 +84,27 @@
 
 #region enums
 enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15}
+#endregion
+
+//extra colors
+#region//Human skin colors
+#macro c_black1 make_color_rgb(120, 65, 35)
+#macro c_black2 make_color_rgb(160, 65, 35)
+#macro c_black3 make_color_rgb(160, 85, 60)
+#macro c_white1 make_color_rgb(255, 195, 140)
+#macro c_white2 make_color_rgb(255, 215, 130)
+#macro c_white3 make_color_rgb(255, 195, 140)
+#macro c_hispanic1 make_color_rgb(175, 105, 75)
+#macro c_hispanic2 make_color_rgb(255, 205, 165)
+#macro c_hispanic3 make_color_rgb(255, 170, 140)
+#macro c_asian1 make_color_rgb(210, 135, 100)
+#macro c_asian2 make_color_rgb(255, 205, 105)
+#macro c_asian3 make_color_rgb(255, 180, 90)
+
+//Human hair colors.
+#macro c_blonde make_color_rgb(235, 255, 0)
+#macro c_darkBrunette make_color_rgb(100, 70, 0)
+#macro c_brunette make_color_rgb(150, 70, 0)
+#macro c_lightBrunette make_color_rgb(200, 125, 0)
+#macro c_ginger make_color_rgb(220, 110,0)
 #endregion

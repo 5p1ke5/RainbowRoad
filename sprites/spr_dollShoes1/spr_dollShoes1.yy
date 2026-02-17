@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":31,
   "bbox_left":4,
-  "bbox_right":15,
+  "bbox_right":16,
   "bbox_top":31,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ca98998b-c36f-4ade-ac2b-d9abe50cae30","name":"ca98998b-c36f-4ade-ac2b-d9abe50cae30","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae186fa0-9e12-4ad5-a5a9-c913661d5da0","name":"ae186fa0-9e12-4ad5-a5a9-c913661d5da0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"18c820b0-10db-43b0-be93-8efb9176b411","blendMode":0,"displayName":"default","isLocked":false,"name":"18c820b0-10db-43b0-be93-8efb9176b411","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"19de2512-8bf4-405c-8ce5-a1475ab7d156","blendMode":0,"displayName":"default","isLocked":false,"name":"19de2512-8bf4-405c-8ce5-a1475ab7d156","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_dollShoes1",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ca98998b-c36f-4ade-ac2b-d9abe50cae30","path":"sprites/spr_dollShoes1/spr_dollShoes1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b65f4c41-e34d-4940-b56f-34b432689bbd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae186fa0-9e12-4ad5-a5a9-c913661d5da0","path":"sprites/spr_dollShoes1/spr_dollShoes1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"23afbafd-ce96-44e0-8cad-db0a3c040973","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

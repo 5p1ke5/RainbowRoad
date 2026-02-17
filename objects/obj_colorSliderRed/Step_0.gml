@@ -9,7 +9,7 @@ if (UP_BUTTON_RELEASED) || (DOWN_BUTTON_RELEASED)
 	switch (optionSelected)
 	{
 		case 0: //Skin
-			val = color_get_red(owner.image_blend);
+			val = color_get_red(owner.skinColor);
 		break;
 		case 1: //Hair
 			val = color_get_red(owner.hairColor);
@@ -19,6 +19,9 @@ if (UP_BUTTON_RELEASED) || (DOWN_BUTTON_RELEASED)
 		break;
 		case 3: //Pants
 			val = color_get_red(owner.pantsColor);
+		break;
+		case 4: //Shoes
+			val = color_get_red(owner.shoeColor);
 		break;
 		default: 
 		break;

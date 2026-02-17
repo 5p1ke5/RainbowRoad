@@ -28,7 +28,7 @@ switch (optionSelected)
 
 		if (MOUSE_LEFT_BUTTON)
 		{
-			image_blend = make_color_rgb(_red, _green, _blue);
+			skinColor = make_color_rgb(_red, _green, _blue);
 		}
 		
 		options[optionSelected] =  "FACE: " + string(faceIndex);
@@ -55,7 +55,7 @@ switch (optionSelected)
 	
 		
 		options[optionSelected] = "HAIR: " + string(hairIndex);
-	break;
+		break;
 	
 	
 	case 2: //Shirt
