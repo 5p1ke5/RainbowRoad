@@ -221,7 +221,6 @@
     {"name":"spr_deskMetal","order":24,"path":"sprites/spr_deskMetal/spr_deskMetal.yy",},
     {"name":"spr_deskWood","order":25,"path":"sprites/spr_deskWood/spr_deskWood.yy",},
     {"name":"spr_diningTable","order":26,"path":"sprites/spr_diningTable/spr_diningTable.yy",},
-    {"name":"spr_dollFace_old","order":5,"path":"sprites/spr_dollFace_old/spr_dollFace_old.yy",},
     {"name":"spr_dollHair","order":1,"path":"sprites/spr_dollHair/spr_dollHair.yy",},
     {"name":"spr_dollJump","order":9,"path":"sprites/spr_dollJump/spr_dollJump.yy",},
     {"name":"spr_dollPants0","order":1,"path":"sprites/spr_dollPants0/spr_dollPants0.yy",},
