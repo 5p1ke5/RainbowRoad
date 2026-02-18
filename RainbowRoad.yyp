@@ -278,6 +278,7 @@
     {"id":{"name":"spr_deskWood","path":"sprites/spr_deskWood/spr_deskWood.yy",},},
     {"id":{"name":"spr_diningTable","path":"sprites/spr_diningTable/spr_diningTable.yy",},},
     {"id":{"name":"spr_doll","path":"sprites/spr_doll/spr_doll.yy",},},
+    {"id":{"name":"spr_dollFace_old","path":"sprites/spr_dollFace_old/spr_dollFace_old.yy",},},
     {"id":{"name":"spr_dollFace","path":"sprites/spr_dollFace/spr_dollFace.yy",},},
     {"id":{"name":"spr_dollHair","path":"sprites/spr_dollHair/spr_dollHair.yy",},},
     {"id":{"name":"spr_dollJump","path":"sprites/spr_dollJump/spr_dollJump.yy",},},

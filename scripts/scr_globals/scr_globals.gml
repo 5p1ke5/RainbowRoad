@@ -21,17 +21,5 @@ function globals_initialize()
 	
 	global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white1, c_darkBrunette, c_red, c_aqua, c_red);
 	
-	
-	
-	//Note: Make these a thing that getts looked up in INI or a DS Map or osmething idk. It shouldn't be just held in memory all the time.
-	global.pants[0] = spr_dollPants0;
-	global.pants[1] = spr_dollPants1;
-	
-	global.pants[0] = spr_dollPants0;
-	global.pants[1] = spr_dollPants1;
-	
-	global.pants[0] = spr_dollPants0;
-	global.pants[1] = spr_dollPants1;
-	
 	show_debug_message("Globals initialized.");
 }
