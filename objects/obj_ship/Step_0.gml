@@ -25,7 +25,10 @@ else if (UP_BUTTON || DOWN_BUTTON)
 	}
 }
 
-
+if (X_BUTTON)
+{
+	room_goto(global.roomPrev);	
+}
 
 //Collision
 
