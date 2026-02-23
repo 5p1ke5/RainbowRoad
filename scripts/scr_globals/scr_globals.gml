@@ -17,6 +17,13 @@ function globals_initialize()
 	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
+	
+	global.shipX = undefined;
+	global.shipY = undefined;
+	global.shipDoorTo = room_beach;
+	global.shipDoorToX = 111;
+	global.shipDoorToY = 2046;
+	
 	global.roomPrev = ROOM_TITLE;
 	
 	global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white1, c_darkBrunette, c_red, c_aqua, c_red);

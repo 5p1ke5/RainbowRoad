@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.046417,
+  "duration":0.046417233,
   "exportDir":"",
   "name":"sfx_throw",
   "parent":{

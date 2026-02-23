@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"ship",
-    "path":"folders/Sprites/OCEAN/ship.yy",
+    "path":"folders/Sprites/WORLDMAP/ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

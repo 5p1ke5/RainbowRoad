@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":41.795918,
+  "duration":41.770863,
   "exportDir":"",
   "name":"bgm_jungle",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_jungle.mp3",
-  "volume":0.25,
+  "volume":0.2,
 }

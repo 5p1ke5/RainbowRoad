@@ -8,8 +8,8 @@
   "name":"obj_marker",
   "overriddenProperties":[],
   "parent":{
-    "name":"OCEAN",
-    "path":"folders/Objects/OCEAN.yy",
+    "name":"WORLDMAP",
+    "path":"folders/Objects/WORLDMAP.yy",
   },
   "parentObjectId":null,
   "persistent":false,

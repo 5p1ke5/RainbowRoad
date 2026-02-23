@@ -1,0 +1,1 @@
+mapMarker_initialize(64, 2046, room_beach, "Statue Beach", "A peaceful deserted island with a mysterious ruins complex to the east.");

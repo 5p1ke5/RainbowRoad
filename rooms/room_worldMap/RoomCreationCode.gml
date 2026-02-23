@@ -1,1 +1,1 @@
- bgm_play(bgm_beach);
+ bgm_play(bgm_worldMap);

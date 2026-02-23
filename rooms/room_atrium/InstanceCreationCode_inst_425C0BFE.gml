@@ -1,1 +1,1 @@
-transition_initialize(111, 2046, room_beach);
+transition_initialize(global.shipDoorToX, global.shipDoorToY, global.shipDoorTo);

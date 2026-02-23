@@ -1,9 +1,51 @@
-// Controls, inherits physics, sets sprite, collision
+// Collision, controls, inherits physics, sets sprite
+
+
+//Collision
+
+var _collision = instance_place(x, y, obj_marker)
+
+if (_collision)
+{
+	//Pulls variables from whatever island is being hovered over.
+	islandName = _collision.islandName;
+	scroll = _collision.description;
+}
+else
+{
+	//Otherwise blanks em
+	islandName = "";
+	scroll = "";
+}
 
 hsp = phys_force_add(hsp, RIGHT_BUTTON - LEFT_BUTTON, 3);
 vsp = phys_force_add(vsp, DOWN_BUTTON - UP_BUTTON, 3);
 
 event_inherited();
+
+
+//If over a marker, lets the player press a button to set the island as the destination and exit the world map.
+if (B_BUTTON || A_BUTTON)
+{
+	if (_collision)
+	{
+		global.shipDoorTo = _collision.roomTo;	
+		global.shipDoorToX = _collision.shipDoorToX;
+		global.shipDoorToY = _collision.shipDoorToY;
+	}
+	audio_play_sound(sfx_ping, 1, false);
+	
+	//Later make a little screen that is like...
+	// 'The Dolphin embarked for <Island Name>' and *then* it sends you back
+	room_goto(global.roomPrev);	
+}
+
+
+//Returns to previous screen.
+if (X_BUTTON)
+{
+	room_goto(global.roomPrev);	
+}
 
 //Sets sprites.
 if (LEFT_BUTTON || RIGHT_BUTTON)
@@ -23,26 +65,4 @@ else if (UP_BUTTON || DOWN_BUTTON)
 	{
 		sprite_index = spr_shipS;
 	}
-}
-
-if (X_BUTTON)
-{
-	room_goto(global.roomPrev);	
-}
-
-//Collision
-
-var _collision = instance_place(x, y, obj_marker)
-
-if (_collision)
-{
-	//Pulls variables from whatever island is being hovered over.
-	islandName = _collision.islandName;
-	scroll = _collision.description;
-}
-else
-{
-	//Otherwise blanks em
-	islandName = "";
-	scroll = "";
 }

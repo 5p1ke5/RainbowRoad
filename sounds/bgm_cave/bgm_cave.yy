@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":171.7551,
+  "duration":171.73004,
   "exportDir":"",
   "name":"bgm_cave",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_cave.mp3",
-  "volume":0.25,
+  "volume":0.2,
 }

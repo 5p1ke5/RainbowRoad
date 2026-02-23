@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":149.94286,
+  "duration":149.9178,
   "exportDir":"",
   "name":"bgm_tutorial",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_tutorial.mp3",
-  "volume":0.3,
+  "volume":0.2,
 }

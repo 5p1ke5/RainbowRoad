@@ -11,10 +11,15 @@ if (_file)
 	{
 		//Reads the json string from each line of the ext file, then parses it into a valid struct.
 		var _json = file_text_readln(_file);
-		var _struct = json_parse(_json);
 		
-		//Once the struct has been parsed deserializes it into an instance.
-		var _instance = instance_deserialize_depth(_struct, _struct.x, _struct.y, depth);		
+		//make sure it's a valid JSon.
+		if (string_char_at(_json, 0) == "{")
+		{
+			var _struct = json_parse(_json);
+	
+			//Once the struct has been parsed deserializes it into an instance.
+			var _instance = instance_deserialize_depth(_struct, _struct.x, _struct.y, depth);	
+		}	
 	}
 
 	file_text_close(_file);

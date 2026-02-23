@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"OCEAN",
-    "path":"folders/Sprites/OCEAN.yy",
+    "name":"WORLDMAP",
+    "path":"folders/Sprites/WORLDMAP.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

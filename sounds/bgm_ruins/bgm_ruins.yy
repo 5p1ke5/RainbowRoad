@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":77.89714,
+  "duration":77.872086,
   "exportDir":"",
   "name":"bgm_ruins",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_ruins.mp3",
-  "volume":0.3,
+  "volume":0.2,
 }

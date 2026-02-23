@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":188.7347,
+  "duration":188.70964,
   "exportDir":"",
   "name":"bgm_beach",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_beach.mp3",
-  "volume":0.25,
+  "volume":0.19,
 }
