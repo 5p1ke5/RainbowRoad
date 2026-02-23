@@ -37,13 +37,18 @@ if (B_BUTTON || A_BUTTON)
 	
 	//Later make a little screen that is like...
 	// 'The Dolphin embarked for <Island Name>' and *then* it sends you back
+	global.shipX = x;
+	global.shipY = y;
+	
 	room_goto(global.roomPrev);	
 }
 
 
-//Returns to previous screen.
+//Saves position, returns to previous screen.
 if (X_BUTTON)
 {
+	global.shipX = x;
+	global.shipY = y;
 	room_goto(global.roomPrev);	
 }
 
