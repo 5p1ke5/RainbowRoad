@@ -1,0 +1,1 @@
+transition_initialize(1392, 480, room_atrium);
