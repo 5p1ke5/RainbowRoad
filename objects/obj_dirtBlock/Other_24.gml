@@ -1,4 +1,6 @@
-// Inherit the parent event, set mask to blank.
+/// @description Destroys self when picked up.
 event_inherited();
 
-mask_index = spr_maskNone;
+instance_destroy();
+
+//Todo: Add some kind of dirt particle effect

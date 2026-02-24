@@ -1,4 +1,4 @@
-/// @description Inherits, alters animation.
+// @description Inherits, alters animation.
 event_inherited();
 
 if (instance_exists(myBalloon))

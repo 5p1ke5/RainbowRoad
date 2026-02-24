@@ -1,6 +1,5 @@
-/// @description If held just follows carrier.
+/// @description If held just follows carrier, doesn't do physics things.
 if (instance_exists(carrier))
 {
-	x = carrier.x;
-	y = carrier.bbox_top - sprite_height;
+	carry_carried_step()
 }

@@ -125,6 +125,7 @@
     {"name":"obj_moai","order":29,"path":"objects/obj_moai/obj_moai.yy",},
     {"name":"obj_moaiRed","order":32,"path":"objects/obj_moaiRed/obj_moaiRed.yy",},
     {"name":"obj_moaiS","order":31,"path":"objects/obj_moaiS/obj_moaiS.yy",},
+    {"name":"obj_npcDoll","order":3,"path":"objects/obj_npcDoll/obj_npcDoll.yy",},
     {"name":"obj_npcScreen","order":1,"path":"objects/obj_npcScreen/obj_npcScreen.yy",},
     {"name":"obj_npcSign","order":2,"path":"objects/obj_npcSign/obj_npcSign.yy",},
     {"name":"obj_oneWayBeach","order":1,"path":"objects/obj_oneWayBeach/obj_oneWayBeach.yy",},

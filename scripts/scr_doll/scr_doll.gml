@@ -45,6 +45,15 @@ function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoe
 	hairSprite = spr_dollHair;
 	armSpriteA = spr_armA;
 	armSpriteB = spr_armB;
+	
+	//Various variables dolls use to animate and might later use to moves.
+	hDir = 0; //Horizontal movement direction.
+	facing = 1; //Direction facing. Should always be 1 or -1.
+	maxSpeed = 3; 
+	accel = 0.4;
+	jumpHeight = 4;
+	jumpOffset = 0.1; 
+	animSpeed = 0.2;
 }
 
 ///@function doll_struct(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoeIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor)
