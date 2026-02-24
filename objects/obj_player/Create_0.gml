@@ -8,6 +8,14 @@ var _doll = global.playerDoll;
 doll_initialize(_doll.faceIndex, _doll.hairIndex, _doll.shirtIndex, _doll.pantsIndex, _doll.shoeIndex, 
 			_doll.skinColor, _doll.hairColor, _doll.shirtColor, _doll.pantsColor, _doll.shoeColor);
 
+//Various variables dolls use to animate.
+hDir = 0; //Horizontal movement direction.
+facing = 1; //Direction facing. Should always be 1 or -1.
+maxSpeed = 3; 
+accel = 0.4;
+jumpHeight = 4;
+jumpOffset = 0.1; 
+animSpeed = 0.2;
 animSpeedRun = 0.5;
 
 image_speed = animSpeed;

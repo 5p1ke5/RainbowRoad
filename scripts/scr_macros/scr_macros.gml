@@ -21,7 +21,7 @@
 
 #region //Constant numbers
 #macro STARTING_HP 3
-#macro TERMINAL_VELOCITY 10
+#macro TERMINAL_VELOCITY 20
 #macro MAX_ACCEL 3
 #macro JUMP_HEIGHT 4
 #macro PLAYER_WEIGHT 0.02
