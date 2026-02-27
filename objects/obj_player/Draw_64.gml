@@ -15,4 +15,5 @@ for (var _i = 0; _i < global.maxHP; _i++)
 	}
 }
 
-draw_text(10, 30, "Money: " + string(global.money));
+draw_set_halign(fa_left);
+draw_text_transformed(16, 80, "Money: " + string(global.money), 3, 3, 0);

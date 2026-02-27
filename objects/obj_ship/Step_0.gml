@@ -45,7 +45,7 @@ if (A_BUTTON_RELEASED)
 
 
 //Saves position, returns to previous screen.
-if (X_BUTTON)
+if (X_BUTTON_RELEASED)
 {
 	global.shipX = x;
 	global.shipY = y;
