@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.186054,
+  "duration":0.18605442,
   "exportDir":"",
   "name":"sfx_shoot",
   "parent":{

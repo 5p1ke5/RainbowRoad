@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_money",
+  "%Name":"obj_oneWayFlowerGrow",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_money",
+  "name":"obj_oneWayFlowerGrow",
   "overriddenProperties":[],
   "parent":{
-    "name":"collectables",
-    "path":"folders/Objects/collectables.yy",
+    "name":"oneway",
+    "path":"folders/Objects/blocks/oneway.yy",
   },
   "parentObjectId":{
-    "name":"abs_collectible",
-    "path":"objects/abs_collectible/abs_collectible.yy",
+    "name":"obj_oneWay",
+    "path":"objects/obj_oneWay/obj_oneWay.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_money",
-    "path":"sprites/spr_money/spr_money.yy",
+    "name":"spr_oneWayFlower",
+    "path":"sprites/spr_oneWayFlower/spr_oneWayFlower.yy",
   },
   "spriteMaskId":null,
   "visible":true,

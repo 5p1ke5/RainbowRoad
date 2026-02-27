@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_money",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_water",
+  "eventList":[],
   "managed":true,
-  "name":"obj_money",
+  "name":"obj_water",
   "overriddenProperties":[],
   "parent":{
-    "name":"collectables",
-    "path":"folders/Objects/collectables.yy",
+    "name":"decor",
+    "path":"folders/Objects/level features/decor.yy",
   },
-  "parentObjectId":{
-    "name":"abs_collectible",
-    "path":"objects/abs_collectible/abs_collectible.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_money",
-    "path":"sprites/spr_money/spr_money.yy",
+    "name":"spr_water",
+    "path":"sprites/spr_water/spr_water.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -11,8 +11,9 @@ if (global.money >= cost)
 		carry_pickup_instance(_newObject);
 	}
 	
-	
 	global.money -= cost;
+	
+	audio_play_sound(snd_buy, 1, false);
 	instance_destroy();
 }
 else

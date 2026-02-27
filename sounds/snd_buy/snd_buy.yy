@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"sfx_spring",
+  "%Name":"snd_buy",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.3781406,
+  "duration":0.54063493,
   "exportDir":"",
-  "name":"sfx_spring",
+  "name":"snd_buy",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_spring.wav",
-  "volume":1.0,
+  "soundFile":"snd_buy.wav",
+  "volume":0.3,
 }

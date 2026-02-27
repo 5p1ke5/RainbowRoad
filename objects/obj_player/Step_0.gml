@@ -91,7 +91,7 @@ if (B_BUTTON_RELEASED)
 		}
 		else if (UP_BUTTON)
 		{
-			carry_throw_instance(0, -jumpHeight, 0, 0);
+			carry_throw_instance(0, -jumpHeight, 0, vsp - 2);
 		}
 		else
 		{
