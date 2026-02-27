@@ -58,7 +58,6 @@
     {"name":"inst_5A3BAD98","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_5763AF80","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_3CBB46D8","path":"rooms/room_beach/room_beach.yy",},
-    {"name":"inst_669CCA1D","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_1CFB5807","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_70D961A5","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_7D9B803B","path":"rooms/room_beach/room_beach.yy",},
@@ -155,6 +154,7 @@
     {"name":"inst_42C612A8","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_166A4AC8","path":"rooms/room_beach/room_beach.yy",},
     {"name":"inst_5B910F30","path":"rooms/room_beach/room_beach.yy",},
+    {"name":"inst_669CCA1D","path":"rooms/room_beach/room_beach.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -199,7 +199,7 @@
       ],"layers":[],"name":"Level","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"NPC","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_3CBB46D8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CBB46D8","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":912.0,"y":2048.0,},
-        {"$GMRInstance":"v4","%Name":"inst_669CCA1D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_669CCA1D","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2100.0,"y":2208.0,},
+        {"$GMRInstance":"v4","%Name":"inst_669CCA1D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_669CCA1D","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2784.0,"y":2080.0,},
         {"$GMRInstance":"v4","%Name":"inst_1207B6C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1207B6C","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":2064.0,},
         {"$GMRInstance":"v4","%Name":"inst_166A4AC8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_166A4AC8","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":423.0,"y":2048.0,},
       ],"layers":[],"name":"NPC","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

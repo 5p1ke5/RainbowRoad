@@ -1,1 +1,0 @@
-mapMarker_initialize(96, 2288, room_cityIsland, "Ocean Beach", "A beach town in California.");

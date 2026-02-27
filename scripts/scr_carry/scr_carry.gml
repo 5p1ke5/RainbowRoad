@@ -13,6 +13,22 @@ function carry_initialize(_canCarry = true, _carrier = noone, _collision = true)
 	thrown = false;
 }
 
+
+/// @function buyable_initialize()
+/// @description initializes variables for a buyable carryable object.
+/// @param _cost Amount of money the object costs.
+/// @param _object Object to turn onto upon being picked up.
+/// @param _sprite Sprite to use for this object.
+/// @param _mask mask to use for this object.
+function buyable_initialize(_cost, _object, _sprite = object_get_sprite(_object), _mask=_sprite)
+{
+	cost = _cost;
+	object = _object;
+	sprite_index = _sprite;
+	mask_index = _mask;
+}
+
+
 /// @function carry_grab_target()
 /// @description Selects a target to grab. Checks below, colliding with the instance, and above, in that order. Returns a target, or undefined if none was found..
 function carry_grab_target()

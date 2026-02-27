@@ -1,0 +1,1 @@
+mapMarker_initialize(96, 2288, room_testIsland, "Test Island", "An island for testing game objects.");

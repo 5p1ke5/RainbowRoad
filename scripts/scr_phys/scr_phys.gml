@@ -109,7 +109,6 @@ function phys_wall_collision()
 /// @description Stops the player if they would touch a block vertically.
 function phys_floor_collision() 
 {
-	
 	//Checks every pixel in the player's path for collision.
 	for (var _i = 0;
 		(abs(_i) < abs(vsp + vspExt)) || 

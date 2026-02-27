@@ -25,7 +25,7 @@ event_inherited();
 
 
 //If over a marker, lets the player press a button to set the island as the destination and exit the world map.
-if (B_BUTTON || A_BUTTON)
+if (A_BUTTON_RELEASED)
 {
 	if (_collision)
 	{

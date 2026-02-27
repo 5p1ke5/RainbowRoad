@@ -5,6 +5,8 @@ function globals_initialize()
 	global.maxHP = STARTING_HP;
 	global.hp = global.maxHP;
 	
+	global.money = 0;
+	
 	//The object currently being carried between rooms.
 	global.carried = noone;
 	
