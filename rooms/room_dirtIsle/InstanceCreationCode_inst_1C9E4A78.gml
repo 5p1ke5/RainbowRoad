@@ -1,0 +1,1 @@
+buyable_initialize(3, obj_flowerSeed);

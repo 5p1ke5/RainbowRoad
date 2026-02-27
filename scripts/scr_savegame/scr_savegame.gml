@@ -34,21 +34,33 @@ function savegame_save(_file)
 	file_text_writeln(_textFile);
 	file_text_write_real(_textFile, global.spawnY);
 	file_text_writeln(_textFile);
+	
+	file_text_write_real(_textFile, global.shipX);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.shipY);
+	file_text_writeln(_textFile);
+	
+	file_text_write_real(_textFile, global.shipDoorToX);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.shipDoorToY);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.shipDoorTo);
+	file_text_writeln(_textFile);
+	
 	file_text_write_real(_textFile, global.bgm);
 	file_text_writeln(_textFile);
 	
 	file_text_write_string(_textFile, json_stringify(global.carried)); //Serializes the struct to a string
 	file_text_writeln(_textFile);
 	
-	file_text_write_real(_textFile, global.redShards);
-	file_text_writeln(_textFile);
-	file_text_write_string(_textFile,json_stringify(global.shardsFound));
+	file_text_write_real(_textFile, global.stars);
 	file_text_writeln(_textFile);
 	
 	file_text_write_real(_textFile, global.hp);
 	file_text_writeln(_textFile);
-	
 	file_text_write_real(_textFile, global.maxHP);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.money);
 	file_text_writeln(_textFile);
 	
 	file_text_write_string(_textFile, json_stringify(global.playerDoll));
@@ -79,15 +91,25 @@ function savegame_load(_file)
 	var _roomTo = real(file_text_readln(_textFile));
 	global.spawnX = real(file_text_readln(_textFile));
 	global.spawnY = real(file_text_readln(_textFile));
+	
+	global.shipX = real(file_text_readln(_textFile));
+	global.shipY = real(file_text_readln(_textFile));
+	
+	global.shipDoorToX = real(file_text_readln(_textFile));
+	global.shipDoorToY = real(file_text_readln(_textFile));
+	global.shipDoorTo = real(file_text_readln(_textFile));
+	
 	global.bgm = real(file_text_readln(_textFile));
+	
 	
 	global.carried = json_parse(file_text_readln(_textFile));
 	
-	global.redShards = real(file_text_readln(_textFile));
-	global.shardsFound = json_parse(file_text_readln(_textFile));
+	global.stars = real(file_text_readln(_textFile));
 	
 	global.hp = real(file_text_readln(_textFile));
 	global.maxHP = real(file_text_readln(_textFile));
+	global.money = real(file_text_readln(_textFile));
+	
 	global.playerDoll = json_parse(file_text_readln(_textFile));
 	
 	file_text_close(_textFile);

@@ -25,15 +25,15 @@ event_inherited();
 
 
 //If over a marker, lets the player press a button to set the island as the destination and exit the world map.
-if (A_BUTTON_RELEASED)
+if (A_BUTTON_RELEASED) || (X_BUTTON_RELEASED)
 {
 	if (_collision)
 	{
 		global.shipDoorTo = _collision.roomTo;	
 		global.shipDoorToX = _collision.shipDoorToX;
 		global.shipDoorToY = _collision.shipDoorToY;
+		audio_play_sound(sfx_ping, 1, false);
 	}
-	audio_play_sound(sfx_ping, 1, false);
 	
 	//Later make a little screen that is like...
 	// 'The Dolphin embarked for <Island Name>' and *then* it sends you back
@@ -44,13 +44,13 @@ if (A_BUTTON_RELEASED)
 }
 
 
-//Saves position, returns to previous screen.
-if (X_BUTTON_RELEASED)
-{
-	global.shipX = x;
-	global.shipY = y;
-	room_goto(global.roomPrev);	
-}
+////Saves position, returns to previous screen.
+//if (X_BUTTON_RELEASED)
+//{
+//	global.shipX = x;
+//	global.shipY = y;
+//	room_goto(global.roomPrev);	
+//}
 
 //Sets sprites.
 if (LEFT_BUTTON || RIGHT_BUTTON)
