@@ -18,7 +18,7 @@ if (global.money >= cost)
 }
 else
 {
-//Cancel out. TODO: Maybe rewrite so being picked up mostly happens on the item's end??
+//Cancel out.
 	with (carrier)
 	{
 		myCarry = noone;

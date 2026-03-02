@@ -96,9 +96,7 @@ function carry_uncarried_step()
 {
 	if (thrown)
 	{
-		//Todo: Make it work if an object is grounded but sliding on the ground kinda but don't mkake it work on enemies who are moving.
 		thrown = !(grounded);
-		//thrown = !((grounded) && (abs(vsp) + abs(hsp) < 1));
 	}
 }
 
@@ -130,7 +128,6 @@ function carry_pickup_instance(_pickup)
 ///@param _yOffset y position to teleport the instance to relative to the calling instance.
 function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 {
-	//Todo: Make this it's own function? Or what if I just put it all under event_user??
 	with (myCarry)
 	{
 		//Tries to find a good spot to place the object at.	

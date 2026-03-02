@@ -1,6 +1,3 @@
-//TODO: Make these ini files?
-
-
 ///@function savegame_save(_file)
 ///@description Saves the game to a text file.
 ///@param _file Name of the file to save to.

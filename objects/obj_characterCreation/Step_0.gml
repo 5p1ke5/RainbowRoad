@@ -81,15 +81,14 @@ switch (optionSelected)
 	break;
 	
 	case 3: //Pants.
-	//TODO: fix magic number 2 here by getting number of pants sets.
 		pantsIndex += _increment;
 		
 		if (pantsIndex < 0)
 		{
-			pantsIndex = 1;	
+			pantsIndex = array_length(PANTS_ARRAY) - 1;	
 		}
 		
-		if (pantsIndex >= 2)
+		if (pantsIndex >= array_length(PANTS_ARRAY))
 		{
 			pantsIndex = 0;
 		}
@@ -110,20 +109,18 @@ switch (optionSelected)
 		}
 	break;
 	
-	case 4: //sHOES.
-	//TODO: fix magic number 2 here by getting number of shoes sets.
+	case 4: //Shoes
 		shoeIndex += _increment;
 		
 		if (shoeIndex < 0)
 		{
-			shoeIndex = 1;	
+			shoeIndex =  array_length(SHOES_ARRAY) - 1;	
 		}
 		
-		if (shoeIndex >= 2)
+		if (shoeIndex >= array_length(SHOES_ARRAY))
 		{
 			shoeIndex = 0;
 		}
-		
 		
 		shoeSprites = 
 		[ //I'll think of a better way to do this later

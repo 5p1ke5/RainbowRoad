@@ -21,9 +21,6 @@ function moving_platform_move_step()
 {
 
 	//Checks every pixel in the object's path for collision. If a collision would happen reverses direction.
-	
-	
-	//todo: Have this further filter for if a carryBlock has been thrown or not. Or make blacklist check inheritance tree, idk.
 	for (var _i = 0; ( abs(_i) < abs(hsp) ); _i += sign(hsp))
 	{
 		if (collision_validate(instance_place_array(x + _i, y, block, false), [BLOCK_CARRY]))
@@ -52,9 +49,7 @@ function moving_platform_carry_step()
 	}
 	
 	
-	//TODO: This adds a 'margin' but thats kinda hacky, figure out a better solution.
-	//var _collisions = collision_rectangle_array(bbox_left, bbox_top - vsp - 1, bbox_right, bbox_top, all, true, true, false);
-	var _collisions = collision_rectangle_array(bbox_left, bbox_top - abs(vsp) - 4, bbox_right, bbox_top, [abs_physics, abs_carryBlock, abs_carryOneway], true, true, false);
+	var _collisions = collision_rectangle_array(bbox_left, bbox_top - abs(vsp * 2) - 1, bbox_right, bbox_top, [abs_physics, abs_carryBlock, abs_carryOneway], true, true, false);
 	
 	for (var _i = 0; _i < array_length(_collisions); _i++) 
 	{
@@ -71,23 +66,16 @@ function moving_platform_carry_step()
 				{
 					hspExt = _hsp + _hspExt;
 					
+					//If trying to move upwards.
 					if (_vsp + _vspExt > 0)
 					{
 						vspExt = _vsp + _vspExt;
 					
-						//adds vspExt to y here. Works good for going downwards but upwards might need to switch to the old way with an if statement or soemthing...
 						y += round(vspExt);
 					}
 					else
 					{
-						////adds vspExt to y here. Works good for going downwards but upwards might need to switch to the old way with an if statement or soemthing...
-						//vspExt = _vsp + _vspExt;
-						//vspExt = _vsp;
-						
-						
-						//y += round(_vspExt);
-						y += round(_vsp + _vspExt);	
-						//y += round(_vsp + _vspExt);	
+						y += round(_vsp + _vspExt);
 					}
 				}
 		}

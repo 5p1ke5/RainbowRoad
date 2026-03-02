@@ -1,3 +1,7 @@
+/// Collision is specifically "is this instance's hitbox currently inside that of another instance"
+/// It's different from collision checking ("Will this instance's hitbox be inside that of another instance?"
+/// It's different from physics ("We're checking if this instance's hitbox will be insiside that of another instance and if it would be we'll stop it from getting there so there will be no actual collision"
+
 ///@function instance_place_array(_x, _y, _object, _ordered)
 ///@description Copy of instance_place_list but outputs an array instead.
 ///@param _x x coordinate to check for collisions at.

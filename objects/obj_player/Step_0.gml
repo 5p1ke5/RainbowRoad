@@ -73,9 +73,6 @@ if (hDir != 0)
 #region ///Grab n throw controls
 
 //The object being targeted to grab.
-//TODO: Somewhat intensive (up to 3 O(n^2)), maybe only do this on button press? Except we also need this for the alert....
-//But wait in practice its probably not much more than a dozen or so checks at once so more like O(n). Worst case is maaaybe close to 100 but only if there are way too many carryables already.
-//It's fine for the player to have it in the step event but if I port this over to NPCs I need to figure out how to only do this on some frames.
 grab = carry_grab_target();
 
 //Lets you throw stuff.
@@ -129,11 +126,9 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 	if (object_is_family(_collisions[_i], abs_enemy))
 	{
 		//Ignores if it's a carried object or if collision is off.
-		//TODO: Make this its own function, maybe??
 		if ((myCarry) && (myCarry.id == _collisions[_i].id)) || !(_collisions[_i].collision)
 		{
-			continue;	//??? What was I doin here??? Should I use continue instead??
-			//break exits the loop
+			continue;
 		}
 		
 		

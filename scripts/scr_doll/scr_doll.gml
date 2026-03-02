@@ -1,5 +1,5 @@
 ///@function doll_initialize(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoeIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor)
-///@description Initializes variables for a draw. TODO: may combine with player_initialize things if i make a unified 'doll' object.
+///@description Initializes variables for a draw. 
 ///@param _faceIndex Subimage in the faces sprite to set face.
 ///@param _hairIndex Subimage in the hair sprite to set hair.
 ///@param _shirtIndex Subimage in the shirt sprite to set shirt.

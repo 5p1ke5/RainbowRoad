@@ -16,7 +16,7 @@ function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collisi
 	frict = _frict;
 	hsp = _hsp;
 	vsp = _vsp;
-	collision = _collision; //Todo: This is different from collision with hitboxes. Change its name? isSolid maybe?
+	collision = _collision; 
 	elasticity = _elasticity
 	wallObject = _wallObject;
 	floorObject = _floorObject;
@@ -86,7 +86,7 @@ function phys_force_add(_force, _accel, _max)
 /// @description If the object would end up inside the block object, it instead just moves them as close as possible.
 function phys_wall_collision() 
 {
-	//Checks every pixel in the object's path for collision. TODO: Find a way to cut dwn on instance_place_array calls a little.
+	//Checks every pixel in the object's path for collision. 
 	for (var _i = 0; ( abs(_i) < abs(hsp + hspExt) ) || (collision_validate(instance_place_array(x + _i, y, wallObject, false), collisionBlacklist)); _i += sign(hsp + hspExt))
 	{
 	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
@@ -116,20 +116,22 @@ function phys_floor_collision()
 		(phys_grounded() && vsp + vspExt > 0); 
 		_i += sign(vsp + vspExt))
 	{
-	    //If there is a valid collision, it will move the player as close to the object as possible and then stop.
+	    //If there is a valid collision, it will move the object as close to the object as possible and then stop.
 		var _collisions = instance_place_array(x, y + _i, floorObject, false);
 		
+		//Goes through the array of collisions.
 		for (var _ii = 0; _ii < array_length(_collisions); _ii++) 
 		{
 		    if (collision_validate(_collisions[_ii], collisionBlacklist))
 		    {
+				//For blocks, stops collision from all directions
 				if (object_is_family(_collisions[_ii], BLOCK))
 				{
 			        y += _i - sign(vsp + vspExt);
 			        vsp = vsp * -elasticity;
 					return;
 				}
-				
+				//For oneway, only does it if the player is directly above the block.
 				if (object_is_family(_collisions[_ii], ONEWAY))
 				{
 					if (vsp > 0) && (bbox_bottom - 1) <= (_collisions[_ii].bbox_top)
