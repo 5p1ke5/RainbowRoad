@@ -74,6 +74,7 @@
     {"name":"abs_hazard","order":11,"path":"objects/abs_hazard/abs_hazard.yy",},
     {"name":"abs_interactable","order":6,"path":"objects/abs_interactable/abs_interactable.yy",},
     {"name":"abs_interactableTransition","order":8,"path":"objects/abs_interactableTransition/abs_interactableTransition.yy",},
+    {"name":"abs_interactableTransitionLocked","order":6,"path":"objects/abs_interactableTransitionLocked/abs_interactableTransitionLocked.yy",},
     {"name":"abs_menu","order":12,"path":"objects/abs_menu/abs_menu.yy",},
     {"name":"abs_physics","order":2,"path":"objects/abs_physics/abs_physics.yy",},
     {"name":"abs_projectile","order":10,"path":"objects/abs_projectile/abs_projectile.yy",},

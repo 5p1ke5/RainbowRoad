@@ -101,6 +101,7 @@
     {"id":{"name":"abs_hazard","path":"objects/abs_hazard/abs_hazard.yy",},},
     {"id":{"name":"abs_interactable","path":"objects/abs_interactable/abs_interactable.yy",},},
     {"id":{"name":"abs_interactableTransition","path":"objects/abs_interactableTransition/abs_interactableTransition.yy",},},
+    {"id":{"name":"abs_interactableTransitionLocked","path":"objects/abs_interactableTransitionLocked/abs_interactableTransitionLocked.yy",},},
     {"id":{"name":"abs_menu","path":"objects/abs_menu/abs_menu.yy",},},
     {"id":{"name":"abs_npc","path":"objects/abs_npc/abs_npc.yy",},},
     {"id":{"name":"abs_physics","path":"objects/abs_physics/abs_physics.yy",},},
