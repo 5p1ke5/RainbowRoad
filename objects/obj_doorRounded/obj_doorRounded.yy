@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"abs_interactableTransitionLocked",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_doorRounded",
+  "eventList":[],
   "managed":true,
-  "name":"abs_interactableTransitionLocked",
+  "name":"obj_doorRounded",
   "overriddenProperties":[],
   "parent":{
-    "name":"abstract",
-    "path":"folders/Objects/abstract.yy",
+    "name":"doors",
+    "path":"folders/Objects/level features/doors.yy",
   },
   "parentObjectId":{
     "name":"abs_interactableTransition",
@@ -33,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_doorRounded",
+    "path":"sprites/spr_doorRounded/spr_doorRounded.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

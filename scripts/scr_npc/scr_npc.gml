@@ -1,4 +1,4 @@
-/// @function npc_initialize()
+/// @function npc_initialize(_name = "", _dialogue = "")
 /// @description Initializes npc variables.
 /// @param _name Name of the character.
 /// @param _dialogue Text string to be put in the speech balloon.
@@ -21,7 +21,7 @@ function npc_initialize(_name = "", _dialogue = "")
 }
 
 
-/// @function npc_speak(_text)
+/// @function npc_speak(_text, _name = undefined)
 /// @description generates a speech balloon for the npc.
 /// @param _text The text to be put in the balloon.
 /// @param _name The name to be put in the balloon.

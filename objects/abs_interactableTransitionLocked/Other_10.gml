@@ -14,7 +14,7 @@ if (_carry.object_index == obj_key)
 		instance_destroy();	
 	}
 	
-	event_inherited();
+	transition_goto(spawnX, spawnY, roomTo);
 }
 //Otherwise, says you need to have a key.
 else

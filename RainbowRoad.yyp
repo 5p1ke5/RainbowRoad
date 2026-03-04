@@ -150,6 +150,7 @@
     {"id":{"name":"obj_doorHouse","path":"objects/obj_doorHouse/obj_doorHouse.yy",},},
     {"id":{"name":"obj_doorMarker","path":"objects/obj_doorMarker/obj_doorMarker.yy",},},
     {"id":{"name":"obj_doorMetal","path":"objects/obj_doorMetal/obj_doorMetal.yy",},},
+    {"id":{"name":"obj_doorRounded","path":"objects/obj_doorRounded/obj_doorRounded.yy",},},
     {"id":{"name":"obj_doorShipWheel","path":"objects/obj_doorShipWheel/obj_doorShipWheel.yy",},},
     {"id":{"name":"obj_endTable","path":"objects/obj_endTable/obj_endTable.yy",},},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},},
@@ -225,6 +226,7 @@
     {"id":{"name":"room_flowerFields","path":"rooms/room_flowerFields/room_flowerFields.yy",},},
     {"id":{"name":"room_flowerFieldsCaveA","path":"rooms/room_flowerFieldsCaveA/room_flowerFieldsCaveA.yy",},},
     {"id":{"name":"room_flowerFieldsCaveB","path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},},
+    {"id":{"name":"room_flowerFieldsTreeHomeA","path":"rooms/room_flowerFieldsTreeHomeA/room_flowerFieldsTreeHomeA.yy",},},
     {"id":{"name":"room_hotelIsle","path":"rooms/room_hotelIsle/room_hotelIsle.yy",},},
     {"id":{"name":"room_iceIsland","path":"rooms/room_iceIsland/room_iceIsland.yy",},},
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
@@ -461,6 +463,7 @@
     {"roomId":{"name":"room_testIsland","path":"rooms/room_testIsland/room_testIsland.yy",},},
     {"roomId":{"name":"room_flowerFieldsCaveA","path":"rooms/room_flowerFieldsCaveA/room_flowerFieldsCaveA.yy",},},
     {"roomId":{"name":"room_flowerFieldsCaveB","path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},},
+    {"roomId":{"name":"room_flowerFieldsTreeHomeA","path":"rooms/room_flowerFieldsTreeHomeA/room_flowerFieldsTreeHomeA.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
