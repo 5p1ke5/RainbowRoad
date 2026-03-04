@@ -1,0 +1,1 @@
+transition_initialize(648, 2288, room_flowerFieldsCaveA);

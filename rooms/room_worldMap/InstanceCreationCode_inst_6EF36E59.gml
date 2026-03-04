@@ -1,1 +1,1 @@
-mapMarker_initialize(96, 2080, room_dirtIsle, "Flower Fields", "A garden island with giant flowers where you can dig for treasure.");
+mapMarker_initialize(96, 2080, room_flowerFields, "Flower Fields", "A garden island with giant flowers where you can dig for treasure.");

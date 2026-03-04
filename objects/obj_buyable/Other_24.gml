@@ -1,5 +1,5 @@
 /// @description cancels out of being picked up if the player doesn't have enough money. Otherwise turns into the item.
-event_inherited();
+//event_inherited();
 
 //If the player has enough money creates the object in the 'object' variable and sets it as the player's held item. Then destroys self.
 if (global.money >= cost)
@@ -24,7 +24,5 @@ else
 		myCarry = noone;
 		npc_speak("I don't have enough money for this.", "Player");
 	}
-
 	carrier = noone;
-	
 }

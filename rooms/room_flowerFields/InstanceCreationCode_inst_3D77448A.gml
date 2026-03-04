@@ -1,0 +1,2 @@
+doll_initialize(3, 10, 1, 0, 1, c_black2, c_brunette, c_green, c_navy, c_red);
+npc_initialize("Jerry", ["These flowers grow up to 10 feet tall if you plant them on dirt. I sell them for 3 coins each."])
