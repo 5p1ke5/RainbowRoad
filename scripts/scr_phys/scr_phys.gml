@@ -8,7 +8,7 @@
 /// @param _elasticity How much an object bounces when it collides with something.
 /// @param _wallObject Object used for collision in wall_collision event.
 /// @param _floorObject Object used for collision in wall_collision event.
-/// @param _collisionBlacklist An array of objects that are ignored for collisions.
+/// @param _collisionBlacklist An array of objects that are ignored for collision checking.
 function phys_initialize(_grav = 0.1, _frict = 0.2, _hsp = 0, _vsp = 0, _collision = true, _elasticity = 0, _wallObject = BLOCK, _floorObject = GROUND, _collisionBlacklist = []) 
 {
 	//Initializes instance variables.

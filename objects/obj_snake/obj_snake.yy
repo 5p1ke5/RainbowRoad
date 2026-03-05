@@ -13,8 +13,8 @@
     "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
-    "name":"abs_enemy",
-    "path":"objects/abs_enemy/abs_enemy.yy",
+    "name":"abs_enemyCarry",
+    "path":"objects/abs_enemyCarry/abs_enemyCarry.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

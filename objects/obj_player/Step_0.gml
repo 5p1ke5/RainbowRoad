@@ -123,7 +123,7 @@ for (var _i = 0; _i < array_length(_collisions); _i++)
 		break;	
 	}
 	
-	if (object_is_family(_collisions[_i], abs_enemy))
+	if (object_is_family(_collisions[_i], abs_enemyCarry))
 	{
 		//Ignores if it's a carried object or if collision is off.
 		if ((myCarry) && (myCarry.id == _collisions[_i].id)) || !(_collisions[_i].collision)

@@ -27,9 +27,6 @@
     {"name":"inst_1DD68469","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_63F91754","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_52EE844C","path":"rooms/room_beachCave/room_beachCave.yy",},
-    {"name":"inst_7BC9A01","path":"rooms/room_beachCave/room_beachCave.yy",},
-    {"name":"inst_6338CB3D","path":"rooms/room_beachCave/room_beachCave.yy",},
-    {"name":"inst_5E50EE9","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_6405CAF3","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_9C5133","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_4C9E5479","path":"rooms/room_beachCave/room_beachCave.yy",},
@@ -37,6 +34,9 @@
     {"name":"inst_4B866516","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_76E63D26","path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"inst_669CCA1D","path":"rooms/room_beachCave/room_beachCave.yy",},
+    {"name":"inst_7D8E3081","path":"rooms/room_beachCave/room_beachCave.yy",},
+    {"name":"inst_67E0389C","path":"rooms/room_beachCave/room_beachCave.yy",},
+    {"name":"inst_84333A3","path":"rooms/room_beachCave/room_beachCave.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -45,9 +45,9 @@
         {"$GMRInstance":"v4","%Name":"inst_669CCA1D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_669CCA1D","objectId":{"name":"obj_npcSign","path":"objects/obj_npcSign/obj_npcSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1824.0,"y":608.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Monsters","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_7BC9A01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BC9A01","objectId":{"name":"obj_slimePink","path":"objects/obj_slimePink/obj_slimePink.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":281.0,"y":482.0,},
-        {"$GMRInstance":"v4","%Name":"inst_6338CB3D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6338CB3D","objectId":{"name":"obj_slimePink","path":"objects/obj_slimePink/obj_slimePink.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":416.0,},
-        {"$GMRInstance":"v4","%Name":"inst_5E50EE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E50EE9","objectId":{"name":"obj_slimePink","path":"objects/obj_slimePink/obj_slimePink.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1440.0,"y":224.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7D8E3081","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D8E3081","objectId":{"name":"obj_snake","path":"objects/obj_snake/obj_snake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":496.0,},
+        {"$GMRInstance":"v4","%Name":"inst_67E0389C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67E0389C","objectId":{"name":"obj_snake","path":"objects/obj_snake/obj_snake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":384.0,},
+        {"$GMRInstance":"v4","%Name":"inst_84333A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_84333A3","objectId":{"name":"obj_snake","path":"objects/obj_snake/obj_snake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1504.0,"y":256.0,},
       ],"layers":[],"name":"Monsters","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Furniture","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_4B866516","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B866516","objectId":{"name":"obj_potM","path":"objects/obj_potM/obj_potM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":608.0,},
