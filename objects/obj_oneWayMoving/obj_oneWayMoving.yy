@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_oneWayFlowerGrow",
+  "%Name":"obj_oneWayMoving",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_oneWayFlowerGrow",
+  "name":"obj_oneWayMoving",
   "overriddenProperties":[],
   "parent":{
-    "name":"oneway",
-    "path":"folders/Objects/blocks/oneway.yy",
+    "name":"moving",
+    "path":"folders/Objects/blocks/oneway/moving.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_oneWay",
+    "path":"objects/obj_oneWay/obj_oneWay.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,9 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_oneWayFlower",
-    "path":"sprites/spr_oneWayFlower/spr_oneWayFlower.yy",
+    "name":"spr_oneWay",
+    "path":"sprites/spr_oneWay/spr_oneWay.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

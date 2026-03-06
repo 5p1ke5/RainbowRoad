@@ -2,5 +2,12 @@
 
 if (image_yscale < maxHeightIncrement)
 {
-	image_yscale += 0.01;
+	image_yscale += 0.022;
+}
+else
+{
+	with (movingPlatform)
+	{
+		vsp = 0;	
+	}
 }
