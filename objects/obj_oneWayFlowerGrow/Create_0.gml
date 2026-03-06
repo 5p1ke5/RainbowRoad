@@ -2,7 +2,7 @@
 image_yscale = 0;
 maxHeightIncrement = 4;
 
-movingPlatform = instance_create_depth(bbox_left, y + 7, depth, obj_oneWayMoving);
+movingPlatform = instance_create_depth(bbox_left, y + 4, depth, obj_oneWayMoving);
 
 with (movingPlatform)
 {
