@@ -1,0 +1,1 @@
+npc_initialize("Sign", ["Watch out for spiked enemies! You can't jump on them or pick them up.", "Try throwing something at them."]);

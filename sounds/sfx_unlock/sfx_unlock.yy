@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"sfx_lever",
+  "%Name":"sfx_unlock",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.09301587,
+  "duration":0.12814058,
   "exportDir":"",
-  "name":"sfx_lever",
+  "name":"sfx_unlock",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_lever.wav",
+  "soundFile":"sfx_unlock.wav",
   "volume":0.5,
 }

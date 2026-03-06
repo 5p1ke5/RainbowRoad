@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"sfx_lever",
+  "%Name":"bgm_forest",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.09301587,
+  "duration":149.20587,
   "exportDir":"",
-  "name":"sfx_lever",
+  "name":"bgm_forest",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Music",
+    "path":"folders/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_lever.wav",
-  "volume":0.5,
+  "soundFile":"bgm_forest.mp3",
+  "volume":0.2,
 }

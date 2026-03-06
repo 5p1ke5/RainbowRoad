@@ -24,6 +24,8 @@ else
 		}
 	
 		transition_goto(spawnX, spawnY, roomTo);
+		
+		audio_play_sound(sfx_unlock, 1, false);
 	}
 	//Otherwise, says you need to have a key.
 	else
