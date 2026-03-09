@@ -6,5 +6,6 @@ movingPlatform = instance_create_depth(bbox_left, y + 4, depth, obj_oneWayMoving
 
 with (movingPlatform)
 {
-	moving_platform_initialize(0, -1, true, []);	
+	moving_platform_initialize(0, -1, true, []);
+	image_xscale = 0.75
 }

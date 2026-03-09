@@ -153,7 +153,7 @@ function phys_floor_collision()
 function phys_friction(_hsp, _frict, _grounded) 
 {
 	//Friction will reduce horizontal speed. This is reduced while in the air.
-	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(8, !_grounded)));
+	  _hsp -= (_frict * sign(_hsp)) * (1 / (power(4, !_grounded)));
 	  
 	//If hsp is lower than the friction value, it just sets hsp to 0.
 	if (abs(_hsp) < _frict)
