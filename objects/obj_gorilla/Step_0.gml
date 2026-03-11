@@ -14,6 +14,7 @@ if (array_length(_hitInstances) > 0)
 	
 	if (array_any(_hitInstances, _validate_hit))
 	{
+		vsp -= 1;
 		hp--;
 		
 		if (hp <= 0)

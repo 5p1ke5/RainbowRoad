@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spikeBug_1",
-    "path":"sprites/spr_spikeBug_1/spr_spikeBug_1.yy",
+    "name":"spr_gorilla",
+    "path":"sprites/spr_gorilla/spr_gorilla.yy",
   },
   "spriteMaskId":null,
   "visible":true,

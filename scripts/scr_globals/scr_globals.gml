@@ -10,6 +10,7 @@ function globals_initialize()
 	//The object currently being carried between rooms.
 	global.carried = noone;
 	
+	//These may be moved to a file but for now reading from memory is fine.
 	global.bgm = noone;
 	
 	global.redShards = 0;
@@ -27,6 +28,10 @@ function globals_initialize()
 	global.shipDoorToY = 2046;
 	
 	global.roomPrev = ROOM_TITLE;
+	
+	
+	global.sasquatchDefeated = false;
+	
 	
 	//global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white1, c_darkBrunette, c_red, c_aqua, c_red);
 	var _faceIndex = irandom(sprite_get_number(spr_dollFace));

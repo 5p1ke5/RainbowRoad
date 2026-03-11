@@ -12,4 +12,8 @@ with (_corpse)
 	vsp = -JUMP_HEIGHT;
 }
 
+//Makes key
 instance_create_depth(x, bbox_top, depth, obj_key);
+
+//sets story flag.
+global.sasquatchDefeated = true;
