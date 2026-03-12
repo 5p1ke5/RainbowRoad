@@ -13,8 +13,7 @@ function globals_initialize()
 	//These may be moved to a file but for now reading from memory is fine.
 	global.bgm = noone;
 	
-	global.redShards = 0;
-	global.shardsFound = array_create(4, false);
+	global.starShards = 0;
 	
 	global.stars = 0;
 	
