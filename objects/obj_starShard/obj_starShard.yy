@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_star",
-    "path":"sprites/spr_star/spr_star.yy",
+    "name":"spr_starShard",
+    "path":"sprites/spr_starShard/spr_starShard.yy",
   },
   "spriteMaskId":null,
   "visible":true,

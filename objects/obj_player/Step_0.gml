@@ -117,10 +117,18 @@ var _collisions = hitbox_step_instance_array();
 //Goes through all the collisions and processes each one.
 for (var _i = 0; _i < array_length(_collisions); _i++) 
 {   
-	//If flicker is activated then a hit has been registered and the loop can be broken.
+	
+	//If the player touches lava or something they just die. Exits the loop cause at that point it doesn't matter what else theyre touchin.
+	if (object_is_family(_collisions[_i], abs_lethal))
+	{
+		player_die();
+		break;
+	}
+	
+	//If flicker is activated then a hit has been registered and can exit the loops step from here.
 	if (flicker > 0)
 	{
-		break;	
+		continue;	
 	}
 	
 	if (object_is_family(_collisions[_i], abs_enemyCarry))
