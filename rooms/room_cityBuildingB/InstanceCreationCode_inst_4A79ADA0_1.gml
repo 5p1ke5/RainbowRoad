@@ -1,0 +1,1 @@
+npc_initialize("Clerk", ["Welcome to my store! We have lots of useful things for sale."])

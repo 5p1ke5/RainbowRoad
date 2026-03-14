@@ -1,0 +1,1 @@
+buyable_initialize(10, obj_trampoline);

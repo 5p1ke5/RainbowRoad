@@ -38,10 +38,13 @@ if (A_BUTTON_PRESSED) //Jumps
 		}
 	}
 } 
+
 //Offsets gravity to allow for jump cancelling
 else if (A_BUTTON) 
 {
-	vsp -= jumpOffset;		
+	//Jumpoffset can depend on held item
+	var _jumpOffset = jumpOffset + ((myCarry != noone) && (myCarry.object_index == obj_umbrella)) * jumpOffset/2;
+	vsp -= _jumpOffset;
 }
 
 ///Movement

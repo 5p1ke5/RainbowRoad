@@ -1,1 +1,0 @@
-dialogue = ["Welcome to the tutorial! You can use the arrow keys to move and the space bar to jump.", "We found you drifting in the ocean. Did you get in a shipwreck?"];

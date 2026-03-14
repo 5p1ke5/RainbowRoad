@@ -1,0 +1,1 @@
+npc_initialize("Antonion", ["Welcome to my lava ice surfing rink! Just 10 coins to play.", "Throw the ice block and then jump on it to surf on the lava.", "If you're having trouble jumping on it, try holding X to do a running jump."])

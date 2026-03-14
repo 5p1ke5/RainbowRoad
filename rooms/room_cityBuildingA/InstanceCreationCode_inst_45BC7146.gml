@@ -1,0 +1,1 @@
+transition_initialize(624, 144, room_cityBuildingA)

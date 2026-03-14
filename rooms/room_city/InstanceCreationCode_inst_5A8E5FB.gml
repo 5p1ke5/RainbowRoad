@@ -1,0 +1,1 @@
+transition_initialize(2696, 688, room_cityBuildingB)
