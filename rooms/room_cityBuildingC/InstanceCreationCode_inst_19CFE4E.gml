@@ -1,0 +1,1 @@
+transition_initialize(656, 384, room_cityBuildingCGameArea, false, 10)

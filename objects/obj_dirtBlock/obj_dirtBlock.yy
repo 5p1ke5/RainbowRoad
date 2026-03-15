@@ -15,8 +15,8 @@
     "path":"folders/Objects/carryable.yy",
   },
   "parentObjectId":{
-    "name":"abs_carryOneway",
-    "path":"objects/abs_carryOneway/abs_carryOneway.yy",
+    "name":"abs_carryBlock",
+    "path":"objects/abs_carryBlock/abs_carryBlock.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

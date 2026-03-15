@@ -43,7 +43,8 @@ if (A_BUTTON_PRESSED) //Jumps
 else if (A_BUTTON) 
 {
 	//Jumpoffset can depend on held item
-	var _jumpOffset = jumpOffset + ((myCarry != noone) && (myCarry.object_index == obj_umbrella)) * jumpOffset/2;
+	var _balloonOffset = instance_exists(myCarry) && (myCarry.object_index == obj_umbrella) * jumpOffset/2;
+	var _jumpOffset = jumpOffset + _balloonOffset;
 	vsp -= _jumpOffset;
 }
 

@@ -190,6 +190,8 @@
     {"name":"room_characterCreation","order":1,"path":"rooms/room_characterCreation/room_characterCreation.yy",},
     {"name":"room_cityBuildingA","order":1,"path":"rooms/room_cityBuildingA/room_cityBuildingA.yy",},
     {"name":"room_cityBuildingB","order":3,"path":"rooms/room_cityBuildingB/room_cityBuildingB.yy",},
+    {"name":"room_cityBuildingC","order":4,"path":"rooms/room_cityBuildingC/room_cityBuildingC.yy",},
+    {"name":"room_cityBuildingCGameArea","order":5,"path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},
     {"name":"room_flowerFieldsCaveA","order":1,"path":"rooms/room_flowerFieldsCaveA/room_flowerFieldsCaveA.yy",},
     {"name":"room_flowerFieldsCaveB","order":2,"path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},
     {"name":"room_flowerFieldsCaveC","order":3,"path":"rooms/room_flowerFieldsCaveC/room_flowerFieldsCaveC.yy",},

@@ -4,12 +4,14 @@
 /// @param _spawnY Y postiion the player will be spawned at in the room.
 /// @param _roomTo Index of the room the player will be sent to.
 /// @param _locked If the door is considered locked.
-function transition_initialize(_spawnX, _spawnY, _roomTo, _locked = false)
+/// @param _price The amount the player has to pay to go through the door.
+function transition_initialize(_spawnX, _spawnY, _roomTo, _locked = false, _price = 0)
 {
 	spawnX = _spawnX;
 	spawnY = _spawnY;
 	roomTo = _roomTo;
 	locked = _locked;
+	price = _price;
 	
 	//If you need the door to sorta stay unlocked you can do something like this in the creation code...
 	/*

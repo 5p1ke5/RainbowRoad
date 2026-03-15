@@ -239,6 +239,8 @@
     {"id":{"name":"room_city","path":"rooms/room_city/room_city.yy",},},
     {"id":{"name":"room_cityBuildingA","path":"rooms/room_cityBuildingA/room_cityBuildingA.yy",},},
     {"id":{"name":"room_cityBuildingB","path":"rooms/room_cityBuildingB/room_cityBuildingB.yy",},},
+    {"id":{"name":"room_cityBuildingC","path":"rooms/room_cityBuildingC/room_cityBuildingC.yy",},},
+    {"id":{"name":"room_cityBuildingCGameArea","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},},
     {"id":{"name":"room_flowerFields","path":"rooms/room_flowerFields/room_flowerFields.yy",},},
     {"id":{"name":"room_flowerFieldsCaveA","path":"rooms/room_flowerFieldsCaveA/room_flowerFieldsCaveA.yy",},},
     {"id":{"name":"room_flowerFieldsCaveB","path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},},
@@ -513,6 +515,8 @@
     {"roomId":{"name":"room_flowerFieldsCaveD","path":"rooms/room_flowerFieldsCaveD/room_flowerFieldsCaveD.yy",},},
     {"roomId":{"name":"room_cityBuildingA","path":"rooms/room_cityBuildingA/room_cityBuildingA.yy",},},
     {"roomId":{"name":"room_cityBuildingB","path":"rooms/room_cityBuildingB/room_cityBuildingB.yy",},},
+    {"roomId":{"name":"room_cityBuildingC","path":"rooms/room_cityBuildingC/room_cityBuildingC.yy",},},
+    {"roomId":{"name":"room_cityBuildingCGameArea","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
