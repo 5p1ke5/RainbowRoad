@@ -176,9 +176,11 @@ if (grab) && !(instance_exists(myCarry))
 }
 
 //parallax
-//var _layer = layer_get_id("Parallax");
 
-//if (_layer)
-//{
-//	layer_y(_layer, y/2);
-//}
+var _layer = layer_get_id("Parallax");
+
+if (_layer)
+{
+	//works for 1280 high backgrounds, haven't tested it on others.
+	layer_y(_layer, y - (960 * (y / room_height) ))
+}
