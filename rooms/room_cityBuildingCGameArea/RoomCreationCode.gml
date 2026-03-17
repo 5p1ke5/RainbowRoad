@@ -1,6 +1,6 @@
 
 //Replaces 10 random dirt blocks with coins to be dug up.
-while (instance_number(obj_money) < 10)
+while (instance_number(obj_money) < 30)
 {
 	var _block = instance_find(obj_dirtBlock, irandom(instance_number(obj_dirtBlock) - 1));
 	

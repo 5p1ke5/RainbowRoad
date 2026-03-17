@@ -88,7 +88,7 @@
 #endregion
 
 #region enums
-enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15}
+enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15, U_EVENT_TIMER = 13}
 #endregion
 
 //extra colors

@@ -49,6 +49,8 @@ else
 	}
 	else
 	{
+		global.money -= price;
+		audio_play_sound(snd_buy, 1, false);
 		transition_goto(spawnX, spawnY, roomTo);
 	}
 	

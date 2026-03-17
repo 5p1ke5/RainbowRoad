@@ -438,6 +438,7 @@
     {"name":"inst_37F3FB9F","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},
     {"name":"inst_7FF2214","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},
     {"name":"inst_428C8261","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},
+    {"name":"inst_4767890B","path":"rooms/room_cityBuildingCGameArea/room_cityBuildingCGameArea.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -882,6 +883,7 @@
       ],"layers":[],"name":"Blocks","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Level","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_428C8261","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_428C8261","objectId":{"name":"obj_doorCave","path":"objects/obj_doorCave/obj_doorCave.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":656.0,"y":864.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4767890B","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4767890B","objectId":{"name":"obj_roomTimerPersistent","path":"objects/obj_roomTimerPersistent/obj_roomTimerPersistent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":368.0,},
       ],"layers":[],"name":"Level","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"FLOOR1","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"FLOOR1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":80,"SerialiseWidth":80,"TileSerialiseData":[
           72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,73,71,72,
