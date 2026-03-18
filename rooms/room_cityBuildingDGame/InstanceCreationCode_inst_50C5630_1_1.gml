@@ -1,1 +1,0 @@
-npc_initialize("Mr. Digby", ["Welcome to my treasure digging minigame! Just 10 coins to play.", "See how much treasure you can dig up in 30 seconds!"])
