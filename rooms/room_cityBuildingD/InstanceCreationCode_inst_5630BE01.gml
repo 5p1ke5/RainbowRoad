@@ -1,1 +1,1 @@
-transition_initialize(432, 928, room_cityBuildingDGame);
+transition_initialize(480, 928, room_cityBuildingDGame);

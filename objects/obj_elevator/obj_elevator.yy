@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_upElevator",
-    "path":"sprites/spr_upElevator/spr_upElevator.yy",
+    "name":"spr_elevatorUp",
+    "path":"sprites/spr_elevatorUp/spr_elevatorUp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

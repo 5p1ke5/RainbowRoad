@@ -1,1 +1,0 @@
-teleporter_initialize(624, 784);
