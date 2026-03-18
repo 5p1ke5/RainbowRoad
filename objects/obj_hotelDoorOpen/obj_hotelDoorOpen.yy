@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hotelOpenDoor",
+  "%Name":"obj_hotelDoorOpen",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hotelOpenDoor",
+  "name":"obj_hotelDoorOpen",
   "overriddenProperties":[],
   "parent":{
     "name":"hotel",
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hotelOpenedDoor",
-    "path":"sprites/spr_hotelOpenedDoor/spr_hotelOpenedDoor.yy",
+    "name":"spr_hotelDoorOpen",
+    "path":"sprites/spr_hotelDoorOpen/spr_hotelDoorOpen.yy",
   },
   "spriteMaskId":null,
   "visible":true,
