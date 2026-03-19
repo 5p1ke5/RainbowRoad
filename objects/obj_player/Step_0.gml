@@ -43,7 +43,7 @@ if (A_BUTTON_PRESSED) //Jumps
 else if (A_BUTTON) 
 {
 	//Jumpoffset can depend on held item
-	var _balloonOffset = instance_exists(myCarry) && (myCarry.object_index == obj_umbrella) * jumpOffset/2;
+	var _balloonOffset = (instance_exists(myCarry) && (myCarry.object_index == obj_balloon)) * jumpOffset / 2;
 	var _jumpOffset = jumpOffset + _balloonOffset;
 	vsp -= _jumpOffset;
 }
@@ -182,5 +182,6 @@ var _layer = layer_get_id("Parallax");
 if (_layer)
 {
 	//works for 1280 high backgrounds, haven't tested it on others.
-	layer_y(_layer, y - (960 * (y / room_height) ))
+	//layer_y(_layer, y - (960 * (y / room_height) ));
+	//layer_y(_layer, y/10);
 }

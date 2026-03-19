@@ -1,0 +1,1 @@
+npc_initialize("Nyssa", "Did you know? They say the dread pirate Captain Jack buried his treasure on the east side of this island!");

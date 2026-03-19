@@ -1,1 +1,1 @@
-buyable_initialize(10, obj_umbrella);
+buyable_initialize(10, obj_balloon);

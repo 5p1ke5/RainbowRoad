@@ -13,7 +13,7 @@ if (global.money >= cost)
 	
 	global.money -= cost;
 	
-	audio_play_sound(snd_buy, 1, false);
+	audio_play_sound(sfx_buy, 1, false);
 	instance_destroy();
 }
 else

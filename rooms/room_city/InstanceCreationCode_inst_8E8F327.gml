@@ -1,0 +1,1 @@
+transition_initialize(640, 768, room_cityCave);
