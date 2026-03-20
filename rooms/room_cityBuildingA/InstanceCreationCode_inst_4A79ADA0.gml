@@ -1,1 +1,2 @@
-npc_initialize("Antonion", ["Welcome to my lava ice surfing rink! Just 10 coins to play.", "Throw the ice block and then jump on it to surf on the lava.", "If you're having trouble jumping on it, try holding X to do a running jump."])
+doll_initialize(13, 15, 15, 0, 1, c_white1, c_violet, c_pink, c_white, c_pink);
+npc_initialize("Clooney", ["Welcome to my lava ice surfing rink! Just 10 coins to play.", "Throw the ice block and then jump on it to surf on the lava.", "If you're having trouble jumping on it, try holding X to do a running jump."])

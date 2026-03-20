@@ -1,1 +1,2 @@
-npc_initialize("Nyssa", "Did you know? They say the dread pirate Captain Jack buried his treasure on the east side of this island!");
+doll_initialize(17, 4, 9, 0, 1, c_white3, c_white, c_white2, c_gray, c_black1);
+npc_initialize("Grampa", ["The treasure? It's in the grotto just to the east.", "Be careful, the last treasure hunter was dashed against the rocks. Getting in there is the hard part!"]);

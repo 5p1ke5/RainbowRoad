@@ -92,7 +92,8 @@ enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15, U_EVENT_TIMER = 1
 #endregion
 
 //extra colors
-#region//Human skin colors
+#region
+//Human skin colors
 #macro c_black1 make_color_rgb(120, 65, 35)
 #macro c_black2 make_color_rgb(160, 65, 35)
 #macro c_black3 make_color_rgb(160, 85, 60)
@@ -112,4 +113,10 @@ enum USER_EVENTS {U_EVENT_PICKED_UP = 14, U_EVENT_THROWN = 15, U_EVENT_TIMER = 1
 #macro c_brunette make_color_rgb(150, 70, 0)
 #macro c_lightBrunette make_color_rgb(200, 125, 0)
 #macro c_ginger make_color_rgb(220, 110,0)
+
+//Other colors
+#macro c_violet make_colour_rgb(200,0, 140)
+#macro c_pink make_colour_rgb(255, 50, 255)
+#macro c_brown make_colour_rgb(190, 85, 0)
+
 #endregion

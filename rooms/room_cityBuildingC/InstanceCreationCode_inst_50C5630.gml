@@ -1,1 +1,2 @@
-npc_initialize("Mr. Digby", ["Welcome to my treasure digging minigame! Just 10 coins to play.", "See how much treasure you can dig up in 30 seconds!"])
+doll_initialize(11, 16, 16, 0, 1, c_hispanic1, c_red, c_red, c_black, c_brunette);
+npc_initialize("Captain Jim", ["Ahoy! Welcome to me treasure digging game! Just 10 coins to play.", "See how much treasure you can dig up in 30 seconds!"])

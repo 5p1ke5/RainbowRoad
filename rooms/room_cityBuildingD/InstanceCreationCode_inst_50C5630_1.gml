@@ -1,1 +1,2 @@
-npc_initialize("Gambino", ["All the guests at my hotel left the doors open! I'll pay you 3 coins for every wing that you close all the doors of in 30 seconds."])
+doll_initialize(14, 11, 1, 0, 0, c_hispanic1, c_blue, c_blue, c_blue, c_black);
+npc_initialize("Cesario", ["All the guests at my hotel left the doors open! I'll pay you 3 coins for every wing that you close all the doors of in 30 seconds."])

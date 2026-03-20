@@ -1,1 +1,2 @@
-npc_initialize("Nyssa", "Did you know? They say the dread pirate Captain Jack buried his treasure on the east side of this island!");
+doll_initialize(1, 8, 9, 0, 0, c_white3, c_blonde, c_purple, c_gray, c_black)
+npc_initialize("Britanny", "Did you know? They say the dread pirate Captain Jack buried his treasure on the east side of this island!");
