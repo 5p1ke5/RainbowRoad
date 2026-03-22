@@ -162,6 +162,47 @@ doll_animate();
 
 #endregion
 
+
+#region /// Demo stuff
+if (keyboard_check(ord("0")))
+{
+	transition_goto(194, 621, room_tutorialA);
+}
+if (keyboard_check(ord("1")))
+{
+	transition_goto(1700, 672, room_atrium);
+}
+
+if (keyboard_check(ord("2")))
+{
+	transition_goto(126, 2043, room_beach);
+}
+
+if (keyboard_check(ord("3")))
+{
+	transition_goto(128, 2064, room_flowerFields);
+}
+
+if (keyboard_check(ord("4")))
+{
+	transition_goto(96, 2288, room_city);
+}
+
+if (keyboard_check(ord("5")))
+{
+	transition_goto(2304, 2400, room_sky);
+}
+
+if (keyboard_check(ord("R")))
+{
+	game_restart();
+}
+
+
+
+
+#endregion
+
 //update alert
 alert = "";
 

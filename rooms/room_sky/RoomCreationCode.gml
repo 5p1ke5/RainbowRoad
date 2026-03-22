@@ -1,1 +1,1 @@
- bgm_play(bgm_jungle);
+ bgm_play(bgm_sky);

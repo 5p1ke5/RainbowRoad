@@ -1,6 +1,6 @@
 /// @description Initializes variables, position at spawn.
 
-phys_initialize(0.2, 0.2);
+phys_initialize(0.2, 0.25);
 
 hitbox_initialize([abs_enemyCarry, abs_hazard, abs_lethal], FLICKER_MAX); 
 
@@ -12,7 +12,7 @@ doll_initialize(_doll.faceIndex, _doll.hairIndex, _doll.shirtIndex, _doll.pantsI
 hDir = 0; //Horizontal movement direction.
 facing = 1; //Direction facing. Should always be 1 or -1.
 maxSpeed = 3; 
-accel = 0.4;
+accel = 0.5;
 jumpHeight = 4;
 jumpOffset = 0.1; 
 animSpeed = 0.2;
