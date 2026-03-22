@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_oneWayCheckerboard_1",
+  "%Name":"obj_oneWaySkyGround",
   "eventList":[],
   "managed":true,
-  "name":"obj_oneWayCheckerboard_1",
+  "name":"obj_oneWaySkyGround",
   "overriddenProperties":[],
   "parent":{
     "name":"oneway",

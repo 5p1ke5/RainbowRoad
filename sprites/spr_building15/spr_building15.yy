@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_building15",
   "bboxMode":0,
-  "bbox_bottom":111,
+  "bbox_bottom":143,
   "bbox_left":0,
   "bbox_right":431,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1292b0f6-6008-4be2-a697-cd1b21bd4df9","name":"1292b0f6-6008-4be2-a697-cd1b21bd4df9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"af9a28bd-1760-40b8-bb36-b2697f03dc7a","name":"af9a28bd-1760-40b8-bb36-b2697f03dc7a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":112,
+  "height":144,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d744c420-ba73-487f-836b-23d07cea415b","blendMode":0,"displayName":"default","isLocked":false,"name":"d744c420-ba73-487f-836b-23d07cea415b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c37c105d-ae05-47b7-8a7e-b7fb00508510","blendMode":0,"displayName":"default","isLocked":false,"name":"c37c105d-ae05-47b7-8a7e-b7fb00508510","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_building15",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1292b0f6-6008-4be2-a697-cd1b21bd4df9","path":"sprites/spr_building15/spr_building15.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3bdd015f-d25a-4e23-a930-aca373850810","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"af9a28bd-1760-40b8-bb36-b2697f03dc7a","path":"sprites/spr_building15/spr_building15.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8e6dda3e-948e-4692-8117-29a1cd90ffb8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
