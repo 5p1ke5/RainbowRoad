@@ -1,1 +1,1 @@
-transition_initialize(656, 384, room_cityBuildingCGame)
+transition_initialize(room_cityBuildingCGame, 656, 384)

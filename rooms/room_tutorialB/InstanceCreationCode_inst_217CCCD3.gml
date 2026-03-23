@@ -1,1 +1,1 @@
-transition_initialize(290, 570, room_tutorialA)
+transition_initialize(room_tutorialA, 290, 570)

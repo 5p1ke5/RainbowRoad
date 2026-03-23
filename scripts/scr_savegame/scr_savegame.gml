@@ -32,6 +32,11 @@ function savegame_save(_file)
 	file_text_write_real(_textFile, global.spawnY);
 	file_text_writeln(_textFile);
 	
+	file_text_write_real(_textFile, global.spawnHsp);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.spawnVsp);
+	file_text_writeln(_textFile);
+	
 	file_text_write_real(_textFile, global.shipX);
 	file_text_writeln(_textFile);
 	file_text_write_real(_textFile, global.shipY);
@@ -88,6 +93,8 @@ function savegame_load(_file)
 	var _roomTo = real(file_text_readln(_textFile));
 	global.spawnX = real(file_text_readln(_textFile));
 	global.spawnY = real(file_text_readln(_textFile));
+	global.spawnHsp = real(file_text_readln(_textFile));
+	global.spawnVsp = real(file_text_readln(_textFile));
 	
 	global.shipX = real(file_text_readln(_textFile));
 	global.shipY = real(file_text_readln(_textFile));
@@ -111,7 +118,7 @@ function savegame_load(_file)
 	
 	file_text_close(_textFile);
 
-	transition_goto(global.spawnX, global.spawnY, _roomTo);
+	transition_goto(_roomTo, global.spawnX, global.spawnY);
 }
 
 ///@function savegame_delete(_file)

@@ -1,1 +1,1 @@
-transition_initialize(464, 928, room_cityBuildingD);
+transition_initialize(room_cityBuildingD, 464, 928);

@@ -1,1 +1,1 @@
-transition_initialize(624, 144, room_cityBuildingA)
+transition_initialize(room_cityBuildingA, 624, 144)

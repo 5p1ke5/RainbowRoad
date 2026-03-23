@@ -1,1 +1,1 @@
-transition_initialize(1344, 848, room_atrium)
+transition_initialize(room_atrium, 1344, 848)

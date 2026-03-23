@@ -2,7 +2,7 @@
 
 if !(locked) && (price == 0)
 {
-	transition_goto(spawnX, spawnY, roomTo);
+	transition_goto(roomTo, spawnX, spawnY);
 }
 //Otherwise, checks if the player is holding a key.
 else
@@ -26,7 +26,7 @@ else
 				instance_destroy();	
 			}
 	
-			transition_goto(spawnX, spawnY, roomTo);
+			transition_goto(roomTo, spawnX, spawnY);
 		
 			audio_play_sound(sfx_unlock, 1, false);
 		}
@@ -51,7 +51,7 @@ else
 	{
 		global.money -= price;
 		audio_play_sound(sfx_buy, 1, false);
-		transition_goto(spawnX, spawnY, roomTo);
+		transition_goto(roomTo, spawnX, spawnY);
 	}
 	
 }

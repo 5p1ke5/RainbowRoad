@@ -1,1 +1,1 @@
-transition_initialize(640, 992, room_beachResidential)
+transition_initialize(room_beachResidential, 640, 992)

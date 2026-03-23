@@ -51,3 +51,13 @@ if (global.spawnX != undefined)
 	x = global.spawnX;
 	y = global.spawnY;
 }
+
+if (global.spawnHsp != undefined)
+{
+	hsp = global.spawnHsp;	
+}
+
+if (global.spawnVsp != undefined)
+{
+	vsp = global.spawnVsp;	
+}

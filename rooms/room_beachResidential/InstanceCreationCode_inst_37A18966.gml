@@ -1,1 +1,1 @@
-transition_initialize(656, 2048, room_beach)
+transition_initialize(room_beach, 656, 2048)

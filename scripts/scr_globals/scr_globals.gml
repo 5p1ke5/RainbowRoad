@@ -19,6 +19,8 @@ function globals_initialize()
 	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
+	global.spawnHsp = undefined;
+	global.spawnVsp = undefined;
 	
 	global.shipX = 464;
 	global.shipY = 384;

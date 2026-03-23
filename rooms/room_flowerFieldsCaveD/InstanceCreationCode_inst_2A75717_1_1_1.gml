@@ -1,1 +1,1 @@
-transition_initialize(3848, 1600, room_flowerFields);
+transition_initialize(room_flowerFields, 3848, 1600);

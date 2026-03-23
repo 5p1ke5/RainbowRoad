@@ -1,1 +1,1 @@
-transition_initialize(1600, 512, room_atrium);
+transition_initialize(room_atrium, 1600, 512);

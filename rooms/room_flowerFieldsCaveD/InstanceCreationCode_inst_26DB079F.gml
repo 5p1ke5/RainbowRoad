@@ -1,1 +1,1 @@
-transition_initialize(3976, 432, room_flowerFields, !global.sasquatchDefeated);
+transition_initialize(room_flowerFields, 3976, 432, 0, 0, !global.sasquatchDefeated);

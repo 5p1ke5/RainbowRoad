@@ -1,1 +1,1 @@
-transition_initialize(global.shipDoorToX, global.shipDoorToY, global.shipDoorTo);
+transition_initialize(global.shipDoorTo, global.shipDoorToX, global.shipDoorToY);

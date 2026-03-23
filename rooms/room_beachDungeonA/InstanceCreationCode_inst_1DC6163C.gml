@@ -1,1 +1,1 @@
-transition_initialize(1552, 1920, room_beachDungeonB)
+transition_initialize(room_beachDungeonB, 1552, 1920)

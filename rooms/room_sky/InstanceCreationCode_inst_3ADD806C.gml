@@ -1,1 +1,1 @@
-transition_initialize(686, 880, room_skyFactory)
+transition_initialize(room_skyFactory, 686, 880)

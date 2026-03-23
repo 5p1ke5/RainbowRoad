@@ -1,1 +1,1 @@
-transition_initialize(800, 928, room_cityHouseD);
+transition_initialize(room_cityHouseD, 800, 928);

@@ -1,1 +1,1 @@
-transition_initialize(671, 464, room_flowerFieldsCaveA);
+transition_initialize(room_flowerFieldsCaveA, 671, 464);

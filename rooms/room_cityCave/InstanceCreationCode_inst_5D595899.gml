@@ -1,1 +1,1 @@
-transition_initialize(5408, 2272, room_city);
+transition_initialize(room_city, 5408, 2272);
