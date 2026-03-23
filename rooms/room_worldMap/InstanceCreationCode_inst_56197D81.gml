@@ -1,0 +1,1 @@
+mapMarker_initialize(96, 2288, room_skyIsland, "Sky Island", "An island you can use to get to the sky!");

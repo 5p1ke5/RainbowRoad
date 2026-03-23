@@ -1,0 +1,1 @@
+transition_initialize(room_sky, 1008, 1904, 0, -10)
