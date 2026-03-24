@@ -198,6 +198,7 @@
     {"name":"obj_robot","order":6,"path":"objects/obj_robot/obj_robot.yy",},
     {"name":"obj_robotLackey","order":28,"path":"objects/obj_robotLackey/obj_robotLackey.yy",},
     {"name":"obj_rocket","order":8,"path":"objects/obj_rocket/obj_rocket.yy",},
+    {"name":"obj_rocketBacku","order":9,"path":"objects/obj_rocketBacku/obj_rocketBacku.yy",},
     {"name":"obj_roomTimerPersistent","order":1,"path":"objects/obj_roomTimerPersistent/obj_roomTimerPersistent.yy",},
     {"name":"obj_savePoint","order":6,"path":"objects/obj_savePoint/obj_savePoint.yy",},
     {"name":"obj_snake","order":2,"path":"objects/obj_snake/obj_snake.yy",},

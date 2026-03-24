@@ -13,7 +13,7 @@ if (_spawn)
 	with (_spawn)
 	{
 		image_xscale = _xscale;
-		hsp = 2 * _xscale;
+		hsp = spd * image_xscale;
 	}
 	
 	image_speed = 1;
