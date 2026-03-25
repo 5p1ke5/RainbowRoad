@@ -1,0 +1,1 @@
+transition_initialize(room_skyAirship, 624, 1024);

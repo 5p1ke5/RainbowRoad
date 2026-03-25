@@ -3,7 +3,7 @@
 event_inherited();
 
 var _x = (image_xscale == 1) ? bbox_right : bbox_left;
-var _y = y;
+var _y = y + 2;
 var _xscale = image_xscale;
 
 var _spawn = spawner_step(_x, _y, depth);
