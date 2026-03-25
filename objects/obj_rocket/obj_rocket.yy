@@ -11,8 +11,8 @@
   "name":"obj_rocket",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemies",
-    "path":"folders/Objects/enemies.yy",
+    "name":"carryable",
+    "path":"folders/Objects/carryable.yy",
   },
   "parentObjectId":{
     "name":"abs_carryOneway",

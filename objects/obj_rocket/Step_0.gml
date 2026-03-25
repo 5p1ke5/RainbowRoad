@@ -6,6 +6,6 @@ if (!instance_exists(carrier))
 	if (hsp == 0)
 	{
 		instance_destroy();
-		instance_create_depth(x, y, depth, obj_explosion);
+		instance_create_depth(x + hDir * 16, y, depth, obj_explosion);
 	}
 }
