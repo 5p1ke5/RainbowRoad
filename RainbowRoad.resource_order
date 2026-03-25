@@ -242,6 +242,7 @@
     {"name":"room_skyAirship","order":3,"path":"rooms/room_skyAirship/room_skyAirship.yy",},
     {"name":"room_skyFactory","order":1,"path":"rooms/room_skyFactory/room_skyFactory.yy",},
     {"name":"room_skyIsland","order":2,"path":"rooms/room_skyIsland/room_skyIsland.yy",},
+    {"name":"room_skyPalace","order":4,"path":"rooms/room_skyPalace/room_skyPalace.yy",},
     {"name":"room_testIsland","order":2,"path":"rooms/room_testIsland/room_testIsland.yy",},
     {"name":"room_tutorialA","order":1,"path":"rooms/room_tutorialA/room_tutorialA.yy",},
     {"name":"room_tutorialB","order":2,"path":"rooms/room_tutorialB/room_tutorialB.yy",},
