@@ -245,6 +245,7 @@
     {"name":"room_skyIsland","order":2,"path":"rooms/room_skyIsland/room_skyIsland.yy",},
     {"name":"room_skyPalaceA","order":4,"path":"rooms/room_skyPalaceA/room_skyPalaceA.yy",},
     {"name":"room_skyPalaceB","order":5,"path":"rooms/room_skyPalaceB/room_skyPalaceB.yy",},
+    {"name":"room_skyPalaceC","order":6,"path":"rooms/room_skyPalaceC/room_skyPalaceC.yy",},
     {"name":"room_testIsland","order":2,"path":"rooms/room_testIsland/room_testIsland.yy",},
     {"name":"room_tutorialA","order":1,"path":"rooms/room_tutorialA/room_tutorialA.yy",},
     {"name":"room_tutorialB","order":2,"path":"rooms/room_tutorialB/room_tutorialB.yy",},
