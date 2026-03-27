@@ -162,6 +162,7 @@
     {"id":{"name":"obj_conveyorBlock","path":"objects/obj_conveyorBlock/obj_conveyorBlock.yy",},},
     {"id":{"name":"obj_conveyorOneway","path":"objects/obj_conveyorOneway/obj_conveyorOneway.yy",},},
     {"id":{"name":"obj_crt","path":"objects/obj_crt/obj_crt.yy",},},
+    {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},},
     {"id":{"name":"obj_dead","path":"objects/obj_dead/obj_dead.yy",},},
     {"id":{"name":"obj_decorTree1","path":"objects/obj_decorTree1/obj_decorTree1.yy",},},
     {"id":{"name":"obj_decorTree2","path":"objects/obj_decorTree2/obj_decorTree2.yy",},},

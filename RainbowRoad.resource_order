@@ -129,6 +129,7 @@
     {"name":"obj_colorSliderRed","order":3,"path":"objects/obj_colorSliderRed/obj_colorSliderRed.yy",},
     {"name":"obj_computer","order":6,"path":"objects/obj_computer/obj_computer.yy",},
     {"name":"obj_crt","order":7,"path":"objects/obj_crt/obj_crt.yy",},
+    {"name":"obj_cutscene","order":4,"path":"objects/obj_cutscene/obj_cutscene.yy",},
     {"name":"obj_dead","order":1,"path":"objects/obj_dead/obj_dead.yy",},
     {"name":"obj_decorTree1","order":1,"path":"objects/obj_decorTree1/obj_decorTree1.yy",},
     {"name":"obj_decorTree2","order":2,"path":"objects/obj_decorTree2/obj_decorTree2.yy",},
