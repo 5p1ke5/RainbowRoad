@@ -1,8 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-carry_initialize(false);
-
 enemy_initialize(6);
 
 spawner_initialize(obj_rocket, game_get_speed(gamespeed_fps) * 2);

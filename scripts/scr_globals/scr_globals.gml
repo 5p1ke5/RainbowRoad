@@ -31,7 +31,10 @@ function globals_initialize()
 	global.roomPrev = ROOM_TITLE;
 	
 	
-	global.sasquatchDefeated = false;
+	global.flagSasquatchDefeated = false;
+	global.flagWifeFound = false;
+	global.flagHusbandFound = false;
+	global.flagSonFound = false;
 	
 	
 	//global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white1, c_darkBrunette, c_red, c_aqua, c_red);

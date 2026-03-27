@@ -1,1 +1,1 @@
-transition_initialize(room_skyPalaceD, 336, 832)
+transition_initialize(room_skyPalaceD, 544, 832)

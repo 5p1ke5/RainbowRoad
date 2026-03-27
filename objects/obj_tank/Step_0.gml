@@ -1,16 +1,18 @@
 //If not being carried does NPC stuff.
 if (!carrier)
 {  
-	if	(collision_validate(instance_place_array(x + hsp + hDir, y, BLOCK, false)))
+	var _player = instance_nearest(x, y, obj_player);
+	
+	if (_player)
 	{
-		hDir = -hDir;
-		image_xscale = hDir;
+		if (grounded)
+		{
+			hDir = sign(_player.x - x) == 0 ? 1 : sign(_player.x - x);
+			image_xscale = hDir;
+			hsp = hDir * spd;
+		}
 	}
 
-	if (grounded)
-	{
-		hsp = hDir * spd;
-	}
 }
 
 
