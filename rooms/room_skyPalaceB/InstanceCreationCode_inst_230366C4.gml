@@ -1,0 +1,1 @@
+transition_initialize(room_skyPalaceA, 312, 512)

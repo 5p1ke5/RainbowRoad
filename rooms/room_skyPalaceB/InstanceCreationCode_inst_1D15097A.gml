@@ -1,1 +1,1 @@
-transition_initialize(room_skyPalaceC, 288, 832);
+transition_initialize(room_sky, 2096, 1264);
