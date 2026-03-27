@@ -164,10 +164,6 @@ doll_animate();
 
 
 #region /// Demo stuff
-if (keyboard_check(ord("0")))
-{
-	transition_goto(room_tutorialA, 194, 621);
-}
 if (keyboard_check(ord("1")))
 {
 	transition_goto(room_atrium, 1700, 672);
@@ -191,6 +187,10 @@ if (keyboard_check(ord("4")))
 if (keyboard_check(ord("5")))
 {
 	transition_goto(room_sky, 2304, 2400);
+}
+if (keyboard_check(ord("6")))
+{
+	transition_goto(room_skyPalaceD, 336, 832)
 }
 
 
