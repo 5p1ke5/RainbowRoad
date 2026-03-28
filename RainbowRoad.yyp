@@ -308,6 +308,7 @@
     {"id":{"name":"room_iceIsland","path":"rooms/room_iceIsland/room_iceIsland.yy",},},
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
     {"id":{"name":"room_jungle","path":"rooms/room_jungle/room_jungle.yy",},},
+    {"id":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
     {"id":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
     {"id":{"name":"room_sky","path":"rooms/room_sky/room_sky.yy",},},
     {"id":{"name":"room_skyAirship","path":"rooms/room_skyAirship/room_skyAirship.yy",},},
@@ -651,6 +652,7 @@
     {"roomId":{"name":"room_skyPalaceC","path":"rooms/room_skyPalaceC/room_skyPalaceC.yy",},},
     {"roomId":{"name":"room_endScreen","path":"rooms/room_endScreen/room_endScreen.yy",},},
     {"roomId":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
+    {"roomId":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

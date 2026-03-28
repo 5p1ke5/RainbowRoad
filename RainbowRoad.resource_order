@@ -249,6 +249,7 @@
     {"name":"room_flowerFieldsCaveD","order":4,"path":"rooms/room_flowerFieldsCaveD/room_flowerFieldsCaveD.yy",},
     {"name":"room_hotelIsle","order":1,"path":"rooms/room_hotelIsle/room_hotelIsle.yy",},
     {"name":"room_initialize","order":2,"path":"rooms/room_initialize/room_initialize.yy",},
+    {"name":"room_pauseMenu","order":4,"path":"rooms/room_pauseMenu/room_pauseMenu.yy",},
     {"name":"room_reset","order":3,"path":"rooms/room_reset/room_reset.yy",},
     {"name":"room_skyAirship","order":3,"path":"rooms/room_skyAirship/room_skyAirship.yy",},
     {"name":"room_skyFactory","order":1,"path":"rooms/room_skyFactory/room_skyFactory.yy",},
