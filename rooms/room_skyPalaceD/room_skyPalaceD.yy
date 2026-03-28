@@ -12,9 +12,9 @@
     {"name":"inst_5452388C","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
     {"name":"inst_295D497F","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
     {"name":"inst_1DBB20FE","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
-    {"name":"inst_19CBF7D9","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
     {"name":"inst_5569409E","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
     {"name":"inst_2B52173D","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
+    {"name":"inst_19CBF7D9","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},
   ],
   "isDnd":false,
   "layers":[

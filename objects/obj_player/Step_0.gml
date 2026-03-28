@@ -190,7 +190,7 @@ if (keyboard_check(ord("5")))
 }
 if (keyboard_check(ord("6")))
 {
-	transition_goto(room_skyPalaceD, 336, 832)
+	transition_goto(room_skyPalaceE, 944, 720);
 }
 
 

@@ -151,6 +151,7 @@
     {"id":{"name":"obj_buttonGreen","path":"objects/obj_buttonGreen/obj_buttonGreen.yy",},},
     {"id":{"name":"obj_buttonRed","path":"objects/obj_buttonRed/obj_buttonRed.yy",},},
     {"id":{"name":"obj_buyable","path":"objects/obj_buyable/obj_buyable.yy",},},
+    {"id":{"name":"obj_carryableNPC","path":"objects/obj_carryableNPC/obj_carryableNPC.yy",},},
     {"id":{"name":"obj_chairOffice","path":"objects/obj_chairOffice/obj_chairOffice.yy",},},
     {"id":{"name":"obj_chairWood","path":"objects/obj_chairWood/obj_chairWood.yy",},},
     {"id":{"name":"obj_characterCreation","path":"objects/obj_characterCreation/obj_characterCreation.yy",},},
@@ -314,6 +315,7 @@
     {"id":{"name":"room_skyPalaceB","path":"rooms/room_skyPalaceB/room_skyPalaceB.yy",},},
     {"id":{"name":"room_skyPalaceC","path":"rooms/room_skyPalaceC/room_skyPalaceC.yy",},},
     {"id":{"name":"room_skyPalaceD","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},},
+    {"id":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
     {"id":{"name":"room_testIsland","path":"rooms/room_testIsland/room_testIsland.yy",},},
     {"id":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
     {"id":{"name":"room_tutorialA","path":"rooms/room_tutorialA/room_tutorialA.yy",},},
@@ -646,6 +648,7 @@
     {"roomId":{"name":"room_skyPalaceD","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},},
     {"roomId":{"name":"room_skyPalaceC","path":"rooms/room_skyPalaceC/room_skyPalaceC.yy",},},
     {"roomId":{"name":"room_endScreen","path":"rooms/room_endScreen/room_endScreen.yy",},},
+    {"roomId":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

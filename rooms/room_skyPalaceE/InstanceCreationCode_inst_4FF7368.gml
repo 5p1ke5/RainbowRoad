@@ -1,0 +1,1 @@
+transition_initialize(room_endScreen, 0, 0);

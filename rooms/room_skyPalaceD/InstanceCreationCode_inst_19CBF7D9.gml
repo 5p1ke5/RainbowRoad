@@ -1,1 +1,1 @@
-transition_initialize(room_endScreen, 0, 0, 0, 0, true);
+transition_initialize(room_skyPalaceE, 944, 720, 0, 0, true);
