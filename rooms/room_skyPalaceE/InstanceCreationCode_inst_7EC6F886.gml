@@ -1,1 +1,0 @@
-npc_initialize("Ocean Jr.", ["Hi! I'm Dr. Ocean's son. Thanks for saving me.", "You wouldn't throw me into that lava, right?"]);

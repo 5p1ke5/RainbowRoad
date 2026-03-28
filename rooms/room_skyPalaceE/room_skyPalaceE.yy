@@ -14,7 +14,8 @@
     {"name":"inst_2A2FBFA1","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
     {"name":"inst_53F4F46E","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
     {"name":"inst_4FF7368","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
-    {"name":"inst_7EC6F886","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
+    {"name":"inst_1FC0A25D","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
+    {"name":"inst_4E81675E","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,7 +24,8 @@
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Collectables","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Collectables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"NPC","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_7EC6F886","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EC6F886","objectId":{"name":"obj_carryableNPC","path":"objects/obj_carryableNPC/obj_carryableNPC.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1104.0,"y":720.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1FC0A25D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FC0A25D","objectId":{"name":"obj_npcDrOceanB","path":"objects/obj_npcDrOceanB/obj_npcDrOceanB.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1040.0,"y":720.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4E81675E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E81675E","objectId":{"name":"obj_carryableNPCOceanJr","path":"objects/obj_carryableNPCOceanJr/obj_carryableNPCOceanJr.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":720.0,},
       ],"layers":[],"name":"NPC","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Furniture","depth":300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Furniture","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Blocks","depth":400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
