@@ -1,9 +1,11 @@
 /// @description does player things, inherits physics
 event_inherited();
 
-if (RESTART_BUTTON)
+if (START_BUTTON_RELEASED)
 {
-	room_restart();	
+	room_persistent = true;
+	global.roomPausedFrom = room;
+	room_goto(room_pauseMenu);	
 }
 
 #region ///Movement Controls.

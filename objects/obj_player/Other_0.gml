@@ -1,4 +1,4 @@
-/// @description if outside the room dies.
+/// @desc if outside the room dies.
 
 if (y > 0)
 {

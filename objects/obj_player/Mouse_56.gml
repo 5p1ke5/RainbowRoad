@@ -1,4 +1,4 @@
-/// @description Debug command that teleports player to mouse location.
+/// @desc Debug command that teleports player to mouse location.
 
 if (keyboard_check(vk_shift))
 {

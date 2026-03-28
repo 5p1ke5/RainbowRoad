@@ -29,6 +29,7 @@ function globals_initialize()
 	global.shipDoorToY = 2046;
 	
 	global.roomPrev = ROOM_TITLE;
+	global.roomPausedFrom = noone;
 	
 	
 	global.flagSasquatchDefeated = false;
