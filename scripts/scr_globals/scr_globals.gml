@@ -28,8 +28,8 @@ function globals_initialize()
 	
 	
 	
-	global.starShards = array_create(25, false);
-	global.starShardsFound = array_create(25, false);
+	global.starShards = array_create(9, false);
+	global.starShardsFound = array_create(9, false);
 	
 	global.stars = array_create(2, false);
 	global.starsFound = array_create(2, false);

@@ -23,6 +23,19 @@ function star_collect()
 }
 
 
+/// @function star_number()
+/// @desc Gets the number of stars collected.
+function star_number()
+{
+	 return array_length(array_filter(global.starsFound, function _fB(element, index) {return element;}))
+}
+
+/// @function star_total()
+/// @desc Gets the total of stars + stars from star shards
+function star_total()
+{
+	return star_number() + (starShard_number() div 5);
+}
 
 /// @function starShard_initialize(_index)
 /// @desc Initializes index for starshard, destroys if already collected.
@@ -45,25 +58,32 @@ function starShard_collect()
 {
 	global.starShardsFound[index] = true;
 	
-	//Gets number of 'true' elements in global.starShardsFound
-	var _shards = array_length(array_filter(global.starShardsFound, function _fA(element, index) {return element;}));
-	
-	if (_shards % 5 != 0)
+	if (starShard_number() % 5 != 0)
 	{
 		with (other)
 		{
-			npc_speak("I have " + string(_shards) + " star shards now! If I get 5 I can make them into a star.", "Player");	
+			npc_speak("I have " + string(starShard_number()) + " star shards now! If I get 5 I can make them into a star.", "Player");	
 		}
 	}
 	else
 	{
-		var _stars = _shards + array_length(array_filter(global.starsFound, function _fB(element, index) {return element;}));
 		with (other)
 		{
-			npc_speak("I got five star shards! I combined them into a star. I now have " + string(_stars) + " Stars!.", "Player");	
+			npc_speak("I got five star shards! I combined them into a star. I now have " + string(star_total()) + " Stars!.", "Player");	
 		}
 	}
 	
 	audio_play_sound(sfx_powerup1, 1, false);
 	instance_destroy();
+}
+
+
+
+
+
+/// @function starShard_number()
+/// @desc Gets the number of stars collected.
+function starShard_number()
+{
+	 return array_length(array_filter(global.starShardsFound, function _fA(element, index) {return element;}))
 }
