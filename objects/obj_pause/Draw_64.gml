@@ -6,6 +6,6 @@ draw_text_ext_transformed(window_get_width()/2, window_get_height()/16, text, st
 
 if (flicker % 4 != 0)
 {
-	draw_text_ext(window_get_width()/2, window_get_height() * 7/8, "Press space to continue.", string_height(text), room_width * 3/4)		
+	draw_text_ext_transformed(window_get_width()/2, window_get_height() * 7/8, "Press space to continue.", string_height(text), room_width /4, 2, 2, 0)		
 }
 
