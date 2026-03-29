@@ -62,7 +62,7 @@ function starShard_collect()
 	{
 		with (other)
 		{
-			npc_speak("I have " + string(starShard_number()) + " star shards now! If I get 5 I can make them into a star.", "Player");	
+			npc_speak("I have " + string(starShard_number() % 5) + " star shards now! If I get 5 I can make them into a star.", "Player");	
 		}
 	}
 	else

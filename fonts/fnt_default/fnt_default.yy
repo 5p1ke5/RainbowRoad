@@ -3,7 +3,7 @@
   "%Name":"fnt_default",
   "AntiAlias":0,
   "applyKerning":0,
-  "ascender":14,
+  "ascender":15,
   "ascenderOffset":0,
   "bold":false,
   "canGenerateBitmap":true,
