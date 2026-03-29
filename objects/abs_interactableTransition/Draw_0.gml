@@ -9,5 +9,6 @@ if (locked)
 
 if (price > 0)
 {
-	draw_text(x, bbox_bottom + string_height(price) * 2, price);
+	draw_set_halign(fa_center);
+	draw_text(x, bbox_bottom + string_height(price), price);
 }

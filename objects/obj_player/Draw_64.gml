@@ -16,4 +16,4 @@ for (var _i = 0; _i < global.maxHP; _i++)
 }
 
 draw_set_halign(fa_left);
-draw_text_transformed(16, 80, "Money: " + string(global.money), 3, 3, 0);
+draw_text_transformed(16, 80, "Money: " + string(global.money), 2, 2, 0);

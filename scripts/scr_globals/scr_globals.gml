@@ -12,11 +12,6 @@ function globals_initialize()
 	
 	//These may be moved to a file but for now reading from memory is fine.
 	global.bgm = noone;
-	
-	global.starShards = 0;
-	
-	global.stars = 0;
-	
 	global.spawnX = undefined;
 	global.spawnY = undefined;
 	global.spawnHsp = undefined;
@@ -31,6 +26,13 @@ function globals_initialize()
 	global.roomPrev = ROOM_TITLE;
 	global.roomPausedFrom = noone;
 	
+	
+	
+	global.starShards = array_create(25, false);
+	global.starShardsFound = array_create(25, false);
+	
+	global.stars = array_create(2, false);
+	global.starsFound = array_create(2, false);
 	
 	global.flagSasquatchDefeated = false;
 	global.flagWifeFound = false;

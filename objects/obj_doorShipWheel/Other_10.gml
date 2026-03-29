@@ -1,5 +1,5 @@
 /// @description Inherits but only if you have a star.
-if (global.stars >= 1)
+if (array_contains(global.starsFound, true))
 {
 	event_inherited();	
 }

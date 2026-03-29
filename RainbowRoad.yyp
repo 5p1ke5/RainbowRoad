@@ -327,6 +327,7 @@
     {"id":{"name":"room_worldMap","path":"rooms/room_worldMap/room_worldMap.yy",},},
     {"id":{"name":"template_isle","path":"rooms/template_isle/template_isle.yy",},},
     {"id":{"name":"scr_carry","path":"scripts/scr_carry/scr_carry.yy",},},
+    {"id":{"name":"scr_collectables","path":"scripts/scr_collectables/scr_collectables.yy",},},
     {"id":{"name":"scr_collision","path":"scripts/scr_collision/scr_collision.yy",},},
     {"id":{"name":"scr_doll","path":"scripts/scr_doll/scr_doll.yy",},},
     {"id":{"name":"scr_enemy","path":"scripts/scr_enemy/scr_enemy.yy",},},
