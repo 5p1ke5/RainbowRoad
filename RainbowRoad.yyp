@@ -353,6 +353,7 @@
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},},
     {"id":{"name":"scr_worldMap","path":"scripts/scr_worldMap/scr_worldMap.yy",},},
     {"id":{"name":"bgm_beach","path":"sounds/bgm_beach/bgm_beach.yy",},},
+    {"id":{"name":"bgm_boss","path":"sounds/bgm_boss/bgm_boss.yy",},},
     {"id":{"name":"bgm_cave","path":"sounds/bgm_cave/bgm_cave.yy",},},
     {"id":{"name":"bgm_city","path":"sounds/bgm_city/bgm_city.yy",},},
     {"id":{"name":"bgm_cityInside","path":"sounds/bgm_cityInside/bgm_cityInside.yy",},},
