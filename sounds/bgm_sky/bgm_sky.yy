@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_sky.mp3",
-  "volume":0.19,
+  "volume":0.2,
 }

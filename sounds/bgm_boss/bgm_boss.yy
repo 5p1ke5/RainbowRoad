@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":188.70964,
+  "duration":163.05739,
   "exportDir":"",
   "name":"bgm_boss",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_boss.mp3",
-  "volume":0.19,
+  "volume":0.2,
 }
