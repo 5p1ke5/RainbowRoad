@@ -1,1 +1,1 @@
-mapMarker_initialize(64, 2288, room_city, "Shore City", "An island with a big city on it.");
+mapMarker_initialize(96, 2288, room_city, "Shore City", "An island with a big city on it.");
