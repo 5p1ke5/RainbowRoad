@@ -6,5 +6,15 @@ islandName = ""; //Name of island that is being hovered over.
 scroll = ""; //Scrolling text description of the island.
 
 //Sets position based on globals.
-x = global.shipX;
-y = global.shipY;
+if (global.shipX != undefined)
+{
+	x = global.shipX;
+}
+
+if (global.shipY != undefined)
+{
+	y = global.shipY;
+}
+
+
+npc_initialize("Player");

@@ -21,6 +21,20 @@ else
 hsp = phys_force_add(hsp, RIGHT_BUTTON - LEFT_BUTTON, 3);
 vsp = phys_force_add(vsp, DOWN_BUTTON - UP_BUTTON, 3);
 
+if (place_meeting(x + hsp, y + vsp, obj_blockWhirlpool))
+{
+	npc_speak("I need 4 stars to go through whirlpools!");
+}
+
+/* something like
+
+if (collision(y, x + hsp, obj_whirlpool)
+{
+	npc_speak("I need 4 stars to get through the whirlpool!")
+}
+
+*/
+
 event_inherited();
 
 

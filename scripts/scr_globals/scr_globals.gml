@@ -17,8 +17,8 @@ function globals_initialize()
 	global.spawnHsp = undefined;
 	global.spawnVsp = undefined;
 	
-	global.shipX = 464;
-	global.shipY = 384;
+	global.shipX = 1232;
+	global.shipY = 1232;
 	global.shipDoorTo = room_beach;
 	global.shipDoorToX = 111;
 	global.shipDoorToY = 2046;
