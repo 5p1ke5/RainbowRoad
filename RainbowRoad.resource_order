@@ -250,6 +250,7 @@
     {"name":"room_flowerFieldsCaveB","order":2,"path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},
     {"name":"room_flowerFieldsCaveC","order":3,"path":"rooms/room_flowerFieldsCaveC/room_flowerFieldsCaveC.yy",},
     {"name":"room_flowerFieldsCaveD","order":4,"path":"rooms/room_flowerFieldsCaveD/room_flowerFieldsCaveD.yy",},
+    {"name":"room_flowerFieldsCaveE","order":5,"path":"rooms/room_flowerFieldsCaveE/room_flowerFieldsCaveE.yy",},
     {"name":"room_hotelIsle","order":1,"path":"rooms/room_hotelIsle/room_hotelIsle.yy",},
     {"name":"room_initialize","order":2,"path":"rooms/room_initialize/room_initialize.yy",},
     {"name":"room_pauseMenu","order":4,"path":"rooms/room_pauseMenu/room_pauseMenu.yy",},

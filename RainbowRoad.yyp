@@ -307,6 +307,7 @@
     {"id":{"name":"room_flowerFieldsCaveB","path":"rooms/room_flowerFieldsCaveB/room_flowerFieldsCaveB.yy",},},
     {"id":{"name":"room_flowerFieldsCaveC","path":"rooms/room_flowerFieldsCaveC/room_flowerFieldsCaveC.yy",},},
     {"id":{"name":"room_flowerFieldsCaveD","path":"rooms/room_flowerFieldsCaveD/room_flowerFieldsCaveD.yy",},},
+    {"id":{"name":"room_flowerFieldsCaveE","path":"rooms/room_flowerFieldsCaveE/room_flowerFieldsCaveE.yy",},},
     {"id":{"name":"room_hotelIsle","path":"rooms/room_hotelIsle/room_hotelIsle.yy",},},
     {"id":{"name":"room_iceIsland","path":"rooms/room_iceIsland/room_iceIsland.yy",},},
     {"id":{"name":"room_initialize","path":"rooms/room_initialize/room_initialize.yy",},},
@@ -660,6 +661,7 @@
     {"roomId":{"name":"room_endScreen","path":"rooms/room_endScreen/room_endScreen.yy",},},
     {"roomId":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
     {"roomId":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
+    {"roomId":{"name":"room_flowerFieldsCaveE","path":"rooms/room_flowerFieldsCaveE/room_flowerFieldsCaveE.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
