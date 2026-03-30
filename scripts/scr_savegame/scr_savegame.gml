@@ -48,6 +48,8 @@ function savegame_save(_file)
 	file_text_writeln(_textFile);
 	file_text_write_real(_textFile, global.shipDoorTo);
 	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.roomPrev);
+	file_text_writeln(_textFile);
 	
 	file_text_write_real(_textFile, global.bgm);
 	file_text_writeln(_textFile);
@@ -55,7 +57,18 @@ function savegame_save(_file)
 	file_text_write_string(_textFile, json_stringify(global.carried)); //Serializes the struct to a string
 	file_text_writeln(_textFile);
 	
-	file_text_write_real(_textFile, global.stars);
+	file_text_write_string(_textFile, json_stringify(global.starsFound)); //Serializes the struct to a string
+	file_text_writeln(_textFile);
+	file_text_write_string(_textFile, json_stringify(global.starShardsFound)); //Serializes the struct to a string
+	file_text_writeln(_textFile);
+	
+	file_text_write_real(_textFile, global.flagSasquatchDefeated);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.flagHusbandFound);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.flagWifeFound);
+	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.flagSonFound);
 	file_text_writeln(_textFile);
 	
 	file_text_write_real(_textFile, global.hp);
@@ -102,13 +115,19 @@ function savegame_load(_file)
 	global.shipDoorToX = real(file_text_readln(_textFile));
 	global.shipDoorToY = real(file_text_readln(_textFile));
 	global.shipDoorTo = real(file_text_readln(_textFile));
+	global.roomPrev = real(file_text_readln(_textFile));
 	
 	global.bgm = real(file_text_readln(_textFile));
 	
-	
 	global.carried = json_parse(file_text_readln(_textFile));
 	
-	global.stars = real(file_text_readln(_textFile));
+	global.starsFound = json_parse(file_text_readln(_textFile));
+	global.starShardsFound = json_parse(file_text_readln(_textFile));
+	
+	global.flagSasquatchDefeated = real(file_text_readln(_textFile));
+	global.flagHusbandFound = real(file_text_readln(_textFile));
+	global.flagWifeFound = real(file_text_readln(_textFile));
+	global.flagSonFound = real(file_text_readln(_textFile));
 	
 	global.hp = real(file_text_readln(_textFile));
 	global.maxHP = real(file_text_readln(_textFile));
