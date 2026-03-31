@@ -1,0 +1,1 @@
+npc_initialize("Sign", ["Watch out for enemies like slimes!", "You can ride on them by jumping on top, or throw things at them to defeat them."]);

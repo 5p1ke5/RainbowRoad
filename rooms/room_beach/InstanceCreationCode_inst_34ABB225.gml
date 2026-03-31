@@ -1,0 +1,1 @@
+npc_initialize("Sign", "If you press space while holding an object in midair, you'll double jump off it!");

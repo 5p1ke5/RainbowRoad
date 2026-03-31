@@ -1,1 +1,1 @@
-transition_initialize(room_tutorialB, 2286, 864);
+transition_initialize(room_tutorialB, 762, 305);
