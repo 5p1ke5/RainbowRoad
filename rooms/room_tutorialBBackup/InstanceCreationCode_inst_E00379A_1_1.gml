@@ -1,1 +1,0 @@
-dialogue = ["You can press 'Space' in midair while holding an object to Double Jump!"];

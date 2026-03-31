@@ -1,1 +1,0 @@
-transition_initialize(room_atrium, 1344, 848)

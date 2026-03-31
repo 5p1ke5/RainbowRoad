@@ -1,5 +1,5 @@
  bgm_play(bgm_forest);
  
- global.starsNearby = [1];
+ global.starsNearby = [];
  
- global.starShardsNearby = [5, 6]
+ global.starShardsNearby = [11]

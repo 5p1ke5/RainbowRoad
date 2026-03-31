@@ -141,6 +141,7 @@ function savegame_load(_file)
 	file_text_close(_textFile);
 
 	transition_goto(_roomTo, global.spawnX, global.spawnY);
+	show_debug_message("Loading game...")
 }
 
 ///@function savegame_delete(_file)

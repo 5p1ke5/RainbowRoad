@@ -20,8 +20,8 @@ function globals_initialize()
 	global.shipX = 1232;
 	global.shipY = 1232;
 	global.shipDoorTo = room_beach;
-	global.shipDoorToX = 111;
-	global.shipDoorToY = 2046;
+	global.shipDoorToX = 32;
+	global.shipDoorToY = 2016;
 	
 	global.roomPrev = ROOM_TITLE;
 	global.roomPausedFrom = noone;
