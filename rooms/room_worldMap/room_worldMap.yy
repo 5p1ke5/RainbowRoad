@@ -634,6 +634,7 @@
     {"name":"inst_56C6E4D3","path":"rooms/room_worldMap/room_worldMap.yy",},
     {"name":"inst_50CB9974","path":"rooms/room_worldMap/room_worldMap.yy",},
     {"name":"inst_47E3D92E","path":"rooms/room_worldMap/room_worldMap.yy",},
+    {"name":"inst_3D4F9176","path":"rooms/room_worldMap/room_worldMap.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -641,6 +642,7 @@
         {"$GMRInstance":"v4","%Name":"inst_55C3B7C1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55C3B7C1","objectId":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":1248.0,},
         {"$GMRInstance":"v4","%Name":"inst_6EF36E59","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EF36E59","objectId":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":1120.0,},
         {"$GMRInstance":"v4","%Name":"inst_38E54DC4","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38E54DC4","objectId":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":1120.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3D4F9176","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D4F9176","objectId":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1367.0,"y":1079.0,},
         {"$GMRInstance":"v4","%Name":"inst_56197D81","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56197D81","objectId":{"name":"obj_marker","path":"objects/obj_marker/obj_marker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":896.0,},
       ],"layers":[],"name":"Markers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

@@ -371,6 +371,7 @@
     {"id":{"name":"bgm_ending","path":"sounds/bgm_ending/bgm_ending.yy",},},
     {"id":{"name":"bgm_forest","path":"sounds/bgm_forest/bgm_forest.yy",},},
     {"id":{"name":"bgm_jungle","path":"sounds/bgm_jungle/bgm_jungle.yy",},},
+    {"id":{"name":"bgm_mAndD","path":"sounds/bgm_mAndD/bgm_mAndD.yy",},},
     {"id":{"name":"bgm_ruins","path":"sounds/bgm_ruins/bgm_ruins.yy",},},
     {"id":{"name":"bgm_sky","path":"sounds/bgm_sky/bgm_sky.yy",},},
     {"id":{"name":"bgm_tutorial","path":"sounds/bgm_tutorial/bgm_tutorial.yy",},},

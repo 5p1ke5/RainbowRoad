@@ -1,4 +1,4 @@
- bgm_play(bgm_forest);
+ bgm_play(bgm_mAndD);
  
  global.starsNearby = [];
  

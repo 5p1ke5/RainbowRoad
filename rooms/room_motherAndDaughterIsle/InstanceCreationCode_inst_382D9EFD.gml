@@ -1,0 +1,1 @@
+transition_initialize(room_motherAndDaughterIsleHouse, 480, 928)

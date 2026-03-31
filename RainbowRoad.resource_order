@@ -307,6 +307,7 @@
     {"name":"bgm_ending","order":12,"path":"sounds/bgm_ending/bgm_ending.yy",},
     {"name":"bgm_forest","order":6,"path":"sounds/bgm_forest/bgm_forest.yy",},
     {"name":"bgm_jungle","order":4,"path":"sounds/bgm_jungle/bgm_jungle.yy",},
+    {"name":"bgm_mAndD","order":13,"path":"sounds/bgm_mAndD/bgm_mAndD.yy",},
     {"name":"bgm_sky","order":9,"path":"sounds/bgm_sky/bgm_sky.yy",},
     {"name":"bgm_tutorial","order":2,"path":"sounds/bgm_tutorial/bgm_tutorial.yy",},
     {"name":"bgm_worldMap","order":5,"path":"sounds/bgm_worldMap/bgm_worldMap.yy",},

@@ -1,1 +1,1 @@
-transition_initialize(room_sky, 4568, 2168)
+transition_initialize(room_motherAndDaughterIsle, 2584, 1992)
