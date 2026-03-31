@@ -28,7 +28,7 @@ function globals_initialize()
 	
 	
 	global.starShardsNearby = [];
-	global.starShardsFound = array_create(11, false);
+	global.starShardsFound = array_create(20, false);
 	
 	global.starsNearby = [];
 	global.starsFound = array_create(3, false);
