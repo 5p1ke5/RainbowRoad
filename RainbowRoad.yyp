@@ -153,6 +153,7 @@
     {"id":{"name":"obj_buttonGreen","path":"objects/obj_buttonGreen/obj_buttonGreen.yy",},},
     {"id":{"name":"obj_buttonRed","path":"objects/obj_buttonRed/obj_buttonRed.yy",},},
     {"id":{"name":"obj_buyable","path":"objects/obj_buyable/obj_buyable.yy",},},
+    {"id":{"name":"obj_buyableStar","path":"objects/obj_buyableStar/obj_buyableStar.yy",},},
     {"id":{"name":"obj_carryableNPC","path":"objects/obj_carryableNPC/obj_carryableNPC.yy",},},
     {"id":{"name":"obj_carryableNPCOceanJr","path":"objects/obj_carryableNPCOceanJr/obj_carryableNPCOceanJr.yy",},},
     {"id":{"name":"obj_chairOffice","path":"objects/obj_chairOffice/obj_chairOffice.yy",},},

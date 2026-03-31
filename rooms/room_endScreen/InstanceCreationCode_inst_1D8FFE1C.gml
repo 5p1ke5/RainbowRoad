@@ -5,7 +5,7 @@ if (global.flagHusbandFound) && (global.flagWifeFound) && (global.flagSonFound)
 
 if (global.flagHusbandFound) && (global.flagWifeFound) && (!global.flagSonFound)
 {
-	text = 	 "You rescued everyone but Dr. Ocean's son, but he decides that's good enough. As a reward, Dr. Ocean has made you the new captain of the Kujira! With the wind at your back, go out and find the last of the stars!"
+	text = 	 "You rescued everyone excep Dr. Ocean's son, but he decides that's good enough. As a reward, Dr. Ocean has made you the new captain of the Kujira! With the wind at your back, go out and find the last of the stars!"
 }
 
 
@@ -36,5 +36,5 @@ if (!global.flagHusbandFound) && (global.flagWifeFound) && (!global.flagSonFound
 
 if (!global.flagHusbandFound) && (!global.flagWifeFound) && (!global.flagSonFound)
 {
-	text = 	 "You completely failed to save any of Dr. Ocean's family! After leaving Dr. Sky's palace, you kill Dr. Ocean and take his ship. You are the new captain of the Kujira! With the wind at your back, go out and find the last of the stars!"
+	text = 	 "You completely failed to save any of Dr. Ocean's family. After leaving Dr. Sky's palace, you kill Dr. Ocean and take his ship. You are the new captain of the Kujira! With the wind at your back, go out and find the last of the stars!"
 }

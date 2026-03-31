@@ -1,0 +1,1 @@
+dialogue = ["You can jump higher by holding SPACE longer!"];

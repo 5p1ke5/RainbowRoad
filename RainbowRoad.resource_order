@@ -122,6 +122,7 @@
     {"name":"obj_buttonGreen","order":2,"path":"objects/obj_buttonGreen/obj_buttonGreen.yy",},
     {"name":"obj_buttonRed","order":1,"path":"objects/obj_buttonRed/obj_buttonRed.yy",},
     {"name":"obj_buyable","order":36,"path":"objects/obj_buyable/obj_buyable.yy",},
+    {"name":"obj_buyableStar","order":44,"path":"objects/obj_buyableStar/obj_buyableStar.yy",},
     {"name":"obj_carryableNPC","order":5,"path":"objects/obj_carryableNPC/obj_carryableNPC.yy",},
     {"name":"obj_carryableNPCOceanJr","order":6,"path":"objects/obj_carryableNPCOceanJr/obj_carryableNPCOceanJr.yy",},
     {"name":"obj_chairOffice","order":4,"path":"objects/obj_chairOffice/obj_chairOffice.yy",},

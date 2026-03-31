@@ -6,6 +6,7 @@ with (carrier)
 	myCarry = noone;
 }
 
+global.flagTreasureFound = true;
 global.money += 200;
 instance_destroy();
 

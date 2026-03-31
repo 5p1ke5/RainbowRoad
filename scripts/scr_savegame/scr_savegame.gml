@@ -64,6 +64,8 @@ function savegame_save(_file)
 	
 	file_text_write_real(_textFile, global.flagSasquatchDefeated);
 	file_text_writeln(_textFile);
+	file_text_write_real(_textFile, global.flagTreasureFound);
+	file_text_writeln(_textFile);
 	file_text_write_real(_textFile, global.flagHusbandFound);
 	file_text_writeln(_textFile);
 	file_text_write_real(_textFile, global.flagWifeFound);
@@ -125,6 +127,7 @@ function savegame_load(_file)
 	global.starShardsFound = json_parse(file_text_readln(_textFile));
 	
 	global.flagSasquatchDefeated = real(file_text_readln(_textFile));
+	global.flagTreasureFound = real(file_text_readln(_textFile));
 	global.flagHusbandFound = real(file_text_readln(_textFile));
 	global.flagWifeFound = real(file_text_readln(_textFile));
 	global.flagSonFound = real(file_text_readln(_textFile));

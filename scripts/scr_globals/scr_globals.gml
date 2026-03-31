@@ -31,9 +31,10 @@ function globals_initialize()
 	global.starShardsFound = array_create(11, false);
 	
 	global.starsNearby = [];
-	global.starsFound = array_create(2, false);
+	global.starsFound = array_create(3, false);
 	
 	global.flagSasquatchDefeated = false;
+	global.flagTreasureFound = false;
 	global.flagWifeFound = false;
 	global.flagHusbandFound = false;
 	global.flagSonFound = false;

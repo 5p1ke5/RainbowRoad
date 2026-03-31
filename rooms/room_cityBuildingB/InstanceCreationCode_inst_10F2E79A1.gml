@@ -1,1 +1,1 @@
-buyable_initialize(10, obj_robotLackey);
+buyable_initialize(30, obj_robotLackey);

@@ -1,1 +1,1 @@
- bgm_play(bgm_cityInside);
+ bgm_play(bgm_cave);
