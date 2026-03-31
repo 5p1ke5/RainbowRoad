@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_building4",
   "bboxMode":0,
-  "bbox_bottom":223,
+  "bbox_bottom":207,
   "bbox_left":0,
   "bbox_right":239,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6618a1f9-1a8d-4fef-8e99-1230de5ac5d6","name":"6618a1f9-1a8d-4fef-8e99-1230de5ac5d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a6b4b9c-32ae-416c-b048-c38b545c417d","name":"7a6b4b9c-32ae-416c-b048-c38b545c417d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":224,
+  "height":208,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d29db9d0-39bd-45bd-93dc-33267ff754dd","blendMode":0,"displayName":"default","isLocked":false,"name":"d29db9d0-39bd-45bd-93dc-33267ff754dd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"618a1c82-6058-49a7-b277-d0c0ea8b5ba5","blendMode":0,"displayName":"default","isLocked":false,"name":"618a1c82-6058-49a7-b277-d0c0ea8b5ba5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_building4",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6618a1f9-1a8d-4fef-8e99-1230de5ac5d6","path":"sprites/spr_building4/spr_building4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f1e93326-86de-4156-9da8-2350564bc410","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a6b4b9c-32ae-416c-b048-c38b545c417d","path":"sprites/spr_building4/spr_building4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3c3bfde7-206f-4237-a136-f164e11e5d19","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
