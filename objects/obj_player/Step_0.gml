@@ -190,9 +190,25 @@ if (keyboard_check(ord("5")))
 {
 	transition_goto(room_sky, 2304, 2400);
 }
+
 if (keyboard_check(ord("6")))
 {
 	transition_goto(room_skyPalaceE, 944, 720);
+}
+
+if (keyboard_check(ord("7")))
+{
+	transition_goto(room_dirtIsland, 96, 2048);
+}
+
+if (keyboard_check(ord("8")))
+{
+	transition_goto(room_factoryIsland, 96, 2048);
+}
+
+if (keyboard_check(ord("9")))
+{
+	transition_goto(room_motherAndDaughterIsle, 96, 2048);
 }
 
 
