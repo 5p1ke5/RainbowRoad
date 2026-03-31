@@ -4,7 +4,7 @@
   "bboxMode":2,
   "bbox_bottom":15,
   "bbox_left":0,
-  "bbox_right":19,
+  "bbox_right":31,
   "bbox_top":12,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"685dcba9-e7a7-4a11-bc1b-f9c8edcafc16","name":"685dcba9-e7a7-4a11-bc1b-f9c8edcafc16","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"6d7da54a-e588-4b22-9d31-ffb2ad4cb28d","name":"6d7da54a-e588-4b22-9d31-ffb2ad4cb28d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fe4aa586-bc25-483b-8714-fbbdbb7d0887","name":"fe4aa586-bc25-483b-8714-fbbdbb7d0887","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7eb328d2-020a-4a8a-8b75-4b83b3ec410f","name":"7eb328d2-020a-4a8a-8b75-4b83b3ec410f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"39269268-f816-4030-8c31-08cea30bebfa","blendMode":0,"displayName":"default","isLocked":false,"name":"39269268-f816-4030-8c31-08cea30bebfa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0a993e1c-5ff6-455f-bba2-7a2f0c878a18","blendMode":0,"displayName":"default","isLocked":false,"name":"0a993e1c-5ff6-455f-bba2-7a2f0c878a18","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_buttonGreen",
   "nineSlice":null,
@@ -70,16 +70,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"685dcba9-e7a7-4a11-bc1b-f9c8edcafc16","path":"sprites/spr_buttonGreen/spr_buttonGreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2d1aa9ce-e57c-403d-b683-0f14fa4634a3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe4aa586-bc25-483b-8714-fbbdbb7d0887","path":"sprites/spr_buttonGreen/spr_buttonGreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"50527b6e-1c8c-4409-bdfe-a6e0b18ec590","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d7da54a-e588-4b22-9d31-ffb2ad4cb28d","path":"sprites/spr_buttonGreen/spr_buttonGreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ac389d17-a187-458a-a4d0-7d75c89ba75a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7eb328d2-020a-4a8a-8b75-4b83b3ec410f","path":"sprites/spr_buttonGreen/spr_buttonGreen.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"76f8c60d-2b9e-4f6d-b579-9b1e4df01292","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":10,
+    "xorigin":16,
     "yorigin":0,
   },
   "swatchColours":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":20,
+  "width":32,
 }

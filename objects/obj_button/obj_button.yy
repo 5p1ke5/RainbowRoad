@@ -12,10 +12,7 @@
     "name":"buttons",
     "path":"folders/Objects/level features/buttons.yy",
   },
-  "parentObjectId":{
-    "name":"obj_block",
-    "path":"objects/obj_block/obj_block.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
