@@ -317,6 +317,8 @@
     {"id":{"name":"room_sky","path":"rooms/room_sky/room_sky.yy",},},
     {"id":{"name":"room_skyAirship","path":"rooms/room_skyAirship/room_skyAirship.yy",},},
     {"id":{"name":"room_skyFactory","path":"rooms/room_skyFactory/room_skyFactory.yy",},},
+    {"id":{"name":"room_skyHouseA","path":"rooms/room_skyHouseA/room_skyHouseA.yy",},},
+    {"id":{"name":"room_skyHouseB","path":"rooms/room_skyHouseB/room_skyHouseB.yy",},},
     {"id":{"name":"room_skyIsland","path":"rooms/room_skyIsland/room_skyIsland.yy",},},
     {"id":{"name":"room_skyPalaceA","path":"rooms/room_skyPalaceA/room_skyPalaceA.yy",},},
     {"id":{"name":"room_skyPalaceB","path":"rooms/room_skyPalaceB/room_skyPalaceB.yy",},},
@@ -664,6 +666,8 @@
     {"roomId":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
     {"roomId":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
     {"roomId":{"name":"room_flowerFieldsCaveE","path":"rooms/room_flowerFieldsCaveE/room_flowerFieldsCaveE.yy",},},
+    {"roomId":{"name":"room_skyHouseA","path":"rooms/room_skyHouseA/room_skyHouseA.yy",},},
+    {"roomId":{"name":"room_skyHouseB","path":"rooms/room_skyHouseB/room_skyHouseB.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -1,0 +1,1 @@
+dialogue = ["You can pick objects up by standing on top of them and pressing Z. Press Z again to throw them,", "If you move that box you can use it as a platform to get up on that ledge."];

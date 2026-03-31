@@ -1,0 +1,1 @@
+transition_initialize(room_skyHouseB, 480, 928)

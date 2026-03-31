@@ -1,0 +1,2 @@
+doll_initialize(13, 15, 15, 0, 1, c_asian1, c_aqua, c_aqua, c_white, c_pink);
+npc_initialize("Klein", ["Dr. Sky's airship is full of robots and bombs.", "The factory to the west has conveyor belts and spikes. Be prepared!"]);

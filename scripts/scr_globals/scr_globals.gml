@@ -27,12 +27,9 @@ function globals_initialize()
 	global.roomPausedFrom = noone;
 	
 	
-	
-	global.starShards = array_create(9, false);
 	global.starShardsNearby = [];
-	global.starShardsFound = array_create(9, false);
+	global.starShardsFound = array_create(11, false);
 	
-	global.stars = array_create(2, false);
 	global.starsNearby = [];
 	global.starsFound = array_create(2, false);
 	

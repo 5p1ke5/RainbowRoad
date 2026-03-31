@@ -1,1 +1,1 @@
-starShard_initialize(7);
+starShard_initialize(9);
