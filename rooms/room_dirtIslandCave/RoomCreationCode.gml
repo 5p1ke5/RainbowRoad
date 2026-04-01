@@ -2,4 +2,4 @@
  
  global.starsNearby = [];
  
- global.starShardsNearby = [12, 13];
+ global.starShardsNearby = [];

@@ -251,6 +251,7 @@
     {"name":"room_cityHouseD","order":12,"path":"rooms/room_cityHouseD/room_cityHouseD.yy",},
     {"name":"room_cityHouseE","order":13,"path":"rooms/room_cityHouseE/room_cityHouseE.yy",},
     {"name":"room_dirtIsland","order":2,"path":"rooms/room_dirtIsland/room_dirtIsland.yy",},
+    {"name":"room_dirtIslandCave","order":4,"path":"rooms/room_dirtIslandCave/room_dirtIslandCave.yy",},
     {"name":"room_endScreen","order":3,"path":"rooms/room_endScreen/room_endScreen.yy",},
     {"name":"room_factoryIsland","order":1,"path":"rooms/room_factoryIsland/room_factoryIsland.yy",},
     {"name":"room_flowerFieldsCaveA","order":1,"path":"rooms/room_flowerFieldsCaveA/room_flowerFieldsCaveA.yy",},

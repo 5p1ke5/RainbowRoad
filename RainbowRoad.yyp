@@ -307,6 +307,7 @@
     {"id":{"name":"room_cityHouseD","path":"rooms/room_cityHouseD/room_cityHouseD.yy",},},
     {"id":{"name":"room_cityHouseE","path":"rooms/room_cityHouseE/room_cityHouseE.yy",},},
     {"id":{"name":"room_dirtIsland","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},},
+    {"id":{"name":"room_dirtIslandCave","path":"rooms/room_dirtIslandCave/room_dirtIslandCave.yy",},},
     {"id":{"name":"room_endScreen","path":"rooms/room_endScreen/room_endScreen.yy",},},
     {"id":{"name":"room_factoryIsland","path":"rooms/room_factoryIsland/room_factoryIsland.yy",},},
     {"id":{"name":"room_flowerFields","path":"rooms/room_flowerFields/room_flowerFields.yy",},},
@@ -689,6 +690,7 @@
     {"roomId":{"name":"room_factoryIsland","path":"rooms/room_factoryIsland/room_factoryIsland.yy",},},
     {"roomId":{"name":"room_dirtIsland","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},},
     {"roomId":{"name":"room_motherAndDaughterIsleHouse","path":"rooms/room_motherAndDaughterIsleHouse/room_motherAndDaughterIsleHouse.yy",},},
+    {"roomId":{"name":"room_dirtIslandCave","path":"rooms/room_dirtIslandCave/room_dirtIslandCave.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
