@@ -304,6 +304,7 @@
     {"name":"bgm_cave","order":3,"path":"sounds/bgm_cave/bgm_cave.yy",},
     {"name":"bgm_city","order":7,"path":"sounds/bgm_city/bgm_city.yy",},
     {"name":"bgm_cityInside","order":8,"path":"sounds/bgm_cityInside/bgm_cityInside.yy",},
+    {"name":"bgm_dirt","order":14,"path":"sounds/bgm_dirt/bgm_dirt.yy",},
     {"name":"bgm_ending","order":12,"path":"sounds/bgm_ending/bgm_ending.yy",},
     {"name":"bgm_forest","order":6,"path":"sounds/bgm_forest/bgm_forest.yy",},
     {"name":"bgm_jungle","order":4,"path":"sounds/bgm_jungle/bgm_jungle.yy",},

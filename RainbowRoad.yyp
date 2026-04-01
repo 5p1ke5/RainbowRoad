@@ -368,6 +368,7 @@
     {"id":{"name":"bgm_cave","path":"sounds/bgm_cave/bgm_cave.yy",},},
     {"id":{"name":"bgm_city","path":"sounds/bgm_city/bgm_city.yy",},},
     {"id":{"name":"bgm_cityInside","path":"sounds/bgm_cityInside/bgm_cityInside.yy",},},
+    {"id":{"name":"bgm_dirt","path":"sounds/bgm_dirt/bgm_dirt.yy",},},
     {"id":{"name":"bgm_ending","path":"sounds/bgm_ending/bgm_ending.yy",},},
     {"id":{"name":"bgm_forest","path":"sounds/bgm_forest/bgm_forest.yy",},},
     {"id":{"name":"bgm_jungle","path":"sounds/bgm_jungle/bgm_jungle.yy",},},

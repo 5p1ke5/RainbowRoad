@@ -198,7 +198,7 @@ if (keyboard_check(ord("6")))
 
 if (keyboard_check(ord("7")))
 {
-	transition_goto(room_dirtIsland, 96, 2048);
+	transition_goto(room_dirtIsland, 176, 672);
 }
 
 if (keyboard_check(ord("8")))

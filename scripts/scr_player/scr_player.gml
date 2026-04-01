@@ -2,6 +2,14 @@
 /// @description Destroys player instance and makes game enter death state.
 function player_die()
 {
+	if (myCarry)
+	{
+		with (myCarry)
+		{
+			carrier = noone;	
+		}
+	}
+	
 	instance_destroy();
 	global.hp = global.maxHP;
 	instance_create_depth(x, y, depth, obj_gameOver);
