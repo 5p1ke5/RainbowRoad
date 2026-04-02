@@ -1,0 +1,1 @@
+transition_initialize(room_dirtIslandCave, 448, 1520);

@@ -1,5 +1,5 @@
 /// @description If being held destroys self after two steps.
-if (instance_exists(carrier))
+if (carrier)
 {
 	carry_carried_step()
 	
