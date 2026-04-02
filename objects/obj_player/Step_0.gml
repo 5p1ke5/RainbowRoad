@@ -42,7 +42,7 @@ if (A_BUTTON_PRESSED) //Jumps
 } 
 
 //Offsets gravity to allow for jump cancelling
-else if (A_BUTTON) 
+if (A_BUTTON) 
 {
 	//Jumpoffset can depend on held item
 	var _balloonOffset = (instance_exists(myCarry) && (myCarry.object_index == obj_balloon)) * jumpOffset / 2;
