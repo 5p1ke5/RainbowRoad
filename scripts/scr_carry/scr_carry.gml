@@ -153,8 +153,60 @@ function carry_throw_instance(_hsp, _vsp, _xOffset = 0, _yOffset = 0)
 					_xOffset -= _i;
 					break;	
 				}
-				
 			}
+			
+			//Let's make it check vertically too
+			if (!_pointFound)
+			{
+				for (var _i = 0; _i < (bbox_bottom - bbox_top); _i++) 
+				{
+					//Checks downwards.
+					/*
+					_pointFound = place_empty(x + _xOffset, y + _yOffset + _i, [BLOCK, ONEWAY_CARRY]);
+				
+					if (_pointFound)
+					{
+						_yOffset += _i;
+						break;	
+					}
+					*/
+					
+					//checks upwards
+					_pointFound = place_empty(x + _xOffset, y + _yOffset - _i, [BLOCK, ONEWAY_CARRY]);
+				
+					if (_pointFound)
+					{
+						_yOffset -= _i;
+						break;	
+					}
+				}
+			}	
+			
+			//And finally diagonals
+			if (!_pointFound)
+			{
+				for (var _i = 0; _i < (bbox_bottom - bbox_top)/2; _i++) 
+				{
+					//checks diagonally upwards left and right
+					_pointFound = place_empty(x + _xOffset + _i, y + _yOffset - _i, [BLOCK, ONEWAY_CARRY]);
+				
+					if (_pointFound)
+					{
+						_xOffset += _i;
+						_yOffset -= _i;
+						break;	
+					}
+					//checks diagonally upwards left and right
+					_pointFound = place_empty(x + _xOffset - _i, y + _yOffset - _i, [BLOCK, ONEWAY_CARRY]);
+				
+					if (_pointFound)
+					{
+						_xOffset -= _i;
+						_yOffset -= _i;
+						break;	
+					}
+				}
+			}	
 			
 			//If no point was found, returns false.
 			if (!_pointFound)
