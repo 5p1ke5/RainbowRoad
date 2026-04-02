@@ -203,7 +203,7 @@ if (keyboard_check(ord("7")))
 
 if (keyboard_check(ord("8")))
 {
-	transition_goto(room_factoryIsland, 96, 2048);
+	transition_goto(room_lavaIsle, 96, 2048);
 }
 
 if (keyboard_check(ord("9")))

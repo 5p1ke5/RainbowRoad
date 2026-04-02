@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_blockTropicsDirt",
+  "%Name":"obj_blockTropicsGrass",
   "eventList":[],
   "managed":true,
-  "name":"obj_blockTropicsDirt",
+  "name":"obj_blockTropicsGrass",
   "overriddenProperties":[],
   "parent":{
     "name":"block",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_blockTropicalDirt",
-    "path":"sprites/spr_blockTropicalDirt/spr_blockTropicalDirt.yy",
+    "name":"spr_blockTropical",
+    "path":"sprites/spr_blockTropical/spr_blockTropical.yy",
   },
   "spriteMaskId":null,
   "visible":true,
