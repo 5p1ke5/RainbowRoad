@@ -261,6 +261,7 @@
     {"name":"room_flowerFieldsCaveE","order":5,"path":"rooms/room_flowerFieldsCaveE/room_flowerFieldsCaveE.yy",},
     {"name":"room_initialize","order":2,"path":"rooms/room_initialize/room_initialize.yy",},
     {"name":"room_motherAndDaughterIsleHouse","order":3,"path":"rooms/room_motherAndDaughterIsleHouse/room_motherAndDaughterIsleHouse.yy",},
+    {"name":"room_ocean","order":13,"path":"rooms/room_ocean/room_ocean.yy",},
     {"name":"room_pauseMenu","order":4,"path":"rooms/room_pauseMenu/room_pauseMenu.yy",},
     {"name":"room_reset","order":3,"path":"rooms/room_reset/room_reset.yy",},
     {"name":"room_skyAirship","order":3,"path":"rooms/room_skyAirship/room_skyAirship.yy",},

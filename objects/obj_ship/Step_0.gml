@@ -46,8 +46,14 @@ if (A_BUTTON_RELEASED) || (X_BUTTON_RELEASED)
 		global.shipDoorTo = _collision.roomTo;	
 		global.shipDoorToX = _collision.shipDoorToX;
 		global.shipDoorToY = _collision.shipDoorToY;
-		audio_play_sound(sfx_ping, 1, false);
 	}
+	else
+	{
+		global.shipDoorTo = room_ocean;
+		global.shipDoorToX = 1168;
+		global.shipDoorToY = 2048;
+	}
+	audio_play_sound(sfx_ping, 1, false);
 	
 	//Later make a little screen that is like...
 	// 'The Dolphin embarked for <Island Name>' and *then* it sends you back

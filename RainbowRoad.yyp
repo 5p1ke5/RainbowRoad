@@ -321,6 +321,7 @@
     {"id":{"name":"room_jungle","path":"rooms/room_jungle/room_jungle.yy",},},
     {"id":{"name":"room_motherAndDaughterIsle","path":"rooms/room_motherAndDaughterIsle/room_motherAndDaughterIsle.yy",},},
     {"id":{"name":"room_motherAndDaughterIsleHouse","path":"rooms/room_motherAndDaughterIsleHouse/room_motherAndDaughterIsleHouse.yy",},},
+    {"id":{"name":"room_ocean","path":"rooms/room_ocean/room_ocean.yy",},},
     {"id":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
     {"id":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
     {"id":{"name":"room_sky","path":"rooms/room_sky/room_sky.yy",},},
@@ -691,6 +692,7 @@
     {"roomId":{"name":"room_dirtIsland","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},},
     {"roomId":{"name":"room_motherAndDaughterIsleHouse","path":"rooms/room_motherAndDaughterIsleHouse/room_motherAndDaughterIsleHouse.yy",},},
     {"roomId":{"name":"room_dirtIslandCave","path":"rooms/room_dirtIslandCave/room_dirtIslandCave.yy",},},
+    {"roomId":{"name":"room_ocean","path":"rooms/room_ocean/room_ocean.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
