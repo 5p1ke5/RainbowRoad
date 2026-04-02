@@ -2,7 +2,7 @@
 if (instance_exists(owner))
 {
 	x = owner.x;
-	y = owner.y - 32 - height;
+	y = owner.y - 32 - (height/2);
 }
 
 time--;

@@ -38,7 +38,7 @@ function npc_speak(_text, _name = undefined)
 	var _balloonHeight = string_height_ext(_text, string_height(_text), TEXT_BALLOON_MAXW);
 	draw_set_font(fnt_default);
 	
-	var _balloon = instance_create_layer(x, y - 32 - _balloonHeight, layer, obj_speechBalloon);
+	var _balloon = instance_create_layer(x, y - 32 - (_balloonHeight/2), layer, obj_speechBalloon);
 	with (_balloon)
 	{
 		speechBalloon_initialize(_text, string_length(_text) * TEXT_BALLOON_SPEED, other, _name);
