@@ -1,0 +1,1 @@
+transition_initialize(room_city, 560, 2256)

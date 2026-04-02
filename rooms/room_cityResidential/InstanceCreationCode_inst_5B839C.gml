@@ -1,0 +1,1 @@
+transition_initialize(room_cityResidentialHomeA, 512, 688);

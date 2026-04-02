@@ -518,6 +518,7 @@
     {"name":"inst_3430D226","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},
     {"name":"inst_5113EB9E","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},
     {"name":"inst_5793C3D2","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},
+    {"name":"inst_14D28E61","path":"rooms/room_dirtIsland/room_dirtIsland.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -568,6 +569,7 @@
         {"$GMRInstance":"v4","%Name":"inst_20A09D90_2_2_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20A09D90_2_2_1","objectId":{"name":"obj_doorMetal","path":"objects/obj_doorMetal/obj_doorMetal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":672.0,},
         {"$GMRInstance":"v4","%Name":"inst_F702F63","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F702F63","objectId":{"name":"obj_doorCave","path":"objects/obj_doorCave/obj_doorCave.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1880.0,"y":192.0,},
         {"$GMRInstance":"v4","%Name":"inst_37727CEC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37727CEC","objectId":{"name":"obj_doorCave","path":"objects/obj_doorCave/obj_doorCave.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1520.0,"y":1392.0,},
+        {"$GMRInstance":"v4","%Name":"inst_14D28E61","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14D28E61","objectId":{"name":"obj_savePoint","path":"objects/obj_savePoint/obj_savePoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":760.0,"y":465.0,},
       ],"layers":[],"name":"Level","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"NPC","depth":500,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"NPC","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Blocks","depth":600,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

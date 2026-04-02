@@ -1,1 +1,0 @@
-transition_initialize(room_beachHouseB, 656, 688);

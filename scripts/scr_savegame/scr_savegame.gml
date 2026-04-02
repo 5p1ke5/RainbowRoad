@@ -121,7 +121,8 @@ function savegame_load(_file)
 	
 	global.bgm = real(file_text_readln(_textFile));
 	
-	global.carried = json_parse(file_text_readln(_textFile));
+	//global.carried = json_parse(file_text_readln(_textFile));
+	file_text_readln(_textFile); //This is broken in html5 so dummying out for now.
 	
 	global.starsFound = json_parse(file_text_readln(_textFile));
 	global.starShardsFound = json_parse(file_text_readln(_textFile));

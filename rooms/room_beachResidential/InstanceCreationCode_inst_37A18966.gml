@@ -1,1 +1,0 @@
-transition_initialize(room_beach, 656, 2048)
