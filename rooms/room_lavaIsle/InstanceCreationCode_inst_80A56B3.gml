@@ -1,1 +1,1 @@
-transition_initialize(room_lavaIsleCave, 512, 1632)
+transition_initialize(room_lavaIsleCaveC, 512, 1632)
