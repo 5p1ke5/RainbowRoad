@@ -9,7 +9,14 @@ if (FACE_BUTTON_RELEASED)
 			savegame_load(SAVEFILE);
 		break;
 		case "New Game":
-			room_goto(ROOM_START)
+			if (file_exists(SAVEFILE))
+			{
+				room_goto(room_saveWarning)
+			}
+			else
+			{
+				room_goto(ROOM_START)
+			}
 		break;
 	}
 }

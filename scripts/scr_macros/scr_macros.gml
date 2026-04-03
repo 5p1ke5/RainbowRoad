@@ -16,6 +16,7 @@
 
 #region string refs
 #macro SAVEFILE "save.dat"
+#macro HOUSEFILE "room_cityResidentialHomeA.dat"
 #endregion
 
 #region //Room references

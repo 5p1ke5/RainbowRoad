@@ -267,6 +267,7 @@
     {"id":{"name":"obj_roomTimer","path":"objects/obj_roomTimer/obj_roomTimer.yy",},},
     {"id":{"name":"obj_roomTimerPersistent","path":"objects/obj_roomTimerPersistent/obj_roomTimerPersistent.yy",},},
     {"id":{"name":"obj_savePoint","path":"objects/obj_savePoint/obj_savePoint.yy",},},
+    {"id":{"name":"obj_saveWarning","path":"objects/obj_saveWarning/obj_saveWarning.yy",},},
     {"id":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},},
     {"id":{"name":"obj_slimePink","path":"objects/obj_slimePink/obj_slimePink.yy",},},
     {"id":{"name":"obj_snake","path":"objects/obj_snake/obj_snake.yy",},},
@@ -334,6 +335,7 @@
     {"id":{"name":"room_ocean","path":"rooms/room_ocean/room_ocean.yy",},},
     {"id":{"name":"room_pauseMenu","path":"rooms/room_pauseMenu/room_pauseMenu.yy",},},
     {"id":{"name":"room_reset","path":"rooms/room_reset/room_reset.yy",},},
+    {"id":{"name":"room_saveWarning","path":"rooms/room_saveWarning/room_saveWarning.yy",},},
     {"id":{"name":"room_sky","path":"rooms/room_sky/room_sky.yy",},},
     {"id":{"name":"room_skyAirship","path":"rooms/room_skyAirship/room_skyAirship.yy",},},
     {"id":{"name":"room_skyFactory","path":"rooms/room_skyFactory/room_skyFactory.yy",},},
@@ -715,6 +717,7 @@
     {"roomId":{"name":"room_lavaIsleCaveC","path":"rooms/room_lavaIsleCaveC/room_lavaIsleCaveC.yy",},},
     {"roomId":{"name":"room_lavaIsleCaveA","path":"rooms/room_lavaIsleCaveA/room_lavaIsleCaveA.yy",},},
     {"roomId":{"name":"room_lavaIsleCaveB","path":"rooms/room_lavaIsleCaveB/room_lavaIsleCaveB.yy",},},
+    {"roomId":{"name":"room_saveWarning","path":"rooms/room_saveWarning/room_saveWarning.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
