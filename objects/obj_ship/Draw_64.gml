@@ -4,8 +4,8 @@ draw_text_transformed_colour(window_get_width()/2, window_get_height() / 4, isla
 
 if (islandName != "")
 {
-	draw_text_transformed_colour(window_get_width()/2, (window_get_height() / 2) + 5, "Press SPACE to embark!", 2, 2, 0, c_black, c_black, c_black, c_black, 1);
-	draw_text_transformed_colour(window_get_width()/2, window_get_height() / 2, "Press SPACE to embark!", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
+	draw_text_transformed_colour(window_get_width()/2, (window_get_height() / 2) + 5, "Press a button to embark!", 2, 2, 0, c_black, c_black, c_black, c_black, 1);
+	draw_text_transformed_colour(window_get_width()/2, window_get_height() / 2, "Press a button to embark!", 2, 2, 0, c_white, c_white, c_white, c_white, 1);
 }
 
 

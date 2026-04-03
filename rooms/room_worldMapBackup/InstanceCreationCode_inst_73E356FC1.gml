@@ -1,0 +1,1 @@
+mapMarker_initialize(96, 2048, room_lavaIsle, "Dino Island", "A volcanic island with dinosaurs.");

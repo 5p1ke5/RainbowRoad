@@ -288,6 +288,7 @@
     {"name":"room_tutorialA","order":1,"path":"rooms/room_tutorialA/room_tutorialA.yy",},
     {"name":"room_tutorialB","order":2,"path":"rooms/room_tutorialB/room_tutorialB.yy",},
     {"name":"room_worldMap","order":8,"path":"rooms/room_worldMap/room_worldMap.yy",},
+    {"name":"room_worldMapBackup","order":14,"path":"rooms/room_worldMapBackup/room_worldMapBackup.yy",},
     {"name":"scr_carry","order":4,"path":"scripts/scr_carry/scr_carry.yy",},
     {"name":"scr_collectables","order":23,"path":"scripts/scr_collectables/scr_collectables.yy",},
     {"name":"scr_collision","order":5,"path":"scripts/scr_collision/scr_collision.yy",},

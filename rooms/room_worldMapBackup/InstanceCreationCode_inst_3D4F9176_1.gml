@@ -1,0 +1,1 @@
+mapMarker_initialize(96, 2048, room_motherAndDaughterIsle, "Mother and Daughter", "A pair of small isles close together.");

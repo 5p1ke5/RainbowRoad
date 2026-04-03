@@ -1,0 +1,1 @@
+mapMarker_initialize(128, 672, room_dirtIsland, "Terra Firma Island", "An island with a treasure dig site and underground cave system.");

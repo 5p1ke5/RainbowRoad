@@ -23,7 +23,10 @@ vsp = phys_force_add(vsp, DOWN_BUTTON - UP_BUTTON, 3);
 
 if (place_meeting(x + hsp, y + vsp, obj_blockWhirlpool))
 {
-	npc_speak("I need 4 stars to go through whirlpools!");
+	if (star_total() < 4)
+	{
+		npc_speak("I need 4 stars to go through whirlpools!");
+	}
 }
 
 /* something like

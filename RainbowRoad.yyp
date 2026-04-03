@@ -350,6 +350,7 @@
     {"id":{"name":"room_tutorialA","path":"rooms/room_tutorialA/room_tutorialA.yy",},},
     {"id":{"name":"room_tutorialB","path":"rooms/room_tutorialB/room_tutorialB.yy",},},
     {"id":{"name":"room_worldMap","path":"rooms/room_worldMap/room_worldMap.yy",},},
+    {"id":{"name":"room_worldMapBackup","path":"rooms/room_worldMapBackup/room_worldMapBackup.yy",},},
     {"id":{"name":"template_isle","path":"rooms/template_isle/template_isle.yy",},},
     {"id":{"name":"scr_carry","path":"scripts/scr_carry/scr_carry.yy",},},
     {"id":{"name":"scr_collectables","path":"scripts/scr_collectables/scr_collectables.yy",},},
@@ -719,6 +720,7 @@
     {"roomId":{"name":"room_lavaIsleCaveA","path":"rooms/room_lavaIsleCaveA/room_lavaIsleCaveA.yy",},},
     {"roomId":{"name":"room_lavaIsleCaveB","path":"rooms/room_lavaIsleCaveB/room_lavaIsleCaveB.yy",},},
     {"roomId":{"name":"room_saveWarning","path":"rooms/room_saveWarning/room_saveWarning.yy",},},
+    {"roomId":{"name":"room_worldMapBackup","path":"rooms/room_worldMapBackup/room_worldMapBackup.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
