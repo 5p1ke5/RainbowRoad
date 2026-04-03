@@ -10,9 +10,9 @@ if (_drOcean)
 {
 	with (_drOcean)
 	{
-		dialogue = "Whoa you killed my son! Oh well I never liked him much anyhow.";
+		dialogue = ["Whoa you killed my son! Oh well I never liked him much anyhow."];
 		instance_destroy(myBalloon);
-		npc_speak(dialogue, name);
+		npc_speak("Whoa you killed my son! Oh well I never liked him much anyhow.", name);
 	}
 }
 

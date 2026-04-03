@@ -166,50 +166,50 @@ doll_animate();
 
 
 #region /// Demo stuff
-if (keyboard_check(ord("1")))
-{
-	transition_goto(room_atrium, 1700, 672);
-}
+//if (keyboard_check(ord("1")))
+//{
+//	transition_goto(room_atrium, 1700, 672);
+//}
 
-if (keyboard_check(ord("2")))
-{
-	transition_goto(room_beach, 126, 2043);
-}
+//if (keyboard_check(ord("2")))
+//{
+//	transition_goto(room_beach, 256, 2043);
+//}
 
-if (keyboard_check(ord("3")))
-{
-	transition_goto(room_flowerFields, 128, 2064);
-}
+//if (keyboard_check(ord("3")))
+//{
+//	transition_goto(room_flowerFields, 128, 2064);
+//}
 
-if (keyboard_check(ord("4")))
-{
-	transition_goto(room_city, 96, 2288);
-}
+//if (keyboard_check(ord("4")))
+//{
+//	transition_goto(room_city, 96, 2288);
+//}
 
-if (keyboard_check(ord("5")))
-{
-	transition_goto(room_sky, 2304, 2400);
-}
+//if (keyboard_check(ord("5")))
+//{
+//	transition_goto(room_sky, 2304, 2400);
+//}
 
-if (keyboard_check(ord("6")))
-{
-	transition_goto(room_skyPalaceE, 944, 720);
-}
+//if (keyboard_check(ord("6")))
+//{
+//	transition_goto(room_skyPalaceE, 944, 720);
+//}
 
-if (keyboard_check(ord("7")))
-{
-	transition_goto(room_dirtIsland, 176, 672);
-}
+//if (keyboard_check(ord("7")))
+//{
+//	transition_goto(room_dirtIsland, 176, 672);
+//}
 
-if (keyboard_check(ord("8")))
-{
-	transition_goto(room_lavaIsle, 96, 2048);
-}
+//if (keyboard_check(ord("8")))
+//{
+//	transition_goto(room_lavaIsle, 96, 2048);
+//}
 
-if (keyboard_check(ord("9")))
-{
-	transition_goto(room_motherAndDaughterIsle, 96, 2048);
-}
+//if (keyboard_check(ord("9")))
+//{
+//	transition_goto(room_motherAndDaughterIsle, 96, 2048);
+//}
 
 
 
