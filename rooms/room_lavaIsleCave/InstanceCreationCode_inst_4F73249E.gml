@@ -1,1 +1,1 @@
-moving_platform_initialize(-1, 0);
+moving_platform_initialize(1, 0);

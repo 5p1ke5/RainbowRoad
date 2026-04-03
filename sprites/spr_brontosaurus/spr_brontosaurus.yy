@@ -24,7 +24,7 @@
   ],
   "name":"spr_brontosaurus",
   "nineSlice":null,
-  "origin":1,
+  "origin":9,
   "parent":{
     "name":"carryable",
     "path":"folders/Sprites/carryable.yy",
@@ -79,7 +79,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":22,
+    "xorigin":21,
     "yorigin":0,
   },
   "swatchColours":null,
