@@ -1,0 +1,2 @@
+doll_initialize(13, 15, 15, 0, 1, c_asian1, c_lime, c_lime, c_white, c_lime);
+npc_initialize("Clive", ["Welcome to sky island! If you want to go back to earth just jump down here.", "Careful, if fall too low anywhere else you'll die like normal."]);

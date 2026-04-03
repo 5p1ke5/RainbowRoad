@@ -1,0 +1,1 @@
+transition_initialize(room_skyIsland, 1300, 160);
