@@ -1,1 +1,0 @@
-npc_initialize("Sign", "Sand blocks can be broken by throwing things at them.");

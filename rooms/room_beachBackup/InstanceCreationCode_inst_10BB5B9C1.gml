@@ -1,1 +1,0 @@
-starShard_initialize(0);

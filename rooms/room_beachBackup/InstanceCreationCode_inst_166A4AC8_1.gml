@@ -1,1 +1,0 @@
-npc_initialize("Sign", "This is a save crystal. Interact with it to save your game!");

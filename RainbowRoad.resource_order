@@ -235,7 +235,6 @@
     {"name":"obj_trampoline","order":39,"path":"objects/obj_trampoline/obj_trampoline.yy",},
     {"name":"obj_trashcan","order":17,"path":"objects/obj_trashcan/obj_trashcan.yy",},
     {"name":"obj_turret","order":42,"path":"objects/obj_turret/obj_turret.yy",},
-    {"name":"room_beachBackup","order":7,"path":"rooms/room_beachBackup/room_beachBackup.yy",},
     {"name":"room_beachCave","order":2,"path":"rooms/room_beachCave/room_beachCave.yy",},
     {"name":"room_beachDungeonA","order":5,"path":"rooms/room_beachDungeonA/room_beachDungeonA.yy",},
     {"name":"room_beachDungeonB","order":6,"path":"rooms/room_beachDungeonB/room_beachDungeonB.yy",},
