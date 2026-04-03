@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e7b65b43-f5fa-4124-b276-cab4070ac9ad","name":"e7b65b43-f5fa-4124-b276-cab4070ac9ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e154415b-ffe5-40b1-8755-a2edf48ee63b","name":"e154415b-ffe5-40b1-8755-a2edf48ee63b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":48,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"651094e6-f248-4bb0-b8a3-4db9a8435a11","blendMode":0,"displayName":"default","isLocked":false,"name":"651094e6-f248-4bb0-b8a3-4db9a8435a11","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"fdf250f0-214e-48e3-b8fb-10e5e88da14f","blendMode":0,"displayName":"default","isLocked":false,"name":"fdf250f0-214e-48e3-b8fb-10e5e88da14f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_oneWayVolcanoMoving",
   "nineSlice":{
@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"oneWay",
-    "path":"folders/Sprites/blocks/oneWay.yy",
+    "name":"moving",
+    "path":"folders/Sprites/blocks/oneWay/moving.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -88,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7b65b43-f5fa-4124-b276-cab4070ac9ad","path":"sprites/spr_oneWayVolcanoMoving/spr_oneWayVolcanoMoving.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"72ee5783-3e2c-4ff8-a213-57a18bd88418","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e154415b-ffe5-40b1-8755-a2edf48ee63b","path":"sprites/spr_oneWayVolcanoMoving/spr_oneWayVolcanoMoving.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"633321b1-e944-4cea-b6c5-dd735a123d7c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,0 +1,1 @@
+transition_initialize(room_lavaIsle, 5056, 1456);
