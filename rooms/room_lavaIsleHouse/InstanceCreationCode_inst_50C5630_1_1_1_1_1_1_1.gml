@@ -1,0 +1,2 @@
+doll_initialize(14, 1, 12, 0, 0, c_asian2, c_darkBrunette, c_red, c_black, c_black);
+npc_initialize("Prof Simon", ["Welcome to Dino Island! I'm a professor studying the brontosauruses here.", "The dinosaurs are very friendly. You should try riding them!"]);
