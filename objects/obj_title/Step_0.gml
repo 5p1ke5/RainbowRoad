@@ -6,6 +6,7 @@ if (FACE_BUTTON_RELEASED)
 	switch (options[optionSelected]) 
 	{   
 		case "Continue":
+			audio_stop_sound(global.bgm);
 			savegame_load(SAVEFILE);
 		break;
 		case "New Game":

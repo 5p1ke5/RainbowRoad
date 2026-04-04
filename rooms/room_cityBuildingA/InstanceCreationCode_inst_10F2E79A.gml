@@ -1,1 +1,1 @@
-buyable_initialize(10, obj_iceBlockW);
+buyable_initialize(5, obj_iceBlockW);
