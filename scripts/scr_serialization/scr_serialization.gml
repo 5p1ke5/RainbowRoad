@@ -127,11 +127,13 @@ function serialize_instance_all(_instance)
 /// @param _depth Depth the create the instance at.
 function instance_deserialize_depth(_serializedInstance, _x, _y, _depth)
 {	
-	//Creates an instance using the saved object index.
-	var _instance = instance_create_depth(_x, _y, _depth, _serializedInstance.object_index);
-	
 	//Gets all variable names from the struct.
-	_variableNameArray = struct_get_names(_serializedInstance);
+	var _variableNameArray = struct_get_names(_serializedInstance);
+	var _ref = handle_parse(_serializedInstance.object_index)
+	
+	//Creates an instance using the saved object index.
+	var _instance = instance_create_depth(_x, _y, _depth, _ref);
+	
 	
 	//Gets all variables from the struct and puts them in the instance.
 	for (var _i = 0; _i < array_length(_variableNameArray); _i++)
