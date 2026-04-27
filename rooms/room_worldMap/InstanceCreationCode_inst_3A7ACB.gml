@@ -1,0 +1,1 @@
+mapMarker_initialize(112, 2288, room_iceIsland, "Giant Glacier", "A big frozen glacier floating in the ocean.");

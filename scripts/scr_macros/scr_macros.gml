@@ -21,6 +21,7 @@
 
 #region //Room references
 #macro ROOM_TITLE room_titleScreen
+#macro ROOM_CLICK room_clickScreen
 #macro ROOM_START room_characterCreation
 #macro ROOM_INTRO_SCREEN room_tutorialA
 #macro ROOM_PAUSE room_pauseMenu
