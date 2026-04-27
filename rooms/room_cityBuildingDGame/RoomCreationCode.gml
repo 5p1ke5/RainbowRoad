@@ -43,10 +43,10 @@ for (var _i = 0; _i < _doorsPerFloor; _i++)
 
 // Generates elevators.
 //Gets a random door from each floor
-var _floor1ElevatorUpIndex = irandom(array_length(_floor1) - 1)
+var _floor1ElevatorUpIndex = my_irandom(array_length(_floor1) - 1)
 var _floor1ElevatorUpDoor = _floor1[_floor1ElevatorUpIndex];
 
-var _floor2ElevatorDownIndex = irandom(array_length(_floor2) - 1)
+var _floor2ElevatorDownIndex = my_irandom(array_length(_floor2) - 1)
 var _floor2ElevatorDownDoor = _floor2[_floor2ElevatorDownIndex];
 
 //The selected door creates an elevator object, then removes itself from the floor array and deletees itself.
@@ -80,10 +80,10 @@ with (_floor2ElevatorDown)
 
 
 
-var _floor2ElevatorUpIndex = irandom(array_length(_floor2) - 1)
+var _floor2ElevatorUpIndex = my_irandom(array_length(_floor2) - 1)
 var _floor2ElevatorUpDoor = _floor2[_floor2ElevatorUpIndex];
 
-var _floor3ElevatorDownIndex = irandom(array_length(_floor3) - 1)
+var _floor3ElevatorDownIndex = my_irandom(array_length(_floor3) - 1)
 var _floor3ElevatorDownDoor = _floor3[_floor3ElevatorDownIndex];
 
 //The selected door creates an elevator object, then removes itself from the floor array and deletees itself.

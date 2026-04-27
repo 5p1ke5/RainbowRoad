@@ -13,8 +13,8 @@ var _sectorWidth = 300;
  
 for (var _i = 0; _i < _sectorNumber; _i++) 
 {    
-	var _x = _startX + (_i * _sectorWidth) - irandom_range(50, 250);
-	var _y = 656+ (16 * irandom(4));
+	var _x = _startX + (_i * _sectorWidth) - my_irandom_range(50, 250);
+	var _y = 656+ (16 * my_irandom(4));
 	show_debug_message("x: " + string(_x) + " - y: " + string(_y));
 	
 	//Makes a cluster of coins.

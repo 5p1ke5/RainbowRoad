@@ -41,17 +41,17 @@ function globals_initialize()
 	
 	
 	//global.playerDoll = doll_struct(0, 0, 0,0, 0, c_white1, c_darkBrunette, c_red, c_aqua, c_red);
-	var _faceIndex = irandom(sprite_get_number(spr_dollFace));
-	var _hairIndex = irandom(sprite_get_number(spr_dollHair));
-	var _shirtIndex = irandom(sprite_get_number(spr_dollShirt));
-	var _pantsIndex = irandom(1);
-	var _shoeIndex = irandom(1);
+	var _faceIndex = my_irandom(sprite_get_number(spr_dollFace));
+	var _hairIndex = my_irandom(sprite_get_number(spr_dollHair));
+	var _shirtIndex = my_irandom(sprite_get_number(spr_dollShirt));
+	var _pantsIndex = my_irandom(1);
+	var _shoeIndex = my_irandom(1);
 	
-	var _skinColor = choose(c_asian1, c_white1, c_black1, c_hispanic1);
-	var _hairColor = choose(c_blonde, c_brunette, c_darkBrunette, c_red);
-	var _shirtColor = choose(c_red, c_blue, c_green, c_purple, c_orange, c_yellow);
-	var _pantsColor = choose(c_blue, c_gray, c_green, c_navy);
-	var _shoeColor = choose(c_brunette, c_green, c_red, c_black);
+	var _skinColor = my_choose([c_asian1, c_white1, c_black1, c_hispanic1]);
+	var _hairColor = my_choose([c_blonde, c_brunette, c_darkBrunette, c_red]);
+	var _shirtColor = my_choose([c_red, c_blue, c_green, c_purple, c_orange, c_yellow]);
+	var _pantsColor = my_choose([c_blue, c_gray, c_green, c_navy]);
+	var _shoeColor = my_choose([c_brunette, c_green, c_red, c_black]);
 	
 	global.playerDoll = doll_struct(_faceIndex, _hairIndex, _shirtIndex, _pantsIndex, _shoeIndex, _skinColor, _hairColor, _shirtColor, _pantsColor, _shoeColor);
 	
