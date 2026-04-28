@@ -17,7 +17,7 @@ function timer_step(_decrement = 1)
 {
 	if (time > 0)
 	{
-		time--;	
+		time -= _decrement;	
 	}
 	
 	if (time <= 0)

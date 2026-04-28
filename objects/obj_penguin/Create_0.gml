@@ -1,5 +1,8 @@
 // Inherits, initializes timers.
-event_inherited();
+phys_initialize(, 0.1,,,,,,, [abs_enemyCarry, obj_blockSand]);
+
+//Initializes variables for carrying this object.
+carry_initialize();
 
 timer_initialize(game_get_speed(gamespeed_fps) * 2, game_get_speed(gamespeed_fps) * 2, true);
 
