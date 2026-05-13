@@ -351,6 +351,7 @@
     {"id":{"name":"room_skyPalaceC","path":"rooms/room_skyPalaceC/room_skyPalaceC.yy",},},
     {"id":{"name":"room_skyPalaceD","path":"rooms/room_skyPalaceD/room_skyPalaceD.yy",},},
     {"id":{"name":"room_skyPalaceE","path":"rooms/room_skyPalaceE/room_skyPalaceE.yy",},},
+    {"id":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"id":{"name":"room_titleScreen","path":"rooms/room_titleScreen/room_titleScreen.yy",},},
     {"id":{"name":"room_tutorialA","path":"rooms/room_tutorialA/room_tutorialA.yy",},},
     {"id":{"name":"room_tutorialB","path":"rooms/room_tutorialB/room_tutorialB.yy",},},
@@ -734,6 +735,7 @@
     {"roomId":{"name":"room_saveWarning","path":"rooms/room_saveWarning/room_saveWarning.yy",},},
     {"roomId":{"name":"room_worldMapBackup","path":"rooms/room_worldMapBackup/room_worldMapBackup.yy",},},
     {"roomId":{"name":"room_clickScreen","path":"rooms/room_clickScreen/room_clickScreen.yy",},},
+    {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

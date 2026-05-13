@@ -166,10 +166,10 @@ doll_animate();
 
 
 #region /// Demo stuff
-//if (keyboard_check(ord("1")))
-//{
-//	transition_goto(room_atrium, 1700, 672);
-//}
+if (keyboard_check(ord("R")))
+{
+	game_restart();
+}
 
 //if (keyboard_check(ord("2")))
 //{
